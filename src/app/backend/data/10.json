@@ -1,0 +1,1382 @@
+[
+  {
+    "id": 1,
+    "word": "Hierarchical Injectors",
+    "answer": "Angular's dependency injection system with parent-child injector relationships for service resolution.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T16:52:48.797Z"
+  },
+  {
+    "id": 2,
+    "word": "Injection Tokens",
+    "answer": "Tokens used to provide and inject values that aren't classes in Angular's DI system.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T16:58:57.439Z"
+  },
+  {
+    "id": 3,
+    "word": "Optional Providers",
+    "answer": "Dependencies marked with @Optional() that won't cause errors if not provided.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:26:38.175Z"
+  },
+  {
+    "id": 4,
+    "word": "Element Injector",
+    "answer": "Injector associated with DOM elements in component hierarchy for service resolution.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:18.660Z"
+  },
+  {
+    "id": 5,
+    "word": "Module Injector",
+    "answer": "Injector at NgModule level providing services to entire module scope.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T16:52:51.406Z"
+  },
+  {
+    "id": 6,
+    "word": "Provider Scope",
+    "answer": "Determines where a service is available: root, platform, any, or specific module.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:09:52.194Z"
+  },
+  {
+    "id": 7,
+    "word": "Factory Providers",
+    "answer": "Providers that use factory functions to create complex dependency instances.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:26:39.877Z"
+  },
+  {
+    "id": 8,
+    "word": "Value Providers",
+    "answer": "Providers that deliver pre-existing values rather than instantiated classes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:21.001Z"
+  },
+  {
+    "id": 9,
+    "word": "Multi Providers",
+    "answer": "Multiple providers for same token collected into array for single injection.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T16:58:47.493Z"
+  },
+  {
+    "id": 10,
+    "word": "Injection Context",
+    "answer": "The environment where dependency injection occurs and services are resolved.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:13:53.505Z"
+  },
+  {
+    "id": 11,
+    "word": "Provider Visibility",
+    "answer": "Controls which components can see and use specific service providers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:31:25.970Z"
+  },
+  {
+    "id": 12,
+    "word": "Injector Bubbling",
+    "answer": "Process where Angular searches parent injectors when service not found locally.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:28.741Z"
+  },
+  {
+    "id": 13,
+    "word": "Service Instantiation",
+    "answer": "When and how services are created: eager, lazy, or per component.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T16:58:48.778Z"
+  },
+  {
+    "id": 14,
+    "word": "Provider Overriding",
+    "answer": "Replacing service implementations in specific modules or components.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:26:34.879Z"
+  },
+  {
+    "id": 15,
+    "word": "Dependency Resolution",
+    "answer": "Process of finding and providing requested dependencies to consumers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:33:38.396Z"
+  },
+  {
+    "id": 16,
+    "word": "Tree-shakable Providers",
+    "answer": "Providers that can be removed during bundling if unused in application.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:34.358Z"
+  },
+  {
+    "id": 17,
+    "word": "Provider Configuration",
+    "answer": "Setting up how services are provided and configured in DI system.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T16:58:55.260Z"
+  },
+  {
+    "id": 18,
+    "word": "Lazy-loaded Providers",
+    "answer": "Services provided only when lazy-loaded modules are loaded.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:26:36.092Z"
+  },
+  {
+    "id": 19,
+    "word": "View Providers",
+    "answer": "Providers available only to component and its template, not content children.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:12.131Z"
+  },
+  {
+    "id": 20,
+    "word": "Host Providers",
+    "answer": "Providers available to component and its host element.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:40.332Z"
+  },
+  {
+    "id": 21,
+    "word": "Default Change Detection",
+    "answer": "Angular's automatic checking of all components after any async event.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:43.530Z"
+  },
+  {
+    "id": 22,
+    "word": "OnPush Strategy",
+    "answer": "Change detection that only runs when @Input references change or events fire.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:37:44.474Z"
+  },
+  {
+    "id": 23,
+    "word": "Manual Change Detection",
+    "answer": "Explicitly triggering change detection using ChangeDetectorRef methods.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:37:57.654Z"
+  },
+  {
+    "id": 24,
+    "word": "Zones",
+    "answer": "Execution context that tracks async operations to trigger change detection.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:49:44.351Z"
+  },
+  {
+    "id": 25,
+    "word": "Signals",
+    "answer": "Reactive primitives that notify Angular when values change for updates.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:44.462Z"
+  },
+  {
+    "id": 26,
+    "word": "ChangeDetectorRef",
+    "answer": "Service for controlling change detection behavior in components.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:37:45.159Z"
+  },
+  {
+    "id": 27,
+    "word": "markForCheck",
+    "answer": "Marks component and ancestors for check in next change detection cycle.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:42:33.305Z"
+  },
+  {
+    "id": 28,
+    "word": "detach",
+    "answer": "Removes component from change detection tree until reattached.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:49:46.355Z"
+  },
+  {
+    "id": 29,
+    "word": "detectChanges",
+    "answer": "Immediately runs change detection on current component and children.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:45.249Z"
+  },
+  {
+    "id": 30,
+    "word": "Async Pipe",
+    "answer": "Pipe that automatically handles subscriptions and triggers change detection.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:37:46.117Z"
+  },
+  {
+    "id": 31,
+    "word": "Immutable Objects",
+    "answer": "Objects that don't change, requiring new references for updates.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:42:34.287Z"
+  },
+  {
+    "id": 32,
+    "word": "Observable Objects",
+    "answer": "Objects that can be observed for changes in OnPush components.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:50:41.114Z"
+  },
+  {
+    "id": 33,
+    "word": "Change Detection Cycle",
+    "answer": "The process of checking components for data changes and updating views.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:35:46.173Z"
+  },
+  {
+    "id": 34,
+    "word": "NgZone",
+    "answer": "Angular's wrapper around zones for managing change detection triggering.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:37:55.436Z"
+  },
+  {
+    "id": 35,
+    "word": "runOutsideAngular",
+    "answer": "Runs code outside Angular zone to prevent change detection.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:49:08.209Z"
+  },
+  {
+    "id": 36,
+    "word": "Expression Changed Error",
+    "answer": "Error when expression changes during change detection cycle.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:50:45.760Z"
+  },
+  {
+    "id": 37,
+    "word": "Change Detection Strategy",
+    "answer": "Configuring how component responds to data changes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:37:42.787Z"
+  },
+  {
+    "id": 38,
+    "word": "OnChanges Hook",
+    "answer": "Lifecycle hook called when input properties change.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:37:56.456Z"
+  },
+  {
+    "id": 39,
+    "word": "DoCheck Hook",
+    "answer": "Lifecycle hook for implementing custom change detection.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:49:15.759Z"
+  },
+  {
+    "id": 40,
+    "word": "Signal-based Components",
+    "answer": "Components using signals for reactive state management.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:51:08.178Z"
+  },
+  {
+    "id": 41,
+    "word": "Structural Directives",
+    "answer": "Directives that change DOM layout by adding/removing elements.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:51:11.347Z"
+  },
+  {
+    "id": 42,
+    "word": "Attribute Directives",
+    "answer": "Directives that change appearance or behavior of elements.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:03:46.301Z"
+  },
+  {
+    "id": 43,
+    "word": "TemplateRef",
+    "answer": "Reference to ng-template for creating embedded views.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:04:39.582Z"
+  },
+  {
+    "id": 44,
+    "word": "ViewContainerRef",
+    "answer": "Container where views can be dynamically created/destroyed.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:05:00.617Z"
+  },
+  {
+    "id": 45,
+    "word": "Directive Context",
+    "answer": "Data available to template within structural directive.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:51:19.140Z"
+  },
+  {
+    "id": 46,
+    "word": "Microsyntax",
+    "answer": "Compact syntax for configuring structural directives in templates.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:04:24.366Z"
+  },
+  {
+    "id": 47,
+    "word": "Star Prefix",
+    "answer": "The * syntax shorthand for structural directives.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:04:42.630Z"
+  },
+  {
+    "id": 48,
+    "word": "Host Element",
+    "answer": "The element that a directive is applied to.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:05:03.882Z"
+  },
+  {
+    "id": 49,
+    "word": "Host Binding",
+    "answer": "Decorator for binding directive properties to host element properties.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T17:51:20.787Z"
+  },
+  {
+    "id": 50,
+    "word": "Host Listener",
+    "answer": "Decorator for listening to host element events.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:04:25.425Z"
+  },
+  {
+    "id": 51,
+    "word": "Directive Selectors",
+    "answer": "CSS selectors that determine where directives apply.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:04:44.124Z"
+  },
+  {
+    "id": 52,
+    "word": "Directive Dependencies",
+    "answer": "Other directives or services that a directive requires.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:05:09.975Z"
+  },
+  {
+    "id": 53,
+    "word": "Custom Template Guards",
+    "answer": "Type narrowing in templates using type predicate functions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:03:17.442Z"
+  },
+  {
+    "id": 54,
+    "word": "Directive Composition",
+    "answer": "Applying multiple directives to host via composition API.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:04:30.727Z"
+  },
+  {
+    "id": 55,
+    "word": "Directive Lifecycle",
+    "answer": "Hooks like ngOnInit, ngOnDestroy for directive initialization.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:04:48.573Z"
+  },
+  {
+    "id": 56,
+    "word": "ExportAs",
+    "answer": "Makes directive instance available in template via template variable.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:05:16.329Z"
+  },
+  {
+    "id": 57,
+    "word": "Input Transform",
+    "answer": "Transforming input values before assigning to directive property.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:03:19.685Z"
+  },
+  {
+    "id": 58,
+    "word": "Directive Metadata",
+    "answer": "Configuration object defining directive behavior and selectors.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:04:35.158Z"
+  },
+  {
+    "id": 59,
+    "word": "Standalone Directives",
+    "answer": "Directives that can be used without declaring in NgModule.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:04:49.916Z"
+  },
+  {
+    "id": 60,
+    "word": "Directive Providers",
+    "answer": "Services provided at directive level for dependency injection.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:05:25.501Z"
+  },
+  {
+    "id": 61,
+    "word": "Content Projection",
+    "answer": "Inserting content from component parent into component template.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:05:48.325Z"
+  },
+  {
+    "id": 62,
+    "word": "Multi-slot Projection",
+    "answer": "Projecting content to different locations using select attribute.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:08:02.968Z"
+  },
+  {
+    "id": 63,
+    "word": "Dynamic Contexts",
+    "answer": "Providing different template contexts to projected content.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:15:36.687Z"
+  },
+  {
+    "id": 64,
+    "word": "ng-content",
+    "answer": "The placeholder element for projected content in components.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:15:29.966Z"
+  },
+  {
+    "id": 65,
+    "word": "Select Attribute",
+    "answer": "CSS selector specifying which content goes to which projection slot.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:06:37.648Z"
+  },
+  {
+    "id": 66,
+    "word": "Projection Slots",
+    "answer": "Different locations in template where content can be projected.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:08:08.259Z"
+  },
+  {
+    "id": 67,
+    "word": "Conditional Projection",
+    "answer": "Dynamically deciding whether to project content based on conditions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:17:42.778Z"
+  },
+  {
+    "id": 68,
+    "word": "ngProjectAs",
+    "answer": "Attribute to override how content is matched to projection slots.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:18:32.387Z"
+  },
+  {
+    "id": 69,
+    "word": "Content Child",
+    "answer": "Query for projected content using @ContentChild decorator.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:07:09.402Z"
+  },
+  {
+    "id": 70,
+    "word": "Content Children",
+    "answer": "Query for multiple projected elements with @ContentChildren.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:08:13.650Z"
+  },
+  {
+    "id": 71,
+    "word": "Transclusion",
+    "answer": "Alternative term for content projection in Angular.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:17:54.504Z"
+  },
+  {
+    "id": 72,
+    "word": "Projection Wrapping",
+    "answer": "Wrapping projected content with additional elements or components.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:18:36.753Z"
+  },
+  {
+    "id": 73,
+    "word": "Projection Fallback",
+    "answer": "Default content shown when no content is projected.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:07:03.968Z"
+  },
+  {
+    "id": 74,
+    "word": "Shadow DOM Projection",
+    "answer": "Content projection when using ViewEncapsulation.ShadowDom.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:08:18.461Z"
+  },
+  {
+    "id": 75,
+    "word": "Template Projection",
+    "answer": "Projecting template references rather than rendered content.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:18:02.010Z"
+  },
+  {
+    "id": 76,
+    "word": "Projection and Styling",
+    "answer": "How CSS styles apply to projected content in components.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:18:45.593Z"
+  },
+  {
+    "id": 77,
+    "word": "Projection Lifecycle",
+    "answer": "When projected content is initialized and destroyed.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:07:56.973Z"
+  },
+  {
+    "id": 78,
+    "word": "Dynamic Component Projection",
+    "answer": "Projecting dynamically created components.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:12:18.745Z"
+  },
+  {
+    "id": 79,
+    "word": "Projection Context API",
+    "answer": "API for providing context to projected templates.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:18:06.326Z"
+  },
+  {
+    "id": 80,
+    "word": "Content Query Updates",
+    "answer": "When content queries are updated during component lifecycle.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T18:18:50.292Z"
+  },
+  {
+    "id": 81,
+    "word": "Input Properties",
+    "answer": "Component properties that receive data from parent components."
+  },
+  {
+    "id": 82,
+    "word": "Output Properties",
+    "answer": "Component properties that emit events to parent components."
+  },
+  {
+    "id": 83,
+    "word": "Control Value Accessor",
+    "answer": "Interface for creating custom form controls in Angular."
+  },
+  {
+    "id": 84,
+    "word": "Input Transforms",
+    "answer": "Functions that transform input values before assignment."
+  },
+  {
+    "id": 85,
+    "word": "Output Aliasing",
+    "answer": "Renaming output properties for template usage."
+  },
+  {
+    "id": 86,
+    "word": "Input Required",
+    "answer": "Marking inputs as required for component to function."
+  },
+  {
+    "id": 87,
+    "word": "Two-way Binding",
+    "answer": "Combining input and output for synchronized parent-child data."
+  },
+  {
+    "id": 88,
+    "word": "Value Changes",
+    "answer": "Emitting events when component values change for forms API."
+  },
+  {
+    "id": 89,
+    "word": "Touched State",
+    "answer": "Marking control as touched for form validation display."
+  },
+  {
+    "id": 90,
+    "word": "Disabled State",
+    "answer": "Controlling whether form control is disabled or enabled."
+  },
+  {
+    "id": 91,
+    "word": "Form Validation",
+    "answer": "Implementing validation logic in custom form controls."
+  },
+  {
+    "id": 92,
+    "word": "Model-View Synchronization",
+    "answer": "Keeping component state in sync with external data models."
+  },
+  {
+    "id": 93,
+    "word": "API Consistency",
+    "answer": "Maintaining predictable interface across component library."
+  },
+  {
+    "id": 94,
+    "word": "Component Composition",
+    "answer": "Building complex components from simpler ones."
+  },
+  {
+    "id": 95,
+    "word": "Forward Ref",
+    "answer": "Referencing components before they're declared."
+  },
+  {
+    "id": 96,
+    "word": "Host Binding API",
+    "answer": "Controlling host element properties from component class."
+  },
+  {
+    "id": 97,
+    "word": "Host Listening",
+    "answer": "Responding to host element events from component class."
+  },
+  {
+    "id": 98,
+    "word": "Self-contained Components",
+    "answer": "Components that manage their own state and dependencies."
+  },
+  {
+    "id": 99,
+    "word": "Component Contracts",
+    "answer": "Clear interfaces defining how components interact."
+  },
+  {
+    "id": 100,
+    "word": "Reactive Components",
+    "answer": "Components using reactive patterns for state management."
+  }
+]

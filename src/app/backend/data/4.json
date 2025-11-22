@@ -1,0 +1,2822 @@
+[
+  {
+    "id": 1,
+    "word": "SQL",
+    "answer": "Structured Query Language for managing and querying relational databases.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T18:30:46.902Z"
+  },
+  {
+    "id": 2,
+    "word": "Database Management System",
+    "answer": "Software that manages databases and provides data storage, retrieval, and security.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T18:31:31.916Z"
+  },
+  {
+    "id": 3,
+    "word": "Relational Database",
+    "answer": "Database organizing data into tables with rows and columns and relationships.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:34:19.223Z"
+  },
+  {
+    "id": 4,
+    "word": "Data Model",
+    "answer": "Abstract representation of data structures and relationships in a database.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:35:26.520Z"
+  },
+  {
+    "id": 5,
+    "word": "Schema",
+    "answer": "Blueprint defining database structure, tables, relationships, and constraints.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T18:31:06.011Z"
+  },
+  {
+    "id": 6,
+    "word": "Table",
+    "answer": "Database object storing data in rows and columns with defined structure.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T18:31:33.829Z"
+  },
+  {
+    "id": 7,
+    "word": "CREATE TABLE",
+    "answer": "DDL command to define a new table structure in the database.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:34:20.179Z"
+  },
+  {
+    "id": 8,
+    "word": "ALTER TABLE",
+    "answer": "DDL command to modify existing table structure like adding columns.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:35:32.925Z"
+  },
+  {
+    "id": 9,
+    "word": "DROP TABLE",
+    "answer": "DDL command to remove a table and its data from the database.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T18:31:15.332Z"
+  },
+  {
+    "id": 10,
+    "word": "Data Types",
+    "answer": "Attribute specifying what kind of data a column can hold.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T18:31:34.917Z"
+  },
+  {
+    "id": 11,
+    "word": "Primary Key",
+    "answer": "Unique identifier for each record in a database table.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:34:20.896Z"
+  },
+  {
+    "id": 12,
+    "word": "Foreign Key",
+    "answer": "Column creating relationship between tables by referencing primary key.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:35:34.017Z"
+  },
+  {
+    "id": 13,
+    "word": "Normalization",
+    "answer": "Process organizing data to reduce redundancy and improve integrity.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T18:31:25.221Z"
+  },
+  {
+    "id": 14,
+    "word": "Transaction",
+    "answer": "Sequence of database operations executed as single logical unit.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T18:33:15.440Z"
+  },
+  {
+    "id": 15,
+    "word": "Data Integrity",
+    "answer": "Maintaining accuracy and consistency of data throughout its lifecycle.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:35:17.330Z"
+  },
+  {
+    "id": 16,
+    "word": "Index",
+    "answer": "Database structure improving speed of data retrieval operations.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:41.048Z"
+  },
+  {
+    "id": 17,
+    "word": "NULL",
+    "answer": "Special marker indicating missing or unknown data value.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T18:31:29.668Z"
+  },
+  {
+    "id": 18,
+    "word": "Constraint",
+    "answer": "Rule enforcing data integrity and relationships in database.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:25:00.898Z"
+  },
+  {
+    "id": 19,
+    "word": "Data Definition Language",
+    "answer": "SQL subset for defining and modifying database structures.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:34:38.744Z"
+  },
+  {
+    "id": 20,
+    "word": "Database",
+    "answer": "Organized collection of structured data stored electronically.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:32.100Z"
+  },
+  {
+    "id": 21,
+    "word": "INTEGER",
+    "answer": "Numeric data type for whole numbers without decimal points.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:44.210Z"
+  },
+  {
+    "id": 22,
+    "word": "VARCHAR",
+    "answer": "Variable-length string data type for character data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:48.892Z"
+  },
+  {
+    "id": 23,
+    "word": "DATE",
+    "answer": "Data type storing calendar dates without time information.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:53.793Z"
+  },
+  {
+    "id": 24,
+    "word": "TIMESTAMP",
+    "answer": "Data type storing both date and time information precisely.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:58.054Z"
+  },
+  {
+    "id": 25,
+    "word": "BOOLEAN",
+    "answer": "Data type representing true/false or yes/no values.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:45.097Z"
+  },
+  {
+    "id": 26,
+    "word": "DECIMAL",
+    "answer": "Numeric data type for exact decimal numbers with fixed precision.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:49.920Z"
+  },
+  {
+    "id": 27,
+    "word": "TEXT",
+    "answer": "String data type for large amounts of character data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:54.514Z"
+  },
+  {
+    "id": 28,
+    "word": "BLOB",
+    "answer": "Binary Large Object for storing large binary data like images.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:58.736Z"
+  },
+  {
+    "id": 29,
+    "word": "FLOAT",
+    "answer": "Numeric data type for approximate floating-point numbers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:45.909Z"
+  },
+  {
+    "id": 30,
+    "word": "CHAR",
+    "answer": "Fixed-length string data type for character data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:50.759Z"
+  },
+  {
+    "id": 31,
+    "word": "DATETIME",
+    "answer": "Data type storing both date and time values together.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:55.254Z"
+  },
+  {
+    "id": 32,
+    "word": "NUMERIC",
+    "answer": "Exact numeric data type with user-defined precision and scale.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:59.461Z"
+  },
+  {
+    "id": 33,
+    "word": "TIME",
+    "answer": "Data type storing time of day without date information.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:46.973Z"
+  },
+  {
+    "id": 34,
+    "word": "YEAR",
+    "answer": "Data type specifically for storing year values.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:52.075Z"
+  },
+  {
+    "id": 35,
+    "word": "ENUM",
+    "answer": "String data type with predefined list of possible values.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:56.212Z"
+  },
+  {
+    "id": 36,
+    "word": "SET",
+    "answer": "String data type allowing zero or more values from predefined list.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:44:49.598Z"
+  },
+  {
+    "id": 37,
+    "word": "BINARY",
+    "answer": "Data type for fixed-length binary data or byte strings.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:47.778Z"
+  },
+  {
+    "id": 38,
+    "word": "BIT",
+    "answer": "Data type for storing bit-field values or binary digits.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:52.832Z"
+  },
+  {
+    "id": 39,
+    "word": "JSON",
+    "answer": "Data type for storing JSON (JavaScript Object Notation) data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:36:56.944Z"
+  },
+  {
+    "id": 40,
+    "word": "UUID",
+    "answer": "Data type for storing Universally Unique Identifier values.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:46:06.223Z"
+  },
+  {
+    "id": 41,
+    "word": "CREATE DATABASE",
+    "answer": "DDL command to create a new database in the DBMS.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:46:48.710Z"
+  },
+  {
+    "id": 42,
+    "word": "DROP DATABASE",
+    "answer": "DDL command to delete an entire database and its contents.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:49:08.082Z"
+  },
+  {
+    "id": 43,
+    "word": "ALTER DATABASE",
+    "answer": "DDL command to modify database properties or settings.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:09:41.164Z"
+  },
+  {
+    "id": 44,
+    "word": "CREATE INDEX",
+    "answer": "DDL command to create an index for faster data retrieval.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:37:29.623Z"
+  },
+  {
+    "id": 45,
+    "word": "DROP INDEX",
+    "answer": "DDL command to remove an index from the database.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:47:27.303Z"
+  },
+  {
+    "id": 46,
+    "word": "TRUNCATE TABLE",
+    "answer": "DDL command to remove all records from a table quickly.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:49:11.543Z"
+  },
+  {
+    "id": 47,
+    "word": "ADD COLUMN",
+    "answer": "ALTER TABLE operation to add new column to existing table.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:09:42.574Z"
+  },
+  {
+    "id": 48,
+    "word": "DROP COLUMN",
+    "answer": "ALTER TABLE operation to remove column from table.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:37:33.153Z"
+  },
+  {
+    "id": 49,
+    "word": "MODIFY COLUMN",
+    "answer": "ALTER TABLE operation to change column data type or properties.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:47:36.551Z"
+  },
+  {
+    "id": 50,
+    "word": "RENAME TABLE",
+    "answer": "ALTER TABLE operation to change a table's name.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:49:13.104Z"
+  },
+  {
+    "id": 51,
+    "word": "Data Definition",
+    "answer": "Process of defining database structure, tables, and relationships.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:19:16.361Z"
+  },
+  {
+    "id": 52,
+    "word": "Column Definition",
+    "answer": "Specifying column name, data type, and constraints in table creation.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:37:40.684Z"
+  },
+  {
+    "id": 53,
+    "word": "Table Constraint",
+    "answer": "Rule applied to entire table affecting multiple columns.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:48:08.642Z"
+  },
+  {
+    "id": 54,
+    "word": "Column Constraint",
+    "answer": "Rule applied to individual column in table definition.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:49:15.150Z"
+  },
+  {
+    "id": 55,
+    "word": "Database Schema",
+    "answer": "Complete logical structure and organization of a database.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:35:48.580Z"
+  },
+  {
+    "id": 56,
+    "word": "Physical Schema",
+    "answer": "Actual storage details and file organization of database.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:40:04.889Z"
+  },
+  {
+    "id": 57,
+    "word": "Logical Schema",
+    "answer": "Abstract design showing tables, relationships without storage details.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:48:58.498Z"
+  },
+  {
+    "id": 58,
+    "word": "View Schema",
+    "answer": "Subset of database visible to particular user or application.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:49:30.590Z"
+  },
+  {
+    "id": 59,
+    "word": "Data Dictionary",
+    "answer": "Repository storing metadata about database structure and objects.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:37:00.124Z"
+  },
+  {
+    "id": 60,
+    "word": "Catalog",
+    "answer": "System database containing information about all database objects.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:40:57.465Z"
+  },
+  {
+    "id": 61,
+    "word": "Query Optimization",
+    "answer": "Process of improving SQL query performance and efficiency.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:41:44.339Z"
+  },
+  {
+    "id": 62,
+    "word": "ACID Properties",
+    "answer": "Atomicity, Consistency, Isolation, Durability for transaction reliability.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:25:37.145Z"
+  },
+  {
+    "id": 63,
+    "word": "Concurrency Control",
+    "answer": "Managing simultaneous database access by multiple users.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:26:18.673Z"
+  },
+  {
+    "id": 64,
+    "word": "Database Administrator",
+    "answer": "Person responsible for database management, security, and performance.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:33:36.268Z"
+  },
+  {
+    "id": 65,
+    "word": "Stored Procedure",
+    "answer": "Precompiled SQL code stored in database for repeated execution.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T11:41:56.825Z"
+  },
+  {
+    "id": 66,
+    "word": "Trigger",
+    "answer": "Database object automatically executing in response to specific events.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:25:38.712Z"
+  },
+  {
+    "id": 67,
+    "word": "Database Normalization",
+    "answer": "Process minimizing data redundancy through table organization.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:28:28.279Z"
+  },
+  {
+    "id": 68,
+    "word": "Referential Integrity",
+    "answer": "Ensuring foreign key values match existing primary key values.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:33:42.194Z"
+  },
+  {
+    "id": 69,
+    "word": "Entity Integrity",
+    "answer": "Ensuring each table has unique primary key and no null values.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T12:11:29.632Z"
+  },
+  {
+    "id": 70,
+    "word": "Domain Integrity",
+    "answer": "Ensuring data values conform to defined data types and constraints.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:25:46.030Z"
+  },
+  {
+    "id": 71,
+    "word": "Cardinality",
+    "answer": "Numerical relationship between tables in database relationships.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:33:24.549Z"
+  },
+  {
+    "id": 72,
+    "word": "Entity",
+    "answer": "Real-world object or concept represented in database as table.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:33:59.601Z"
+  },
+  {
+    "id": 73,
+    "word": "Attribute",
+    "answer": "Property or characteristic of an entity represented as column.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T12:32:55.534Z"
+  },
+  {
+    "id": 74,
+    "word": "Relationship",
+    "answer": "Association between two or more entities in database model.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:13.068Z"
+  },
+  {
+    "id": 75,
+    "word": "Tuple",
+    "answer": "Single row or record in a database table representing one entity.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:33:31.808Z"
+  },
+  {
+    "id": 76,
+    "word": "Relation",
+    "answer": "Mathematical term for table in relational database theory.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:14.701Z"
+  },
+  {
+    "id": 77,
+    "word": "Domain",
+    "answer": "Set of possible values for a database attribute or column.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T12:33:10.046Z"
+  },
+  {
+    "id": 78,
+    "word": "Candidate Key",
+    "answer": "Minimal set of attributes that can uniquely identify a tuple.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:25:57.787Z"
+  },
+  {
+    "id": 79,
+    "word": "Composite Key",
+    "answer": "Primary key consisting of two or more columns together.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:26:05.776Z"
+  },
+  {
+    "id": 80,
+    "word": "Surrogate Key",
+    "answer": "Artificial primary key added to table when no natural key exists.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:27.545Z"
+  },
+  {
+    "id": 81,
+    "word": "Data Manipulation",
+    "answer": "Operations for retrieving, inserting, updating, and deleting data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:34.646Z"
+  },
+  {
+    "id": 82,
+    "word": "Data Control Language",
+    "answer": "SQL commands for security and access control in database.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:56.442Z"
+  },
+  {
+    "id": 83,
+    "word": "Transaction Control",
+    "answer": "Commands for managing database transactions like COMMIT, ROLLBACK.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:35:17.009Z"
+  },
+  {
+    "id": 84,
+    "word": "Database Engine",
+    "answer": "Core software component managing data storage and retrieval.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:40:50.700Z"
+  },
+  {
+    "id": 85,
+    "word": "Query Processor",
+    "answer": "Database component that interprets and executes SQL queries.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:39.671Z"
+  },
+  {
+    "id": 86,
+    "word": "Storage Manager",
+    "answer": "Database component managing data storage on physical devices.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:59.295Z"
+  },
+  {
+    "id": 87,
+    "word": "Buffer Manager",
+    "answer": "Component handling data transfer between disk and memory.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:36:14.352Z"
+  },
+  {
+    "id": 88,
+    "word": "Transaction Manager",
+    "answer": "Component ensuring ACID properties for database transactions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:41:00.991Z"
+  },
+  {
+    "id": 89,
+    "word": "Recovery Manager",
+    "answer": "Component restoring database after failures using logs and backups.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:42.103Z"
+  },
+  {
+    "id": 90,
+    "word": "Authorization",
+    "answer": "Process granting users specific access rights to database objects.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:35:00.579Z"
+  },
+  {
+    "id": 91,
+    "word": "Authentication",
+    "answer": "Process verifying user identity before granting database access.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:36:21.288Z"
+  },
+  {
+    "id": 92,
+    "word": "Database Security",
+    "answer": "Measures protecting database from unauthorized access or modification.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:41:03.213Z"
+  },
+  {
+    "id": 93,
+    "word": "Backup",
+    "answer": "Copy of database data for restoration in case of data loss.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:44.835Z"
+  },
+  {
+    "id": 94,
+    "word": "Recovery",
+    "answer": "Process restoring database to consistent state after failure.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:35:01.864Z"
+  },
+  {
+    "id": 95,
+    "word": "Database Mirroring",
+    "answer": "Creating and maintaining duplicate copy of database for redundancy.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:37:03.063Z"
+  },
+  {
+    "id": 96,
+    "word": "Replication",
+    "answer": "Process copying and distributing data to multiple database servers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:41:09.250Z"
+  },
+  {
+    "id": 97,
+    "word": "Clustering",
+    "answer": "Linking multiple servers to work as single system for high availability.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:34:48.782Z"
+  },
+  {
+    "id": 98,
+    "word": "Sharding",
+    "answer": "Horizontal partitioning of data across multiple database servers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:35:10.594Z"
+  },
+  {
+    "id": 99,
+    "word": "Data Warehouse",
+    "answer": "Central repository integrating data from multiple sources for analysis.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:40:26.828Z"
+  },
+  {
+    "id": 100,
+    "word": "Data Mining",
+    "answer": "Process discovering patterns and knowledge from large datasets.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T04:41:17.258Z"
+  },
+  {
+    "id": 101,
+    "word": "PRIMARY KEY",
+    "answer": "Uniquely identifies each record in a table. Only one per table allowed.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:19:24.353Z"
+  },
+  {
+    "id": 102,
+    "word": "FOREIGN KEY",
+    "answer": "Creates relationship between tables by referencing another table's primary key.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:19:56.295Z"
+  },
+  {
+    "id": 103,
+    "word": "UNIQUE Constraint",
+    "answer": "Ensures all values in a column are different across rows.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:22:05.783Z"
+  },
+  {
+    "id": 104,
+    "word": "NOT NULL Constraint",
+    "answer": "Prevents NULL values from being inserted into a column.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:22:38.895Z"
+  },
+  {
+    "id": 105,
+    "word": "CHECK Constraint",
+    "answer": "Limits value range that can be placed in a column.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:19:31.710Z"
+  },
+  {
+    "id": 106,
+    "word": "DEFAULT Constraint",
+    "answer": "Sets default value for column when no value is specified.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:20:30.388Z"
+  },
+  {
+    "id": 107,
+    "word": "Composite Primary Key",
+    "answer": "Primary key made of two or more columns.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:22:10.153Z"
+  },
+  {
+    "id": 108,
+    "word": "Referential Integrity",
+    "answer": "Ensures foreign key values match existing primary key values.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:22:51.084Z"
+  },
+  {
+    "id": 109,
+    "word": "Constraint Naming",
+    "answer": "Best practice to name constraints for easier management.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:19:39.022Z"
+  },
+  {
+    "id": 110,
+    "word": "Constraint Violation",
+    "answer": "Error when data insertion/update breaks constraint rules.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:20:36.953Z"
+  },
+  {
+    "id": 111,
+    "word": "Identity Column",
+    "answer": "Auto-incrementing column often used as primary key.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:22:18.729Z"
+  },
+  {
+    "id": 112,
+    "word": "Cascade Delete",
+    "answer": "Automatically deletes related records when parent is deleted.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:22:57.702Z"
+  },
+  {
+    "id": 113,
+    "word": "Cascade Update",
+    "answer": "Automatically updates foreign keys when primary key changes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:19:46.563Z"
+  },
+  {
+    "id": 114,
+    "word": "Check Constraint Expression",
+    "answer": "Boolean expression that must be true for data to be valid.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:20:57.589Z"
+  },
+  {
+    "id": 115,
+    "word": "Default Value Types",
+    "answer": "Can be literal value, function, or system value like GETDATE().",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:22:27.195Z"
+  },
+  {
+    "id": 116,
+    "word": "Nullable Columns",
+    "answer": "Columns that can contain NULL values if not constrained.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:23:04.407Z"
+  },
+  {
+    "id": 117,
+    "word": "Unique Index",
+    "answer": "Automatically created when UNIQUE constraint is defined.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:19:52.819Z"
+  },
+  {
+    "id": 118,
+    "word": "Primary Key Index",
+    "answer": "Automatically created clustered index for primary key.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:22:00.158Z"
+  },
+  {
+    "id": 119,
+    "word": "Constraint Disabling",
+    "answer": "Temporarily disable constraints for bulk operations.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:22:33.803Z"
+  },
+  {
+    "id": 120,
+    "word": "Constraint Validation",
+    "answer": "Process of checking existing data against constraint rules.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-20T07:23:09.943Z"
+  },
+  {
+    "id": 121,
+    "word": "INSERT Statement",
+    "answer": "Adds new rows to a table."
+  },
+  {
+    "id": 122,
+    "word": "UPDATE Statement",
+    "answer": "Modifies existing data in a table."
+  },
+  {
+    "id": 123,
+    "word": "DELETE Statement",
+    "answer": "Removes rows from a table."
+  },
+  {
+    "id": 124,
+    "word": "INSERT with VALUES",
+    "answer": "Inserts specific values into a table."
+  },
+  {
+    "id": 125,
+    "word": "INSERT with SELECT",
+    "answer": "Inserts data selected from another table or query."
+  },
+  {
+    "id": 126,
+    "word": "UPDATE with WHERE",
+    "answer": "Updates only rows that meet specific conditions."
+  },
+  {
+    "id": 127,
+    "word": "DELETE with WHERE",
+    "answer": "Deletes only rows that meet specific conditions."
+  },
+  {
+    "id": 128,
+    "word": "TRUNCATE TABLE",
+    "answer": "Removes all rows from table quickly without logging."
+  },
+  {
+    "id": 129,
+    "word": "Bulk Insert",
+    "answer": "Inserts large amount of data efficiently."
+  },
+  {
+    "id": 130,
+    "word": "MERGE Statement",
+    "answer": "Performs INSERT, UPDATE, DELETE in single operation."
+  },
+  {
+    "id": 131,
+    "word": "Column List in INSERT",
+    "answer": "Specifies which columns to insert data into."
+  },
+  {
+    "id": 132,
+    "word": "Multiple Row INSERT",
+    "answer": "Inserts several rows with single INSERT statement."
+  },
+  {
+    "id": 133,
+    "word": "UPDATE Join",
+    "answer": "Updates table based on values from another table."
+  },
+  {
+    "id": 134,
+    "word": "DELETE Join",
+    "answer": "Deletes rows based on conditions involving other tables."
+  },
+  {
+    "id": 135,
+    "word": "Output Clause",
+    "answer": "Returns information about affected rows in DML operations."
+  },
+  {
+    "id": 136,
+    "word": "Transaction with DML",
+    "answer": "Groups DML operations for atomic commit or rollback."
+  },
+  {
+    "id": 137,
+    "word": "DML Triggers",
+    "answer": "Code that executes automatically when DML operations occur."
+  },
+  {
+    "id": 138,
+    "word": "Affected Row Count",
+    "answer": "Number of rows modified by INSERT, UPDATE, or DELETE."
+  },
+  {
+    "id": 139,
+    "word": "Conditional UPDATE",
+    "answer": "UPDATE that only modifies rows meeting certain criteria."
+  },
+  {
+    "id": 140,
+    "word": "Cascading DML",
+    "answer": "DML operations that trigger other related operations."
+  },
+  {
+    "id": 141,
+    "word": "SELECT Statement",
+    "answer": "Retrieves data from database tables."
+  },
+  {
+    "id": 142,
+    "word": "FROM Clause",
+    "answer": "Specifies table(s) to query data from."
+  },
+  {
+    "id": 143,
+    "word": "SELECT All Columns",
+    "answer": "Uses asterisk (*) to return all columns from table."
+  },
+  {
+    "id": 144,
+    "word": "SELECT Specific Columns",
+    "answer": "Lists specific column names to return from query."
+  },
+  {
+    "id": 145,
+    "word": "Column Aliases",
+    "answer": "Temporary names for columns in result set using AS."
+  },
+  {
+    "id": 146,
+    "word": "Table Aliases",
+    "answer": "Temporary names for tables in queries."
+  },
+  {
+    "id": 147,
+    "word": "Calculated Columns",
+    "answer": "Columns derived from expressions in SELECT clause."
+  },
+  {
+    "id": 148,
+    "word": "Literal Values in SELECT",
+    "answer": "Constant values included in SELECT output."
+  },
+  {
+    "id": 149,
+    "word": "String Concatenation",
+    "answer": "Combining multiple string values in SELECT."
+  },
+  {
+    "id": 150,
+    "word": "Arithmetic Operations",
+    "answer": "Mathematical calculations in SELECT expressions."
+  },
+  {
+    "id": 151,
+    "word": "Multiple Table SELECT",
+    "answer": "Querying data from more than one table."
+  },
+  {
+    "id": 152,
+    "word": "SELECT with Functions",
+    "answer": "Using built-in functions in SELECT expressions."
+  },
+  {
+    "id": 153,
+    "word": "Result Set",
+    "answer": "Output data returned by SELECT query."
+  },
+  {
+    "id": 154,
+    "word": "Query Execution Order",
+    "answer": "Logical order in which SQL processes query clauses."
+  },
+  {
+    "id": 155,
+    "word": "SELECT Limitations",
+    "answer": "Restrictions on what can be included in SELECT."
+  },
+  {
+    "id": 156,
+    "word": "Column Order in SELECT",
+    "answer": "Determines order of columns in result set."
+  },
+  {
+    "id": 157,
+    "word": "Duplicate Rows",
+    "answer": "Multiple identical rows in SELECT result set."
+  },
+  {
+    "id": 158,
+    "word": "SELECT Performance",
+    "answer": "Efficiency considerations for SELECT queries."
+  },
+  {
+    "id": 159,
+    "word": "Read Consistency",
+    "answer": "Ensures data consistency during SELECT operations."
+  },
+  {
+    "id": 160,
+    "word": "Simple Query Structure",
+    "answer": "Basic SELECT-FROM-WHERE pattern for data retrieval."
+  },
+  {
+    "id": 161,
+    "word": "WHERE Clause",
+    "answer": "Filters rows based on specified conditions."
+  },
+  {
+    "id": 162,
+    "word": "AND Operator",
+    "answer": "Combines conditions, all must be true."
+  },
+  {
+    "id": 163,
+    "word": "OR Operator",
+    "answer": "Combines conditions, at least one must be true."
+  },
+  {
+    "id": 164,
+    "word": "NOT Operator",
+    "answer": "Negates a condition, returns opposite result."
+  },
+  {
+    "id": 165,
+    "word": "LIKE Operator",
+    "answer": "Pattern matching with wildcards % and _."
+  },
+  {
+    "id": 166,
+    "word": "IN Operator",
+    "answer": "Checks if value matches any in list or subquery."
+  },
+  {
+    "id": 167,
+    "word": "BETWEEN Operator",
+    "answer": "Checks if value is within range (inclusive)."
+  },
+  {
+    "id": 168,
+    "word": "Comparison Operators",
+    "answer": "=, <>, <, >, <=, >= for value comparisons."
+  },
+  {
+    "id": 169,
+    "word": "NULL Handling",
+    "answer": "Using IS NULL or IS NOT NULL for null checks."
+  },
+  {
+    "id": 170,
+    "word": "Multiple Conditions",
+    "answer": "Combining several conditions in WHERE clause."
+  },
+  {
+    "id": 171,
+    "word": "Parentheses in Conditions",
+    "answer": "Controls evaluation order of complex conditions."
+  },
+  {
+    "id": 172,
+    "word": "Wildcard Characters",
+    "answer": "% matches any string, _ matches single character."
+  },
+  {
+    "id": 173,
+    "word": "Escape Characters in LIKE",
+    "answer": "Searches for literal wildcard characters."
+  },
+  {
+    "id": 174,
+    "word": "NOT LIKE",
+    "answer": "Finds values that don't match specified pattern."
+  },
+  {
+    "id": 175,
+    "word": "NOT IN",
+    "answer": "Excludes values matching list or subquery."
+  },
+  {
+    "id": 176,
+    "word": "NOT BETWEEN",
+    "answer": "Excludes values within specified range."
+  },
+  {
+    "id": 177,
+    "word": "Date Range Filtering",
+    "answer": "Using BETWEEN or comparisons for date ranges."
+  },
+  {
+    "id": 178,
+    "word": "String Pattern Matching",
+    "answer": "Finding text patterns using LIKE operator."
+  },
+  {
+    "id": 179,
+    "word": "Case Sensitivity",
+    "answer": "Consideration of letter case in string comparisons."
+  },
+  {
+    "id": 180,
+    "word": "Filter Optimization",
+    "answer": "Writing efficient WHERE conditions for performance."
+  },
+  {
+    "id": 181,
+    "word": "ORDER BY Clause",
+    "answer": "Sorts result set by specified columns."
+  },
+  {
+    "id": 182,
+    "word": "ASC Sorting",
+    "answer": "Ascending order (default, from low to high)."
+  },
+  {
+    "id": 183,
+    "word": "DESC Sorting",
+    "answer": "Descending order (from high to low)."
+  },
+  {
+    "id": 184,
+    "word": "Multiple Column Sorting",
+    "answer": "Sorting by multiple columns in specified order."
+  },
+  {
+    "id": 185,
+    "word": "Column Position Sorting",
+    "answer": "Sorting by column position instead of name."
+  },
+  {
+    "id": 186,
+    "word": "Expression Sorting",
+    "answer": "Sorting by calculated expressions or functions."
+  },
+  {
+    "id": 187,
+    "word": "NULL Sorting Behavior",
+    "answer": "How NULL values are treated in sorted results."
+  },
+  {
+    "id": 188,
+    "word": "Case-Insensitive Sorting",
+    "answer": "Sorting that ignores letter case differences."
+  },
+  {
+    "id": 189,
+    "word": "Custom Sort Order",
+    "answer": "Using CASE in ORDER BY for custom sequences."
+  },
+  {
+    "id": 190,
+    "word": "Sort Performance",
+    "answer": "Impact of sorting on query execution time."
+  },
+  {
+    "id": 191,
+    "word": "Top-N Queries",
+    "answer": "Retrieving first N rows after sorting."
+  },
+  {
+    "id": 192,
+    "word": "Pagination with ORDER BY",
+    "answer": "Implementing page-by-page results with sorting."
+  },
+  {
+    "id": 193,
+    "word": "Collation in Sorting",
+    "answer": "Character set rules affecting sort order."
+  },
+  {
+    "id": 194,
+    "word": "Sort Stability",
+    "answer": "Consistency of order for equal values."
+  },
+  {
+    "id": 195,
+    "word": "ORDER BY with Joins",
+    "answer": "Sorting results from multiple joined tables."
+  },
+  {
+    "id": 196,
+    "word": "ORDER BY with Aggregates",
+    "answer": "Sorting grouped or aggregated results."
+  },
+  {
+    "id": 197,
+    "word": "Index Utilization",
+    "answer": "How indexes affect sort performance."
+  },
+  {
+    "id": 198,
+    "word": "Memory Requirements",
+    "answer": "System resources needed for large sorts."
+  },
+  {
+    "id": 199,
+    "word": "Temporary Sorting",
+    "answer": "Database creates temporary structures for sorting."
+  },
+  {
+    "id": 200,
+    "word": "Sort Direction Mixing",
+    "answer": "Using both ASC and DESC in same ORDER BY."
+  },
+  {
+    "id": 201,
+    "word": "DISTINCT Keyword",
+    "answer": "Removes duplicate rows from result set."
+  },
+  {
+    "id": 202,
+    "word": "DISTINCT on Single Column",
+    "answer": "Returns unique values from one column."
+  },
+  {
+    "id": 203,
+    "word": "DISTINCT on Multiple Columns",
+    "answer": "Returns unique combinations of multiple columns."
+  },
+  {
+    "id": 204,
+    "word": "COUNT(DISTINCT)",
+    "answer": "Counts number of unique values in column."
+  },
+  {
+    "id": 205,
+    "word": "DISTINCT with Expressions",
+    "answer": "Finding unique results of calculations."
+  },
+  {
+    "id": 206,
+    "word": "DISTINCT vs GROUP BY",
+    "answer": "Both remove duplicates but GROUP BY allows aggregates."
+  },
+  {
+    "id": 207,
+    "word": "DISTINCT Performance",
+    "answer": "Impact on query execution time and resources."
+  },
+  {
+    "id": 208,
+    "word": "DISTINCT with Joins",
+    "answer": "Removing duplicates from joined table results."
+  },
+  {
+    "id": 209,
+    "word": "NULL in DISTINCT",
+    "answer": "How NULL values are treated with DISTINCT."
+  },
+  {
+    "id": 210,
+    "word": "DISTINCT Limitations",
+    "answer": "Restrictions on usage with certain data types."
+  },
+  {
+    "id": 211,
+    "word": "SELECT DISTINCT Syntax",
+    "answer": "Proper placement in SELECT statement."
+  },
+  {
+    "id": 212,
+    "word": "Multiple DISTINCT Columns",
+    "answer": "Behavior when selecting several distinct columns."
+  },
+  {
+    "id": 213,
+    "word": "DISTINCT with ORDER BY",
+    "answer": "Sorting unique result sets."
+  },
+  {
+    "id": 214,
+    "word": "DISTINCT with WHERE",
+    "answer": "Filtering before removing duplicates."
+  },
+  {
+    "id": 215,
+    "word": "DISTINCT vs UNION",
+    "answer": "Different approaches to removing duplicates."
+  },
+  {
+    "id": 216,
+    "word": "DISTINCT on Large Tables",
+    "answer": "Performance considerations with big data."
+  },
+  {
+    "id": 217,
+    "word": "DISTINCT with Subqueries",
+    "answer": "Using DISTINCT in nested queries."
+  },
+  {
+    "id": 218,
+    "word": "DISTINCT and Indexes",
+    "answer": "How indexes affect DISTINCT operation speed."
+  },
+  {
+    "id": 219,
+    "word": "Alternative to DISTINCT",
+    "answer": "Other methods to achieve unique results."
+  },
+  {
+    "id": 220,
+    "word": "DISTINCT Best Practices",
+    "answer": "When and how to use DISTINCT effectively."
+  },
+  {
+    "id": 221,
+    "word": "COUNT Function",
+    "answer": "Returns number of rows matching criteria."
+  },
+  {
+    "id": 222,
+    "word": "SUM Function",
+    "answer": "Calculates total of numeric column values."
+  },
+  {
+    "id": 223,
+    "word": "AVG Function",
+    "answer": "Calculates average of numeric column values."
+  },
+  {
+    "id": 224,
+    "word": "MIN Function",
+    "answer": "Finds minimum value in column."
+  },
+  {
+    "id": 225,
+    "word": "MAX Function",
+    "answer": "Finds maximum value in column."
+  },
+  {
+    "id": 226,
+    "word": "Aggregate Function Syntax",
+    "answer": "Proper usage format for aggregate functions."
+  },
+  {
+    "id": 227,
+    "word": "NULL in Aggregates",
+    "answer": "How NULL values are handled in calculations."
+  },
+  {
+    "id": 228,
+    "word": "Multiple Aggregates",
+    "answer": "Using several aggregate functions in one query."
+  },
+  {
+    "id": 229,
+    "word": "Expression in Aggregates",
+    "answer": "Using calculations inside aggregate functions."
+  },
+  {
+    "id": 230,
+    "word": "DISTINCT in Aggregates",
+    "answer": "Aggregating only unique values."
+  },
+  {
+    "id": 231,
+    "word": "COUNT Variations",
+    "answer": "COUNT(*), COUNT(column), COUNT(1) differences."
+  },
+  {
+    "id": 232,
+    "word": "String Aggregation",
+    "answer": "Combining string values from multiple rows."
+  },
+  {
+    "id": 233,
+    "word": "Date Aggregation",
+    "answer": "Finding min/max dates or date ranges."
+  },
+  {
+    "id": 234,
+    "word": "Aggregate Data Types",
+    "answer": "Which data types work with each aggregate."
+  },
+  {
+    "id": 235,
+    "word": "Performance of Aggregates",
+    "answer": "Efficiency considerations for large datasets."
+  },
+  {
+    "id": 236,
+    "word": "Conditional Aggregation",
+    "answer": "Using CASE inside aggregate functions."
+  },
+  {
+    "id": 237,
+    "word": "Window Aggregates",
+    "answer": "Aggregates over partitions of data."
+  },
+  {
+    "id": 238,
+    "word": "Statistical Aggregates",
+    "answer": "STDDEV, VARIANCE for statistical analysis."
+  },
+  {
+    "id": 239,
+    "word": "Aggregate Precision",
+    "answer": "Handling decimal precision in calculations."
+  },
+  {
+    "id": 240,
+    "word": "Aggregate Error Handling",
+    "answer": "Dealing with errors in aggregate computations."
+  },
+  {
+    "id": 241,
+    "word": "GROUP BY Clause",
+    "answer": "Groups rows with same values into summary rows."
+  },
+  {
+    "id": 242,
+    "word": "HAVING Clause",
+    "answer": "Filters groups based on aggregate conditions."
+  },
+  {
+    "id": 243,
+    "word": "GROUP BY Multiple Columns",
+    "answer": "Creating groups based on multiple criteria."
+  },
+  {
+    "id": 244,
+    "word": "HAVING vs WHERE",
+    "answer": "WHERE filters rows, HAVING filters groups."
+  },
+  {
+    "id": 245,
+    "word": "GROUP BY with Aggregates",
+    "answer": "Using aggregate functions with grouped data."
+  },
+  {
+    "id": 246,
+    "word": "GROUP BY Expression",
+    "answer": "Grouping by calculated expressions."
+  },
+  {
+    "id": 247,
+    "word": "HAVING with Multiple Conditions",
+    "answer": "Complex filtering of grouped results."
+  },
+  {
+    "id": 248,
+    "word": "GROUP BY Performance",
+    "answer": "Efficiency considerations for grouping operations."
+  },
+  {
+    "id": 249,
+    "word": "NULL Groups",
+    "answer": "How NULL values are grouped together."
+  },
+  {
+    "id": 250,
+    "word": "GROUP BY Order",
+    "answer": "Order of columns affects grouping results."
+  },
+  {
+    "id": 251,
+    "word": "HAVING without GROUP BY",
+    "answer": "Using HAVING with single group aggregates."
+  },
+  {
+    "id": 252,
+    "word": "GROUP BY with Joins",
+    "answer": "Grouping results from multiple tables."
+  },
+  {
+    "id": 253,
+    "word": "Complex HAVING Conditions",
+    "answer": "Using AND/OR in HAVING clause."
+  },
+  {
+    "id": 254,
+    "word": "GROUP BY Best Practices",
+    "answer": "Effective use of grouping in queries."
+  },
+  {
+    "id": 255,
+    "word": "Rollup Grouping",
+    "answer": "Creating subtotals and grand totals."
+  },
+  {
+    "id": 256,
+    "word": "Cube Grouping",
+    "answer": "Creating all possible grouping combinations."
+  },
+  {
+    "id": 257,
+    "word": "Grouping Sets",
+    "answer": "Specifying multiple grouping lists."
+  },
+  {
+    "id": 258,
+    "word": "Filtered Aggregation",
+    "answer": "Applying filters within aggregate functions."
+  },
+  {
+    "id": 259,
+    "word": "Grouping Algorithm",
+    "answer": "How database engine performs grouping."
+  },
+  {
+    "id": 260,
+    "word": "Memory for Grouping",
+    "answer": "Resource requirements for large groupings."
+  },
+  {
+    "id": 261,
+    "word": "INNER JOIN",
+    "answer": "Returns matching rows from both tables."
+  },
+  {
+    "id": 262,
+    "word": "LEFT JOIN",
+    "answer": "Returns all left table rows with matching right rows."
+  },
+  {
+    "id": 263,
+    "word": "RIGHT JOIN",
+    "answer": "Returns all right table rows with matching left rows."
+  },
+  {
+    "id": 264,
+    "word": "FULL OUTER JOIN",
+    "answer": "Returns all rows from both tables with matches."
+  },
+  {
+    "id": 265,
+    "word": "CROSS JOIN",
+    "answer": "Returns Cartesian product of both tables."
+  },
+  {
+    "id": 266,
+    "word": "SELF JOIN",
+    "answer": "Joins table to itself using aliases."
+  },
+  {
+    "id": 267,
+    "word": "Join Conditions",
+    "answer": "ON clause specifies how tables relate."
+  },
+  {
+    "id": 268,
+    "word": "Multiple Table Joins",
+    "answer": "Joining more than two tables in one query."
+  },
+  {
+    "id": 269,
+    "word": "Natural Join",
+    "answer": "Joins tables on columns with same names."
+  },
+  {
+    "id": 270,
+    "word": "Theta Join",
+    "answer": "Join using comparison operators other than equals."
+  },
+  {
+    "id": 271,
+    "word": "Equi-Join",
+    "answer": "Join using equality comparison in condition."
+  },
+  {
+    "id": 272,
+    "word": "Non-Equi Join",
+    "answer": "Join using non-equality comparisons."
+  },
+  {
+    "id": 273,
+    "word": "Join Performance",
+    "answer": "Index usage and optimization for joins."
+  },
+  {
+    "id": 274,
+    "word": "Join Aliases",
+    "answer": "Using table aliases to simplify join syntax."
+  },
+  {
+    "id": 275,
+    "word": "Implicit Join Syntax",
+    "answer": "Using WHERE clause instead of JOIN keyword."
+  },
+  {
+    "id": 276,
+    "word": "Join with Aggregates",
+    "answer": "Combining joins with aggregate functions."
+  },
+  {
+    "id": 277,
+    "word": "Anti-Join",
+    "answer": "Finds rows in one table not in another."
+  },
+  {
+    "id": 278,
+    "word": "Semi-Join",
+    "answer": "Returns rows from one table that match another."
+  },
+  {
+    "id": 279,
+    "word": "Composite Join",
+    "answer": "Join on multiple columns from each table."
+  },
+  {
+    "id": 280,
+    "word": "Join Elimination",
+    "answer": "Query optimizer removes unnecessary joins."
+  },
+  {
+    "id": 281,
+    "word": "Subquery",
+    "answer": "Query nested inside another query."
+  },
+  {
+    "id": 282,
+    "word": "Correlated Subquery",
+    "answer": "Subquery that references outer query columns."
+  },
+  {
+    "id": 283,
+    "word": "Non-Correlated Subquery",
+    "answer": "Subquery that executes independently."
+  },
+  {
+    "id": 284,
+    "word": "Scalar Subquery",
+    "answer": "Returns single value used in expressions."
+  },
+  {
+    "id": 285,
+    "word": "EXISTS Subquery",
+    "answer": "Tests if subquery returns any rows."
+  },
+  {
+    "id": 286,
+    "word": "IN Subquery",
+    "answer": "Checks if value matches any subquery result."
+  },
+  {
+    "id": 287,
+    "word": "ANY/SOME Subquery",
+    "answer": "Compares value to any subquery result."
+  },
+  {
+    "id": 288,
+    "word": "ALL Subquery",
+    "answer": "Compares value to all subquery results."
+  },
+  {
+    "id": 289,
+    "word": "Derived Table",
+    "answer": "Subquery in FROM clause acting as table."
+  },
+  {
+    "id": 290,
+    "word": "Subquery in SELECT",
+    "answer": "Using subquery in column expression."
+  },
+  {
+    "id": 291,
+    "word": "Subquery in WHERE",
+    "answer": "Using subquery for row filtering."
+  },
+  {
+    "id": 292,
+    "word": "Subquery in HAVING",
+    "answer": "Using subquery for group filtering."
+  },
+  {
+    "id": 293,
+    "word": "Nested Subquery",
+    "answer": "Subquery containing another subquery."
+  },
+  {
+    "id": 294,
+    "word": "Subquery Performance",
+    "answer": "Optimization considerations for subqueries."
+  },
+  {
+    "id": 295,
+    "word": "Subquery vs Join",
+    "answer": "When to use subqueries versus joins."
+  },
+  {
+    "id": 296,
+    "word": "Common Table Expression",
+    "answer": "Named temporary result set for complex queries."
+  },
+  {
+    "id": 297,
+    "word": "Recursive Subquery",
+    "answer": "Subquery that references itself."
+  },
+  {
+    "id": 298,
+    "word": "Subquery Unnesting",
+    "answer": "Query optimizer rewrites subqueries as joins."
+  },
+  {
+    "id": 299,
+    "word": "Multi-row Subquery",
+    "answer": "Returns multiple rows for comparison."
+  },
+  {
+    "id": 300,
+    "word": "Subquery Limitations",
+    "answer": "Restrictions on subquery usage and placement."
+  }
+]

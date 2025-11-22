@@ -1,0 +1,1162 @@
+[
+  {
+    "id": 1,
+    "word": "Python",
+    "answer": "High-level programming language created by Guido van Rossum in 1991.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:02:11.370Z"
+  },
+  {
+    "id": 2,
+    "word": "Guido Van Rossum",
+    "answer": "Dutch programmer who created Python programming language.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:03:58.695Z"
+  },
+  {
+    "id": 3,
+    "word": "Python 2",
+    "answer": "Major Python version released in 2000, support ended in 2020.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:04:50.238Z"
+  },
+  {
+    "id": 4,
+    "word": "Python 3",
+    "answer": "Current Python version with breaking changes from Python 2.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:06:32.506Z"
+  },
+  {
+    "id": 5,
+    "word": "PEP 8",
+    "answer": "Python Enhancement Proposal defining style guide for Python code.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:02:37.746Z"
+  },
+  {
+    "id": 6,
+    "word": "Zen Of Python",
+    "answer": "Collection of 19 aphorisms describing Python design principles.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:04:05.978Z"
+  },
+  {
+    "id": 7,
+    "word": "CPython",
+    "answer": "Default implementation of Python written in C language.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:04:52.432Z"
+  },
+  {
+    "id": 8,
+    "word": "Python Software Foundation",
+    "answer": "Non-profit organization behind Python programming language.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:07:00.009Z"
+  },
+  {
+    "id": 9,
+    "word": "Python 3000",
+    "answer": "Codename for Python 3.0 during development phase.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:02:49.042Z"
+  },
+  {
+    "id": 10,
+    "word": "Monty Python",
+    "answer": "British comedy group that inspired Python's name.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:04:14.737Z"
+  },
+  {
+    "id": 11,
+    "word": "PEP 20",
+    "answer": "Python Enhancement Proposal containing the Zen of Python.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:05:02.915Z"
+  },
+  {
+    "id": 12,
+    "word": "Python 1.0",
+    "answer": "First official Python version released in January 1994.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:07:03.213Z"
+  },
+  {
+    "id": 13,
+    "word": "PEP 484",
+    "answer": "Python Enhancement Proposal introducing type hints.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:02:58.309Z"
+  },
+  {
+    "id": 14,
+    "word": "Python 3.6",
+    "answer": "Version adding f-strings and async/await syntax.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:04:24.868Z"
+  },
+  {
+    "id": 15,
+    "word": "Python 3.8",
+    "answer": "Version introducing walrus operator and positional parameters.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:05:11.284Z"
+  },
+  {
+    "id": 16,
+    "word": "Python 3.9",
+    "answer": "Version adding dictionary union operators.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:07:06.962Z"
+  },
+  {
+    "id": 17,
+    "word": "Python 3.10",
+    "answer": "Version introducing structural pattern matching.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:03:57.047Z"
+  },
+  {
+    "id": 18,
+    "word": "Python 3.11",
+    "answer": "Version with significant performance improvements.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:04:31.012Z"
+  },
+  {
+    "id": 19,
+    "word": "Python 2.7",
+    "answer": "Final Python 2 version with extended support until 2020.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:06:18.800Z"
+  },
+  {
+    "id": 20,
+    "word": "BDFL",
+    "answer": "Benevolent Dictator For Life, Guido van Rossum's title.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:07:11.938Z"
+  },
+  {
+    "id": 21,
+    "word": "Python Installer",
+    "answer": "Executable file to install Python on operating system.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:07:19.611Z"
+  },
+  {
+    "id": 22,
+    "word": "IDLE",
+    "answer": "Python's built-in Integrated Development Environment.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:08:08.830Z"
+  },
+  {
+    "id": 23,
+    "word": "PyCharm",
+    "answer": "Popular Python IDE by JetBrains with community edition.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:09:50.866Z"
+  },
+  {
+    "id": 24,
+    "word": "VS Code",
+    "answer": "Visual Studio Code editor with Python extension support.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:12:16.115Z"
+  },
+  {
+    "id": 25,
+    "word": "Jupyter Notebook",
+    "answer": "Web-based interactive computational environment for Python.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:07:29.334Z"
+  },
+  {
+    "id": 26,
+    "word": "Virtual Environment",
+    "answer": "Isolated Python environment for project dependencies.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:09:02.347Z"
+  },
+  {
+    "id": 27,
+    "word": "Pip",
+    "answer": "Python package installer for managing external libraries.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:11:38.476Z"
+  },
+  {
+    "id": 28,
+    "word": "Conda",
+    "answer": "Package manager and environment management system.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:12:21.232Z"
+  },
+  {
+    "id": 29,
+    "word": "Anaconda",
+    "answer": "Python distribution with data science packages.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:07:41.562Z"
+  },
+  {
+    "id": 30,
+    "word": "Pyenv",
+    "answer": "Python version management tool for multiple versions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:11:20.620Z"
+  },
+  {
+    "id": 31,
+    "word": "Sublime Text",
+    "answer": "Popular text editor with Python plugin support.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:11:48.057Z"
+  },
+  {
+    "id": 32,
+    "word": "Atom",
+    "answer": "Hackable text editor developed by GitHub.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:12:59.083Z"
+  },
+  {
+    "id": 33,
+    "word": "Spyder",
+    "answer": "Scientific Python Development Environment for data science.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:07:57.164Z"
+  },
+  {
+    "id": 34,
+    "word": "Thonny",
+    "answer": "Python IDE designed for beginners and education.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:09:42.937Z"
+  },
+  {
+    "id": 35,
+    "word": "Wing IDE",
+    "answer": "Commercial Python IDE with debugger and editor.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:11:52.800Z"
+  },
+  {
+    "id": 36,
+    "word": "PyDev",
+    "answer": "Python IDE for Eclipse development environment.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:13:41.175Z"
+  },
+  {
+    "id": 37,
+    "word": "Virtualenv",
+    "answer": "Tool to create isolated Python environments.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:08:01.750Z"
+  },
+  {
+    "id": 38,
+    "word": "Pipenv",
+    "answer": "Python development workflow and dependency management tool.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:09:48.304Z"
+  },
+  {
+    "id": 39,
+    "word": "Poetry",
+    "answer": "Python dependency management and packaging tool.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:12:05.316Z"
+  },
+  {
+    "id": 40,
+    "word": "Docker",
+    "answer": "Containerization platform for consistent Python environments.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:13:47.840Z"
+  },
+  {
+    "id": 41,
+    "word": "REPL",
+    "answer": "Read-Eval-Print Loop for interactive Python coding.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:13:57.621Z"
+  },
+  {
+    "id": 42,
+    "word": "Python Script",
+    "answer": "File containing Python code executed by interpreter.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:16:15.164Z"
+  },
+  {
+    "id": 43,
+    "word": "Indentation",
+    "answer": "Python uses whitespace to define code blocks.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:17:44.535Z"
+  },
+  {
+    "id": 44,
+    "word": "Comment",
+    "answer": "Text ignored by interpreter, starts with # symbol.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:18:07.614Z"
+  },
+  {
+    "id": 45,
+    "word": "Shebang",
+    "answer": "#! line specifying interpreter for script execution.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:14:04.773Z"
+  },
+  {
+    "id": 46,
+    "word": "Interpreter",
+    "answer": "Program that executes Python code line by line.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:16:19.734Z"
+  },
+  {
+    "id": 47,
+    "word": "Statement",
+    "answer": "Instruction that Python interpreter can execute.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:17:50.275Z"
+  },
+  {
+    "id": 48,
+    "word": "Expression",
+    "answer": "Code that produces a value when evaluated.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:18:15.222Z"
+  },
+  {
+    "id": 49,
+    "word": "Python Shell",
+    "answer": "Interactive environment to run Python commands.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:14:09.778Z"
+  },
+  {
+    "id": 50,
+    "word": "Command Line",
+    "answer": "Terminal interface to run Python scripts.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:16:45.302Z"
+  },
+  {
+    "id": 51,
+    "word": "Import Statement",
+    "answer": "Code to include external modules in Python program.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:17:53.416Z"
+  },
+  {
+    "id": 52,
+    "word": "Module",
+    "answer": "Python file containing reusable code and functions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:18:21.782Z"
+  },
+  {
+    "id": 53,
+    "word": "Package",
+    "answer": "Collection of Python modules in directories.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:15:47.671Z"
+  },
+  {
+    "id": 54,
+    "word": "Main Block",
+    "answer": "Code under if __name__ == '__main__': condition.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:16:49.532Z"
+  },
+  {
+    "id": 55,
+    "word": "Docstring",
+    "answer": "Multi-line string documenting Python code.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:18:01.393Z"
+  },
+  {
+    "id": 56,
+    "word": "Syntax Error",
+    "answer": "Error when Python cannot understand code structure.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:18:29.941Z"
+  },
+  {
+    "id": 57,
+    "word": "Runtime Error",
+    "answer": "Error occurring during program execution.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:15:52.192Z"
+  },
+  {
+    "id": 58,
+    "word": "Logical Error",
+    "answer": "Bug where code runs but produces wrong results.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:17:36.545Z"
+  },
+  {
+    "id": 59,
+    "word": "Debugging",
+    "answer": "Process of finding and fixing errors in code.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:18:04.966Z"
+  },
+  {
+    "id": 60,
+    "word": "Print Function",
+    "answer": "Outputs text to console in Python 3.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-18T20:18:40.582Z"
+  },
+  {
+    "id": 61,
+    "word": "Variable",
+    "answer": "Named storage location for data values."
+  },
+  {
+    "id": 62,
+    "word": "Integer",
+    "answer": "Data type for whole numbers without decimals."
+  },
+  {
+    "id": 63,
+    "word": "Float",
+    "answer": "Data type for numbers with decimal points."
+  },
+  {
+    "id": 64,
+    "word": "String",
+    "answer": "Sequence of characters enclosed in quotes."
+  },
+  {
+    "id": 65,
+    "word": "Boolean",
+    "answer": "Data type with True or False values."
+  },
+  {
+    "id": 66,
+    "word": "List",
+    "answer": "Mutable ordered collection of items in square brackets."
+  },
+  {
+    "id": 67,
+    "word": "Tuple",
+    "answer": "Immutable ordered collection in parentheses."
+  },
+  {
+    "id": 68,
+    "word": "Dictionary",
+    "answer": "Key-value pair collection in curly braces."
+  },
+  {
+    "id": 69,
+    "word": "Set",
+    "answer": "Unordered collection of unique elements."
+  },
+  {
+    "id": 70,
+    "word": "Type Conversion",
+    "answer": "Converting data from one type to another."
+  },
+  {
+    "id": 71,
+    "word": "Casting",
+    "answer": "Explicit type conversion using functions like int()."
+  },
+  {
+    "id": 72,
+    "word": "Mutable",
+    "answer": "Object that can be changed after creation."
+  },
+  {
+    "id": 73,
+    "word": "Immutable",
+    "answer": "Object that cannot be changed after creation."
+  },
+  {
+    "id": 74,
+    "word": "None Type",
+    "answer": "Special data type representing absence of value."
+  },
+  {
+    "id": 75,
+    "word": "Complex Number",
+    "answer": "Number with real and imaginary parts in Python."
+  },
+  {
+    "id": 76,
+    "word": "Bytes",
+    "answer": "Immutable sequence of integers between 0-255."
+  },
+  {
+    "id": 77,
+    "word": "Bytearray",
+    "answer": "Mutable sequence of integers between 0-255."
+  },
+  {
+    "id": 78,
+    "word": "Type Function",
+    "answer": "Returns the data type of an object."
+  },
+  {
+    "id": 79,
+    "word": "Isinstance",
+    "answer": "Function to check if object is of specific type."
+  },
+  {
+    "id": 80,
+    "word": "Dynamic Typing",
+    "answer": "Python determines variable types at runtime."
+  },
+  {
+    "id": 81,
+    "word": "Arithmetic Operators",
+    "answer": "Symbols for math operations: +, -, *, /, %, **, //."
+  },
+  {
+    "id": 82,
+    "word": "Comparison Operators",
+    "answer": "Compare values: ==, !=, >, <, >=, <=."
+  },
+  {
+    "id": 83,
+    "word": "Logical Operators",
+    "answer": "Combine conditions: and, or, not."
+  },
+  {
+    "id": 84,
+    "word": "Bitwise Operators",
+    "answer": "Operate on bits: &, |, ^, ~, <<, >>."
+  },
+  {
+    "id": 85,
+    "word": "Assignment Operator",
+    "answer": "= symbol for assigning values to variables."
+  },
+  {
+    "id": 86,
+    "word": "Identity Operators",
+    "answer": "Compare object identity: is, is not."
+  },
+  {
+    "id": 87,
+    "word": "Membership Operators",
+    "answer": "Test sequence membership: in, not in."
+  },
+  {
+    "id": 88,
+    "word": "Addition",
+    "answer": "+ operator for adding numbers or concatenating strings."
+  },
+  {
+    "id": 89,
+    "word": "Subtraction",
+    "answer": "- operator for subtracting numbers."
+  },
+  {
+    "id": 90,
+    "word": "Multiplication",
+    "answer": "* operator for multiplying numbers."
+  },
+  {
+    "id": 91,
+    "word": "Division",
+    "answer": "/ operator for floating-point division."
+  },
+  {
+    "id": 92,
+    "word": "Floor Division",
+    "answer": "// operator for integer division rounding down."
+  },
+  {
+    "id": 93,
+    "word": "Modulus",
+    "answer": "% operator for remainder of division."
+  },
+  {
+    "id": 94,
+    "word": "Exponentiation",
+    "answer": "** operator for raising to power."
+  },
+  {
+    "id": 95,
+    "word": "Equal To",
+    "answer": "== operator checks if values are equal."
+  },
+  {
+    "id": 96,
+    "word": "Not Equal To",
+    "answer": "!= operator checks if values are different."
+  },
+  {
+    "id": 97,
+    "word": "Greater Than",
+    "answer": "> operator checks if left value is larger."
+  },
+  {
+    "id": 98,
+    "word": "Less Than",
+    "answer": "< operator checks if left value is smaller."
+  },
+  {
+    "id": 99,
+    "word": "And Operator",
+    "answer": "Returns True if both conditions are true."
+  },
+  {
+    "id": 100,
+    "word": "Or Operator",
+    "answer": "Returns True if at least one condition is true."
+  }
+]

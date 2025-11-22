@@ -1,0 +1,15 @@
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  // 4 columns
+  grid-auto-rows: auto;                    // rows expand to fit
+  gap: 16px;                                // spacing between vocab cards
+  justify-items: center;
+  align-items: start;
+  padding: 16px;
+}
+
+/* Optionally constrain the grid width so it doesn’t stretch too much */
+.page-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+}

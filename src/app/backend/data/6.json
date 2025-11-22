@@ -1,0 +1,1382 @@
+[
+  {
+    "id": 1,
+    "word": "Express.js",
+    "answer": "Minimal web application framework for Node.js used to build web apps and APIs.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:04.950Z"
+  },
+  {
+    "id": 2,
+    "word": "Middleware",
+    "answer": "Functions that have access to request and response objects in Express.js routing.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:10.414Z"
+  },
+  {
+    "id": 3,
+    "word": "Routing",
+    "answer": "Determining how an application responds to client requests to specific endpoints.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:15.077Z"
+  },
+  {
+    "id": 4,
+    "word": "Request Object",
+    "answer": "Contains information about the HTTP request including parameters, body, and headers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:19.670Z"
+  },
+  {
+    "id": 5,
+    "word": "Response Object",
+    "answer": "Used to send responses back to the client from the server.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:05.939Z"
+  },
+  {
+    "id": 6,
+    "word": "app.listen()",
+    "answer": "Starts the server and makes it listen for incoming connections on specified port.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:11.368Z"
+  },
+  {
+    "id": 7,
+    "word": "Package.json",
+    "answer": "File containing project metadata and dependencies for Node.js applications.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:15.737Z"
+  },
+  {
+    "id": 8,
+    "word": "NPM",
+    "answer": "Node Package Manager used to install and manage JavaScript packages.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:20.351Z"
+  },
+  {
+    "id": 9,
+    "word": "Node_modules",
+    "answer": "Directory where NPM installs all project dependencies and packages.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:06.783Z"
+  },
+  {
+    "id": 10,
+    "word": "Dependencies",
+    "answer": "External packages that your project needs to function properly.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:12.503Z"
+  },
+  {
+    "id": 11,
+    "word": "GET Method",
+    "answer": "HTTP method used to retrieve data from the server.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:16.446Z"
+  },
+  {
+    "id": 12,
+    "word": "POST Method",
+    "answer": "HTTP method used to send data to the server to create resources.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:21.093Z"
+  },
+  {
+    "id": 13,
+    "word": "PUT Method",
+    "answer": "HTTP method used to update existing resources on the server.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:07.523Z"
+  },
+  {
+    "id": 14,
+    "word": "DELETE Method",
+    "answer": "HTTP method used to remove resources from the server.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:13.280Z"
+  },
+  {
+    "id": 15,
+    "word": "Route Parameters",
+    "answer": "Variable parts of URL path that capture values specified in their position.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:17.921Z"
+  },
+  {
+    "id": 16,
+    "word": "Query Strings",
+    "answer": "Key-value pairs appended to URL after question mark for optional parameters.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:22.337Z"
+  },
+  {
+    "id": 17,
+    "word": "req.params",
+    "answer": "Object containing properties mapped to named route parameters.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:08.240Z"
+  },
+  {
+    "id": 18,
+    "word": "req.query",
+    "answer": "Object containing property for each query string parameter in route.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:14.036Z"
+  },
+  {
+    "id": 19,
+    "word": "app.get()",
+    "answer": "Method to handle GET requests to specific routes in Express.js.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:18.561Z"
+  },
+  {
+    "id": 20,
+    "word": "app.post()",
+    "answer": "Method to handle POST requests to specific routes in Express.js.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:23.784Z"
+  },
+  {
+    "id": 21,
+    "word": "Route Handler",
+    "answer": "Function executed when HTTP request matches specific route and method.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:27.243Z"
+  },
+  {
+    "id": 22,
+    "word": "HTTP Status Codes",
+    "answer": "Standard codes indicating success or failure of HTTP requests.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:34.829Z"
+  },
+  {
+    "id": 23,
+    "word": "res.send()",
+    "answer": "Method to send HTTP response with various types of data to client.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:46.525Z"
+  },
+  {
+    "id": 24,
+    "word": "res.json()",
+    "answer": "Method to send JSON response to client in Express.js.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:55.426Z"
+  },
+  {
+    "id": 25,
+    "word": "res.status()",
+    "answer": "Method to set HTTP status code for the response.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:28.921Z"
+  },
+  {
+    "id": 26,
+    "word": "Static Files",
+    "answer": "Files like HTML, CSS, images served directly to client without processing.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:37.044Z"
+  },
+  {
+    "id": 27,
+    "word": "app.use()",
+    "answer": "Method to mount middleware functions at specified path in Express.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:47.220Z"
+  },
+  {
+    "id": 28,
+    "word": "Body Parser",
+    "answer": "Middleware to parse incoming request bodies before handlers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:33:03.587Z"
+  },
+  {
+    "id": 29,
+    "word": "Route Path",
+    "answer": "String defining the endpoint URL where requests will be handled.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:29.903Z"
+  },
+  {
+    "id": 30,
+    "word": "Callback Function",
+    "answer": "Function passed as argument to route method, executed when route matched.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:37.988Z"
+  },
+  {
+    "id": 31,
+    "word": "Request-Response Cycle",
+    "answer": "Complete process from client request to server response in web apps.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:48.875Z"
+  },
+  {
+    "id": 32,
+    "word": "CRUD Operations",
+    "answer": "Create, Read, Update, Delete - basic data manipulation operations.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:33:04.371Z"
+  },
+  {
+    "id": 33,
+    "word": "RESTful Routes",
+    "answer": "Conventional URL patterns that map to CRUD operations in web apps.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:30.895Z"
+  },
+  {
+    "id": 34,
+    "word": "Endpoint",
+    "answer": "Specific URL path where API or server can receive requests.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:44.803Z"
+  },
+  {
+    "id": 35,
+    "word": "Server",
+    "answer": "Program that listens for and responds to incoming network requests.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:52.708Z"
+  },
+  {
+    "id": 36,
+    "word": "Port",
+    "answer": "Communication endpoint where server listens for incoming requests.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:33:04.991Z"
+  },
+  {
+    "id": 37,
+    "word": "Localhost",
+    "answer": "Hostname referring to current device used for local development.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:33.671Z"
+  },
+  {
+    "id": 38,
+    "word": "Development Environment",
+    "answer": "Setup where developers write and test code before deployment.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:45.416Z"
+  },
+  {
+    "id": 39,
+    "word": "Module",
+    "answer": "Discrete program component that can be imported and used in Node.js.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:32:53.634Z"
+  },
+  {
+    "id": 40,
+    "word": "Require()",
+    "answer": "Function to import modules and dependencies in Node.js applications.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:33:05.578Z"
+  },
+  {
+    "id": 41,
+    "word": "Module Exports",
+    "answer": "Object used to export functions, objects from module for external use.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:36:58.199Z"
+  },
+  {
+    "id": 42,
+    "word": "Template Engine",
+    "answer": "Tool that enables using templates to generate dynamic HTML content.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:23.043Z"
+  },
+  {
+    "id": 43,
+    "word": "API",
+    "answer": "Application Programming Interface allowing software components to communicate.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:29.276Z"
+  },
+  {
+    "id": 44,
+    "word": "Web Framework",
+    "answer": "Software framework designed to support web application development.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:50.106Z"
+  },
+  {
+    "id": 45,
+    "word": "Single-threaded",
+    "answer": "Node.js processes one operation at a time using event loop.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:36:59.115Z"
+  },
+  {
+    "id": 46,
+    "word": "Event-driven Architecture",
+    "answer": "Pattern where flow determined by events like user actions or messages.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:24.661Z"
+  },
+  {
+    "id": 47,
+    "word": "Non-blocking I/O",
+    "answer": "Operations that don't stop execution while waiting for completion.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:34.682Z"
+  },
+  {
+    "id": 48,
+    "word": "Asynchronous",
+    "answer": "Operations that occur independently of main program flow.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:51.136Z"
+  },
+  {
+    "id": 49,
+    "word": "Callback",
+    "answer": "Function passed as argument to be executed after another function completes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:37:00.030Z"
+  },
+  {
+    "id": 50,
+    "word": "Error Handling",
+    "answer": "Process of anticipating and responding to errors in applications.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:25.563Z"
+  },
+  {
+    "id": 51,
+    "word": "404 Not Found",
+    "answer": "HTTP status code indicating requested resource could not be found.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:36.381Z"
+  },
+  {
+    "id": 52,
+    "word": "200 OK",
+    "answer": "HTTP status code indicating successful request processing.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:51.972Z"
+  },
+  {
+    "id": 53,
+    "word": "500 Internal Server Error",
+    "answer": "HTTP status code indicating unexpected server error occurred.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:37:00.842Z"
+  },
+  {
+    "id": 54,
+    "word": "Route Chaining",
+    "answer": "Method to define multiple routes on same path using different HTTP methods.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:26.869Z"
+  },
+  {
+    "id": 55,
+    "word": "Wildcard Route",
+    "answer": "Route that matches any path, often used for handling 404 errors.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:42.567Z"
+  },
+  {
+    "id": 56,
+    "word": "Path Segment",
+    "answer": "Individual part of URL path separated by forward slashes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:52.913Z"
+  },
+  {
+    "id": 57,
+    "word": "URL Encoding",
+    "answer": "Format for representing characters in URLs using percent-encoding.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:37:01.641Z"
+  },
+  {
+    "id": 58,
+    "word": "String Interpolation",
+    "answer": "Process of evaluating string literals containing embedded expressions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:27.904Z"
+  },
+  {
+    "id": 59,
+    "word": "Template Literals",
+    "answer": "String literals allowing embedded expressions using backticks in JavaScript.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:48.906Z"
+  },
+  {
+    "id": 60,
+    "word": "Environment Variables",
+    "answer": "External variables configuring application behavior without code changes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:39:53.960Z"
+  },
+  {
+    "id": 61,
+    "word": "process.env",
+    "answer": "Object containing user environment information in Node.js applications.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:40:13.464Z"
+  },
+  {
+    "id": 62,
+    "word": "Dotenv",
+    "answer": "Module that loads environment variables from .env file into process.env.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:41:05.739Z"
+  },
+  {
+    "id": 63,
+    "word": "Development Dependencies",
+    "answer": "Packages needed only during development, not in production.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:42:16.586Z"
+  },
+  {
+    "id": 64,
+    "word": "Scripts",
+    "answer": "Commands defined in package.json that can be executed via npm run.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:42:51.102Z"
+  },
+  {
+    "id": 65,
+    "word": "Hot Reloading",
+    "answer": "Feature that automatically reloads application when code changes detected.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:40:28.123Z"
+  },
+  {
+    "id": 66,
+    "word": "Nodemon",
+    "answer": "Tool that automatically restarts Node.js application when file changes detected.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:41:12.853Z"
+  },
+  {
+    "id": 67,
+    "word": "Project Structure",
+    "answer": "Organization of files and directories in software development project.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:42:20.336Z"
+  },
+  {
+    "id": 68,
+    "word": "MVC Pattern",
+    "answer": "Model-View-Controller architectural pattern for organizing code.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:43:01.093Z"
+  },
+  {
+    "id": 69,
+    "word": "Separation of Concerns",
+    "answer": "Design principle separating program into distinct sections.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:40:38.592Z"
+  },
+  {
+    "id": 70,
+    "word": "Code Organization",
+    "answer": "Structuring code in logical, maintainable way for better development.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:41:53.990Z"
+  },
+  {
+    "id": 71,
+    "word": "Route Separation",
+    "answer": "Practice of organizing routes into separate files for better maintainability.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:42:27.942Z"
+  },
+  {
+    "id": 72,
+    "word": "Controller",
+    "answer": "Component handling application logic and interaction between model and view.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:43:04.854Z"
+  },
+  {
+    "id": 73,
+    "word": "Model",
+    "answer": "Component representing data structure and business logic in application.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:40:44.593Z"
+  },
+  {
+    "id": 74,
+    "word": "View",
+    "answer": "Component responsible for presenting data to user in application.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:42:00.185Z"
+  },
+  {
+    "id": 75,
+    "word": "Middleware Stack",
+    "answer": "Sequence of middleware functions executed in order for each request.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:42:36.299Z"
+  },
+  {
+    "id": 76,
+    "word": "Next Function",
+    "answer": "Callback passed to middleware to pass control to next middleware function.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:43:26.670Z"
+  },
+  {
+    "id": 77,
+    "word": "Route-specific Middleware",
+    "answer": "Middleware applied only to specific routes rather than all routes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:40:56.796Z"
+  },
+  {
+    "id": 78,
+    "word": "Application-level Middleware",
+    "answer": "Middleware bound to app object using app.use() or app.METHOD().",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:42:09.594Z"
+  },
+  {
+    "id": 79,
+    "word": "Router-level Middleware",
+    "answer": "Middleware bound to Express.Router() instance for modular routes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:42:45.123Z"
+  },
+  {
+    "id": 80,
+    "word": "Error-handling Middleware",
+    "answer": "Special middleware with four arguments for handling errors in Express.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T15:43:33.405Z"
+  },
+  {
+    "id": 81,
+    "word": "Built-in Middleware",
+    "answer": "Middleware included with Express.js like express.static for static files."
+  },
+  {
+    "id": 82,
+    "word": "Third-party Middleware",
+    "answer": "Middleware packages developed by community and installed via npm."
+  },
+  {
+    "id": 83,
+    "word": "Body Parsing",
+    "answer": "Process of extracting data from HTTP request body for processing."
+  },
+  {
+    "id": 84,
+    "word": "Cookie Parsing",
+    "answer": "Process of parsing cookies from HTTP request headers in Express."
+  },
+  {
+    "id": 85,
+    "word": "Session Management",
+    "answer": "Maintaining user state across multiple requests in web applications."
+  },
+  {
+    "id": 86,
+    "word": "Authentication",
+    "answer": "Process of verifying identity of users accessing application."
+  },
+  {
+    "id": 87,
+    "word": "Authorization",
+    "answer": "Process of determining what resources user can access in application."
+  },
+  {
+    "id": 88,
+    "word": "CORS",
+    "answer": "Cross-Origin Resource Sharing mechanism for cross-domain requests."
+  },
+  {
+    "id": 89,
+    "word": "Helmet",
+    "answer": "Middleware helping secure Express apps by setting various HTTP headers."
+  },
+  {
+    "id": 90,
+    "word": "Morgan",
+    "answer": "HTTP request logger middleware for Node.js used in Express applications."
+  },
+  {
+    "id": 91,
+    "word": "Compression",
+    "answer": "Middleware to compress response bodies for better performance."
+  },
+  {
+    "id": 92,
+    "word": "Rate Limiting",
+    "answer": "Technique to limit repeated requests to public APIs and endpoints."
+  },
+  {
+    "id": 93,
+    "word": "Input Validation",
+    "answer": "Process of ensuring data meets criteria before processing."
+  },
+  {
+    "id": 94,
+    "word": "Sanitization",
+    "answer": "Process of cleaning user input to prevent security vulnerabilities."
+  },
+  {
+    "id": 95,
+    "word": "XSS Protection",
+    "answer": "Security measures to prevent cross-site scripting attacks."
+  },
+  {
+    "id": 96,
+    "word": "CSRF Protection",
+    "answer": "Security measures to prevent cross-site request forgery attacks."
+  },
+  {
+    "id": 97,
+    "word": "SQL Injection",
+    "answer": "Code injection technique attacking data-driven applications."
+  },
+  {
+    "id": 98,
+    "word": "HTTPS",
+    "answer": "Secure version of HTTP protocol using encryption for data transfer."
+  },
+  {
+    "id": 99,
+    "word": "Environment Configuration",
+    "answer": "Setting up different configurations for development and production."
+  },
+  {
+    "id": 100,
+    "word": "Deployment",
+    "answer": "Process of making application available for use in production environment."
+  }
+]

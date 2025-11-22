@@ -1,0 +1,1657 @@
+[
+  {
+    "id": 1,
+    "word": "Gefahrzeichen Wildwechsel",
+    "answer": "Red triangle warning sign indicating areas where wild animals frequently cross roads. Drivers must reduce speed and stay alert, especially at dawn and dusk.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:32:43.287Z"
+  },
+  {
+    "id": 2,
+    "word": "Rechts Vor Links Rule",
+    "answer": "Basic right-of-way rule: vehicles approaching from the right have priority at unmarked intersections unless signs indicate otherwise.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:33:26.277Z"
+  },
+  {
+    "id": 3,
+    "word": "Innerorts Speed Limit",
+    "answer": "Speed limit within built-up areas is 50 km/h unless otherwise posted. Begins at yellow town sign, ends at crossed-out sign.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:38:02.428Z"
+  },
+  {
+    "id": 4,
+    "word": "Vorschriftszeichen Stop Sign",
+    "answer": "Octagonal red sign requiring complete vehicle stop at stop line. Must yield to all traffic before proceeding through intersection.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:38:11.122Z"
+  },
+  {
+    "id": 5,
+    "word": "Vorfahrtsstraße Priority Road",
+    "answer": "Yellow diamond sign indicating you're on priority road. You have right-of-way at intersections until sign is cancelled.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:32:45.814Z"
+  },
+  {
+    "id": 6,
+    "word": "Außerorts Speed Limit",
+    "answer": "Default speed limit outside built-up areas is 100 km/h for cars. Different limits apply for trucks, trailers, and adverse conditions.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:33:30.390Z"
+  },
+  {
+    "id": 7,
+    "word": "Gefahrzeichen Baustelle",
+    "answer": "Red triangle with shovel and pile symbol warns of construction zone ahead. Expect lane changes, workers, machinery, and reduced speeds.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:38:03.730Z"
+  },
+  {
+    "id": 8,
+    "word": "Kreisverkehr Right Of Way",
+    "answer": "Vehicles inside roundabout have priority. Yield before entering, signal right when exiting, no stopping inside the circle.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:38:12.068Z"
+  },
+  {
+    "id": 9,
+    "word": "Autobahn Speed Limit",
+    "answer": "Recommended speed is 130 km/h on unrestricted sections. No general limit exists, but posted limits and conditions must be observed.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:32:47.042Z"
+  },
+  {
+    "id": 10,
+    "word": "Überholverbot No Overtaking",
+    "answer": "Round sign with red border showing two cars prohibits overtaking. Applies until next intersection or cancellation sign appears.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:33:33.300Z"
+  },
+  {
+    "id": 11,
+    "word": "Gefahrzeichen Kurve Links",
+    "answer": "Red triangle with curved arrow warns of sharp left curve ahead. Reduce speed before entering curve, maintain control throughout.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:38:04.876Z"
+  },
+  {
+    "id": 12,
+    "word": "Richtzeichen Parking Sign",
+    "answer": "Blue square with white P indicates parking area. Additional signs may show restrictions, time limits, or payment requirements.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:38:13.452Z"
+  },
+  {
+    "id": 13,
+    "word": "Abbiegen Right Turn Priority",
+    "answer": "When turning right, yield to pedestrians and cyclists crossing your path. Check mirrors and blind spots before turning.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:32:54.716Z"
+  },
+  {
+    "id": 14,
+    "word": "Spielstraße Play Street",
+    "answer": "Special zone where pedestrians have priority, may use entire street. Maximum speed walking pace, parking only in marked areas.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:34:13.695Z"
+  },
+  {
+    "id": 15,
+    "word": "Wohngebiet Residential Zone",
+    "answer": "Speed limit typically 30 km/h. Pedestrians have priority, children may play. Drive carefully and be prepared to stop.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:38:09.476Z"
+  },
+  {
+    "id": 16,
+    "word": "Gefahrzeichen Kreuzung",
+    "answer": "Red triangle with cross warns of intersection ahead without priority indication. Approach carefully, prepare to yield to right.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T02:55:48.355Z"
+  },
+  {
+    "id": 17,
+    "word": "Einbahnstraße One-Way Street",
+    "answer": "Blue rectangular sign with white arrow indicates one-way traffic. Driving against direction is prohibited except for authorized vehicles.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:47:23.035Z"
+  },
+  {
+    "id": 18,
+    "word": "School Zone Speed Limit",
+    "answer": "Reduced speed limit near schools, typically 30 km/h during school hours. Watch for children crossing, buses stopping.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:47:27.078Z"
+  },
+  {
+    "id": 19,
+    "word": "Zusatzzeichen Time Restriction",
+    "answer": "White rectangular sign below main sign showing times when regulation applies. Outside those times, normal rules apply.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:55:51.990Z"
+  },
+  {
+    "id": 20,
+    "word": "Linksabbiegen Left Turn Yield",
+    "answer": "When turning left, yield to oncoming traffic and crossing pedestrians. Position vehicle near center line, signal early.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:50:07.908Z"
+  },
+  {
+    "id": 21,
+    "word": "Tempo-30-Zone Speed Zone",
+    "answer": "Area with 30 km/h limit marked by zone sign. Right-before-left rule typically applies at all intersections within zone.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:54:44.719Z"
+  },
+  {
+    "id": 22,
+    "word": "Gefahrzeichen Gefälle",
+    "answer": "Red triangle showing slope percentage warns of steep downhill. Use lower gear, avoid excessive braking to prevent brake fade.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:54:57.724Z"
+  },
+  {
+    "id": 23,
+    "word": "Vorfahrt Gewähren Yield Sign",
+    "answer": "Inverted red triangle requires yielding to traffic on priority road. Slow down, be prepared to stop if necessary.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:56:02.226Z"
+  },
+  {
+    "id": 24,
+    "word": "Sackgasse Dead End Sign",
+    "answer": "Shows road has no through passage. May have pedestrian or bicycle passage. Plan route accordingly, prepare to turn around.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:47:30.151Z"
+  },
+  {
+    "id": 25,
+    "word": "Weather Condition Speed Limit",
+    "answer": "Must reduce speed in rain, snow, fog, or ice below posted limits. Adapt to visibility and road conditions for safety.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:54:46.138Z"
+  },
+  {
+    "id": 26,
+    "word": "Gefahrzeichen Gegenverkehr",
+    "answer": "Red triangle with opposing arrows warns oncoming traffic shares your lane ahead. Reduce speed, stay right, prepare to yield.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:55:20.731Z"
+  },
+  {
+    "id": 27,
+    "word": "Durchfahrtsverbot No Entry",
+    "answer": "Round red sign with white horizontal bar prohibits entry. Usually marks one-way street exit or restricted area.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:55:09.001Z"
+  },
+  {
+    "id": 28,
+    "word": "Kraftfahrstraße Motor Road",
+    "answer": "Blue sign with car symbol indicates road for motor vehicles only. Minimum speed capabilities required, pedestrians and bicycles prohibited.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:47:32.342Z"
+  },
+  {
+    "id": 29,
+    "word": "Abknickende Vorfahrt Bending Priority",
+    "answer": "Priority road bends; thick line shows priority direction. Vehicles continuing on priority must still signal and exercise caution.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:54:52.358Z"
+  },
+  {
+    "id": 30,
+    "word": "Gefahrzeichen Steigung",
+    "answer": "Red triangle showing upward slope warns of steep uphill. Lower gear may be needed, watch for slow-moving vehicles ahead.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T18:54:54.603Z"
+  },
+  {
+    "id": 31,
+    "word": "Trailer Speed Limit",
+    "answer": "Cars with trailers limited to 80 km/h outside towns, 100 km/h on highways with approval. Lower limits may apply.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:34:50.232Z"
+  },
+  {
+    "id": 32,
+    "word": "Zusatzzeichen Distance Arrow",
+    "answer": "Shows distance to hazard or how long regulation continues. Helps drivers prepare appropriately for upcoming situation.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:38:38.767Z"
+  },
+  {
+    "id": 33,
+    "word": "Gefahrzeichen Engstelle",
+    "answer": "Red triangle warns of road narrowing ahead. Reduce speed, prepare to yield if oncoming traffic present in narrow section.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:33:49.929Z"
+  },
+  {
+    "id": 34,
+    "word": "Fußgängerzone Pedestrian Zone",
+    "answer": "Blue sign with walking figure indicates pedestrian-only area. Vehicle entry generally prohibited except delivery vehicles at specified times.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:34:05.725Z"
+  },
+  {
+    "id": 35,
+    "word": "Vorfahrt Next Intersection",
+    "answer": "Priority at next intersection only; doesn't extend beyond. Other signs or rules determine priority at subsequent intersections.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:38:23.535Z"
+  },
+  {
+    "id": 36,
+    "word": "Gefahrzeichen Unebene Fahrbahn",
+    "answer": "Red triangle with bumps warns of uneven road surface ahead. Reduce speed to avoid vehicle damage and maintain control.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:38:40.308Z"
+  },
+  {
+    "id": 37,
+    "word": "Umleitung Detour Sign",
+    "answer": "Orange signs with arrows guide drivers around closed roads. Follow numbered or colored detour route to destination.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:33:55.543Z"
+  },
+  {
+    "id": 38,
+    "word": "Minimum Speed Limit",
+    "answer": "Round blue sign with white number shows minimum required speed. Applies unless conditions make it unsafe to maintain speed.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:34:24.636Z"
+  },
+  {
+    "id": 39,
+    "word": "Gefahrzeichen Steinschlag",
+    "answer": "Red triangle warns of falling rocks or debris from cliffs. Drive alertly, avoid stopping in danger zone if possible.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:35:39.647Z"
+  },
+  {
+    "id": 40,
+    "word": "Stau-Ende Traffic Jam Ends",
+    "answer": "Sign indicates end of congestion zone. May resume normal speed gradually while monitoring traffic ahead.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:38:45.542Z"
+  },
+  {
+    "id": 41,
+    "word": "Vorrang Streetcar Priority",
+    "answer": "Streetcars always have priority unless otherwise signed. Yield when they're entering or leaving stops, crossing paths.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:39:00.658Z"
+  },
+  {
+    "id": 42,
+    "word": "Gefahrzeichen Seitenwind",
+    "answer": "Red triangle warns of strong crosswinds. Grip steering firmly, reduce speed, especially with high-profile vehicles or trailers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:45:32.395Z"
+  },
+  {
+    "id": 43,
+    "word": "Durchfahrt Verboten All Vehicles",
+    "answer": "Red circle prohibits all vehicle traffic. May have exceptions shown on additional signs for residents or deliveries.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:53:16.358Z"
+  },
+  {
+    "id": 44,
+    "word": "Advisory Speed Limit",
+    "answer": "Square blue sign with white number recommends speed but isn't legally binding. Often used on highways as recommended maximum.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:54:15.694Z"
+  },
+  {
+    "id": 45,
+    "word": "Gefahrzeichen Schnee Glatteis",
+    "answer": "Red triangle with snowflake warns of ice or snow on road. Reduce speed significantly, increase following distance, drive gently.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:39:03.506Z"
+  },
+  {
+    "id": 46,
+    "word": "Einmündung Junction Ahead",
+    "answer": "Sign shows road merging from side. If on priority road, you have right-of-way. Still check for merging vehicles.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:45:51.518Z"
+  },
+  {
+    "id": 47,
+    "word": "Variable Speed Limits",
+    "answer": "Electronic overhead signs show changing speed limits based on traffic, weather, or accidents. Limits are legally binding when displayed.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:53:21.662Z"
+  },
+  {
+    "id": 48,
+    "word": "Gefahrzeichen Kinder Children",
+    "answer": "Red triangle with running children warns of school, playground, or area with children. Reduce speed, expect sudden movements.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:54:31.348Z"
+  },
+  {
+    "id": 49,
+    "word": "Fahrtrichtung Arrows",
+    "answer": "White arrows on blue background show mandatory direction at intersection. Must follow arrow direction, cannot choose alternative.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:39:13.863Z"
+  },
+  {
+    "id": 50,
+    "word": "Ladezone Loading Zone",
+    "answer": "Parking area reserved for loading/unloading goods. Time restrictions usually apply. Regular parking may be prohibited.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:52:42.284Z"
+  },
+  {
+    "id": 51,
+    "word": "Gefahrzeichen Querrinne",
+    "answer": "Red triangle warns of groove or depression across roadway. Reduce speed to prevent damage and loss of vehicle control.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:54:08.550Z"
+  },
+  {
+    "id": 52,
+    "word": "Vorfahrt Aufgehoben Priority Ends",
+    "answer": "Yellow diamond with gray diagonal stripes cancels priority road. Standard right-before-left or other signs now apply.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:54:39.977Z"
+  },
+  {
+    "id": 53,
+    "word": "Truck Speed Limit",
+    "answer": "Trucks over 3.5 tons limited to 80 km/h outside towns, 60 km/h with trailer. Different limits on highways.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:39:32.216Z"
+  },
+  {
+    "id": 54,
+    "word": "Gefahrzeichen Flugbetrieb",
+    "answer": "Red triangle with airplane warns of low-flying aircraft near airport. Expect noise, don't stop unnecessarily, stay alert.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:52:45.218Z"
+  },
+  {
+    "id": 55,
+    "word": "Radweg Bicycle Path",
+    "answer": "Blue round sign with bicycle indicates mandatory bike path. Bicycles must use path; cars prohibited except for crossing.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:54:09.979Z"
+  },
+  {
+    "id": 56,
+    "word": "Kreisverkehr Entry Yield",
+    "answer": "Yield sign with roundabout arrows means traffic in circle has priority. Wait for gap, merge smoothly without stopping unnecessarily.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:55:06.375Z"
+  },
+  {
+    "id": 57,
+    "word": "Gefahrzeichen Bewegliche Brücke",
+    "answer": "Red triangle warns of movable bridge ahead. Bridge may open; watch for signals, be prepared to stop.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:45:12.120Z"
+  },
+  {
+    "id": 58,
+    "word": "Zusatzzeichen Pfeil Direction",
+    "answer": "Arrow below sign indicates which direction regulation applies. Important for one-sided parking restrictions or priority.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:52:53.508Z"
+  },
+  {
+    "id": 59,
+    "word": "Rain Speed Adjustment",
+    "answer": "No specific posted limit for rain, but adapt speed to conditions. Reduce significantly if visibility impaired or aquaplaning risk.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:54:12.059Z"
+  },
+  {
+    "id": 60,
+    "word": "Gefahrzeichen Fußgängerüberweg",
+    "answer": "Red triangle warns of pedestrian crossing ahead. Slow down, be prepared to stop for pedestrians waiting or crossing.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T21:55:23.095Z"
+  },
+  {
+    "id": 61,
+    "word": "Halteverbot Limited Stopping Ban",
+    "answer": "Blue circle with red border and red X prohibits stopping except for passenger embarkation/disembarkation, maximum 3 minutes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:00:04.715Z"
+  },
+  {
+    "id": 62,
+    "word": "Mehrere Vorfahrtsberechtigte Priority",
+    "answer": "When multiple vehicles have priority, right-before-left applies among them. Eye contact and courtesy help resolve simultaneous arrival.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:03:23.717Z"
+  },
+  {
+    "id": 63,
+    "word": "Gefahrzeichen Amphibienwanderung",
+    "answer": "Red triangle warns of migrating amphibians crossing road seasonally. Drive slowly, watch road surface to avoid killing animals.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:24:18.477Z"
+  },
+  {
+    "id": 64,
+    "word": "Parkscheibe Parking Disc",
+    "answer": "Blue disc showing arrival time required in restricted zones. Set to arrival time rounded up to next half-hour.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:32:18.502Z"
+  },
+  {
+    "id": 65,
+    "word": "Fog Speed Reduction",
+    "answer": "Visibility under 50 meters requires maximum 50 km/h. Use fog lights, increase following distance, avoid unnecessary overtaking.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:00:14.206Z"
+  },
+  {
+    "id": 66,
+    "word": "Gefahrzeichen Viehtrieb",
+    "answer": "Red triangle warns of livestock being herded across or along road. Slow down, follow herder's instructions, avoid frightening animals.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:16:26.827Z"
+  },
+  {
+    "id": 67,
+    "word": "Absolutes Halteverbot Total Stop Ban",
+    "answer": "Blue circle with red border and diagonal red line prohibits all stopping and parking. Applies in direction of arrow.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:24:22.570Z"
+  },
+  {
+    "id": 68,
+    "word": "Bus Priority Merging",
+    "answer": "Buses signaling to leave stop have priority to merge into traffic. Drivers must allow buses to pull out safely.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:33:31.584Z"
+  },
+  {
+    "id": 69,
+    "word": "Gefahrzeichen Splitt Schotter",
+    "answer": "Red triangle warns of loose gravel or stones on road. Reduce speed, maintain safe distance, risk of flying stones.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:01:38.477Z"
+  },
+  {
+    "id": 70,
+    "word": "Ende Speed Limit Sign",
+    "answer": "Round sign with diagonal stripes through number cancels specific speed limit. Default limits or new signs now apply.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:20:10.135Z"
+  },
+  {
+    "id": 71,
+    "word": "Opposite Direction Right Of Way",
+    "answer": "Red arrow facing you means yield to oncoming traffic in narrow section. Blue arrow means you have priority.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:25:49.834Z"
+  },
+  {
+    "id": 72,
+    "word": "Gefahrzeichen Ufer Water Edge",
+    "answer": "Red triangle warns road near water without barrier. Drive carefully, risk of skidding into water if leaving road.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:33:59.517Z"
+  },
+  {
+    "id": 73,
+    "word": "Parkhaus Parking Garage",
+    "answer": "Sign indicates multi-story parking facility. Follow directional signs, observe height restrictions and internal traffic rules.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:02:28.692Z"
+  },
+  {
+    "id": 74,
+    "word": "Conditional Speed Limit Sign",
+    "answer": "Speed limit with weather symbol applies only during specified conditions like rain or snow. Normal limits when conditions clear.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:20:38.960Z"
+  },
+  {
+    "id": 75,
+    "word": "Gefahrzeichen Bahnübergang Gate",
+    "answer": "Red triangle warns of railway crossing with barriers ahead. Stop at red lights or closed gates, never drive around.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:31:07.882Z"
+  },
+  {
+    "id": 76,
+    "word": "Parkverbot Parking Prohibition",
+    "answer": "Blue circle with red border and diagonal line prohibits parking. Stopping up to 3 minutes allowed for loading/unloading.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:34:53.158Z"
+  },
+  {
+    "id": 77,
+    "word": "T-Junction Priority Rules",
+    "answer": "At T-intersection, through traffic has priority over joining traffic unless signs indicate otherwise. Check for priority signs.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:02:49.868Z"
+  },
+  {
+    "id": 78,
+    "word": "Gefahrzeichen Andere Gefahr",
+    "answer": "Red triangle with exclamation mark warns of unspecified hazard. Additional sign usually specifies danger. Proceed with caution.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:21:11.917Z"
+  },
+  {
+    "id": 79,
+    "word": "Zone Speed End",
+    "answer": "Zone sign with diagonal stripes marks end of zone. Previous general rules resume unless new zone begins.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:31:57.635Z"
+  },
+  {
+    "id": 80,
+    "word": "Eingeschränktes Halteverbot Restricted",
+    "answer": "Stopping prohibited during times shown on additional sign. May allow stopping nights, weekends, or outside specified hours.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-18T22:35:07.498Z"
+  },
+  {
+    "id": 81,
+    "word": "Emergency Vehicle Priority",
+    "answer": "Blue lights and siren require immediate right-of-way. Pull to right, stop if necessary. Don't follow emergency vehicles."
+  },
+  {
+    "id": 82,
+    "word": "Gefahrzeichen Seitlicher Abstand",
+    "answer": "Triangle warns of reduced clearance to side. May indicate narrow bridge, wall, or obstacle. Reduce speed, stay centered."
+  },
+  {
+    "id": 83,
+    "word": "Nacht Speed Night Limit",
+    "answer": "Some areas have nighttime speed reductions for noise protection. Posted signs show times, typically 22:00-06:00."
+  },
+  {
+    "id": 84,
+    "word": "Zusatzzeichen Anlieger Residents",
+    "answer": "Plate below sign reading Anlieger frei means residents and delivery vehicles exempted from restriction."
+  },
+  {
+    "id": 85,
+    "word": "Multiple Lane Priority Right",
+    "answer": "On multi-lane roads with equal priority, right-before-left applies per lane. Each lane yields independently to its right."
+  },
+  {
+    "id": 86,
+    "word": "Gefahrzeichen Radfahrer Cyclists",
+    "answer": "Red triangle warns of bicycle traffic crossing or joining. Watch for cyclists especially at intersections and bike paths."
+  },
+  {
+    "id": 87,
+    "word": "Bewohnerparken Resident Parking",
+    "answer": "Parking area reserved for residents with permits. Non-residents may receive fines. Permits typically displayed in windscreen."
+  },
+  {
+    "id": 88,
+    "word": "Maximum Autobahn Posted Limit",
+    "answer": "Posted speed limits on autobahn override no-limit sections. Strictly enforced, often for construction, curves, or congestion."
+  },
+  {
+    "id": 89,
+    "word": "Andreaskreuz Railway Cross",
+    "answer": "X-shaped sign marks railway crossing without barriers. Stop if train approaching, look both ways, cross quickly when clear."
+  },
+  {
+    "id": 90,
+    "word": "Park And Ride Facility",
+    "answer": "Sign indicates parking for transferring to public transport. Often free or reduced-cost parking near stations."
+  },
+  {
+    "id": 91,
+    "word": "Reißverschluss Zipper Merge",
+    "answer": "When lanes merge, alternate one-by-one like zipper at merge point. Don't merge early; use full lane length."
+  },
+  {
+    "id": 92,
+    "word": "Sicherheitsabstand Following Distance",
+    "answer": "Maintain half your speedometer reading in meters as minimum following distance. Three-second rule alternative: watch fixed point."
+  },
+  {
+    "id": 93,
+    "word": "Überholabstand Overtaking Distance",
+    "answer": "Maintain 1.5 meters minimum when overtaking cyclists, 2 meters for children. More distance required at higher speeds."
+  },
+  {
+    "id": 94,
+    "word": "Bremsweg Braking Distance",
+    "answer": "Distance traveled while braking. Formula: speed divided by 10, squared. Example: 50 km/h = 25 meters on dry road."
+  },
+  {
+    "id": 95,
+    "word": "Reaktionsweg Reaction Distance",
+    "answer": "Distance traveled during reaction time before braking begins. Formula: speed divided by 10, times 3. Example: 50 km/h = 15 meters."
+  },
+  {
+    "id": 96,
+    "word": "Anhalteweg Stopping Distance",
+    "answer": "Total distance to stop: reaction distance plus braking distance. Must maintain this distance to vehicle ahead."
+  },
+  {
+    "id": 97,
+    "word": "Auffahren Autobahn Entry",
+    "answer": "Accelerate on ramp to match highway speed. Yield to highway traffic, merge into gap using acceleration lane fully."
+  },
+  {
+    "id": 98,
+    "word": "Rettungsgasse Emergency Lane",
+    "answer": "In traffic jams, create center corridor for emergency vehicles. Left lane moves left, all others move right."
+  },
+  {
+    "id": 99,
+    "word": "Seitenstreifen Shoulder Use",
+    "answer": "Hard shoulder only for emergencies and breakdowns. Stopping prohibited except in emergency. Keep clear for rescue vehicles."
+  },
+  {
+    "id": 100,
+    "word": "Überholen Links Overtake Left",
+    "answer": "Overtaking permitted only on left side on highways. Passing on right prohibited except in slow-moving traffic queues."
+  },
+  {
+    "id": 101,
+    "word": "Two-Second Rule Distance",
+    "answer": "Alternative distance method: vehicle should reach your position 2 seconds after vehicle ahead passes fixed point."
+  },
+  {
+    "id": 102,
+    "word": "Wet Road Braking Distance",
+    "answer": "Braking distance doubles on wet roads. Triple distance on ice. Adjust following distance accordingly in poor conditions."
+  },
+  {
+    "id": 103,
+    "word": "Überholvorgang Overtaking Process",
+    "answer": "Check mirrors, signal, verify gap, accelerate smoothly past, maintain safe clearance, signal and return when clear ahead."
+  },
+  {
+    "id": 104,
+    "word": "Mindestabstand Tunnel Minimum",
+    "answer": "Maintain greater following distance in tunnels. Recommended: half speedometer value in meters, minimum 2-second rule."
+  },
+  {
+    "id": 105,
+    "word": "Gefahrenbremsung Emergency Braking",
+    "answer": "Maximum braking effort requires full pedal pressure. ABS prevents wheel lock, allowing steering during braking."
+  },
+  {
+    "id": 106,
+    "word": "Überholen Verbot Zone",
+    "answer": "No overtaking zones include intersections, pedestrian crossings, poor visibility curves, railway crossings, and narrow passages."
+  },
+  {
+    "id": 107,
+    "word": "Autobahn Exit Procedure",
+    "answer": "Signal early, move to right lane well before exit. Use deceleration lane to slow down, not highway lane."
+  },
+  {
+    "id": 108,
+    "word": "LKW Überholverbot Truck Ban",
+    "answer": "Sign prohibits trucks over 3.5 tons from overtaking. Applies on two-lane highways, often on hills or congested sections."
+  },
+  {
+    "id": 109,
+    "word": "Abstand Bei Stau Traffic Jam",
+    "answer": "In stopped traffic, maintain 2-3 meter gap to vehicle ahead. Allows maneuvering and escape route if needed."
+  },
+  {
+    "id": 110,
+    "word": "Überholsichtweite Visibility",
+    "answer": "Need clear view of entire overtaking distance before starting maneuver. Generally requires 500-800 meter visibility depending on speed."
+  },
+  {
+    "id": 111,
+    "word": "Drängeln Tailgating Prohibition",
+    "answer": "Following too closely is illegal and dangerous. Can result in fines, points, or license suspension if causing accidents."
+  },
+  {
+    "id": 112,
+    "word": "Richtgeschwindigkeit Advisory 130",
+    "answer": "130 km/h recommended speed on unrestricted autobahn. Not legally binding but affects liability in accidents exceeding it."
+  },
+  {
+    "id": 113,
+    "word": "Standstreifen Emergency Stop",
+    "answer": "May only stop on shoulder for emergencies. Turn on hazard lights, use warning triangle, exit vehicle safely behind barrier."
+  },
+  {
+    "id": 114,
+    "word": "Double Speed Distance Rule",
+    "answer": "When doubling speed, quadruple the braking distance. Example: 100 km/h needs four times the distance of 50 km/h."
+  },
+  {
+    "id": 115,
+    "word": "Autobahn Minimum Speed",
+    "answer": "No legal minimum speed on autobahn, but vehicles must be capable of 60 km/h. Driving unnecessarily slowly can be penalized."
+  },
+  {
+    "id": 116,
+    "word": "Elefantenrennen Elephant Racing",
+    "answer": "Trucks overtaking slightly slower trucks for extended periods. Causes congestion, may be prohibited in certain sections."
+  },
+  {
+    "id": 117,
+    "word": "Fahrbahn Wechsel Lane Change",
+    "answer": "Check mirrors and blind spot, signal intention, make smooth gradual movement. Verify sufficient space before changing lanes."
+  },
+  {
+    "id": 118,
+    "word": "Beschleunigungsstreifen Acceleration",
+    "answer": "Merge lane for entering highway. Use entire length to match traffic speed. Yield to highway traffic already present."
+  },
+  {
+    "id": 119,
+    "word": "Verzögerungsstreifen Deceleration",
+    "answer": "Exit lane for leaving highway. Move to exit lane first, then reduce speed using full deceleration lane length."
+  },
+  {
+    "id": 120,
+    "word": "Sicherer Spurwechsel Safe Change",
+    "answer": "Signal 3 seconds before changing lanes. Check three mirrors and shoulder check. Change lanes smoothly and decisively."
+  },
+  {
+    "id": 121,
+    "word": "Kriechspur Crawler Lane",
+    "answer": "Additional uphill lane for slow-moving vehicles on steep grades. Faster traffic uses left lanes to maintain flow."
+  },
+  {
+    "id": 122,
+    "word": "Mittlerer Abstand Average Distance",
+    "answer": "In flowing traffic, aim for 2-3 second gap. Adjust based on weather, visibility, and road conditions."
+  },
+  {
+    "id": 123,
+    "word": "Überholen Wohnmobil RV Pass",
+    "answer": "Passing motorhomes and campervans requires more time and distance. Ensure clear visibility and adequate space before overtaking."
+  },
+  {
+    "id": 124,
+    "word": "Stauwarnung Traffic Jam Warning",
+    "answer": "Activate hazard lights briefly when approaching sudden traffic jam rear. Alerts following drivers to brake early."
+  },
+  {
+    "id": 125,
+    "word": "Rechtsfahrgebot Keep Right Rule",
+    "answer": "Drive in rightmost lane unless overtaking on multi-lane highways. Left lanes are for passing only, not cruising."
+  },
+  {
+    "id": 126,
+    "word": "Verfolgungsabstand Pursuit Distance",
+    "answer": "Police and emergency vehicles need more following distance due to sudden stops. Give them extra clearance and right-of-way."
+  },
+  {
+    "id": 127,
+    "word": "Braking Distance Ice Formula",
+    "answer": "On ice, braking distance multiplies by 10 compared to dry conditions. Extremely gentle braking and slow speeds essential."
+  },
+  {
+    "id": 128,
+    "word": "Überholen Mehrere Vehicles",
+    "answer": "Overtaking multiple vehicles requires proportionally longer clear distance. Often safer to overtake one vehicle at a time."
+  },
+  {
+    "id": 129,
+    "word": "Highway Lane Discipline",
+    "answer": "Stay in right lane when not overtaking. Move right after passing. Multiple lane changes discouraged without reason."
+  },
+  {
+    "id": 130,
+    "word": "Abbremsen Vor Exit Reduction",
+    "answer": "Begin slowing only after fully entering exit lane. Reducing speed on highway lane creates dangerous situation for following traffic."
+  },
+  {
+    "id": 131,
+    "word": "Sicherheitsabstand LKW Truck Gap",
+    "answer": "Trucks need 50 meters minimum following distance at highway speeds. Longer stopping distances require greater gaps."
+  },
+  {
+    "id": 132,
+    "word": "Überholspur Passing Lane",
+    "answer": "Left lane on multi-lane highways reserved for active overtaking. Must return to right lane after completing pass."
+  },
+  {
+    "id": 133,
+    "word": "Notfallspur Emergency Corridor",
+    "answer": "Keep shoulders and between-lane space clear in jams. Emergency vehicles need unobstructed path through traffic."
+  },
+  {
+    "id": 134,
+    "word": "Fahrstreifenwechsel Change Safety",
+    "answer": "Never change lanes directly in front of faster approaching vehicle. Always check mirror and ensure adequate clearance distance."
+  },
+  {
+    "id": 135,
+    "word": "Rush Hour Highway Distance",
+    "answer": "Heavy traffic requires increased following distance despite slower speeds. Frequent braking and unpredictable driver behavior present hazards."
+  },
+  {
+    "id": 136,
+    "word": "Überholmanöver Duration Time",
+    "answer": "Complete overtaking maneuvers quickly to minimize time in oncoming lane. Extended passing increases risk and traffic disruption."
+  },
+  {
+    "id": 137,
+    "word": "Autobahn Pannenstreifen Rules",
+    "answer": "Hard shoulder reserved for breakdowns only. Walking on shoulder prohibited except to reach emergency phone or exit safely."
+  },
+  {
+    "id": 138,
+    "word": "Geschwindigkeitsdifferenz Speed Gap",
+    "answer": "Greater speed difference requires longer overtaking distance. Passing 20 km/h faster needs much more space than 10 km/h."
+  },
+  {
+    "id": 139,
+    "word": "Mindestprofiltiefe Tread Depth",
+    "answer": "Minimum legal tire tread depth is 1.6 mm. Recommended 3 mm for summer, 4 mm for winter tires for safe braking."
+  },
+  {
+    "id": 140,
+    "word": "Ausreichender Abstand Sufficient",
+    "answer": "Insufficient following distance can result in fines and points. Severe tailgating may lead to license suspension or jail."
+  },
+  {
+    "id": 141,
+    "word": "Parallel Overtaking Side Pass",
+    "answer": "Overtaking on parallel lanes permitted in congested multi-lane traffic moving under 60 km/h. Right may pass left slowly."
+  },
+  {
+    "id": 142,
+    "word": "Rückstau Backup Prevention",
+    "answer": "When traffic slows suddenly, check rearview mirror and activate hazard lights to warn following vehicles before hard braking."
+  },
+  {
+    "id": 143,
+    "word": "Einfädelungsstreifen Merge Strip",
+    "answer": "Short entrance ramp requires earlier speed matching and decisive merging. Watch for gaps, don't stop unless absolutely necessary."
+  },
+  {
+    "id": 144,
+    "word": "Gefahrbremsweg Emergency Stop",
+    "answer": "Emergency braking distance shorter than normal due to maximum brake application. ABS allows steering while braking maximally."
+  },
+  {
+    "id": 145,
+    "word": "Durchschnittlicher Verkehr Flow",
+    "answer": "Match general traffic speed on highways within legal limits. Driving significantly slower than flow can create hazards."
+  },
+  {
+    "id": 146,
+    "word": "Rückwärtsfahren Autobahn Reverse",
+    "answer": "Reversing on autobahn strictly prohibited and extremely dangerous. Missed exit requires continuing to next exit to turn around."
+  },
+  {
+    "id": 147,
+    "word": "Überholweg Overtaking Path",
+    "answer": "Total distance needed includes: approach, alongside, and return clearance. Must be visible and clear throughout entire maneuver."
+  },
+  {
+    "id": 148,
+    "word": "Spur Blockierung Lane Blocking",
+    "answer": "Unnecessarily occupying left lane while right lane clear violates keep-right rule. Can result in fines up to €80."
+  },
+  {
+    "id": 149,
+    "word": "Baustellen Highway Construction",
+    "answer": "Reduced speed limits strictly enforced in work zones. Lanes narrower, barriers present. Follow posted speeds and lane markings."
+  },
+  {
+    "id": 150,
+    "word": "Pannenfahrzeug Breakdown Vehicle",
+    "answer": "Broken-down vehicles on shoulder must display warning triangle 150 meters behind on highway. Use hazard lights, wear safety vest."
+  },
+  {
+    "id": 151,
+    "word": "Abstand Bei Nebel Fog Gap",
+    "answer": "In fog, increase following distance significantly. Use fog lights, reduce speed, avoid overtaking in limited visibility conditions."
+  },
+  {
+    "id": 152,
+    "word": "Spurrillen Lane Grooves",
+    "answer": "Worn highway lanes with grooves can affect steering. Maintain firm grip, avoid sudden movements, reduce speed in heavy rain."
+  },
+  {
+    "id": 153,
+    "word": "Wenden Autobahn U-Turn Ban",
+    "answer": "U-turns on autobahn absolutely prohibited. Use designated exits and interchanges to reverse direction safely and legally."
+  },
+  {
+    "id": 154,
+    "word": "Dynamic Distance Adjustment",
+    "answer": "Continuously adjust following distance for changing speeds, weather, visibility, and traffic density throughout journey."
+  },
+  {
+    "id": 155,
+    "word": "Gegenfahrbahn Wrong Direction",
+    "answer": "Driving wrong way on autobahn extremely dangerous and illegal. If occurs accidentally, stop safely, use emergency phone immediately."
+  }
+]

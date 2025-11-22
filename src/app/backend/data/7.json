@@ -1,0 +1,5742 @@
+[
+  {
+    "id": 1,
+    "word": "Gradient Tape",
+    "answer": "TensorFlow API for automatic differentiation and gradient computation in custom training loops.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:09.476Z"
+  },
+  {
+    "id": 2,
+    "word": "Eager Execution",
+    "answer": "TensorFlow's imperative programming environment that evaluates operations immediately.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:30.912Z"
+  },
+  {
+    "id": 3,
+    "word": "Backpropagation",
+    "answer": "Algorithm for calculating gradients and updating neural network weights during training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:31.935Z"
+  },
+  {
+    "id": 4,
+    "word": "Activation Function",
+    "answer": "Function that determines neural network node output, like ReLU or sigmoid.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:39.612Z"
+  },
+  {
+    "id": 5,
+    "word": "Virtual Environment",
+    "answer": "Isolated Python environment for managing project-specific dependencies and packages.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:10.236Z"
+  },
+  {
+    "id": 6,
+    "word": "Probability Distribution",
+    "answer": "Function describing likelihood of different outcomes in random process.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:30.210Z"
+  },
+  {
+    "id": 7,
+    "word": "GPU Support",
+    "answer": "Hardware acceleration using graphics processors for faster deep learning computations.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:32.696Z"
+  },
+  {
+    "id": 8,
+    "word": "DataFrame",
+    "answer": "Pandas 2D labeled data structure with columns of potentially different types.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:38.910Z"
+  },
+  {
+    "id": 9,
+    "word": "Deep Learning",
+    "answer": "Machine learning using neural networks with multiple hidden layers.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:22.301Z"
+  },
+  {
+    "id": 10,
+    "word": "Tensor",
+    "answer": "Multi-dimensional array used as fundamental data structure in TensorFlow.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:29.495Z"
+  },
+  {
+    "id": 11,
+    "word": "Matplotlib",
+    "answer": "Python plotting library for creating static, animated, and interactive visualizations.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:33.477Z"
+  },
+  {
+    "id": 12,
+    "word": "Calculus",
+    "answer": "Mathematics branch studying continuous change through derivatives and integrals.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:38.150Z"
+  },
+  {
+    "id": 13,
+    "word": "Loss Function",
+    "answer": "Metric measuring difference between predicted and actual values during training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:22.997Z"
+  },
+  {
+    "id": 14,
+    "word": "Neural Network",
+    "answer": "Computing system inspired by biological brains using interconnected nodes.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:28.647Z"
+  },
+  {
+    "id": 15,
+    "word": "Eigenvalue",
+    "answer": "Scalar representing how much eigenvector is stretched during linear transformation.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:34.208Z"
+  },
+  {
+    "id": 16,
+    "word": "Keras",
+    "answer": "High-level neural networks API, now integrated as TensorFlow's primary interface.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:37.369Z"
+  },
+  {
+    "id": 17,
+    "word": "Optimizer",
+    "answer": "Algorithm that adjusts neural network weights to minimize loss function.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:23.680Z"
+  },
+  {
+    "id": 18,
+    "word": "Standard Deviation",
+    "answer": "Measure of data dispersion or variation from the mean value.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:25.713Z"
+  },
+  {
+    "id": 19,
+    "word": "Pandas",
+    "answer": "Python library providing high-performance data structures and analysis tools.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:35.108Z"
+  },
+  {
+    "id": 20,
+    "word": "Overfitting",
+    "answer": "When model learns training data too well but fails on new data.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-01T12:37:36.259Z"
+  },
+  {
+    "id": 21,
+    "word": "Linear Algebra",
+    "answer": "Mathematics branch dealing with vectors, matrices, and linear transformations.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:36:17.030Z"
+  },
+  {
+    "id": 22,
+    "word": "TensorFlow",
+    "answer": "Open-source machine learning platform developed by Google Brain team.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:36:23.938Z"
+  },
+  {
+    "id": 23,
+    "word": "NumPy",
+    "answer": "Fundamental package for scientific computing with Python and N-dimensional arrays.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:38:40.105Z"
+  },
+  {
+    "id": 24,
+    "word": "CUDA",
+    "answer": "NVIDIA's parallel computing platform for GPU acceleration in TensorFlow.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-27T03:46:55.953Z"
+  },
+  {
+    "id": 25,
+    "word": "Eigenvector",
+    "answer": "Vector that only scales when linear transformation is applied to it.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:31:22.184Z"
+  },
+  {
+    "id": 26,
+    "word": "Jupyter Notebook",
+    "answer": "Web-based interactive development environment for data science projects.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:36:24.737Z"
+  },
+  {
+    "id": 27,
+    "word": "Backend",
+    "answer": "Computational engine that Keras can run on, like TensorFlow or Theano.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:38:40.754Z"
+  },
+  {
+    "id": 28,
+    "word": "Gradient",
+    "answer": "Vector of partial derivatives used in optimization and neural network training.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:34:32.234Z"
+  },
+  {
+    "id": 29,
+    "word": "Derivative",
+    "answer": "Instantaneous rate of change measuring how function responds to input changes.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:36:20.610Z"
+  },
+  {
+    "id": 30,
+    "word": "Random Variable",
+    "answer": "Variable whose possible values are numerical outcomes of random phenomenon.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:36:25.718Z"
+  },
+  {
+    "id": 31,
+    "word": "Seaborn",
+    "answer": "Python data visualization library based on matplotlib with statistical plots.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:38:50.078Z"
+  },
+  {
+    "id": 32,
+    "word": "Convolutional Layer",
+    "answer": "Neural network layer for processing grid-like data such as images.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:46:59.785Z"
+  },
+  {
+    "id": 33,
+    "word": "Matrix Multiplication",
+    "answer": "Fundamental linear algebra operation combining two matrices to produce third.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:36:21.735Z"
+  },
+  {
+    "id": 34,
+    "word": "Dataset API",
+    "answer": "TensorFlow's high-performance tool for building efficient data input pipelines.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:36:26.788Z"
+  },
+  {
+    "id": 35,
+    "word": "Docker",
+    "answer": "Platform for containerizing applications to ensure consistent environments.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:38:51.299Z"
+  },
+  {
+    "id": 36,
+    "word": "Batch Size",
+    "answer": "Number of training examples used in one iteration of gradient descent.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:47:01.121Z"
+  },
+  {
+    "id": 37,
+    "word": "Chain Rule",
+    "answer": "Calculus rule for computing derivative of composition of multiple functions.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-27T03:36:22.795Z"
+  },
+  {
+    "id": 38,
+    "word": "Recurrent Neural Network",
+    "answer": "Neural network architecture for processing sequential data and time series.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-21T18:34:37.663Z"
+  },
+  {
+    "id": 39,
+    "word": "Anaconda",
+    "answer": "Popular Python distribution for data science and machine learning projects.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-27T03:45:07.841Z"
+  },
+  {
+    "id": 40,
+    "word": "TensorBoard",
+    "answer": "TensorFlow's visualization toolkit for monitoring training and debugging models.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:35:19.842Z"
+  },
+  {
+    "id": 41,
+    "word": "Softmax",
+    "answer": "Activation function converting raw scores to probabilities that sum to one.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:35:33.327Z"
+  },
+  {
+    "id": 42,
+    "word": "Artificial Neuron",
+    "answer": "Basic unit of neural network that processes inputs using weights and activation.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:32.229Z"
+  },
+  {
+    "id": 43,
+    "word": "Probability",
+    "answer": "Measure of likelihood that event will occur, ranging from 0 to 1.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:36.394Z"
+  },
+  {
+    "id": 44,
+    "word": "Array Broadcasting",
+    "answer": "NumPy method for arithmetic operations on arrays of different shapes.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:35:40.336Z"
+  },
+  {
+    "id": 45,
+    "word": "Estimator API",
+    "answer": "High-level TensorFlow interface for distributed training and production.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-28T02:15:17.842Z"
+  },
+  {
+    "id": 46,
+    "word": "Pip",
+    "answer": "Python package installer for managing software libraries and dependencies.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:33.018Z"
+  },
+  {
+    "id": 47,
+    "word": "Hidden Layer",
+    "answer": "Intermediate layer between input and output layers in neural network.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:37.153Z"
+  },
+  {
+    "id": 48,
+    "word": "Vector",
+    "answer": "Mathematical object with magnitude and direction, represented as array.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:16:49.707Z"
+  },
+  {
+    "id": 49,
+    "word": "Scikit-learn",
+    "answer": "Python machine learning library with tools for classification and regression.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:27.252Z"
+  },
+  {
+    "id": 50,
+    "word": "Keras Functional API",
+    "answer": "TensorFlow interface for building complex models with shared layers.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:33.838Z"
+  },
+  {
+    "id": 51,
+    "word": "Package Manager",
+    "answer": "Tool for installing, updating, and removing software packages like conda.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:37.935Z"
+  },
+  {
+    "id": 52,
+    "word": "Feedforward Network",
+    "answer": "Neural network where connections don't form cycles, information moves forward.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-28T02:23:26.564Z"
+  },
+  {
+    "id": 53,
+    "word": "Dot Product",
+    "answer": "Algebra operation returning sum of products of corresponding vector entries.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:29.970Z"
+  },
+  {
+    "id": 54,
+    "word": "Data Visualization",
+    "answer": "Graphical representation of information and data using visual elements.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:34.645Z"
+  },
+  {
+    "id": 55,
+    "word": "Google Colab",
+    "answer": "Free cloud service with GPU support for machine learning and research.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:38.785Z"
+  },
+  {
+    "id": 56,
+    "word": "Environment Variable",
+    "answer": "Dynamic value that can affect running processes' behavior on computer.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:23:27.643Z"
+  },
+  {
+    "id": 57,
+    "word": "Underfitting",
+    "answer": "When model fails to capture underlying patterns in training data.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:31.010Z"
+  },
+  {
+    "id": 58,
+    "word": "Matrix",
+    "answer": "Rectangular array of numbers arranged in rows and columns.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:15:35.447Z"
+  },
+  {
+    "id": 59,
+    "word": "PyPlot",
+    "answer": "Matplotlib module providing MATLAB-like interface for plotting graphs.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-28T02:15:40.058Z"
+  },
+  {
+    "id": 60,
+    "word": "XLA",
+    "answer": "TensorFlow's Accelerated Linear Algebra compiler for optimizing computations.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-28T02:23:33.084Z"
+  },
+  {
+    "id": 61,
+    "word": "CUDA Toolkit",
+    "answer": "NVIDIA's development environment for creating GPU-accelerated applications.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:20:19.086Z"
+  },
+  {
+    "id": 62,
+    "word": "Supervised Learning",
+    "answer": "Machine learning using labeled datasets to train predictive models.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:06.953Z"
+  },
+  {
+    "id": 63,
+    "word": "Integration",
+    "answer": "Calculus operation finding accumulated quantity from rate of change.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:17.912Z"
+  },
+  {
+    "id": 64,
+    "word": "Series",
+    "answer": "Pandas one-dimensional labeled array capable of holding any data type.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:24:10.982Z"
+  },
+  {
+    "id": 65,
+    "word": "TFX",
+    "answer": "TensorFlow Extended platform for deploying production ML pipelines.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-29T04:20:23.140Z"
+  },
+  {
+    "id": 66,
+    "word": "Conda",
+    "answer": "Open-source package management system and environment management system.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:13.504Z"
+  },
+  {
+    "id": 67,
+    "word": "Perceptron",
+    "answer": "Simplest type of artificial neuron using step function as activation.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:18.642Z"
+  },
+  {
+    "id": 68,
+    "word": "Rank",
+    "answer": "Number of dimensions in tensor, also called order or degree.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-29T04:24:19.769Z"
+  },
+  {
+    "id": 69,
+    "word": "Central Limit Theorem",
+    "answer": "Statistical theory stating sample means approximate normal distribution.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:20:33.752Z"
+  },
+  {
+    "id": 70,
+    "word": "DataFrame Index",
+    "answer": "Pandas array identifying and labeling rows in DataFrame structure.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:15.000Z"
+  },
+  {
+    "id": 71,
+    "word": "Keras Sequential Model",
+    "answer": "Linear stack of layers where each has exactly one input and output.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:25.776Z"
+  },
+  {
+    "id": 72,
+    "word": "CPU Vs GPU",
+    "answer": "Comparison between general-purpose and graphics-optimized processors.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:24:22.046Z"
+  },
+  {
+    "id": 73,
+    "word": "Weight Initialization",
+    "answer": "Method for setting initial neural network weights before training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:20:38.525Z"
+  },
+  {
+    "id": 74,
+    "word": "Determinant",
+    "answer": "Scalar value computed from square matrix encoding linear transformation properties.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:15.893Z"
+  },
+  {
+    "id": 75,
+    "word": "Hypothesis Testing",
+    "answer": "Statistical method for making decisions using experimental data.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:31.284Z"
+  },
+  {
+    "id": 76,
+    "word": "Array Indexing",
+    "answer": "NumPy method for accessing and modifying specific array elements.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:24:22.992Z"
+  },
+  {
+    "id": 77,
+    "word": "TF.Keras",
+    "answer": "TensorFlow's implementation of Keras API with tight framework integration.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-29T04:21:05.417Z"
+  },
+  {
+    "id": 78,
+    "word": "Requirements.txt",
+    "answer": "File listing Python package dependencies for project installation.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:16.656Z"
+  },
+  {
+    "id": 79,
+    "word": "Regularization",
+    "answer": "Technique to prevent overfitting by penalizing complex models.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:21:57.669Z"
+  },
+  {
+    "id": 80,
+    "word": "Epoch",
+    "answer": "Complete pass through entire training dataset during model training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-29T04:24:24.008Z"
+  },
+  {
+    "id": 81,
+    "word": "Partial Derivative",
+    "answer": "Derivative of multivariable function with respect to one variable.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:14:51.342Z"
+  },
+  {
+    "id": 82,
+    "word": "Confidence Interval",
+    "answer": "Range of values containing population parameter with certain probability.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:02.543Z"
+  },
+  {
+    "id": 83,
+    "word": "Data Cleaning",
+    "answer": "Process of detecting and correcting corrupt or inaccurate records.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:03.532Z"
+  },
+  {
+    "id": 84,
+    "word": "Static Vs Eager Execution",
+    "answer": "Comparison between graph-based and imperative TensorFlow programming.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:25.250Z"
+  },
+  {
+    "id": 85,
+    "word": "TensorFlow Serving",
+    "answer": "Flexible system for deploying trained machine learning models in production.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-30T20:14:55.227Z"
+  },
+  {
+    "id": 86,
+    "word": "Bias-Variance Tradeoff",
+    "answer": "Balance between model simplicity and ability to fit training data.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:01.722Z"
+  },
+  {
+    "id": 87,
+    "word": "Singular Value Decomposition",
+    "answer": "Matrix factorization method useful for dimensionality reduction.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:04.283Z"
+  },
+  {
+    "id": 88,
+    "word": "Correlation",
+    "answer": "Statistical measure of relationship between two variables' movements.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:24.386Z"
+  },
+  {
+    "id": 89,
+    "word": "Array Shape",
+    "answer": "Tuple of integers specifying dimensions of NumPy array.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:14:56.150Z"
+  },
+  {
+    "id": 90,
+    "word": "Computational Graph",
+    "answer": "TensorFlow representation of operations as directed graph of nodes.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:00.831Z"
+  },
+  {
+    "id": 91,
+    "word": "Cloud AI Platform",
+    "answer": "Google Cloud service for training and deploying ML models at scale.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-30T20:15:13.185Z"
+  },
+  {
+    "id": 92,
+    "word": "Gradient Descent",
+    "answer": "Optimization algorithm for minimizing loss function by iteratively updating parameters.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:23.114Z"
+  },
+  {
+    "id": 93,
+    "word": "Matrix Inverse",
+    "answer": "Matrix that when multiplied by original gives identity matrix.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:14:57.040Z"
+  },
+  {
+    "id": 94,
+    "word": "P-Value",
+    "answer": "Probability of obtaining results at least as extreme as observed results.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:14:59.972Z"
+  },
+  {
+    "id": 95,
+    "word": "Vectorization",
+    "answer": "NumPy optimization using array operations instead of Python loops.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-10-30T20:15:14.367Z"
+  },
+  {
+    "id": 96,
+    "word": "Multi-GPU Training",
+    "answer": "Distributing model training across multiple graphics processing units.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:22.283Z"
+  },
+  {
+    "id": 97,
+    "word": "Learning Rate",
+    "answer": "Hyperparameter controlling how much to adjust model during each training step.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:14:57.832Z"
+  },
+  {
+    "id": 98,
+    "word": "Mean",
+    "answer": "Average value of dataset calculated by summing all values and dividing.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:14:59.208Z"
+  },
+  {
+    "id": 99,
+    "word": "Plot Customization",
+    "answer": "Modifying appearance of matplotlib graphs with colors, labels, styles.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:20.378Z"
+  },
+  {
+    "id": 100,
+    "word": "TensorFlow Hub",
+    "answer": "Repository of reusable machine learning modules and pre-trained models.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-10-30T20:15:21.492Z"
+  },
+  {
+    "id": 101,
+    "word": "Sequential API",
+    "answer": "Linear stack of layers for simple models, easy to use but limited architecture.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:46:55.625Z"
+  },
+  {
+    "id": 102,
+    "word": "Functional API",
+    "answer": "Enables complex architectures with multiple inputs/outputs and shared layers.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:47:21.452Z"
+  },
+  {
+    "id": 103,
+    "word": "Model Subclassing",
+    "answer": "Maximum flexibility by writing Python code to define custom forward pass.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-02T06:55:18.851Z"
+  },
+  {
+    "id": 104,
+    "word": "Dense Layer",
+    "answer": "Fully connected layer where each neuron connects to all previous layer outputs.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:55:48.678Z"
+  },
+  {
+    "id": 105,
+    "word": "Activation Layer",
+    "answer": "Applies element-wise activation function like ReLU or sigmoid to inputs.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:46:57.068Z"
+  },
+  {
+    "id": 106,
+    "word": "Dropout Layer",
+    "answer": "Randomly sets fraction of input units to 0 during training to prevent overfitting.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:47:23.851Z"
+  },
+  {
+    "id": 107,
+    "word": "Flatten Layer",
+    "answer": "Converts multi-dimensional input into 1D array for dense layers.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:55:21.672Z"
+  },
+  {
+    "id": 108,
+    "word": "Input Shape",
+    "answer": "Defines dimensions of input data excluding batch size.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:55:49.607Z"
+  },
+  {
+    "id": 109,
+    "word": "Tensor",
+    "answer": "Multi-dimensional array that flows through computational graph in deep learning.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:46:59.569Z"
+  },
+  {
+    "id": 110,
+    "word": "Broadcasting",
+    "answer": "Automatic expansion of tensor dimensions during operations when shapes differ.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:47:25.181Z"
+  },
+  {
+    "id": 111,
+    "word": "Data Pipeline",
+    "answer": "Efficient data loading and preprocessing workflow using tf.data.Dataset.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:55:24.518Z"
+  },
+  {
+    "id": 112,
+    "word": "Loss Function",
+    "answer": "Measures how well model predictions match true labels during training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:55:50.654Z"
+  },
+  {
+    "id": 113,
+    "word": "Metrics",
+    "answer": "Evaluation measures like accuracy to monitor training and testing performance.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:47:02.530Z"
+  },
+  {
+    "id": 114,
+    "word": "Optimizers",
+    "answer": "Algorithms like Adam that update model weights to minimize loss function.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:47:26.014Z"
+  },
+  {
+    "id": 115,
+    "word": "Backpropagation",
+    "answer": "Algorithm for calculating gradients of loss with respect to model parameters.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:55:39.373Z"
+  },
+  {
+    "id": 116,
+    "word": "Gradient Descent",
+    "answer": "Optimization method that updates parameters in direction of negative gradient.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:55:51.607Z"
+  },
+  {
+    "id": 117,
+    "word": "Learning Rate Scheduling",
+    "answer": "Adjusting learning rate during training for better convergence.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-02T06:47:14.288Z"
+  },
+  {
+    "id": 118,
+    "word": "L1 Regularization",
+    "answer": "Adds absolute value of weights to loss to encourage sparsity.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-02T06:47:49.460Z"
+  },
+  {
+    "id": 119,
+    "word": "L2 Regularization",
+    "answer": "Adds squared value of weights to loss to prevent large weights.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-02T06:55:44.085Z"
+  },
+  {
+    "id": 120,
+    "word": "Batch Normalization",
+    "answer": "Normalizes layer inputs to reduce internal covariate shift and speed training.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-02T07:04:48.451Z"
+  },
+  {
+    "id": 121,
+    "word": "Callbacks",
+    "answer": "Objects that perform actions at training stages like saving models or stopping.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:18.888Z"
+  },
+  {
+    "id": 122,
+    "word": "Early Stopping",
+    "answer": "Callback that halts training when validation performance stops improving.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:23.053Z"
+  },
+  {
+    "id": 123,
+    "word": "Model Checkpoints",
+    "answer": "Callback that saves model weights during training for recovery or best model.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:40.062Z"
+  },
+  {
+    "id": 124,
+    "word": "Training Set",
+    "answer": "Data used to update model parameters during training process.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:56.872Z"
+  },
+  {
+    "id": 125,
+    "word": "Validation Set",
+    "answer": "Data used to evaluate model during training for hyperparameter tuning.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:40:25.531Z"
+  },
+  {
+    "id": 126,
+    "word": "Test Set",
+    "answer": "Unseen data used for final evaluation of model generalization performance.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:23.847Z"
+  },
+  {
+    "id": 127,
+    "word": "Cross-Validation",
+    "answer": "Technique to assess model performance by rotating training/validation splits.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:40.795Z"
+  },
+  {
+    "id": 128,
+    "word": "Data Preprocessing",
+    "answer": "Cleaning and transforming raw data into suitable format for model training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:55.911Z"
+  },
+  {
+    "id": 129,
+    "word": "Data Augmentation",
+    "answer": "Artificially expanding dataset by applying transformations to existing samples.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:20.472Z"
+  },
+  {
+    "id": 130,
+    "word": "Convolutional Layer",
+    "answer": "Applies filters to detect spatial patterns like edges in images.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:24.627Z"
+  },
+  {
+    "id": 131,
+    "word": "Pooling Layer",
+    "answer": "Reduces spatial dimensions while retaining important features through downsampling.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:43.194Z"
+  },
+  {
+    "id": 132,
+    "word": "Strides",
+    "answer": "Step size for moving filters or pooling windows across input dimensions.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-21T18:41:31.166Z"
+  },
+  {
+    "id": 133,
+    "word": "Padding",
+    "answer": "Adding pixels around input to control output size after convolution operations.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:21.281Z"
+  },
+  {
+    "id": 134,
+    "word": "Dilated Convolutions",
+    "answer": "Convolutions with spaced kernel elements to increase receptive field without parameters.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-03T16:25:38.022Z"
+  },
+  {
+    "id": 135,
+    "word": "Batch Size",
+    "answer": "Number of samples processed before model parameters are updated.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:44.330Z"
+  },
+  {
+    "id": 136,
+    "word": "Epoch",
+    "answer": "Complete pass through entire training dataset during model training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:49.562Z"
+  },
+  {
+    "id": 137,
+    "word": "Gradient",
+    "answer": "Vector of partial derivatives showing direction of steepest ascent for loss.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:21.962Z"
+  },
+  {
+    "id": 138,
+    "word": "Weight Initialization",
+    "answer": "Method for setting initial parameter values before training begins.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:28.936Z"
+  },
+  {
+    "id": 139,
+    "word": "Vanishing Gradient",
+    "answer": "Problem where gradients become extremely small, slowing deep network training.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:47.666Z"
+  },
+  {
+    "id": 140,
+    "word": "Exploding Gradient",
+    "answer": "Problem where gradients become extremely large, causing unstable training.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-03T16:25:48.820Z"
+  },
+  {
+    "id": 141,
+    "word": "Momentum",
+    "answer": "Optimizer technique that accumulates past gradients for smoother convergence.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:41:46.484Z"
+  },
+  {
+    "id": 142,
+    "word": "Adam Optimizer",
+    "answer": "Adaptive learning rate optimizer combining Momentum and RMSProp benefits.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:40:33.440Z"
+  },
+  {
+    "id": 143,
+    "word": "Categorical Crossentropy",
+    "answer": "Loss function for multi-class classification with one-hot encoded labels.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:42:57.060Z"
+  },
+  {
+    "id": 144,
+    "word": "Binary Crossentropy",
+    "answer": "Loss function for binary classification problems with two output classes.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:49:02.580Z"
+  },
+  {
+    "id": 145,
+    "word": "Mean Squared Error",
+    "answer": "Loss function for regression tasks that measures average squared differences.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:40:28.543Z"
+  },
+  {
+    "id": 146,
+    "word": "Accuracy",
+    "answer": "Metric measuring proportion of correct predictions among total predictions.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:40:34.191Z"
+  },
+  {
+    "id": 147,
+    "word": "Precision",
+    "answer": "Metric measuring proportion of true positives among all positive predictions.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:42:57.886Z"
+  },
+  {
+    "id": 148,
+    "word": "Recall",
+    "answer": "Metric measuring proportion of true positives among all actual positives.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:49:03.555Z"
+  },
+  {
+    "id": 149,
+    "word": "F1 Score",
+    "answer": "Harmonic mean of precision and recall for balanced classification evaluation.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:40:29.369Z"
+  },
+  {
+    "id": 150,
+    "word": "Overfitting",
+    "answer": "When model learns training data too well but fails to generalize to new data.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:40:34.936Z"
+  },
+  {
+    "id": 151,
+    "word": "Underfitting",
+    "answer": "When model fails to capture underlying patterns in training data.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:42:58.586Z"
+  },
+  {
+    "id": 152,
+    "word": "Bias-Variance Tradeoff",
+    "answer": "Balance between model simplicity and complexity for optimal generalization.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:49:04.725Z"
+  },
+  {
+    "id": 153,
+    "word": "Learning Rate",
+    "answer": "Step size for weight updates during gradient descent optimization.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:40:30.314Z"
+  },
+  {
+    "id": 154,
+    "word": "Exponential Decay",
+    "answer": "Learning rate schedule that decreases rate exponentially over time.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-04T18:42:02.158Z"
+  },
+  {
+    "id": 155,
+    "word": "Step Decay",
+    "answer": "Learning rate schedule that reduces rate by factor after fixed epochs.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-04T18:43:00.210Z"
+  },
+  {
+    "id": 156,
+    "word": "Cosine Annealing",
+    "answer": "Learning rate schedule that follows cosine function for smooth reduction.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:50:22.608Z"
+  },
+  {
+    "id": 157,
+    "word": "Gradient Clipping",
+    "answer": "Technique to limit gradient values to prevent exploding gradient problem.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-04T18:40:32.231Z"
+  },
+  {
+    "id": 158,
+    "word": "Weight Decay",
+    "answer": "Regularization technique that adds penalty for large weight values.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-04T18:41:30.241Z"
+  },
+  {
+    "id": 159,
+    "word": "Dropout Rate",
+    "answer": "Fraction of input units to randomly set to zero during training.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-04T18:49:27.419Z"
+  },
+  {
+    "id": 160,
+    "word": "Batch Norm Momentum",
+    "answer": "Momentum parameter for running statistics in batch normalization.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-04T18:50:59.161Z"
+  },
+  {
+    "id": 161,
+    "word": "ReduceLROnPlateau",
+    "answer": "Callback that reduces learning rate when validation metric stops improving.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:52:05.795Z"
+  },
+  {
+    "id": 162,
+    "word": "TensorBoard",
+    "answer": "Visualization tool for monitoring training metrics and model architecture.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:43.932Z"
+  },
+  {
+    "id": 163,
+    "word": "CSV Logger",
+    "answer": "Callback that streams training metrics to CSV file for later analysis.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:50.894Z"
+  },
+  {
+    "id": 164,
+    "word": "Model Summary",
+    "answer": "Text output showing layer types, output shapes, and parameter counts.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:58.118Z"
+  },
+  {
+    "id": 165,
+    "word": "Trainable Parameters",
+    "answer": "Weights and biases that get updated during model training process.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:53:33.420Z"
+  },
+  {
+    "id": 166,
+    "word": "Non-trainable Parameters",
+    "answer": "Parameters like batch norm statistics that don't get updated during training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:44.918Z"
+  },
+  {
+    "id": 167,
+    "word": "K-fold Cross Validation",
+    "answer": "Splitting data into k folds, using each as validation once for robust evaluation.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:51.886Z"
+  },
+  {
+    "id": 168,
+    "word": "Stratified Sampling",
+    "answer": "Splitting method that preserves class distribution in train/validation sets.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-05T17:56:55.792Z"
+  },
+  {
+    "id": 169,
+    "word": "Hold-out Validation",
+    "answer": "Simple validation using single split of data into train and validation sets.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:53:48.122Z"
+  },
+  {
+    "id": 170,
+    "word": "Data Leakage",
+    "answer": "When information from validation/test data influences training, causing overestimation.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:46.152Z"
+  },
+  {
+    "id": 171,
+    "word": "Normalization",
+    "answer": "Scaling input features to standard range like [0,1] for stable training.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:53.316Z"
+  },
+  {
+    "id": 172,
+    "word": "Standardization",
+    "answer": "Transforming data to have zero mean and unit variance for each feature.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:56:58.267Z"
+  },
+  {
+    "id": 173,
+    "word": "One-hot Encoding",
+    "answer": "Converting categorical variables to binary vectors for neural network input.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-05T17:55:33.846Z"
+  },
+  {
+    "id": 174,
+    "word": "Label Encoding",
+    "answer": "Converting categorical labels to integer values for classification tasks.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:47.868Z"
+  },
+  {
+    "id": 175,
+    "word": "Image Augmentation",
+    "answer": "Applying random transformations like rotation/flip to increase dataset diversity.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:55.702Z"
+  },
+  {
+    "id": 176,
+    "word": "Text Tokenization",
+    "answer": "Converting text into numerical tokens or sequences for NLP models.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:56:59.251Z"
+  },
+  {
+    "id": 177,
+    "word": "Padding Sequences",
+    "answer": "Adding zeros to make sequences same length for batch processing.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-05T17:55:42.695Z"
+  },
+  {
+    "id": 178,
+    "word": "Feature Scaling",
+    "answer": "Normalizing numerical features to common scale for tabular data.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:49.684Z"
+  },
+  {
+    "id": 179,
+    "word": "Random Rotation",
+    "answer": "Image augmentation that randomly rotates images by specified angle range.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:55:56.718Z"
+  },
+  {
+    "id": 180,
+    "word": "Random Flip",
+    "answer": "Image augmentation that randomly flips images horizontally or vertically.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-05T17:57:00.230Z"
+  },
+  {
+    "id": 181,
+    "word": "Random Zoom",
+    "answer": "Image augmentation that randomly zooms in or out on images.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:05:50.284Z"
+  },
+  {
+    "id": 182,
+    "word": "Brightness Adjustment",
+    "answer": "Image augmentation that randomly changes image brightness values.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:05:56.788Z"
+  },
+  {
+    "id": 183,
+    "word": "Contrast Adjustment",
+    "answer": "Image augmentation that randomly adjusts contrast between pixels.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:06:07.555Z"
+  },
+  {
+    "id": 184,
+    "word": "Convolutional Filter",
+    "answer": "Small matrix that slides over input to detect specific features or patterns.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:06:00.683Z"
+  },
+  {
+    "id": 185,
+    "word": "Feature Map",
+    "answer": "Output of convolution operation showing where specific features appear in input.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:05:51.238Z"
+  },
+  {
+    "id": 186,
+    "word": "Receptive Field",
+    "answer": "Region in input space that affects particular neuron in convolutional layer.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:06:09.031Z"
+  },
+  {
+    "id": 187,
+    "word": "Channel",
+    "answer": "Dimension representing different features or filters in convolutional layers.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:06:05.252Z"
+  },
+  {
+    "id": 188,
+    "word": "Depth-wise Convolution",
+    "answer": "Convolution applied separately to each input channel to reduce parameters.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:14:29.821Z"
+  },
+  {
+    "id": 189,
+    "word": "Point-wise Convolution",
+    "answer": "1x1 convolution that combines features across channels without spatial mixing.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:14:33.398Z"
+  },
+  {
+    "id": 190,
+    "word": "Separable Convolution",
+    "answer": "Depth-wise followed by point-wise convolution for efficiency in mobile networks.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-06T20:14:31.177Z"
+  },
+  {
+    "id": 191,
+    "word": "Max Pooling",
+    "answer": "Pooling operation that takes maximum value from each window region.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:43:40.559Z"
+  },
+  {
+    "id": 192,
+    "word": "Average Pooling",
+    "answer": "Pooling operation that takes average value from each window region.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:43:44.999Z"
+  },
+  {
+    "id": 193,
+    "word": "Global Pooling",
+    "answer": "Pooling over entire spatial dimensions to convert feature maps to vectors.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:24:36.114Z"
+  },
+  {
+    "id": 194,
+    "word": "Global Average Pooling",
+    "answer": "Takes average over entire spatial dimensions, often used before classification.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:43:49.677Z"
+  },
+  {
+    "id": 195,
+    "word": "Global Max Pooling",
+    "answer": "Takes maximum over entire spatial dimensions for feature extraction.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:43:42.968Z"
+  },
+  {
+    "id": 196,
+    "word": "Valid Padding",
+    "answer": "No padding, output size reduces after convolution operation.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:24:32.539Z"
+  },
+  {
+    "id": 197,
+    "word": "Same Padding",
+    "answer": "Padding added so output size equals input size when stride=1.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:24:37.239Z"
+  },
+  {
+    "id": 198,
+    "word": "Dilation Rate",
+    "answer": "Spacing between kernel elements in dilated convolutions for larger receptive field.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-21T18:43:58.219Z"
+  },
+  {
+    "id": 199,
+    "word": "Transposed Convolution",
+    "answer": "Learnable upsampling operation, sometimes called deconvolution.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-06T20:24:29.160Z"
+  },
+  {
+    "id": 200,
+    "word": "Upsampling",
+    "answer": "Increasing spatial dimensions through interpolation or learned operations.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-06T20:24:47.563Z"
+  },
+  {
+    "id": 201,
+    "word": "Residual Connection",
+    "answer": "Skip connection that adds input to output, helping train very deep networks.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:13.089Z"
+  },
+  {
+    "id": 202,
+    "word": "Bottleneck Layer",
+    "answer": "Layer with reduced dimensions for computational efficiency in deep networks.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:15.918Z"
+  },
+  {
+    "id": 203,
+    "word": "Inception Module",
+    "answer": "Parallel convolutional branches with different filter sizes for multi-scale features.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:17.320Z"
+  },
+  {
+    "id": 204,
+    "word": "Attention Mechanism",
+    "answer": "Weights input elements differently, focusing on relevant parts for task.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-07T18:46:24.307Z"
+  },
+  {
+    "id": 205,
+    "word": "Transfer Learning",
+    "answer": "Using pre-trained models as starting point for new related tasks.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:14.961Z"
+  },
+  {
+    "id": 206,
+    "word": "Fine-tuning",
+    "answer": "Updating pre-trained model weights on new data for specific task.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-07T18:46:43.448Z"
+  },
+  {
+    "id": 207,
+    "word": "Feature Extraction",
+    "answer": "Using pre-trained model to extract features without updating its weights.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:34.795Z"
+  },
+  {
+    "id": 208,
+    "word": "Model Ensemble",
+    "answer": "Combining predictions from multiple models for improved performance.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:30.087Z"
+  },
+  {
+    "id": 209,
+    "word": "Hyperparameter Tuning",
+    "answer": "Searching for optimal model configuration parameters like learning rate.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:31.029Z"
+  },
+  {
+    "id": 210,
+    "word": "Grid Search",
+    "answer": "Exhaustive search over specified hyperparameter values for best combination.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:27.944Z"
+  },
+  {
+    "id": 211,
+    "word": "Random Search",
+    "answer": "Random sampling of hyperparameters from distributions for efficient tuning.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:52.641Z"
+  },
+  {
+    "id": 212,
+    "word": "Bayesian Optimization",
+    "answer": "Smart hyperparameter search using probabilistic model to guide selection.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-07T18:47:02.277Z"
+  },
+  {
+    "id": 213,
+    "word": "Gradient Tape",
+    "answer": "TensorFlow context for recording operations to compute gradients automatically.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:49.212Z"
+  },
+  {
+    "id": 214,
+    "word": "Custom Training Loop",
+    "answer": "Manual control over training steps for advanced model architectures.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:50.660Z"
+  },
+  {
+    "id": 215,
+    "word": "Eager Execution",
+    "answer": "Immediate operation execution for easier debugging and prototyping.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:46:46.671Z"
+  },
+  {
+    "id": 216,
+    "word": "Graph Execution",
+    "answer": "Building computational graph first then executing for performance optimization.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:47:06.038Z"
+  },
+  {
+    "id": 217,
+    "word": "Mixed Precision",
+    "answer": "Using both 16-bit and 32-bit floating point for faster training and less memory.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:47:13.372Z"
+  },
+  {
+    "id": 218,
+    "word": "Distributed Training",
+    "answer": "Training models across multiple GPUs or machines for speed and scale.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:47:11.751Z"
+  },
+  {
+    "id": 219,
+    "word": "Model Serving",
+    "answer": "Deploying trained models to production environment for inference.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:47:10.572Z"
+  },
+  {
+    "id": 220,
+    "word": "TensorFlow Serving",
+    "answer": "System for serving machine learning models in production environments.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-07T18:47:07.755Z"
+  },
+  {
+    "id": 221,
+    "word": "Callbacks",
+    "answer": "Functions executed at specific training stages (epoch end, batch end) to monitor metrics, save models, or modify training dynamically.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:31.866Z"
+  },
+  {
+    "id": 222,
+    "word": "Early Stopping",
+    "answer": "Technique that halts training when validation performance stops improving, preventing overfitting and saving computational resources.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:33.798Z"
+  },
+  {
+    "id": 223,
+    "word": "Model Checkpoint",
+    "answer": "Callback that saves model weights at intervals, typically preserving the best-performing version based on validation metrics.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:34.930Z"
+  },
+  {
+    "id": 224,
+    "word": "Training Set",
+    "answer": "Data subset used to fit model parameters by adjusting weights through backpropagation during the learning process.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:35.790Z"
+  },
+  {
+    "id": 225,
+    "word": "Validation Set",
+    "answer": "Data subset used during training to tune hyperparameters and monitor performance without touching the test set.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:32.653Z"
+  },
+  {
+    "id": 226,
+    "word": "Test Set",
+    "answer": "Held-out data used once after training to evaluate final model performance and estimate real-world generalization ability.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:38.205Z"
+  },
+  {
+    "id": 227,
+    "word": "Cross-Validation",
+    "answer": "Technique splitting data into k folds, training on k-1 and validating on one, rotating to reduce variance in performance estimates.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:40.173Z"
+  },
+  {
+    "id": 228,
+    "word": "Stratified K-Fold",
+    "answer": "Cross-validation variant preserving class distribution proportions in each fold, crucial for imbalanced datasets.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:44.246Z"
+  },
+  {
+    "id": 229,
+    "word": "Image Normalization",
+    "answer": "Scaling pixel values to standard range (typically 0-1 or mean zero) to stabilize training and accelerate convergence.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:45.438Z"
+  },
+  {
+    "id": 230,
+    "word": "Data Augmentation",
+    "answer": "Artificially expanding training data by applying transformations like rotation, flipping, or cropping to improve generalization.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:38.972Z"
+  },
+  {
+    "id": 231,
+    "word": "Random Crop",
+    "answer": "Augmentation extracting random patches from images, teaching models spatial invariance and increasing effective dataset size.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:47.695Z"
+  },
+  {
+    "id": 232,
+    "word": "Mixup Augmentation",
+    "answer": "Technique creating synthetic samples by blending two images and their labels, encouraging smoother decision boundaries.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:49.796Z"
+  },
+  {
+    "id": 233,
+    "word": "Text Tokenization",
+    "answer": "Splitting text into units (words, subwords, characters) for numerical encoding, essential for feeding text into neural networks.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:50.753Z"
+  },
+  {
+    "id": 234,
+    "word": "One-Hot Encoding",
+    "answer": "Converting categorical variables into binary vectors where one element is 1 and others 0, enabling categorical input processing.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T09:04:15.913Z"
+  },
+  {
+    "id": 235,
+    "word": "Feature Scaling",
+    "answer": "Normalizing or standardizing numerical features to similar ranges, preventing features with larger magnitudes from dominating training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T08:58:48.721Z"
+  },
+  {
+    "id": 236,
+    "word": "Convolutional Layer",
+    "answer": "Neural network layer applying learnable filters across spatial dimensions to detect local patterns like edges or textures.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T09:04:18.992Z"
+  },
+  {
+    "id": 237,
+    "word": "Convolutional Neural Network (CNN)",
+    "answer": "Deep learning architecture using convolutional layers to automatically learn hierarchical spatial features from grid-like data.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T09:04:26.426Z"
+  },
+  {
+    "id": 238,
+    "word": "Receptive Field",
+    "answer": "Region of input space that influences a particular neuron's activation, growing deeper in the network.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T09:04:27.578Z"
+  },
+  {
+    "id": 239,
+    "word": "Filter/Kernel",
+    "answer": "Small weight matrix sliding across input to detect specific features, producing feature maps through convolution operations.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T09:04:28.427Z"
+  },
+  {
+    "id": 240,
+    "word": "Feature Map",
+    "answer": "Output of convolutional layer showing where specific patterns detected by filters appear in the input.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-08T09:04:25.086Z"
+  },
+  {
+    "id": 241,
+    "word": "Max Pooling",
+    "answer": "Downsampling operation taking maximum value from each patch, reducing spatial dimensions while preserving prominent features.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:34:01.484Z"
+  },
+  {
+    "id": 242,
+    "word": "Average Pooling",
+    "answer": "Downsampling by averaging values in each patch, providing smoother dimensionality reduction than max pooling.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:39:40.370Z"
+  },
+  {
+    "id": 243,
+    "word": "Stride",
+    "answer": "Number of pixels the filter moves when sliding across input; larger strides reduce output dimensions more aggressively.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:34:56.361Z"
+  },
+  {
+    "id": 244,
+    "word": "Padding",
+    "answer": "Adding border pixels (usually zeros) around input to control output dimensions and preserve edge information during convolution.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:34:57.129Z"
+  },
+  {
+    "id": 245,
+    "word": "Valid Padding",
+    "answer": "No padding applied; convolution only where filter fully overlaps input, resulting in smaller output dimensions.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:34:02.563Z"
+  },
+  {
+    "id": 246,
+    "word": "Same Padding",
+    "answer": "Padding added so output dimensions match input dimensions when stride is 1, preserving spatial size.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:00.845Z"
+  },
+  {
+    "id": 247,
+    "word": "Dilated Convolution",
+    "answer": "Convolution with gaps between filter elements, exponentially expanding receptive field without increasing parameters or reducing resolution.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:02.830Z"
+  },
+  {
+    "id": 248,
+    "word": "Atrous Convolution",
+    "answer": "Another term for dilated convolution, inserting holes (atrous means with holes) between kernel elements for wider coverage.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:03.760Z"
+  },
+  {
+    "id": 249,
+    "word": "Transfer Learning",
+    "answer": "Reusing knowledge from model trained on one task to accelerate learning on different but related task.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:04.569Z"
+  },
+  {
+    "id": 250,
+    "word": "Pre-Trained Model",
+    "answer": "Neural network already trained on large dataset, providing learned features reusable for downstream tasks via transfer learning.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:01.707Z"
+  },
+  {
+    "id": 251,
+    "word": "Feature Extraction",
+    "answer": "Using frozen pre-trained layers as fixed feature extractors while training only new classifier layers on target task.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:07.581Z"
+  },
+  {
+    "id": 252,
+    "word": "Fine-Tuning",
+    "answer": "Unfreezing some or all pre-trained layers and training them with small learning rate on new dataset.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:26.935Z"
+  },
+  {
+    "id": 253,
+    "word": "ImageNet",
+    "answer": "Large image dataset with millions of labeled images across thousands of categories, commonly used for pre-training vision models.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:12.339Z"
+  },
+  {
+    "id": 254,
+    "word": "Frozen Layers",
+    "answer": "Model layers with fixed weights not updated during training, preserving learned features from pre-training.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:13.224Z"
+  },
+  {
+    "id": 255,
+    "word": "Recurrent Neural Network (RNN)",
+    "answer": "Neural network with loops allowing information persistence, processing sequential data by maintaining hidden state across time steps.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:11.103Z"
+  },
+  {
+    "id": 256,
+    "word": "Hidden State",
+    "answer": "Internal memory vector in RNN carrying information from previous time steps to influence current output.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:31.734Z"
+  },
+  {
+    "id": 257,
+    "word": "Vanishing Gradient Problem",
+    "answer": "Issue where gradients become extremely small during backpropagation through time, preventing learning of long-term dependencies.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:44.393Z"
+  },
+  {
+    "id": 258,
+    "word": "Long Short-Term Memory (LSTM)",
+    "answer": "RNN variant using gates (forget, input, output) to control information flow, solving vanishing gradient and capturing long-term dependencies.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:45.593Z"
+  },
+  {
+    "id": 259,
+    "word": "Gated Recurrent Unit (GRU)",
+    "answer": "Simplified LSTM alternative with fewer gates (reset, update), offering similar performance with reduced computational complexity.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:50.517Z"
+  },
+  {
+    "id": 260,
+    "word": "Cell State",
+    "answer": "LSTM's long-term memory pathway running through chain, with gates regulating information addition or removal.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-09T09:35:32.831Z"
+  },
+  {
+    "id": 261,
+    "word": "Forget Gate",
+    "answer": "LSTM component deciding what information to discard from cell state based on current input and previous hidden state.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T17:51:55.813Z"
+  },
+  {
+    "id": 262,
+    "word": "Backpropagation Through Time (BPTT)",
+    "answer": "Training algorithm for RNNs unrolling network across time steps and applying standard backpropagation through the unrolled structure.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross"
+    ],
+    "lastUpdated": "2025-11-10T19:51:17.610Z"
+  },
+  {
+    "id": 263,
+    "word": "Many-To-One Sequence Model",
+    "answer": "Architecture processing entire sequence to produce single output, used for tasks like sentiment classification.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T17:52:01.356Z"
+  },
+  {
+    "id": 264,
+    "word": "Many-To-Many Sequence Model",
+    "answer": "Architecture mapping input sequence to output sequence, used for tasks like machine translation or video captioning.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T17:52:02.366Z"
+  },
+  {
+    "id": 265,
+    "word": "One-To-Many Sequence Model",
+    "answer": "Architecture generating sequence from single input, used for tasks like image captioning or music generation.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T17:52:03.533Z"
+  },
+  {
+    "id": 266,
+    "word": "Sequence-To-Sequence (Seq2Seq)",
+    "answer": "Architecture with encoder processing input sequence and decoder generating output sequence, common in translation tasks.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:29.372Z"
+  },
+  {
+    "id": 267,
+    "word": "Encoder-Decoder Architecture",
+    "answer": "Two-part model where encoder compresses input into context vector and decoder generates output sequence from it.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:34.542Z"
+  },
+  {
+    "id": 268,
+    "word": "Attention Mechanism",
+    "answer": "Component allowing model to focus on relevant input parts when generating each output, improving long-sequence performance.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:35.564Z"
+  },
+  {
+    "id": 269,
+    "word": "Self-Attention",
+    "answer": "Attention variant where sequence attends to itself, capturing dependencies between different positions in same sequence.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:36.486Z"
+  },
+  {
+    "id": 270,
+    "word": "Teacher Forcing",
+    "answer": "Training technique using ground truth from previous time step as input rather than model's prediction, accelerating convergence.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:30.367Z"
+  },
+  {
+    "id": 271,
+    "word": "Word Embedding",
+    "answer": "Dense vector representation of words mapping them to continuous space where semantic similarity corresponds to proximity.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:47.840Z"
+  },
+  {
+    "id": 272,
+    "word": "Embedding Layer",
+    "answer": "Neural network layer converting discrete tokens (words, characters) into continuous dense vectors of fixed dimension.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:49.255Z"
+  },
+  {
+    "id": 273,
+    "word": "Word2Vec",
+    "answer": "Algorithm learning word embeddings by predicting context words (CBOW) or target word from context (Skip-gram).",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:50.162Z"
+  },
+  {
+    "id": 274,
+    "word": "GloVe",
+    "answer": "Global Vectors for word representation, learning embeddings by factorizing word co-occurrence matrix from corpus statistics.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:51.067Z"
+  },
+  {
+    "id": 275,
+    "word": "Contextual Embeddings",
+    "answer": "Word representations varying based on surrounding context, unlike static embeddings where each word has fixed vector.",
+    "states": [
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:48.513Z"
+  },
+  {
+    "id": 276,
+    "word": "Positional Encoding",
+    "answer": "Adding position information to embeddings in models without inherent sequence order, enabling transformers to understand position.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:57.904Z"
+  },
+  {
+    "id": 277,
+    "word": "Subword Tokenization",
+    "answer": "Splitting words into smaller meaningful units (morphemes, syllables), balancing vocabulary size with rare word handling.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:59.968Z"
+  },
+  {
+    "id": 278,
+    "word": "Byte Pair Encoding (BPE)",
+    "answer": "Subword tokenization iteratively merging most frequent character pairs, creating vocabulary of variable-length tokens.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:52:01.875Z"
+  },
+  {
+    "id": 279,
+    "word": "Embedding Dimension",
+    "answer": "Size of vector representing each token, balancing expressiveness against computational cost and overfitting risk.",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:52:02.842Z"
+  },
+  {
+    "id": 280,
+    "word": "Cosine Similarity",
+    "answer": "Metric measuring angle between embedding vectors, quantifying semantic similarity regardless of magnitude.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-10T19:51:59.047Z"
+  },
+  {
+    "id": 281,
+    "word": "Learning Rate Scheduling",
+    "answer": "Dynamically adjusting learning rate during training, typically decreasing over time to fine-tune convergence.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:39:48.682Z"
+  },
+  {
+    "id": 282,
+    "word": "Reduce LR on Plateau",
+    "answer": "Callback reducing learning rate when validation metric stops improving, helping escape local minima or saddle points.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:39:50.488Z"
+  },
+  {
+    "id": 283,
+    "word": "Global Average Pooling",
+    "answer": "Pooling entire feature map to single value per channel, reducing parameters and overfitting compared to fully connected layers.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:39:51.279Z"
+  },
+  {
+    "id": 284,
+    "word": "Batch Normalization",
+    "answer": "Normalizing layer inputs across mini-batch, stabilizing training and enabling higher learning rates by reducing internal covariate shift.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:39:54.590Z"
+  },
+  {
+    "id": 285,
+    "word": "Dropout",
+    "answer": "Regularization randomly deactivating neurons during training, preventing co-adaptation and improving generalization.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:39:49.532Z"
+  },
+  {
+    "id": 286,
+    "word": "Depthwise Separable Convolution",
+    "answer": "Efficient convolution factorizing standard convolution into depthwise and pointwise operations, drastically reducing parameters.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:39:56.898Z"
+  },
+  {
+    "id": 287,
+    "word": "Residual Connection",
+    "answer": "Skip connection adding layer input directly to output, enabling gradient flow and training of very deep networks.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:40:02.799Z"
+  },
+  {
+    "id": 288,
+    "word": "1x1 Convolution",
+    "answer": "Convolution with single-pixel filter adjusting channel dimensions, enabling cross-channel feature combination without spatial mixing.",
+    "states": [
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:40:03.833Z"
+  },
+  {
+    "id": 289,
+    "word": "Bottleneck Layer",
+    "answer": "Layer reducing dimensionality before expensive operations then expanding, decreasing computational cost while preserving information.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:40:04.725Z"
+  },
+  {
+    "id": 290,
+    "word": "Temperature Scaling",
+    "answer": "Dividing logits by temperature parameter before softmax, controlling prediction confidence and probability distribution sharpness.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:39:57.785Z"
+  },
+  {
+    "id": 291,
+    "word": "Gradient Clipping",
+    "answer": "Limiting gradient magnitude during training to prevent exploding gradients, especially important for recurrent networks.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:40:06.772Z"
+  },
+  {
+    "id": 292,
+    "word": "Warmup Steps",
+    "answer": "Gradually increasing learning rate from zero at training start, stabilizing early optimization when parameters are random.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:40:08.413Z"
+  },
+  {
+    "id": 293,
+    "word": "Cyclic Learning Rate",
+    "answer": "Varying learning rate between bounds in cycles, potentially escaping local minima and accelerating convergence.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:40:09.657Z"
+  },
+  {
+    "id": 294,
+    "word": "Label Smoothing",
+    "answer": "Softening one-hot labels toward uniform distribution, preventing overconfident predictions and improving calibration.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:40:11.973Z"
+  },
+  {
+    "id": 295,
+    "word": "Cutout Augmentation",
+    "answer": "Randomly masking square regions in images, forcing model to rely on broader context rather than specific features.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-11-11T19:40:07.517Z"
+  },
+  {
+    "id": 296,
+    "word": "AutoAugment",
+    "answer": "Automated search for optimal augmentation policies using reinforcement learning to find transformations improving validation performance.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-21T18:16:34.390Z"
+  },
+  {
+    "id": 297,
+    "word": "Progressive Resizing",
+    "answer": "Training initially on smaller images then gradually increasing resolution, speeding up early training while refining details later.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-21T18:17:05.153Z"
+  },
+  {
+    "id": 298,
+    "word": "TF-IDF Vectorization",
+    "answer": "Term frequency-inverse document frequency, weighting words by importance within document relative to entire corpus.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-21T18:16:31.975Z"
+  },
+  {
+    "id": 299,
+    "word": "Sequence Padding",
+    "answer": "Adding special tokens to make variable-length sequences uniform length for batch processing in neural networks.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-21T18:14:58.017Z"
+  },
+  {
+    "id": 300,
+    "word": "Masking",
+    "answer": "Ignoring padded positions in loss and attention computations, preventing meaningless tokens from affecting training.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-21T18:16:37.831Z"
+  },
+  {
+    "id": 301,
+    "word": "Categorical Crossentropy",
+    "answer": "Loss function for multi-class classification comparing predicted probability distribution against one-hot encoded true labels.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T11:34:08.477Z"
+  },
+  {
+    "id": 302,
+    "word": "Sparse Categorical Crossentropy",
+    "answer": "Crossentropy variant accepting integer class labels instead of one-hot vectors, saving memory for many classes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T11:34:10.092Z"
+  },
+  {
+    "id": 303,
+    "word": "Perplexity",
+    "answer": "Exponentiated cross-entropy measuring how well probability model predicts samples, lower values indicate better predictions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T11:34:50.656Z"
+  },
+  {
+    "id": 304,
+    "word": "BLEU Score",
+    "answer": "Metric comparing n-gram overlap between generated and reference translations, evaluating machine translation quality.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T11:34:47.956Z"
+  },
+  {
+    "id": 305,
+    "word": "Beam Search",
+    "answer": "Decoding strategy maintaining multiple hypotheses ranked by probability, balancing exploration and exploitation for better sequence generation.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-13T11:34:28.301Z"
+  },
+  {
+    "id": 306,
+    "word": "Greedy Decoding",
+    "answer": "Selecting highest probability token at each step, fast but potentially suboptimal for sequence generation.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:06:45.658Z"
+  },
+  {
+    "id": 307,
+    "word": "Top-K Sampling",
+    "answer": "Sampling next token from k most probable candidates, balancing randomness and quality in text generation.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:06:48.564Z"
+  },
+  {
+    "id": 308,
+    "word": "Nucleus Sampling (Top-P)",
+    "answer": "Sampling from smallest token set whose cumulative probability exceeds threshold p, dynamically adjusting candidate pool size.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:06:49.697Z"
+  },
+  {
+    "id": 309,
+    "word": "Bidirectional RNN",
+    "answer": "Processing sequence in both forward and backward directions, capturing context from entire sequence for each position.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:06:51.540Z"
+  },
+  {
+    "id": 310,
+    "word": "Stateful RNN",
+    "answer": "RNN preserving hidden state across batches, enabling learning from very long sequences split into chunks.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-14T22:06:46.896Z"
+  },
+  {
+    "id": 311,
+    "word": "Return Sequences",
+    "answer": "RNN configuration outputting hidden state at every time step rather than only final step, used for stacked RNNs.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T19:17:56.785Z"
+  },
+  {
+    "id": 312,
+    "word": "Attention Weights",
+    "answer": "Normalized scores indicating how much each input position should influence current output, often visualized to interpret models.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T19:18:02.075Z"
+  },
+  {
+    "id": 313,
+    "word": "Query, Key, Value (QKV)",
+    "answer": "Three projections in attention mechanism: query determines what to look for, keys what to match, values provide information.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T19:18:03.176Z"
+  },
+  {
+    "id": 314,
+    "word": "Multi-Head Attention",
+    "answer": "Running multiple attention mechanisms in parallel, allowing model to attend to different representation subspaces simultaneously.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T19:18:04.040Z"
+  },
+  {
+    "id": 315,
+    "word": "Causal Masking",
+    "answer": "Preventing attention to future positions during training, ensuring model only uses past information when predicting next token.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T19:18:00.917Z"
+  },
+  {
+    "id": 316,
+    "word": "Cross-Attention",
+    "answer": "Attention mechanism where queries come from one sequence (decoder) and keys/values from another (encoder).",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-16T13:29:29.765Z"
+  },
+  {
+    "id": 317,
+    "word": "Scaled Dot-Product Attention",
+    "answer": "Computing attention by taking dot product of queries and keys, scaling by dimension, then applying softmax.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-16T13:29:42.767Z"
+  },
+  {
+    "id": 318,
+    "word": "Attention Is All You Need",
+    "answer": "Landmark paper introducing transformer architecture, replacing recurrence with self-attention for parallel sequence processing.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-16T13:29:43.816Z"
+  },
+  {
+    "id": 319,
+    "word": "Gradient Accumulation",
+    "answer": "Summing gradients over multiple forward passes before updating weights, simulating larger batch sizes with limited memory.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-16T13:29:45.268Z"
+  },
+  {
+    "id": 320,
+    "word": "Mixed Precision Training",
+    "answer": "Using 16-bit floats for most operations and 32-bit for critical ones, reducing memory and accelerating training on modern GPUs.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-16T13:29:41.405Z"
+  },
+  {
+    "id": 321,
+    "word": "Input Pipeline Optimization",
+    "answer": "Techniques like prefetching, parallel data loading, and caching to prevent GPU idle time during training.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:16:16.355Z"
+  },
+  {
+    "id": 322,
+    "word": "Time Distributed Layer",
+    "answer": "Wrapper applying same layer independently to each time step in sequence, sharing weights across temporal dimension.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:15:53.979Z"
+  },
+  {
+    "id": 323,
+    "word": "Repeat Vector",
+    "answer": "Layer replicating single vector across multiple time steps, bridging encoder's single output to decoder's sequence input.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:15:55.847Z"
+  },
+  {
+    "id": 324,
+    "word": "Embedding Collapse",
+    "answer": "Problem where different tokens learn nearly identical embeddings, reducing model expressiveness and hurting performance.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:16:05.644Z"
+  },
+  {
+    "id": 325,
+    "word": "Out-Of-Vocabulary (OOV)",
+    "answer": "Words not present in training vocabulary, handled through special tokens, subword tokenization, or character-level processing.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:15:49.432Z"
+  },
+  {
+    "id": 326,
+    "word": "Vocabulary Size",
+    "answer": "Number of unique tokens model can handle, balancing coverage against embedding matrix size and computational cost.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:16:44.085Z"
+  },
+  {
+    "id": 327,
+    "word": "Pretrained Embeddings",
+    "answer": "Word vectors learned from large corpus used to initialize embedding layer, transferring semantic knowledge to downstream tasks.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:16:51.243Z"
+  },
+  {
+    "id": 328,
+    "word": "Embedding Fine-Tuning",
+    "answer": "Training pretrained embeddings on task-specific data, adapting general semantic knowledge to domain-specific vocabulary.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:16:52.249Z"
+  },
+  {
+    "id": 329,
+    "word": "Skip Connection",
+    "answer": "Direct pathway bypassing one or more layers, helping gradients flow and enabling training of deeper architectures.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:16:53.601Z"
+  },
+  {
+    "id": 330,
+    "word": "Dense Block",
+    "answer": "Architecture pattern where each layer receives inputs from all previous layers, maximizing feature reuse and gradient flow.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:16:56.302Z"
+  },
+  {
+    "id": 331,
+    "word": "Inception Module",
+    "answer": "Parallel convolutions with different kernel sizes concatenated, capturing multi-scale features in single layer.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:29:55.893Z"
+  },
+  {
+    "id": 332,
+    "word": "Squeeze-And-Excitation (SE) Block",
+    "answer": "Module recalibrating channel-wise features by explicitly modeling interdependencies, improving representation quality.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T22:01:00.587Z"
+  },
+  {
+    "id": 333,
+    "word": "Spatial Pyramid Pooling",
+    "answer": "Pooling input at multiple scales and concatenating results, enabling fixed-size output from variable-size inputs.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T22:02:58.608Z"
+  },
+  {
+    "id": 334,
+    "word": "Feature Pyramid Network (FPN)",
+    "answer": "Architecture combining low-resolution semantic features with high-resolution spatial features for multi-scale detection.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T22:02:57.764Z"
+  },
+  {
+    "id": 335,
+    "word": "U-Net Architecture",
+    "answer": "Encoder-decoder with skip connections between symmetric layers, widely used for image segmentation tasks.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T21:29:29.780Z"
+  },
+  {
+    "id": 336,
+    "word": "VGGNet",
+    "answer": "Deep CNN using small 3x3 filters stacked deeply, demonstrating importance of network depth.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T22:06:14.476Z"
+  },
+  {
+    "id": 337,
+    "word": "ResNet",
+    "answer": "Architecture introducing residual connections, enabling training of networks with 100+ layers by solving vanishing gradients.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T22:06:28.336Z"
+  },
+  {
+    "id": 338,
+    "word": "MobileNet",
+    "answer": "Efficient CNN using depthwise separable convolutions, designed for mobile and embedded vision applications.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T22:12:37.325Z"
+  },
+  {
+    "id": 339,
+    "word": "EfficientNet",
+    "answer": "Architecture family systematically scaling depth, width, and resolution for optimal accuracy-efficiency tradeoff.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T22:12:46.221Z"
+  },
+  {
+    "id": 340,
+    "word": "Neural Architecture Search (NAS)",
+    "answer": "Automated method discovering optimal network architectures through search algorithms rather than manual design.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-19T22:13:08.837Z"
+  },
+  {
+    "id": 341,
+    "word": "Learning Rate Finder",
+    "answer": "Technique plotting loss versus learning rate to identify optimal range before full training."
+  },
+  {
+    "id": 342,
+    "word": "One Cycle Policy",
+    "answer": "Training schedule with single learning rate cycle from low to high to low, enabling faster convergence."
+  },
+  {
+    "id": 343,
+    "word": "Discriminative Fine-Tuning",
+    "answer": "Using different learning rates for different layers during fine-tuning, updating earlier layers more conservatively."
+  },
+  {
+    "id": 344,
+    "word": "Gradual Unfreezing",
+    "answer": "Progressively unfreezing layers from top to bottom during fine-tuning, preventing catastrophic forgetting."
+  },
+  {
+    "id": 345,
+    "word": "Class Imbalance",
+    "answer": "Situation where training samples unevenly distributed across classes, potentially biasing model toward majority class."
+  },
+  {
+    "id": 346,
+    "word": "Class Weights",
+    "answer": "Assigning higher loss penalties to underrepresented classes, compensating for imbalanced training data."
+  },
+  {
+    "id": 347,
+    "word": "Focal Loss",
+    "answer": "Loss function down-weighting easy examples to focus training on hard negatives, addressing class imbalance."
+  },
+  {
+    "id": 348,
+    "word": "SMOTE",
+    "answer": "Synthetic Minority Over-sampling Technique, creating artificial samples for minority classes by interpolating between existing examples."
+  },
+  {
+    "id": 349,
+    "word": "Confusion Matrix",
+    "answer": "Table showing true vs predicted classifications, revealing which classes model confuses with each other."
+  },
+  {
+    "id": 350,
+    "word": "Precision",
+    "answer": "Proportion of positive predictions that are actually correct, measuring model's exactness."
+  },
+  {
+    "id": 351,
+    "word": "Recall",
+    "answer": "Proportion of actual positives correctly identified, measuring model's completeness or sensitivity."
+  },
+  {
+    "id": 352,
+    "word": "F1 Score",
+    "answer": "Harmonic mean of precision and recall, balancing both metrics into single performance measure."
+  },
+  {
+    "id": 353,
+    "word": "ROC Curve",
+    "answer": "Plot of true positive rate vs false positive rate across thresholds, visualizing classifier performance."
+  },
+  {
+    "id": 354,
+    "word": "AUC-ROC",
+    "answer": "Area under ROC curve, summarizing overall classifier quality independent of threshold choice."
+  },
+  {
+    "id": 355,
+    "word": "TensorBoard Callback",
+    "answer": "Keras callback logging metrics, graphs, and embeddings for visualization in TensorBoard during training."
+  },
+  {
+    "id": 356,
+    "word": "CSV Logger",
+    "answer": "Callback writing epoch-level metrics to CSV file, enabling easy analysis and plotting of training history."
+  },
+  {
+    "id": 357,
+    "word": "Lambda Callback",
+    "answer": "Custom callback executing arbitrary functions at training stages, offering maximum flexibility for specialized monitoring."
+  },
+  {
+    "id": 358,
+    "word": "Remote Monitor Callback",
+    "answer": "Callback sending training events to web server, enabling real-time monitoring from remote locations."
+  },
+  {
+    "id": 359,
+    "word": "Terminate on NaN",
+    "answer": "Callback stopping training immediately when NaN loss detected, preventing wasted computation on diverged training."
+  },
+  {
+    "id": 360,
+    "word": "Backup and Restore Callback",
+    "answer": "Callback saving/restoring model state to recover from interruptions, enabling fault-tolerant long training runs."
+  },
+  {
+    "id": 361,
+    "word": "Albumentations",
+    "answer": "Fast augmentation library supporting complex pipelines with spatial and color transforms for image data."
+  },
+  {
+    "id": 362,
+    "word": "RandAugment",
+    "answer": "Simplified augmentation strategy randomly selecting transformations and magnitudes, reducing hyperparameter search space."
+  },
+  {
+    "id": 363,
+    "word": "Color Jittering",
+    "answer": "Randomly adjusting brightness, contrast, saturation, and hue to improve model robustness to lighting variations."
+  },
+  {
+    "id": 364,
+    "word": "Elastic Deformation",
+    "answer": "Smoothly distorting images to simulate natural variations, particularly useful for medical imaging tasks."
+  },
+  {
+    "id": 365,
+    "word": "Grid Distortion",
+    "answer": "Warping images using grid-based transformations, creating realistic geometric variations for augmentation."
+  },
+  {
+    "id": 366,
+    "word": "Gaussian Noise",
+    "answer": "Adding random noise from normal distribution, improving model robustness to sensor noise and compression artifacts."
+  },
+  {
+    "id": 367,
+    "word": "Back Translation",
+    "answer": "Text augmentation translating to another language and back, generating paraphrases while preserving meaning."
+  },
+  {
+    "id": 368,
+    "word": "Synonym Replacement",
+    "answer": "Randomly replacing words with synonyms for text augmentation, increasing dataset diversity without changing semantics."
+  },
+  {
+    "id": 369,
+    "word": "Random Insertion",
+    "answer": "Adding random words at random positions for text augmentation, teaching models robustness to extra tokens."
+  },
+  {
+    "id": 370,
+    "word": "Random Swap",
+    "answer": "Exchanging positions of random words for text augmentation, encouraging word order invariance."
+  },
+  {
+    "id": 371,
+    "word": "Random Deletion",
+    "answer": "Removing random words with certain probability for text augmentation, simulating missing or corrupted tokens."
+  },
+  {
+    "id": 372,
+    "word": "Contextual Word Substitution",
+    "answer": "Using language models to suggest context-appropriate replacements, creating high-quality augmented text samples."
+  },
+  {
+    "id": 373,
+    "word": "MinMax Scaling",
+    "answer": "Scaling features to fixed range (typically 0-1) by subtracting minimum and dividing by range."
+  },
+  {
+    "id": 374,
+    "word": "Standardization (Z-Score)",
+    "answer": "Transforming features to zero mean and unit variance by subtracting mean and dividing by standard deviation."
+  },
+  {
+    "id": 375,
+    "word": "Robust Scaling",
+    "answer": "Scaling using median and interquartile range, making preprocessing robust to outliers compared to standardization."
+  },
+  {
+    "id": 376,
+    "word": "Log Transformation",
+    "answer": "Applying logarithm to reduce sk"
+  },
+  {
+    "id": 377,
+    "word": "Box-Cox Transformation",
+    "answer": "Power transformation automatically finding optimal exponent to make data more Gaussian-like, improving model performance."
+  },
+  {
+    "id": 378,
+    "word": "Target Encoding",
+    "answer": "Replacing categorical values with mean of target variable for that category, creating informative numerical features."
+  },
+  {
+    "id": 379,
+    "word": "Frequency Encoding",
+    "answer": "Encoding categorical variables by their occurrence frequency, capturing rarity or commonness of each category."
+  },
+  {
+    "id": 380,
+    "word": "Ordinal Encoding",
+    "answer": "Mapping categorical values to integers preserving inherent order, appropriate for categories with natural ranking."
+  },
+  {
+    "id": 381,
+    "word": "Hold-Out Validation",
+    "answer": "Simplest split reserving fixed portion of data for validation, fast but with higher variance than cross-validation."
+  },
+  {
+    "id": 382,
+    "word": "Leave-One-Out Cross-Validation",
+    "answer": "Extreme cross-validation using each sample once as validation, maximizing training data but computationally expensive."
+  },
+  {
+    "id": 383,
+    "word": "Group K-Fold",
+    "answer": "Cross-validation ensuring samples from same group stay together in folds, preventing data leakage in grouped data."
+  },
+  {
+    "id": 384,
+    "word": "Time Series Split",
+    "answer": "Cross-validation respecting temporal order, always training on past and validating on future to prevent look-ahead bias."
+  },
+  {
+    "id": 385,
+    "word": "Nested Cross-Validation",
+    "answer": "Outer loop for model evaluation and inner loop for hyperparameter tuning, providing unbiased performance estimates."
+  },
+  {
+    "id": 386,
+    "word": "Data Leakage",
+    "answer": "Information from validation/test sets inappropriately influencing training, leading to overly optimistic performance estimates."
+  },
+  {
+    "id": 387,
+    "word": "Train-Test Contamination",
+    "answer": "Overlap or information flow between training and testing data, invalidating evaluation and causing overestimation of performance."
+  },
+  {
+    "id": 388,
+    "word": "Temporal Leakage",
+    "answer": "Using future information during training in time series problems, creating unrealistic performance that won't generalize."
+  },
+  {
+    "id": 389,
+    "word": "Validation Loss",
+    "answer": "Model loss computed on validation set, key metric for monitoring overfitting and selecting best model."
+  },
+  {
+    "id": 390,
+    "word": "Training Loss",
+    "answer": "Loss computed on training data during backpropagation, indicating how well model fits training examples."
+  },
+  {
+    "id": 391,
+    "word": "Overfitting",
+    "answer": "Model learning training data too well including noise, resulting in poor generalization to new data."
+  },
+  {
+    "id": 392,
+    "word": "Underfitting",
+    "answer": "Model too simple to capture data patterns, performing poorly on both training and validation sets."
+  },
+  {
+    "id": 393,
+    "word": "Bias-Variance Tradeoff",
+    "answer": "Balance between model's inability to capture true relationship (bias) and sensitivity to training fluctuations (variance)."
+  },
+  {
+    "id": 394,
+    "word": "Model Capacity",
+    "answer": "Complexity and representational power of model architecture, determining range of functions it can learn."
+  },
+  {
+    "id": 395,
+    "word": "Regularization",
+    "answer": "Techniques constraining model complexity to prevent overfitting, like L1/L2 penalties, dropout, or early stopping."
+  },
+  {
+    "id": 396,
+    "word": "L1 Regularization (Lasso)",
+    "answer": "Adding absolute value of weights to loss, encouraging sparsity by driving some weights to exactly zero."
+  },
+  {
+    "id": 397,
+    "word": "L2 Regularization (Ridge)",
+    "answer": "Adding squared weights to loss, penalizing large weights and encouraging small distributed weights across features."
+  },
+  {
+    "id": 398,
+    "word": "Elastic Net",
+    "answer": "Combining L1 and L2 regularization, balancing feature selection with weight distribution for robust models."
+  },
+  {
+    "id": 399,
+    "word": "Weight Decay",
+    "answer": "Multiplying weights by factor slightly less than 1 each step, equivalent to L2 regularization in some optimizers."
+  },
+  {
+    "id": 400,
+    "word": "Spatial Dropout",
+    "answer": "Dropping entire feature maps instead of individual activations in CNNs, promoting independent feature map learning."
+  }
+]

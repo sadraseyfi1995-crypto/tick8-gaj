@@ -1,0 +1,31 @@
+<div class="page-wrapper">
+  <button
+    class="nav-btn prev"
+    (click)="previousPage()"
+    [disabled]="currentPage === 0"
+    aria-label="Previous page"
+  >
+    ‹
+  </button>
+
+  <div class="page-container">
+    <ng-container *ngIf="allQuestions.length > 0">
+      <app-page
+        [vocabWords]="chunkedQuestions[currentPage]">
+      </app-page>
+    </ng-container>
+  </div>
+
+  <button
+    class="nav-btn next"
+    (click)="nextPage()"
+    [disabled]="currentPage === allQuestions.length - 1"
+    aria-label="Next question"
+  >
+    ›
+  </button>
+</div>
+
+<div class="pager-indicator">
+  Page {{ currentPage + 1 }}
+</div>

@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 1,
+    "word": "Neural Network",
+    "answer": "Computing system inspired by biological brains, composed of interconnected layers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T01:58:27.156Z"
+  },
+  {
+    "id": 2,
+    "word": "Matrix Multiplication",
+    "answer": "Mathematical operation combining two matrices to produce another matrix.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:11:13.384Z"
+  },
+  {
+    "id": 3,
+    "word": "Derivative",
+    "answer": "Measures how a function changes as its input changes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:22.181Z"
+  },
+  {
+    "id": 4,
+    "word": "Standard Deviation",
+    "answer": "Measure of data dispersion or variation in a dataset.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:38.158Z"
+  },
+  {
+    "id": 5,
+    "word": "List Comprehension",
+    "answer": "Concise Python syntax for creating new lists from existing ones.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:07:49.055Z"
+  },
+  {
+    "id": 6,
+    "word": "Backpropagation",
+    "answer": "Algorithm for training neural networks by propagating errors backward.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:11:16.672Z"
+  },
+  {
+    "id": 7,
+    "word": "Eigenvector",
+    "answer": "Vector that only scales when linear transformation is applied.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:30.293Z"
+  },
+  {
+    "id": 8,
+    "word": "Chain Rule",
+    "answer": "Derivative rule for computing derivatives of function compositions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:37.462Z"
+  },
+  {
+    "id": 9,
+    "word": "Bayesian Inference",
+    "answer": "Statistical method updating probability estimates as new data arrives.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:08:55.680Z"
+  },
+  {
+    "id": 10,
+    "word": "NumPy",
+    "answer": "Python library for numerical computing with array support.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:11:31.242Z"
+  },
+  {
+    "id": 11,
+    "word": "Convolutional Network",
+    "answer": "Neural network architecture specialized for processing grid-like data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:31.481Z"
+  },
+  {
+    "id": 12,
+    "word": "Tensor",
+    "answer": "Multidimensional array generalizing matrices to higher dimensions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:36.834Z"
+  },
+  {
+    "id": 13,
+    "word": "Gradient Descent",
+    "answer": "Optimization algorithm using derivatives to minimize functions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:09:06.397Z"
+  },
+  {
+    "id": 14,
+    "word": "P-Value",
+    "answer": "Probability of obtaining results at least as extreme as observed.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:19.861Z"
+  },
+  {
+    "id": 15,
+    "word": "Pandas",
+    "answer": "Python library for data manipulation and analysis.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:32.447Z"
+  },
+  {
+    "id": 16,
+    "word": "Overfitting",
+    "answer": "Model learns training data too well but fails to generalize.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:36.084Z"
+  },
+  {
+    "id": 17,
+    "word": "Singular Value Decomposition",
+    "answer": "Matrix factorization method into three constituent matrices.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:11:00.994Z"
+  },
+  {
+    "id": 18,
+    "word": "Partial Derivative",
+    "answer": "Derivative of multivariable function with respect to one variable.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:21.020Z"
+  },
+  {
+    "id": 19,
+    "word": "Normal Distribution",
+    "answer": "Bell-shaped probability distribution common in statistics.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:33.412Z"
+  },
+  {
+    "id": 20,
+    "word": "Dictionary",
+    "answer": "Python data structure storing key-value pairs.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:35.341Z"
+  },
+  {
+    "id": 21,
+    "word": "Activation Function",
+    "answer": "Neural network component determining neuron output.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:46.297Z"
+  },
+  {
+    "id": 22,
+    "word": "Rank",
+    "answer": "Maximum number of linearly independent columns in matrix.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:18:21.508Z"
+  },
+  {
+    "id": 23,
+    "word": "Integration",
+    "answer": "Calculus operation finding area under a curve.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:21:29.895Z"
+  },
+  {
+    "id": 24,
+    "word": "Confidence Interval",
+    "answer": "Range of values containing population parameter with certainty.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:23:33.016Z"
+  },
+  {
+    "id": 25,
+    "word": "Matplotlib",
+    "answer": "Python library for creating data visualizations.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:46.964Z"
+  },
+  {
+    "id": 26,
+    "word": "Recurrent Neural Network",
+    "answer": "Neural network with loops for sequential data processing.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:21:26.179Z"
+  },
+  {
+    "id": 27,
+    "word": "Determinant",
+    "answer": "Scalar value computed from square matrix encoding properties.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:21:30.561Z"
+  },
+  {
+    "id": 28,
+    "word": "Local Minimum",
+    "answer": "Point where function has lowest value in local neighborhood.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:23:39.558Z"
+  },
+  {
+    "id": 29,
+    "word": "Hypothesis Testing",
+    "answer": "Statistical method for testing assumptions about data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:15:50.275Z"
+  },
+  {
+    "id": 30,
+    "word": "Lambda Function",
+    "answer": "Anonymous Python function defined with lambda keyword.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:21:17.163Z"
+  },
+  {
+    "id": 31,
+    "word": "Autoencoder",
+    "answer": "Neural network that learns efficient data encodings unsupervised.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:21:35.047Z"
+  },
+  {
+    "id": 32,
+    "word": "Orthogonal Matrix",
+    "answer": "Square matrix with orthonormal rows and columns.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:27:17.313Z"
+  },
+  {
+    "id": 33,
+    "word": "Taylor Series",
+    "answer": "Infinite sum representing function using derivatives.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:18:08.383Z"
+  },
+  {
+    "id": 34,
+    "word": "Central Limit Theorem",
+    "answer": "Means of samples approximate normal distribution.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:21:21.462Z"
+  },
+  {
+    "id": 35,
+    "word": "Generator Expression",
+    "answer": "Python syntax for lazy evaluation creating iterators.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:23:22.948Z"
+  },
+  {
+    "id": 36,
+    "word": "Dropout",
+    "answer": "Regularization technique randomly disabling neurons during training.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:27:25.967Z"
+  },
+  {
+    "id": 37,
+    "word": "Eigenvalue",
+    "answer": "Scalar factor by which eigenvector is scaled.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:18:10.339Z"
+  },
+  {
+    "id": 38,
+    "word": "Multivariable Chain Rule",
+    "answer": "Extension of chain rule to functions with multiple variables.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:21:28.305Z"
+  },
+  {
+    "id": 39,
+    "word": "Law of Large Numbers",
+    "answer": "Average of results approaches expected value with more trials.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:23:29.328Z"
+  },
+  {
+    "id": 40,
+    "word": "Virtual Environment",
+    "answer": "Isolated Python environment for project dependencies.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:23:42.120Z"
+  },
+  {
+    "id": 41,
+    "word": "Loss Function",
+    "answer": "Measures difference between predicted and actual values.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:27:33.417Z"
+  },
+  {
+    "id": 42,
+    "word": "Linear Independence",
+    "answer": "Vectors cannot be represented as linear combinations.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T03:31:24.082Z"
+  },
+  {
+    "id": 43,
+    "word": "Critical Point",
+    "answer": "Point where function's derivative is zero or undefined.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:15:51.843Z"
+  },
+  {
+    "id": 44,
+    "word": "Covariance",
+    "answer": "Measures how two variables change together.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:16:10.094Z"
+  },
+  {
+    "id": 45,
+    "word": "Decorator",
+    "answer": "Python feature modifying function behavior without code change.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:27:34.035Z"
+  },
+  {
+    "id": 46,
+    "word": "Gradient Vanishing",
+    "answer": "Problem where gradients become too small during training.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:13:23.459Z"
+  },
+  {
+    "id": 47,
+    "word": "Principal Component Analysis",
+    "answer": "Dimensionality reduction using orthogonal transformation.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:15:56.251Z"
+  },
+  {
+    "id": 48,
+    "word": "L'Hospital's Rule",
+    "answer": "Method for evaluating limits of indeterminate forms.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:16:11.415Z"
+  },
+  {
+    "id": 49,
+    "word": "Monte Carlo Method",
+    "answer": "Algorithm using random sampling for numerical results.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:27:39.683Z"
+  },
+  {
+    "id": 50,
+    "word": "Class Inheritance",
+    "answer": "Python object-oriented programming feature for code reuse.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:13:25.850Z"
+  },
+  {
+    "id": 51,
+    "word": "Optimizer",
+    "answer": "Algorithm updating neural network parameters during training.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:15:57.370Z"
+  },
+  {
+    "id": 52,
+    "word": "Vector Space",
+    "answer": "Collection of vectors closed under addition and scaling.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:16:16.285Z"
+  },
+  {
+    "id": 53,
+    "word": "Product Rule",
+    "answer": "Derivative rule for product of two functions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:27:40.954Z"
+  },
+  {
+    "id": 54,
+    "word": "Statistical Power",
+    "answer": "Probability test correctly rejects false null hypothesis.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:15:48.212Z"
+  },
+  {
+    "id": 55,
+    "word": "Context Manager",
+    "answer": "Python construct managing resources using with statement.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:15:59.284Z"
+  },
+  {
+    "id": 56,
+    "word": "Regularization",
+    "answer": "Technique preventing overfitting in machine learning models.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:16:51.547Z"
+  },
+  {
+    "id": 57,
+    "word": "Basis",
+    "answer": "Set of linearly independent vectors spanning vector space.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T02:27:46.446Z"
+  },
+  {
+    "id": 58,
+    "word": "Jacobian Matrix",
+    "answer": "Matrix containing all first-order partial derivatives.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:15:50.602Z"
+  },
+  {
+    "id": 59,
+    "word": "Poisson Distribution",
+    "answer": "Discrete probability distribution for event counts.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:16:07.883Z"
+  },
+  {
+    "id": 60,
+    "word": "Iterator Protocol",
+    "answer": "Python methods enabling object iteration.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:17:51.838Z"
+  },
+  {
+    "id": 61,
+    "word": "Epoch",
+    "answer": "One complete pass through training dataset during learning.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:17:57.767Z"
+  },
+  {
+    "id": 62,
+    "word": "LU Decomposition",
+    "answer": "Matrix factorization into lower and upper triangular matrices.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:18:13.840Z"
+  },
+  {
+    "id": 63,
+    "word": "Optimization",
+    "answer": "Process finding inputs that minimize or maximize function.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:19:11.484Z"
+  },
+  {
+    "id": 64,
+    "word": "Binomial Distribution",
+    "answer": "Discrete probability distribution of successful trials.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:21:32.520Z"
+  },
+  {
+    "id": 65,
+    "word": "Exception Handling",
+    "answer": "Python mechanism for managing errors using try-except.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:17:59.877Z"
+  },
+  {
+    "id": 66,
+    "word": "Transfer Learning",
+    "answer": "Using pre-trained model for new related task.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:18:20.891Z"
+  },
+  {
+    "id": 67,
+    "word": "Span",
+    "answer": "Set of all linear combinations of vector set.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:20:53.918Z"
+  },
+  {
+    "id": 68,
+    "word": "Directional Derivative",
+    "answer": "Instantaneous rate of change in specific direction.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:21:37.959Z"
+  },
+  {
+    "id": 69,
+    "word": "Bayes' Theorem",
+    "answer": "Describes probability of event based on prior knowledge.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:18:00.801Z"
+  },
+  {
+    "id": 70,
+    "word": "Module",
+    "answer": "Python file containing code and definitions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:18:22.261Z"
+  },
+  {
+    "id": 71,
+    "word": "Batch Normalization",
+    "answer": "Technique normalizing layer inputs for stable training.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:21:00.735Z"
+  },
+  {
+    "id": 72,
+    "word": "Diagonalization",
+    "answer": "Process transforming matrix into diagonal form.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:21:44.208Z"
+  },
+  {
+    "id": 73,
+    "word": "Fundamental Theorem of Calculus",
+    "answer": "Links differentiation and integration concepts.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:18:03.200Z"
+  },
+  {
+    "id": 74,
+    "word": "Conditional Probability",
+    "answer": "Probability of event given another event has occurred.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:18:24.791Z"
+  },
+  {
+    "id": 75,
+    "word": "List Slicing",
+    "answer": "Python operation extracting subsequence from list.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:21:22.704Z"
+  },
+  {
+    "id": 76,
+    "word": "Attention Mechanism",
+    "answer": "Neural network component focusing on relevant inputs.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:21:50.542Z"
+  },
+  {
+    "id": 77,
+    "word": "Positive Definite Matrix",
+    "answer": "Symmetric matrix with all positive eigenvalues.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:18:08.276Z"
+  },
+  {
+    "id": 78,
+    "word": "Convex Function",
+    "answer": "Function where line segment between points lies above graph.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:19:09.139Z"
+  },
+  {
+    "id": 79,
+    "word": "Maximum Likelihood Estimation",
+    "answer": "Method estimating parameters by maximizing likelihood.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:21:27.228Z"
+  },
+  {
+    "id": 80,
+    "word": "DataFrame",
+    "answer": "Pandas two-dimensional labeled data structure.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:21:52.065Z"
+  },
+  {
+    "id": 81,
+    "word": "Embedding",
+    "answer": "Representation of categorical data as continuous vectors.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:01.153Z"
+  },
+  {
+    "id": 82,
+    "word": "Trace",
+    "answer": "Sum of diagonal elements of square matrix.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:22.685Z"
+  },
+  {
+    "id": 83,
+    "word": "Stochastic Gradient Descent",
+    "answer": "Gradient descent using random subsets of data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:54.544Z"
+  },
+  {
+    "id": 84,
+    "word": "Probability Density Function",
+    "answer": "Describes relative likelihood of continuous random variable.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:23:22.940Z"
+  },
+  {
+    "id": 85,
+    "word": "Set Comprehension",
+    "answer": "Python syntax creating sets using compact notation.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:04.489Z"
+  },
+  {
+    "id": 86,
+    "word": "Transformer",
+    "answer": "Neural network architecture using attention mechanisms.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:27.961Z"
+  },
+  {
+    "id": 87,
+    "word": "Orthogonal Projection",
+    "answer": "Projection onto subspace preserving perpendicularity.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:59.159Z"
+  },
+  {
+    "id": 88,
+    "word": "Integration by Parts",
+    "answer": "Integration technique derived from product rule.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:23:33.765Z"
+  },
+  {
+    "id": 89,
+    "word": "Type I Error",
+    "answer": "False positive in statistical hypothesis testing.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:08.783Z"
+  },
+  {
+    "id": 90,
+    "word": "Zip Function",
+    "answer": "Python function aggregating elements from multiple iterators.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:32.934Z"
+  },
+  {
+    "id": 91,
+    "word": "Generative Adversarial Network",
+    "answer": "System of two neural networks competing against each other.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:23:06.087Z"
+  },
+  {
+    "id": 92,
+    "word": "Kernel",
+    "answer": "Null space of linear transformation or matrix.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:23:38.110Z"
+  },
+  {
+    "id": 93,
+    "word": "Linear Approximation",
+    "answer": "Estimating function value using tangent line.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:12.629Z"
+  },
+  {
+    "id": 94,
+    "word": "Correlation Coefficient",
+    "answer": "Measures strength of linear relationship between variables.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:38.526Z"
+  },
+  {
+    "id": 95,
+    "word": "Pickle",
+    "answer": "Python module for object serialization.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:23:11.490Z"
+  },
+  {
+    "id": 96,
+    "word": "Long Short-Term Memory",
+    "answer": "RNN variant capable of learning long-term dependencies.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:23:47.183Z"
+  },
+  {
+    "id": 97,
+    "word": "Gram-Schmidt Process",
+    "answer": "Method for orthogonalizing set of vectors.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:17.763Z"
+  },
+  {
+    "id": 98,
+    "word": "Newton's Method",
+    "answer": "Algorithm for finding roots of differentiable function.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:22:44.461Z"
+  },
+  {
+    "id": 99,
+    "word": "Uniform Distribution",
+    "answer": "Probability distribution with constant probability.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:23:16.000Z"
+  },
+  {
+    "id": 100,
+    "word": "Deep Copy",
+    "answer": "Python operation creating independent copy of object.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-21T19:23:50.574Z"
+  }
+]

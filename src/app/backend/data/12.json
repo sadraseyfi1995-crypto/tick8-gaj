@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 1,
+    "word": "Supervised Learning",
+    "answer": "Algorithm learns from labeled training data to predict outcomes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:14.059Z"
+  },
+  {
+    "id": 2,
+    "word": "Unsupervised Learning",
+    "answer": "Algorithm finds patterns in data without predefined labels.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:19.689Z"
+  },
+  {
+    "id": 3,
+    "word": "Regression",
+    "answer": "Predicting continuous numerical values from input data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:24.964Z"
+  },
+  {
+    "id": 4,
+    "word": "Classification",
+    "answer": "Categorizing data into discrete classes or groups.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:31.073Z"
+  },
+  {
+    "id": 5,
+    "word": "Overfitting",
+    "answer": "Model performs well on training data but poorly on new data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:15.555Z"
+  },
+  {
+    "id": 6,
+    "word": "Underfitting",
+    "answer": "Model fails to capture underlying patterns in data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:20.736Z"
+  },
+  {
+    "id": 7,
+    "word": "Training Set",
+    "answer": "Data used to train machine learning models.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:26.593Z"
+  },
+  {
+    "id": 8,
+    "word": "Test Set",
+    "answer": "Data used to evaluate model performance after training.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:31.904Z"
+  },
+  {
+    "id": 9,
+    "word": "Feature",
+    "answer": "Individual measurable property of a phenomenon being observed.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:16.381Z"
+  },
+  {
+    "id": 10,
+    "word": "Label",
+    "answer": "The output or target variable in supervised learning.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:21.613Z"
+  },
+  {
+    "id": 11,
+    "word": "Neural Network",
+    "answer": "Computing system inspired by biological neural networks.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:27.408Z"
+  },
+  {
+    "id": 12,
+    "word": "Decision Tree",
+    "answer": "Tree-like model used for classification and regression.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:32.717Z"
+  },
+  {
+    "id": 13,
+    "word": "Clustering",
+    "answer": "Grouping similar data points together in unsupervised learning.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:17.301Z"
+  },
+  {
+    "id": 14,
+    "word": "Cross-Validation",
+    "answer": "Technique for assessing model performance on unseen data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:22.353Z"
+  },
+  {
+    "id": 15,
+    "word": "Gradient Descent",
+    "answer": "Optimization algorithm for minimizing loss functions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:28.253Z"
+  },
+  {
+    "id": 16,
+    "word": "Loss Function",
+    "answer": "Measures how well model predictions match actual values.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:33.641Z"
+  },
+  {
+    "id": 17,
+    "word": "Accuracy",
+    "answer": "Percentage of correct predictions made by a model.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:18.263Z"
+  },
+  {
+    "id": 18,
+    "word": "Precision",
+    "answer": "Ratio of true positives to all positive predictions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:23.381Z"
+  },
+  {
+    "id": 19,
+    "word": "Recall",
+    "answer": "Ratio of true positives to all actual positives.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:29.656Z"
+  },
+  {
+    "id": 20,
+    "word": "Reinforcement Learning",
+    "answer": "Learning through interaction with environment and rewards.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:34.541Z"
+  },
+  {
+    "id": 21,
+    "word": "Vector",
+    "answer": "Mathematical object with magnitude and direction.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:36.931Z"
+  },
+  {
+    "id": 22,
+    "word": "Matrix",
+    "answer": "Rectangular array of numbers arranged in rows and columns.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:46.086Z"
+  },
+  {
+    "id": 23,
+    "word": "Scalar",
+    "answer": "Single numerical value without direction.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:25:29.410Z"
+  },
+  {
+    "id": 24,
+    "word": "Dot Product",
+    "answer": "Algebraic operation that takes two vectors and returns scalar.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:02.794Z"
+  },
+  {
+    "id": 25,
+    "word": "Eigenvalue",
+    "answer": "Scalar that indicates how transformation stretches vector.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:37.621Z"
+  },
+  {
+    "id": 26,
+    "word": "Eigenvector",
+    "answer": "Vector that only scales when linear transformation applied.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:46.726Z"
+  },
+  {
+    "id": 27,
+    "word": "Linear Transformation",
+    "answer": "Function that maps vectors to vectors preserving vector operations.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:25:36.001Z"
+  },
+  {
+    "id": 28,
+    "word": "Determinant",
+    "answer": "Scalar value that measures matrix's scaling factor.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:04.116Z"
+  },
+  {
+    "id": 29,
+    "word": "Inverse Matrix",
+    "answer": "Matrix that when multiplied with original gives identity.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:38.408Z"
+  },
+  {
+    "id": 30,
+    "word": "Transpose",
+    "answer": "Matrix operation flipping rows and columns.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:55.276Z"
+  },
+  {
+    "id": 31,
+    "word": "Rank",
+    "answer": "Maximum number of linearly independent columns in matrix.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:25:37.262Z"
+  },
+  {
+    "id": 32,
+    "word": "Orthogonal",
+    "answer": "Vectors perpendicular with dot product zero.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:14.280Z"
+  },
+  {
+    "id": 33,
+    "word": "Singular Value Decomposition",
+    "answer": "Matrix factorization into three component matrices.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:39.279Z"
+  },
+  {
+    "id": 34,
+    "word": "Principal Component Analysis",
+    "answer": "Dimensionality reduction using eigenvectors of covariance.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:25:16.923Z"
+  },
+  {
+    "id": 35,
+    "word": "Linear Independence",
+    "answer": "Vectors cannot be expressed as linear combination of others.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:25:46.350Z"
+  },
+  {
+    "id": 36,
+    "word": "Basis",
+    "answer": "Set of linearly independent vectors that span vector space.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:15.467Z"
+  },
+  {
+    "id": 37,
+    "word": "Span",
+    "answer": "All possible linear combinations of set of vectors.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:23:44.639Z"
+  },
+  {
+    "id": 38,
+    "word": "Norm",
+    "answer": "Function that assigns length to vectors.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:25:25.590Z"
+  },
+  {
+    "id": 39,
+    "word": "Identity Matrix",
+    "answer": "Square matrix with ones on diagonal and zeros elsewhere.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:25:47.987Z"
+  },
+  {
+    "id": 40,
+    "word": "Symmetric Matrix",
+    "answer": "Matrix equal to its transpose.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:01.446Z"
+  },
+  {
+    "id": 41,
+    "word": "Derivative",
+    "answer": "Instantaneous rate of change of function with respect to variable.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:19.096Z"
+  },
+  {
+    "id": 42,
+    "word": "Integral",
+    "answer": "Mathematical concept representing area under curve.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:26.748Z"
+  },
+  {
+    "id": 43,
+    "word": "Gradient",
+    "answer": "Vector of partial derivatives of multivariable function.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:34.362Z"
+  },
+  {
+    "id": 44,
+    "word": "Partial Derivative",
+    "answer": "Derivative of function with respect to one variable.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:41.196Z"
+  },
+  {
+    "id": 45,
+    "word": "Chain Rule",
+    "answer": "Derivative rule for composition of functions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:19.878Z"
+  },
+  {
+    "id": 46,
+    "word": "Limit",
+    "answer": "Value function approaches as input approaches some point.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:27.541Z"
+  },
+  {
+    "id": 47,
+    "word": "Product Rule",
+    "answer": "Derivative rule for product of two functions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:35.174Z"
+  },
+  {
+    "id": 48,
+    "word": "Quotient Rule",
+    "answer": "Derivative rule for quotient of two functions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:27:09.778Z"
+  },
+  {
+    "id": 49,
+    "word": "Taylor Series",
+    "answer": "Infinite sum representing function using derivatives.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:21.641Z"
+  },
+  {
+    "id": 50,
+    "word": "Critical Point",
+    "answer": "Point where function's derivative is zero or undefined.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:28.623Z"
+  },
+  {
+    "id": 51,
+    "word": "Local Minimum",
+    "answer": "Point where function has lowest value in neighborhood.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:36.332Z"
+  },
+  {
+    "id": 52,
+    "word": "Local Maximum",
+    "answer": "Point where function has highest value in neighborhood.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:27:11.849Z"
+  },
+  {
+    "id": 53,
+    "word": "Inflection Point",
+    "answer": "Point where function changes concavity.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:23.949Z"
+  },
+  {
+    "id": 54,
+    "word": "Second Derivative",
+    "answer": "Derivative of the derivative of function.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:30.713Z"
+  },
+  {
+    "id": 55,
+    "word": "Definite Integral",
+    "answer": "Integral with specified upper and lower limits.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:37.812Z"
+  },
+  {
+    "id": 56,
+    "word": "Indefinite Integral",
+    "answer": "Family of functions representing antiderivative.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:27:14.088Z"
+  },
+  {
+    "id": 57,
+    "word": "Fundamental Theorem of Calculus",
+    "answer": "Links differentiation and integration concepts.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:24.953Z"
+  },
+  {
+    "id": 58,
+    "word": "Multivariable Calculus",
+    "answer": "Calculus with functions of multiple variables.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:32.958Z"
+  },
+  {
+    "id": 59,
+    "word": "Jacobian Matrix",
+    "answer": "Matrix of all first-order partial derivatives.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:26:39.044Z"
+  },
+  {
+    "id": 60,
+    "word": "Hessian Matrix",
+    "answer": "Square matrix of second-order partial derivatives.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:27:16.580Z"
+  },
+  {
+    "id": 61,
+    "word": "Probability",
+    "answer": "Measure of likelihood that event will occur.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:27.163Z"
+  },
+  {
+    "id": 62,
+    "word": "Random Variable",
+    "answer": "Variable whose values depend on outcomes of random phenomenon.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:35.078Z"
+  },
+  {
+    "id": 63,
+    "word": "Distribution",
+    "answer": "Function describing probabilities of random variable outcomes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:40.242Z"
+  },
+  {
+    "id": 64,
+    "word": "Mean",
+    "answer": "Average value of set of numbers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:44.482Z"
+  },
+  {
+    "id": 65,
+    "word": "Variance",
+    "answer": "Measure of spread or dispersion in data set.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:28.107Z"
+  },
+  {
+    "id": 66,
+    "word": "Standard Deviation",
+    "answer": "Square root of variance, measures data dispersion.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:36.560Z"
+  },
+  {
+    "id": 67,
+    "word": "Normal Distribution",
+    "answer": "Bell-shaped symmetric probability distribution.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:41.005Z"
+  },
+  {
+    "id": 68,
+    "word": "Hypothesis Testing",
+    "answer": "Statistical method for testing assumptions about data.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:47.152Z"
+  },
+  {
+    "id": 69,
+    "word": "P-Value",
+    "answer": "Probability of obtaining results at least as extreme as observed.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:29.016Z"
+  },
+  {
+    "id": 70,
+    "word": "Confidence Interval",
+    "answer": "Range of values containing true parameter with certain probability.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:37.325Z"
+  },
+  {
+    "id": 71,
+    "word": "Correlation",
+    "answer": "Statistical relationship between two variables.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:41.711Z"
+  },
+  {
+    "id": 72,
+    "word": "Causation",
+    "answer": "Relationship where one event causes another.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:47.869Z"
+  },
+  {
+    "id": 73,
+    "word": "Bayes Theorem",
+    "answer": "Describes probability of event based on prior knowledge.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:29.731Z"
+  },
+  {
+    "id": 74,
+    "word": "Conditional Probability",
+    "answer": "Probability of event given another event has occurred.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:38.362Z"
+  },
+  {
+    "id": 75,
+    "word": "Regression Analysis",
+    "answer": "Statistical process for estimating relationships among variables.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:42.505Z"
+  },
+  {
+    "id": 76,
+    "word": "Sampling",
+    "answer": "Process of selecting subset from population for analysis.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:48.671Z"
+  },
+  {
+    "id": 77,
+    "word": "Bias",
+    "answer": "Systematic error in statistical analysis or data collection.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:33.738Z"
+  },
+  {
+    "id": 78,
+    "word": "Central Limit Theorem",
+    "answer": "Sample means approximate normal distribution as size increases.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:39.206Z"
+  },
+  {
+    "id": 79,
+    "word": "Law of Large Numbers",
+    "answer": "Average of results approaches expected value as trials increase.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:43.211Z"
+  },
+  {
+    "id": 80,
+    "word": "Statistical Significance",
+    "answer": "Result unlikely to have occurred by chance alone.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:49.870Z"
+  },
+  {
+    "id": 81,
+    "word": "Variable",
+    "answer": "Named storage location for data in programming.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:53.164Z"
+  },
+  {
+    "id": 82,
+    "word": "Function",
+    "answer": "Reusable block of code that performs specific task.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:57.920Z"
+  },
+  {
+    "id": 83,
+    "word": "Loop",
+    "answer": "Programming construct that repeats code block multiple times.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:02.319Z"
+  },
+  {
+    "id": 84,
+    "word": "Conditional Statement",
+    "answer": "Executes different code based on Boolean condition.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:43.464Z"
+  },
+  {
+    "id": 85,
+    "word": "List",
+    "answer": "Ordered collection of elements in Python.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:53.871Z"
+  },
+  {
+    "id": 86,
+    "word": "Array",
+    "answer": "Data structure containing elements of same type.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:58.857Z"
+  },
+  {
+    "id": 87,
+    "word": "Data Frame",
+    "answer": "Two-dimensional labeled data structure in R and Python.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:03.084Z"
+  },
+  {
+    "id": 88,
+    "word": "Library",
+    "answer": "Collection of pre-written code and functions.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:51.745Z"
+  },
+  {
+    "id": 89,
+    "word": "Package",
+    "answer": "Bundle of software and documentation in programming.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:54.637Z"
+  },
+  {
+    "id": 90,
+    "word": "Algorithm",
+    "answer": "Step-by-step procedure for solving problem.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:59.655Z"
+  },
+  {
+    "id": 91,
+    "word": "Syntax",
+    "answer": "Set of rules defining combinations of symbols in language.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:03.880Z"
+  },
+  {
+    "id": 92,
+    "word": "Debugging",
+    "answer": "Process of finding and fixing errors in code.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:52.578Z"
+  },
+  {
+    "id": 93,
+    "word": "Indexing",
+    "answer": "Accessing elements in data structure using numerical position.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:55.538Z"
+  },
+  {
+    "id": 94,
+    "word": "String",
+    "answer": "Sequence of characters used to represent text.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:00.412Z"
+  },
+  {
+    "id": 95,
+    "word": "Boolean",
+    "answer": "Data type with two values: true or false.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:04.752Z"
+  },
+  {
+    "id": 96,
+    "word": "Integer",
+    "answer": "Data type representing whole numbers.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:53.520Z"
+  },
+  {
+    "id": 97,
+    "word": "Float",
+    "answer": "Data type representing numbers with decimal points.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:39:56.431Z"
+  },
+  {
+    "id": 98,
+    "word": "Dictionary",
+    "answer": "Data structure storing key-value pairs in Python.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:01.170Z"
+  },
+  {
+    "id": 99,
+    "word": "Method",
+    "answer": "Function associated with object in object-oriented programming.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:05.680Z"
+  },
+  {
+    "id": 100,
+    "word": "Import",
+    "answer": "Statement to include external code libraries in program.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T04:40:54.321Z"
+  }
+]

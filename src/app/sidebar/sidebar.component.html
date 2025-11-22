@@ -1,0 +1,15 @@
+<nav [class.collapsed]="mode === 'collapsed'" class="sidebar">
+    <ul>
+        <li>
+            <button (click)="onToggleClick()">
+                <span class="icon">☰</span>
+                <span class="label" *ngIf="mode === 'expanded'">Toggle</span>
+            </button>
+        </li>
+        <li *ngFor="let course of sortedCourses;">
+            <button>
+                <span (click)="setCourse(course.id)" class="label" *ngIf="mode === 'expanded'">{{course.name}}</span>
+            </button>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,34 @@
+.page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  padding: 0 12px;
+  user-select: none;
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.page-container {
+  flex: 1;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.pager-indicator {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
