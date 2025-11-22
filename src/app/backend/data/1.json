@@ -10921,7 +10921,7 @@
     "word": "Die Geschäftsreise",
     "answer": "A business trip or work travel.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "tick",
       "tick",
@@ -10930,7 +10930,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-20T22:00:17.933Z"
+    "lastUpdated": "2025-11-22T19:19:46.312Z"
   },
   {
     "id": 685,
@@ -10953,7 +10953,7 @@
     "word": "Die Kundschaft",
     "answer": "Customers or clientele.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "tick",
       "cross",
@@ -10962,7 +10962,7 @@
       "cross",
       "cross"
     ],
-    "lastUpdated": "2025-11-20T22:00:37.731Z"
+    "lastUpdated": "2025-11-22T19:19:14.578Z"
   },
   {
     "id": 687,
@@ -11001,7 +11001,7 @@
     "word": "Das Ziel",
     "answer": "A goal or objective.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "tick",
       "tick",
@@ -11010,7 +11010,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-20T21:59:56.754Z"
+    "lastUpdated": "2025-11-22T19:19:42.726Z"
   },
   {
     "id": 690,
@@ -11038,11 +11038,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:08.528Z"
+    "lastUpdated": "2025-11-22T18:57:13.227Z"
   },
   {
     "id": 692,
@@ -11054,11 +11054,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:20.383Z"
+    "lastUpdated": "2025-11-22T18:58:53.574Z"
   },
   {
     "id": 693,
@@ -11070,11 +11070,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:28.418Z"
+    "lastUpdated": "2025-11-22T18:59:05.047Z"
   },
   {
     "id": 694,
@@ -11086,11 +11086,11 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:38.772Z"
+    "lastUpdated": "2025-11-22T19:00:53.047Z"
   },
   {
     "id": 695,
@@ -11102,11 +11102,11 @@
       "tick",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:11.021Z"
+    "lastUpdated": "2025-11-22T18:57:37.909Z"
   },
   {
     "id": 696,
@@ -11115,14 +11115,14 @@
     "states": [
       "cross",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:00:42.696Z"
+    "lastUpdated": "2025-11-22T18:59:03.267Z"
   },
   {
     "id": 697,
@@ -11134,11 +11134,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:29.426Z"
+    "lastUpdated": "2025-11-22T18:59:05.933Z"
   },
   {
     "id": 698,
@@ -11150,11 +11150,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:40.616Z"
+    "lastUpdated": "2025-11-22T18:59:11.154Z"
   },
   {
     "id": 699,
@@ -11166,11 +11166,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:14.760Z"
+    "lastUpdated": "2025-11-22T18:58:47.488Z"
   },
   {
     "id": 700,
@@ -11182,11 +11182,11 @@
       "cross",
       "cross",
       "cross",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:24.770Z"
+    "lastUpdated": "2025-11-22T18:58:56.520Z"
   },
   {
     "id": 701,
@@ -11198,11 +11198,11 @@
       "tick",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:33.725Z"
+    "lastUpdated": "2025-11-22T18:59:06.776Z"
   },
   {
     "id": 702,
@@ -11214,11 +11214,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:43.260Z"
+    "lastUpdated": "2025-11-22T18:59:11.878Z"
   },
   {
     "id": 703,
@@ -11230,11 +11230,11 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:15.974Z"
+    "lastUpdated": "2025-11-22T18:58:50.930Z"
   },
   {
     "id": 704,
@@ -11246,11 +11246,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:25.694Z"
+    "lastUpdated": "2025-11-22T18:58:57.807Z"
   },
   {
     "id": 705,
@@ -11262,11 +11262,11 @@
       "cross",
       "tick",
       "cross",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:59:35.508Z"
+    "lastUpdated": "2025-11-22T18:59:08.062Z"
   },
   {
     "id": 706,
@@ -11274,7 +11274,7 @@
     "answer": "A university for higher education.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11282,7 +11282,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:13.543Z"
+    "lastUpdated": "2025-11-22T19:00:58.158Z"
   },
   {
     "id": 707,
@@ -11290,7 +11290,7 @@
     "answer": "A college or university institution.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11298,7 +11298,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:44.207Z"
+    "lastUpdated": "2025-11-22T19:05:25.947Z"
   },
   {
     "id": 708,
@@ -11306,7 +11306,7 @@
     "answer": "University studies or degree program.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11314,7 +11314,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:58.333Z"
+    "lastUpdated": "2025-11-22T19:05:34.051Z"
   },
   {
     "id": 709,
@@ -11322,7 +11322,7 @@
     "answer": "A university student.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11330,7 +11330,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:56.152Z"
+    "lastUpdated": "2025-11-22T19:06:07.362Z"
   },
   {
     "id": 710,
@@ -11338,7 +11338,7 @@
     "answer": "A school pupil or student.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11346,7 +11346,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:19.954Z"
+    "lastUpdated": "2025-11-22T19:01:02.497Z"
   },
   {
     "id": 711,
@@ -11354,7 +11354,7 @@
     "answer": "A teacher at school.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11362,7 +11362,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:31.397Z"
+    "lastUpdated": "2025-11-22T19:05:27.269Z"
   },
   {
     "id": 712,
@@ -11370,7 +11370,7 @@
     "answer": "A university professor.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11378,7 +11378,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:51.280Z"
+    "lastUpdated": "2025-11-22T19:05:35.025Z"
   },
   {
     "id": 713,
@@ -11386,7 +11386,7 @@
     "answer": "A lecturer at university.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11394,7 +11394,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:55.202Z"
+    "lastUpdated": "2025-11-22T19:06:30.673Z"
   },
   {
     "id": 714,
@@ -11402,7 +11402,7 @@
     "answer": "A university semester or term.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11410,7 +11410,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:20.974Z"
+    "lastUpdated": "2025-11-22T19:03:51.692Z"
   },
   {
     "id": 715,
@@ -11418,7 +11418,7 @@
     "answer": "A school year.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11426,7 +11426,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:46.739Z"
+    "lastUpdated": "2025-11-22T19:05:28.145Z"
   },
   {
     "id": 716,
@@ -11434,7 +11434,7 @@
     "answer": "A degree or qualification completion.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11442,7 +11442,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:52.304Z"
+    "lastUpdated": "2025-11-22T19:05:35.990Z"
   },
   {
     "id": 717,
@@ -11450,7 +11450,7 @@
     "answer": "A bachelor's degree.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11458,7 +11458,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:54.237Z"
+    "lastUpdated": "2025-11-22T19:06:12.939Z"
   },
   {
     "id": 718,
@@ -11466,7 +11466,7 @@
     "answer": "A master's degree.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11474,7 +11474,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:38.451Z"
+    "lastUpdated": "2025-11-22T19:03:52.836Z"
   },
   {
     "id": 719,
@@ -11482,7 +11482,7 @@
     "answer": "A doctorate or PhD.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11490,12 +11490,28 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:33.605Z"
+    "lastUpdated": "2025-11-22T19:05:30.477Z"
   },
   {
     "id": 720,
     "word": "Das Diplom",
     "answer": "A diploma or degree certificate.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-22T19:06:50.039Z"
+  },
+  {
+    "id": 721,
+    "word": "Die Note",
+    "answer": "A grade or mark on work.",
     "states": [
       "tick",
       "none",
@@ -11506,30 +11522,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:02:53.181Z"
-  },
-  {
-    "id": 721,
-    "word": "Die Note",
-    "answer": "A grade or mark on work.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T18:52:18.970Z"
+    "lastUpdated": "2025-11-22T19:09:16.979Z"
   },
   {
     "id": 722,
     "word": "Bestehen",
     "answer": "To pass an exam or test.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11538,14 +11538,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:52:31.097Z"
+    "lastUpdated": "2025-11-22T19:09:25.646Z"
   },
   {
     "id": 723,
     "word": "Durchfallen",
     "answer": "To fail an exam.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -11554,14 +11554,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:01.414Z"
+    "lastUpdated": "2025-11-22T19:15:34.964Z"
   },
   {
     "id": 724,
     "word": "Die Klausur",
     "answer": "A written exam in university.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -11570,14 +11570,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:08.547Z"
+    "lastUpdated": "2025-11-22T19:18:19.783Z"
   },
   {
     "id": 725,
     "word": "Die Klassenarbeit",
     "answer": "A classroom test in school.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11586,14 +11586,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:52:21.987Z"
+    "lastUpdated": "2025-11-22T19:09:21.624Z"
   },
   {
     "id": 726,
     "word": "Die Übung",
     "answer": "An exercise or practice session.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -11602,14 +11602,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T18:58:58.188Z"
+    "lastUpdated": "2025-11-22T19:13:50.444Z"
   },
   {
     "id": 727,
     "word": "Das Seminar",
     "answer": "A university seminar or discussion class.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11618,14 +11618,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:02.400Z"
+    "lastUpdated": "2025-11-22T19:11:48.557Z"
   },
   {
     "id": 728,
     "word": "Der Kurs",
     "answer": "A course or class.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11634,14 +11634,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:09.525Z"
+    "lastUpdated": "2025-11-22T19:14:01.713Z"
   },
   {
     "id": 729,
     "word": "Das Fach",
     "answer": "A subject or academic discipline.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11650,14 +11650,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:52:25.515Z"
+    "lastUpdated": "2025-11-22T19:09:23.299Z"
   },
   {
     "id": 730,
     "word": "Der Unterricht",
     "answer": "Instruction or lessons at school.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11666,14 +11666,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:52:53.793Z"
+    "lastUpdated": "2025-11-22T19:13:55.497Z"
   },
   {
     "id": 731,
     "word": "Die Stunde",
     "answer": "A lesson or class period.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11682,14 +11682,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:03.249Z"
+    "lastUpdated": "2025-11-22T19:13:57.574Z"
   },
   {
     "id": 732,
     "word": "Die Doppelstunde",
     "answer": "A double lesson period.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11698,14 +11698,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:10.331Z"
+    "lastUpdated": "2025-11-22T19:13:58.392Z"
   },
   {
     "id": 733,
     "word": "Die Hausaufgaben",
     "answer": "Homework assignments.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11714,14 +11714,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:52:27.710Z"
+    "lastUpdated": "2025-11-22T19:09:24.252Z"
   },
   {
     "id": 734,
     "word": "Das Referat",
     "answer": "A presentation or oral report.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -11730,14 +11730,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:56:54.353Z"
+    "lastUpdated": "2025-11-22T19:18:22.416Z"
   },
   {
     "id": 735,
     "word": "Der Vortrag",
     "answer": "A talk or presentation.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -11746,7 +11746,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:05.131Z"
+    "lastUpdated": "2025-11-22T19:17:04.479Z"
   },
   {
     "id": 736,

@@ -4725,7 +4725,7 @@
     "answer": "Automated search for optimal augmentation policies using reinforcement learning to find transformations improving validation performance.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -4733,7 +4733,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:16:34.390Z"
+    "lastUpdated": "2025-11-22T19:22:16.877Z"
   },
   {
     "id": 297,
