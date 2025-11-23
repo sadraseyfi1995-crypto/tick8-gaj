@@ -17,7 +17,7 @@ export interface VocabComponentModel {
   styleUrls: ['./vocab.component.scss']
 })
 export class VocabComponent implements OnInit {
-  @Input() vocab: VocabComponentModel = {word: ''};
+  @Input() vocab: VocabComponentModel = { word: '' };
   boxes = 8;
   flipped = false;
 
@@ -95,5 +95,14 @@ export class VocabComponent implements OnInit {
       event.preventDefault();
       this.toggleFlip();
     }
+  }
+
+  getAriaChecked(state: VboxState): string {
+    return state === 'tick' ? 'true' : state === 'none' ? 'false' : 'mixed';
+  }
+
+  getAriaLabel(index: number, state: VboxState): string {
+    const stateText = state === 'none' ? 'not checked' : state === 'tick' ? 'checked' : 'checked with cross';
+    return `Box ${index + 1}: ${stateText}`;
   }
 }

@@ -1,40 +1,44 @@
-<div
-  class="vocab-card"
-  [class.flipped]="flipped"
-  [class.old]="!areSameDay(vocab.lastUpdated)"
-  tabindex="0"
-  (click)="toggleFlip()"
-  (keydown)="onCardKeydown($event)"
-  role="button"
-  [attr.aria-pressed]="flipped"
-  aria-label="Vocabulary card. Press to flip to see answer."
-  [copy]="vocab.word"
->
+<div class="vocab-card" [class.flipped]="flipped" [class.old]="!areSameDay(vocab.lastUpdated)" tabindex="0"
+  (click)="toggleFlip()" (keydown)="onCardKeydown($event)" role="button" [attr.aria-pressed]="flipped"
+  aria-label="Vocabulary card. Press to flip to see answer." [copy]="vocab.word">
+  <!-- Front Side -->
   <div class="side front">
     <div class="word">{{ vocab.word }}</div>
+
     <div class="boxes">
-      <button
-        *ngFor="let s of vocab.states; let i = index"
-        class="box"
-        [attr.data-state]="s"
-        (click)="$event.stopPropagation(); cycleBox(i)"
-        (keydown)="$event.stopPropagation(); onBoxKeydown($event, i)"
-        role="checkbox"
-        [attr.aria-checked]="s === 'tick' ? 'true' : s === 'none' ? 'false' : 'mixed'"
-        [attr.aria-label]="'Box ' + (i + 1) + ': ' + (s === 'none' ? 'not checked' : s === 'tick' ? 'checked' : 'checked with cross')"
-        title="Cycle state"
-      >
-        <svg *ngIf="s === 'tick'" class="icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <svg *ngIf="s === 'cross'" class="icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+      <button *ngFor="let s of vocab.states; let i = index" class="box" [attr.data-state]="s"
+        (click)="$event.stopPropagation(); cycleBox(i)" (keydown)="$event.stopPropagation(); onBoxKeydown($event, i)"
+        role="checkbox" [attr.aria-checked]="getAriaChecked(s)" [attr.aria-label]="getAriaLabel(i, s)"
+        title="Cycle state">
+        <ng-container [ngSwitch]="s">
+          <ng-container *ngSwitchCase="'tick'">
+            <ng-container *ngTemplateOutlet="tickIcon"></ng-container>
+          </ng-container>
+          <ng-container *ngSwitchCase="'cross'">
+            <ng-container *ngTemplateOutlet="crossIcon"></ng-container>
+          </ng-container>
+        </ng-container>
       </button>
     </div>
   </div>
 
+  <!-- Back Side -->
   <div class="side back">
     <div class="answer">{{ vocab.answer }}</div>
   </div>
 </div>
+
+<!-- Icons Templates -->
+<ng-template #tickIcon>
+  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </svg>
+</ng-template>
+
+<ng-template #crossIcon>
+  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </svg>
+</ng-template>

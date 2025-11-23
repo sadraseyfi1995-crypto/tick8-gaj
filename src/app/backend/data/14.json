@@ -4,7 +4,7 @@
     "word": "Two Sum (array, target)",
     "answer": "Find two indices whose values sum to target using a hash map for O(n) time.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -13,14 +13,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T03:18:08.863Z"
+    "lastUpdated": "2025-11-23T22:56:36.709Z"
   },
   {
     "id": 2,
     "word": "Reverse a string",
     "answer": "Use two pointers from start and end, swapping characters until they meet in the middle.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -29,7 +29,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-10-26T04:55:29.742Z"
+    "lastUpdated": "2025-11-23T22:56:44.983Z"
   },
   {
     "id": 3,
