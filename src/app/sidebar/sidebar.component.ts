@@ -38,9 +38,11 @@ export class SidebarComponent {
   }
 
   setCourse(courseId: string) {
-    this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { course: courseId },
+    this.router.navigate(['/'], {
+      queryParams: {
+        course: courseId,
+        page: null
+      },
       queryParamsHandling: 'merge',
       replaceUrl: true
     });

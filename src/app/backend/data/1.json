@@ -9835,9 +9835,9 @@
     "states": [
       "tick",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -9851,9 +9851,9 @@
     "states": [
       "tick",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -9867,9 +9867,9 @@
     "states": [
       "tick",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -9883,9 +9883,9 @@
     "states": [
       "cross",
       "tick",
-      "cross",
-      "cross",
-      "cross",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -9899,9 +9899,9 @@
     "states": [
       "tick",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -9915,9 +9915,9 @@
     "states": [
       "tick",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -9931,9 +9931,9 @@
     "states": [
       "tick",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -9947,9 +9947,9 @@
     "states": [
       "tick",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -9963,9 +9963,9 @@
     "states": [
       "cross",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -9995,9 +9995,9 @@
     "states": [
       "tick",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -10011,9 +10011,9 @@
     "states": [
       "cross",
       "cross",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -10027,9 +10027,9 @@
     "states": [
       "tick",
       "cross",
-      "cross",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -10043,9 +10043,9 @@
     "states": [
       "tick",
       "tick",
-      "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -10059,9 +10059,9 @@
     "states": [
       "cross",
       "cross",
-      "cross",
-      "tick",
-      "tick",
+      "none",
+      "none",
+      "none",
       "none",
       "none",
       "none"
@@ -11037,12 +11037,12 @@
       "tick",
       "tick",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:57:13.227Z"
+    "lastUpdated": "2025-11-23T15:25:01.962Z"
   },
   {
     "id": 692,
@@ -11053,12 +11053,12 @@
       "tick",
       "tick",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:58:53.574Z"
+    "lastUpdated": "2025-11-23T15:28:42.910Z"
   },
   {
     "id": 693,
@@ -11069,12 +11069,12 @@
       "tick",
       "tick",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:59:05.047Z"
+    "lastUpdated": "2025-11-23T15:28:56.273Z"
   },
   {
     "id": 694,
@@ -11085,12 +11085,12 @@
       "cross",
       "cross",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:00:53.047Z"
+    "lastUpdated": "2025-11-23T15:33:56.690Z"
   },
   {
     "id": 695,
@@ -11101,12 +11101,12 @@
       "cross",
       "tick",
       "cross",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:57:37.909Z"
+    "lastUpdated": "2025-11-23T15:25:03.359Z"
   },
   {
     "id": 696,
@@ -11116,13 +11116,13 @@
       "cross",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:59:03.267Z"
+    "lastUpdated": "2025-11-23T15:28:37.507Z"
   },
   {
     "id": 697,
@@ -11133,12 +11133,12 @@
       "tick",
       "tick",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:59:05.933Z"
+    "lastUpdated": "2025-11-23T15:28:48.228Z"
   },
   {
     "id": 698,
@@ -11149,12 +11149,12 @@
       "tick",
       "tick",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:59:11.154Z"
+    "lastUpdated": "2025-11-23T15:33:43.061Z"
   },
   {
     "id": 699,
@@ -11165,12 +11165,12 @@
       "cross",
       "tick",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:58:47.488Z"
+    "lastUpdated": "2025-11-23T15:25:07.457Z"
   },
   {
     "id": 700,
@@ -11181,12 +11181,12 @@
       "tick",
       "cross",
       "cross",
-      "cross",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:58:56.520Z"
+    "lastUpdated": "2025-11-23T15:34:03.653Z"
   },
   {
     "id": 701,
@@ -11197,12 +11197,12 @@
       "cross",
       "tick",
       "cross",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:59:06.776Z"
+    "lastUpdated": "2025-11-23T15:33:53.233Z"
   },
   {
     "id": 702,
@@ -11213,12 +11213,12 @@
       "tick",
       "tick",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:59:11.878Z"
+    "lastUpdated": "2025-11-23T15:33:37.737Z"
   },
   {
     "id": 703,
@@ -11229,12 +11229,12 @@
       "cross",
       "cross",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:58:50.930Z"
+    "lastUpdated": "2025-11-23T15:25:30.960Z"
   },
   {
     "id": 704,
@@ -11245,12 +11245,12 @@
       "tick",
       "tick",
       "tick",
-      "tick",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:58:57.807Z"
+    "lastUpdated": "2025-11-23T15:28:44.798Z"
   },
   {
     "id": 705,
@@ -11261,12 +11261,12 @@
       "cross",
       "cross",
       "tick",
-      "cross",
-      "tick",
+      "none",
+      "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:59:08.062Z"
+    "lastUpdated": "2025-11-23T15:28:50.965Z"
   },
   {
     "id": 706,
@@ -11275,14 +11275,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:00:58.158Z"
+    "lastUpdated": "2025-11-23T15:34:29.961Z"
   },
   {
     "id": 707,
@@ -11291,14 +11291,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:05:25.947Z"
+    "lastUpdated": "2025-11-23T15:34:35.097Z"
   },
   {
     "id": 708,
@@ -11307,14 +11307,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:05:34.051Z"
+    "lastUpdated": "2025-11-23T15:34:39.921Z"
   },
   {
     "id": 709,
@@ -11323,14 +11323,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:06:07.362Z"
+    "lastUpdated": "2025-11-23T15:37:16.710Z"
   },
   {
     "id": 710,
@@ -11339,14 +11339,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:01:02.497Z"
+    "lastUpdated": "2025-11-23T15:34:31.377Z"
   },
   {
     "id": 711,
@@ -11355,14 +11355,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:05:27.269Z"
+    "lastUpdated": "2025-11-23T15:34:36.406Z"
   },
   {
     "id": 712,
@@ -11371,14 +11371,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:05:35.025Z"
+    "lastUpdated": "2025-11-23T15:34:40.960Z"
   },
   {
     "id": 713,
@@ -11387,14 +11387,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:06:30.673Z"
+    "lastUpdated": "2025-11-23T15:37:15.268Z"
   },
   {
     "id": 714,
@@ -11403,14 +11403,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:03:51.692Z"
+    "lastUpdated": "2025-11-23T15:34:32.466Z"
   },
   {
     "id": 715,
@@ -11419,14 +11419,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:05:28.145Z"
+    "lastUpdated": "2025-11-23T15:34:37.814Z"
   },
   {
     "id": 716,
@@ -11435,14 +11435,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:05:35.990Z"
+    "lastUpdated": "2025-11-23T15:34:42.204Z"
   },
   {
     "id": 717,
@@ -11451,14 +11451,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:06:12.939Z"
+    "lastUpdated": "2025-11-23T15:37:14.267Z"
   },
   {
     "id": 718,
@@ -11467,14 +11467,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:03:52.836Z"
+    "lastUpdated": "2025-11-23T15:34:33.784Z"
   },
   {
     "id": 719,
@@ -11483,14 +11483,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:05:30.477Z"
+    "lastUpdated": "2025-11-23T15:34:38.675Z"
   },
   {
     "id": 720,
@@ -11499,14 +11499,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:06:50.039Z"
+    "lastUpdated": "2025-11-23T15:39:35.638Z"
   },
   {
     "id": 721,
@@ -11514,7 +11514,7 @@
     "answer": "A grade or mark on work.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11522,7 +11522,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:09:16.979Z"
+    "lastUpdated": "2025-11-23T15:39:39.036Z"
   },
   {
     "id": 722,
@@ -11530,7 +11530,7 @@
     "answer": "To pass an exam or test.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11538,7 +11538,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:09:25.646Z"
+    "lastUpdated": "2025-11-23T15:40:12.077Z"
   },
   {
     "id": 723,
@@ -11546,7 +11546,7 @@
     "answer": "To fail an exam.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11554,7 +11554,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:15:34.964Z"
+    "lastUpdated": "2025-11-23T15:41:00.539Z"
   },
   {
     "id": 724,
@@ -11562,7 +11562,7 @@
     "answer": "A written exam in university.",
     "states": [
       "cross",
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -11570,7 +11570,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:18:19.783Z"
+    "lastUpdated": "2025-11-23T15:41:40.692Z"
   },
   {
     "id": 725,
@@ -11578,7 +11578,7 @@
     "answer": "A classroom test in school.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11586,7 +11586,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:09:21.624Z"
+    "lastUpdated": "2025-11-23T15:39:43.658Z"
   },
   {
     "id": 726,
@@ -11594,7 +11594,7 @@
     "answer": "An exercise or practice session.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11602,7 +11602,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:13:50.444Z"
+    "lastUpdated": "2025-11-23T15:41:11.412Z"
   },
   {
     "id": 727,
@@ -11610,7 +11610,7 @@
     "answer": "A university seminar or discussion class.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11618,7 +11618,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:11:48.557Z"
+    "lastUpdated": "2025-11-23T15:40:38.421Z"
   },
   {
     "id": 728,
@@ -11626,7 +11626,7 @@
     "answer": "A course or class.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11634,7 +11634,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:14:01.713Z"
+    "lastUpdated": "2025-11-23T15:40:26.554Z"
   },
   {
     "id": 729,
@@ -11642,7 +11642,7 @@
     "answer": "A subject or academic discipline.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11650,7 +11650,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:09:23.299Z"
+    "lastUpdated": "2025-11-23T15:40:42.468Z"
   },
   {
     "id": 730,
@@ -11658,7 +11658,7 @@
     "answer": "Instruction or lessons at school.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11666,7 +11666,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:13:55.497Z"
+    "lastUpdated": "2025-11-23T15:40:15.045Z"
   },
   {
     "id": 731,
@@ -11674,7 +11674,7 @@
     "answer": "A lesson or class period.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11682,7 +11682,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:13:57.574Z"
+    "lastUpdated": "2025-11-23T15:40:32.419Z"
   },
   {
     "id": 732,
@@ -11690,7 +11690,7 @@
     "answer": "A double lesson period.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11698,12 +11698,60 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:13:58.392Z"
+    "lastUpdated": "2025-11-23T15:40:33.577Z"
   },
   {
     "id": 733,
     "word": "Die Hausaufgaben",
     "answer": "Homework assignments.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-23T15:40:47.921Z"
+  },
+  {
+    "id": 734,
+    "word": "Das Referat",
+    "answer": "A presentation or oral report.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-23T15:40:19.078Z"
+  },
+  {
+    "id": 735,
+    "word": "Der Vortrag",
+    "answer": "A talk or presentation.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-23T15:41:04.894Z"
+  },
+  {
+    "id": 736,
+    "word": "Die Bibliothek",
+    "answer": "A library for studying.",
     "states": [
       "tick",
       "none",
@@ -11714,62 +11762,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:09:24.252Z"
-  },
-  {
-    "id": 734,
-    "word": "Das Referat",
-    "answer": "A presentation or oral report.",
-    "states": [
-      "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-22T19:18:22.416Z"
-  },
-  {
-    "id": 735,
-    "word": "Der Vortrag",
-    "answer": "A talk or presentation.",
-    "states": [
-      "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-22T19:17:04.479Z"
-  },
-  {
-    "id": 736,
-    "word": "Die Bibliothek",
-    "answer": "A library for studying.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T18:58:11.102Z"
+    "lastUpdated": "2025-11-23T15:41:46.628Z"
   },
   {
     "id": 737,
     "word": "Die Mensa",
     "answer": "A university cafeteria.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11778,14 +11778,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:52:28.756Z"
+    "lastUpdated": "2025-11-23T15:41:53.538Z"
   },
   {
     "id": 738,
     "word": "Der Hörsaal",
     "answer": "A lecture hall at university.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11794,14 +11794,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:57:47.181Z"
+    "lastUpdated": "2025-11-23T15:42:16.432Z"
   },
   {
     "id": 739,
     "word": "Das Klassenzimmer",
     "answer": "A classroom in school.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11810,14 +11810,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:07.305Z"
+    "lastUpdated": "2025-11-23T15:42:09.028Z"
   },
   {
     "id": 740,
     "word": "Der Campus",
     "answer": "A university campus or grounds.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11826,14 +11826,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:11.766Z"
+    "lastUpdated": "2025-11-23T15:41:47.662Z"
   },
   {
     "id": 741,
     "word": "Die Anwesenheit",
     "answer": "Attendance at class.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11842,14 +11842,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:14.340Z"
+    "lastUpdated": "2025-11-23T15:41:54.478Z"
   },
   {
     "id": 742,
     "word": "Fehlen",
     "answer": "To be absent from class.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11858,14 +11858,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T19:02:28.579Z"
+    "lastUpdated": "2025-11-23T15:42:17.451Z"
   },
   {
     "id": 743,
     "word": "Schwänzen",
     "answer": "To skip or play truant.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -11874,14 +11874,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T19:03:05.748Z"
+    "lastUpdated": "2025-11-23T15:43:57.037Z"
   },
   {
     "id": 744,
     "word": "Lernen",
     "answer": "To learn or study.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11890,14 +11890,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T19:03:09.244Z"
+    "lastUpdated": "2025-11-23T15:41:48.868Z"
   },
   {
     "id": 745,
     "word": "Studieren",
     "answer": "To study at university level.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11906,14 +11906,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:15.007Z"
+    "lastUpdated": "2025-11-23T15:41:55.344Z"
   },
   {
     "id": 746,
     "word": "Vorbereiten",
     "answer": "To prepare for something.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11922,14 +11922,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T19:02:55.934Z"
+    "lastUpdated": "2025-11-23T15:42:01.550Z"
   },
   {
     "id": 747,
     "word": "Wiederholen",
     "answer": "To repeat or review material.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11938,14 +11938,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T19:03:04.019Z"
+    "lastUpdated": "2025-11-23T15:42:06.404Z"
   },
   {
     "id": 748,
     "word": "Üben",
     "answer": "To practice or exercise skills.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11954,14 +11954,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T19:03:10.911Z"
+    "lastUpdated": "2025-11-23T15:41:51.739Z"
   },
   {
     "id": 749,
     "word": "Pauken",
     "answer": "To cram or study intensively.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11970,14 +11970,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T18:58:22.191Z"
+    "lastUpdated": "2025-11-23T15:41:56.494Z"
   },
   {
     "id": 750,
     "word": "Auswendig Lernen",
     "answer": "To memorize or learn by heart.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -11986,7 +11986,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T19:02:52.922Z"
+    "lastUpdated": "2025-11-23T15:42:03.197Z"
   },
   {
     "id": 751,

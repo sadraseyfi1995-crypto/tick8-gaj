@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { VocabComponent } from './vocab/vocab.component';
@@ -12,6 +13,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
 import { CopyDirective } from './copy-to-clipboard-button.directive';
+import { CourseManagementComponent } from './course-management/course-management.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,17 @@ import { CopyDirective } from './copy-to-clipboard-button.directive';
     HeaderComponent,
     SidebarComponent,
     LayoutComponent,
-    CopyDirective
+    CopyDirective,
+    CourseManagementComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot([]),
+    FormsModule,
+    RouterModule.forRoot([
+      { path: '', component: BookComponent },
+      { path: 'manage-courses', component: CourseManagementComponent }
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

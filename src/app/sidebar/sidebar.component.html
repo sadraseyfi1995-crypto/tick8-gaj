@@ -6,6 +6,12 @@
                 <span class="label" *ngIf="mode === 'expanded'">Toggle</span>
             </button>
         </li>
+        <li>
+            <button routerLink="/manage-courses">
+                <span class="icon">⚙️</span>
+                <span class="label" *ngIf="mode === 'expanded'">Manage</span>
+            </button>
+        </li>
         <li *ngFor="let course of sortedCourses;">
             <button>
                 <span (click)="setCourse(course.id)" class="label" *ngIf="mode === 'expanded'">{{course.name}}</span>

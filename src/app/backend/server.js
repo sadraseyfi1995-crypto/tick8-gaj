@@ -317,18 +317,50 @@ app.get('/api/courses', async (req, res) => {
 });
 
 /**
- * DELETE /api/courses/:name
+ * PUT /api/courses/:id
+ * Update course metadata
+ */
+app.put('/api/courses/:id', async (req, res) => {
+  const courseId = req.params.id;
+  const updates = req.body;
+
+  try {
+    const courses = await FileService.loadCourses();
+    const courseIndex = courses.findIndex(c => c.filename === `${courseId}.json`);
+
+    if (courseIndex === -1) {
+      return res.status(404).json({ error: 'Course not found' });
+    }
+
+    // Update fields
+    courses[courseIndex] = {
+      ...courses[courseIndex],
+      ...updates,
+      // Prevent updating filename via this endpoint for safety
+      filename: courses[courseIndex].filename
+    };
+
+    await FileService.saveCourses(courses);
+    res.json({ success: true, course: courses[courseIndex] });
+  } catch (err) {
+    console.error('Error updating course:', err);
+    res.status(500).json({ error: 'Could not update course' });
+  }
+});
+
+/**
+ * DELETE /api/courses/:id
  * Delete a course and its corresponding file
  */
-app.delete('/api/courses/:name', async (req, res) => {
-  const courseName = req.params.name;
+app.delete('/api/courses/:id', async (req, res) => {
+  const courseId = req.params.id;
 
   try {
     // Load courses
     const courses = await FileService.loadCourses();
 
-    // Find course
-    const courseIndex = courses.findIndex(c => c.name === courseName);
+    // Find course by filename (id + .json)
+    const courseIndex = courses.findIndex(c => c.filename === `${courseId}.json`);
 
     if (courseIndex === -1) {
       return res.status(404).json({ error: 'Course not found' });
@@ -341,14 +373,13 @@ app.delete('/api/courses/:name', async (req, res) => {
       await FileService.deleteFile(course.filename);
     } catch (err) {
       console.warn(`Could not delete file ${course.filename}:`, err);
-      // Continue to delete from mapping even if file delete fails (maybe file was already gone)
     }
 
     // Remove from mapping
     courses.splice(courseIndex, 1);
     await FileService.saveCourses(courses);
 
-    res.json({ success: true, message: `Course '${courseName}' deleted` });
+    res.json({ success: true, message: `Course '${course.name}' deleted` });
   } catch (err) {
     console.error('Error deleting course:', err);
     res.status(500).json({ error: 'Could not delete course' });

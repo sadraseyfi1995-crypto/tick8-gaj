@@ -4726,14 +4726,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T19:22:16.877Z"
+    "lastUpdated": "2025-11-23T15:51:09.060Z"
   },
   {
     "id": 297,
@@ -4741,15 +4741,15 @@
     "answer": "Training initially on smaller images then gradually increasing resolution, speeding up early training while refining details later.",
     "states": [
       "cross",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:17:05.153Z"
+    "lastUpdated": "2025-11-23T15:51:13.322Z"
   },
   {
     "id": 298,
@@ -4757,15 +4757,15 @@
     "answer": "Term frequency-inverse document frequency, weighting words by importance within document relative to entire corpus.",
     "states": [
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:16:31.975Z"
+    "lastUpdated": "2025-11-23T15:56:13.850Z"
   },
   {
     "id": 299,
@@ -4773,15 +4773,15 @@
     "answer": "Adding special tokens to make variable-length sequences uniform length for batch processing in neural networks.",
     "states": [
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:14:58.017Z"
+    "lastUpdated": "2025-11-23T15:56:08.950Z"
   },
   {
     "id": 300,
@@ -4789,23 +4789,23 @@
     "answer": "Ignoring padded positions in loss and attention computations, preventing meaningless tokens from affecting training.",
     "states": [
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:16:37.831Z"
+    "lastUpdated": "2025-11-23T15:51:11.753Z"
   },
   {
     "id": 301,
     "word": "Categorical Crossentropy",
     "answer": "Loss function for multi-class classification comparing predicted probability distribution against one-hot encoded true labels.",
     "states": [
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
@@ -4813,15 +4813,15 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-13T11:34:08.477Z"
+    "lastUpdated": "2025-11-23T15:56:56.886Z"
   },
   {
     "id": 302,
     "word": "Sparse Categorical Crossentropy",
     "answer": "Crossentropy variant accepting integer class labels instead of one-hot vectors, saving memory for many classes.",
     "states": [
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
@@ -4829,15 +4829,15 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-13T11:34:10.092Z"
+    "lastUpdated": "2025-11-23T15:56:55.818Z"
   },
   {
     "id": 303,
     "word": "Perplexity",
     "answer": "Exponentiated cross-entropy measuring how well probability model predicts samples, lower values indicate better predictions.",
     "states": [
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
@@ -4845,15 +4845,15 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-13T11:34:50.656Z"
+    "lastUpdated": "2025-11-23T15:57:15.951Z"
   },
   {
     "id": 304,
     "word": "BLEU Score",
     "answer": "Metric comparing n-gram overlap between generated and reference translations, evaluating machine translation quality.",
     "states": [
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
@@ -4861,15 +4861,15 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-13T11:34:47.956Z"
+    "lastUpdated": "2025-11-23T15:57:08.932Z"
   },
   {
     "id": 305,
     "word": "Beam Search",
     "answer": "Decoding strategy maintaining multiple hypotheses ranked by probability, balancing exploration and exploitation for better sequence generation.",
     "states": [
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
@@ -4877,7 +4877,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-13T11:34:28.301Z"
+    "lastUpdated": "2025-11-23T15:57:17.690Z"
   },
   {
     "id": 306,
@@ -4900,7 +4900,7 @@
     "word": "Top-K Sampling",
     "answer": "Sampling next token from k most probable candidates, balancing randomness and quality in text generation.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -4909,14 +4909,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-14T22:06:48.564Z"
+    "lastUpdated": "2025-11-23T16:50:53.462Z"
   },
   {
     "id": 308,
     "word": "Nucleus Sampling (Top-P)",
     "answer": "Sampling from smallest token set whose cumulative probability exceeds threshold p, dynamically adjusting candidate pool size.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -4925,7 +4925,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-14T22:06:49.697Z"
+    "lastUpdated": "2025-11-23T16:50:54.795Z"
   },
   {
     "id": 309,
@@ -4948,7 +4948,7 @@
     "word": "Stateful RNN",
     "answer": "RNN preserving hidden state across batches, enabling learning from very long sequences split into chunks.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -4957,7 +4957,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-14T22:06:46.896Z"
+    "lastUpdated": "2025-11-23T16:50:41.849Z"
   },
   {
     "id": 311,

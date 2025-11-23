@@ -1,6 +1,7 @@
 import { Component, HostListener, Input } from '@angular/core';
 import { VocabComponentModel } from '../vocab/vocab.component';
 import { SharedService } from '../shared.service';
+import { DataHandlerService } from '../data-handler.service';
 
 function chunkArray<T>(array: T[], chunkSize: number): T[][] {
   const result: T[][] = [];
@@ -20,23 +21,34 @@ export class BookComponent {
   public get allQuestions(): VocabComponentModel[] {
     return this._allQuestions;
   }
-  @Input()
+
   public set allQuestions(value: VocabComponentModel[]) {
     this._allQuestions = value;
     this.createChunkedQuestions();
   }
   chunkedQuestions: VocabComponentModel[][] = [];
   currentPage: number = 0;
+  pendingPage: number | null = null;
 
-  constructor(private sharedService: SharedService) {
+  constructor(private sharedService: SharedService, private dataHandler: DataHandlerService) {
 
   }
 
   ngOnInit(): void {
+    this.dataHandler.data$.subscribe(data => {
+      this.allQuestions = data;
+    });
+
     this.sharedService.chosenCourse$.subscribe(course => {
       if (course) {
+        this.pendingPage = null; // Clear pending on course change
         this.createChunkedQuestions();
       }
+    });
+
+    this.sharedService.pageNavigation$.subscribe(page => {
+      this.pendingPage = page;
+      this.applyPendingPage();
     });
   }
 
@@ -44,6 +56,21 @@ export class BookComponent {
     const course = this.sharedService.getChosenCourse();
     if (course) {
       this.chunkedQuestions = chunkArray(this.allQuestions, course.pageSize ?? 20);
+      this.applyPendingPage();
+
+      // Ensure currentPage is valid
+      if (this.chunkedQuestions.length > 0 && this.currentPage >= this.chunkedQuestions.length) {
+        this.currentPage = this.chunkedQuestions.length - 1;
+      } else if (this.chunkedQuestions.length === 0) {
+        this.currentPage = 0;
+      }
+    }
+  }
+
+  private applyPendingPage() {
+    if (this.pendingPage !== null && this.pendingPage < this.chunkedQuestions.length) {
+      this.currentPage = this.pendingPage;
+      this.pendingPage = null;
     }
   }
 

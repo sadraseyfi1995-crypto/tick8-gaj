@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, catchError, filter, throwError } from 'rxjs';
+import { Observable, catchError, filter, throwError, BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { VboxState, VocabComponentModel } from './vocab/vocab.component';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
@@ -13,6 +13,7 @@ import { ICourse } from './sidebar/sidebar.component';
 export class DataHandlerService {
   private apiUrl = 'http://localhost:3000/api/vocab-files';
   public data: VocabComponentModel[] = [];
+  public data$ = new BehaviorSubject<VocabComponentModel[]>([]);
   public courses: ICourse[] = [];
 
   constructor(private http: HttpClient,
@@ -52,6 +53,14 @@ export class DataHandlerService {
   private fetchData() {
     this.getAll().subscribe(data => {
       this.data = data;
+      this.data$.next(data);
+
+      // Calculate and navigate to the last filled page
+      const course = this.sharedService.getChosenCourse();
+      if (course) {
+        const lastFilledPage = this.sharedService.calculateLastFilledPage(data, course.pageSize ?? 20);
+        this.sharedService.navigateToPage(lastFilledPage);
+      }
     });
   }
 
@@ -68,6 +77,16 @@ export class DataHandlerService {
 
   getCourses(): Observable<any[]> {
     return this.http.get<any[]>('http://localhost:3000/api/courses')
+      .pipe(catchError(this.handleError));
+  }
+
+  deleteCourse(id: string): Observable<any> {
+    return this.http.delete<any>(`http://localhost:3000/api/courses/${id}`)
+      .pipe(catchError(this.handleError));
+  }
+
+  updateCourse(id: string, updates: any): Observable<any> {
+    return this.http.put<any>(`http://localhost:3000/api/courses/${id}`, updates)
       .pipe(catchError(this.handleError));
   }
 
