@@ -245,7 +245,7 @@
     "answer": "Red triangle with cross warns of intersection ahead without priority indication. Approach carefully, prepare to yield to right.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -253,7 +253,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:12:42.053Z"
+    "lastUpdated": "2025-11-23T22:05:12.115Z"
   },
   {
     "id": 17,
@@ -261,7 +261,7 @@
     "answer": "Blue rectangular sign with white arrow indicates one-way traffic. Driving against direction is prohibited except for authorized vehicles.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -269,7 +269,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:25:46.680Z"
+    "lastUpdated": "2025-11-23T22:05:28.648Z"
   },
   {
     "id": 18,
@@ -277,7 +277,7 @@
     "answer": "Reduced speed limit near schools, typically 30 km/h during school hours. Watch for children crossing, buses stopping.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -285,7 +285,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:34:22.446Z"
+    "lastUpdated": "2025-11-23T22:05:46.513Z"
   },
   {
     "id": 19,
@@ -293,7 +293,7 @@
     "answer": "White rectangular sign below main sign showing times when regulation applies. Outside those times, normal rules apply.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -301,7 +301,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:34:37.342Z"
+    "lastUpdated": "2025-11-23T22:05:50.549Z"
   },
   {
     "id": 20,
@@ -309,7 +309,7 @@
     "answer": "When turning left, yield to oncoming traffic and crossing pedestrians. Position vehicle near center line, signal early.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -317,7 +317,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:12:43.367Z"
+    "lastUpdated": "2025-11-23T22:05:14.195Z"
   },
   {
     "id": 21,
@@ -325,7 +325,7 @@
     "answer": "Area with 30 km/h limit marked by zone sign. Right-before-left rule typically applies at all intersections within zone.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -333,7 +333,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:25:50.740Z"
+    "lastUpdated": "2025-11-23T22:05:29.487Z"
   },
   {
     "id": 22,
@@ -341,7 +341,7 @@
     "answer": "Red triangle showing slope percentage warns of steep downhill. Use lower gear, avoid excessive braking to prevent brake fade.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -349,7 +349,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:27:02.083Z"
+    "lastUpdated": "2025-11-23T22:05:45.101Z"
   },
   {
     "id": 23,
@@ -357,7 +357,7 @@
     "answer": "Inverted red triangle requires yielding to traffic on priority road. Slow down, be prepared to stop if necessary.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -365,7 +365,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:33:08.202Z"
+    "lastUpdated": "2025-11-23T22:06:13.747Z"
   },
   {
     "id": 24,
@@ -373,7 +373,7 @@
     "answer": "Shows road has no through passage. May have pedestrian or bicycle passage. Plan route accordingly, prepare to turn around.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -381,7 +381,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:12:45.759Z"
+    "lastUpdated": "2025-11-23T22:05:17.234Z"
   },
   {
     "id": 25,
@@ -389,7 +389,7 @@
     "answer": "Must reduce speed in rain, snow, fog, or ice below posted limits. Adapt to visibility and road conditions for safety.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -397,7 +397,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:25:52.582Z"
+    "lastUpdated": "2025-11-23T22:05:30.382Z"
   },
   {
     "id": 26,
@@ -405,7 +405,7 @@
     "answer": "Red triangle with opposing arrows warns oncoming traffic shares your lane ahead. Reduce speed, stay right, prepare to yield.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -413,7 +413,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:34:19.215Z"
+    "lastUpdated": "2025-11-23T22:06:06.573Z"
   },
   {
     "id": 27,
@@ -421,7 +421,7 @@
     "answer": "Round red sign with white horizontal bar prohibits entry. Usually marks one-way street exit or restricted area.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -429,7 +429,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:33:06.386Z"
+    "lastUpdated": "2025-11-23T22:05:54.483Z"
   },
   {
     "id": 28,
@@ -437,7 +437,7 @@
     "answer": "Blue sign with car symbol indicates road for motor vehicles only. Minimum speed capabilities required, pedestrians and bicycles prohibited.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -445,7 +445,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:12:46.750Z"
+    "lastUpdated": "2025-11-23T22:05:27.211Z"
   },
   {
     "id": 29,
@@ -453,7 +453,7 @@
     "answer": "Priority road bends; thick line shows priority direction. Vehicles continuing on priority must still signal and exercise caution.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -461,12 +461,28 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:26:04.671Z"
+    "lastUpdated": "2025-11-23T22:05:32.875Z"
   },
   {
     "id": 30,
     "word": "Gefahrzeichen Steigung",
     "answer": "Red triangle showing upward slope warns of steep uphill. Lower gear may be needed, watch for slow-moving vehicles ahead.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-23T22:05:44.282Z"
+  },
+  {
+    "id": 31,
+    "word": "Trailer Speed Limit",
+    "answer": "Cars with trailers limited to 80 km/h outside towns, 100 km/h on highways with approval. Lower limits may apply.",
     "states": [
       "tick",
       "none",
@@ -477,30 +493,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-22T18:54:54.603Z"
-  },
-  {
-    "id": 31,
-    "word": "Trailer Speed Limit",
-    "answer": "Cars with trailers limited to 80 km/h outside towns, 100 km/h on highways with approval. Lower limits may apply.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-23T14:34:50.201Z"
+    "lastUpdated": "2025-11-23T22:06:19.823Z"
   },
   {
     "id": 32,
     "word": "Zusatzzeichen Distance Arrow",
     "answer": "Shows distance to hazard or how long regulation continues. Helps drivers prepare appropriately for upcoming situation.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -509,14 +509,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:24:40.403Z"
+    "lastUpdated": "2025-11-23T22:09:45.421Z"
   },
   {
     "id": 33,
     "word": "Gefahrzeichen Engstelle",
     "answer": "Red triangle warns of road narrowing ahead. Reduce speed, prepare to yield if oncoming traffic present in narrow section.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -525,14 +525,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:02:42.849Z"
+    "lastUpdated": "2025-11-23T22:09:38.678Z"
   },
   {
     "id": 34,
     "word": "Fußgängerzone Pedestrian Zone",
     "answer": "Blue sign with walking figure indicates pedestrian-only area. Vehicle entry generally prohibited except delivery vehicles at specified times.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -541,14 +541,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:06:25.962Z"
+    "lastUpdated": "2025-11-23T22:08:35.888Z"
   },
   {
     "id": 35,
     "word": "Vorfahrt Next Intersection",
     "answer": "Priority at next intersection only; doesn't extend beyond. Other signs or rules determine priority at subsequent intersections.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -557,14 +557,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:48:39.760Z"
+    "lastUpdated": "2025-11-23T22:06:21.548Z"
   },
   {
     "id": 36,
     "word": "Gefahrzeichen Unebene Fahrbahn",
     "answer": "Red triangle with bumps warns of uneven road surface ahead. Reduce speed to avoid vehicle damage and maintain control.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -573,14 +573,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:45:54.539Z"
+    "lastUpdated": "2025-11-23T22:07:10.799Z"
   },
   {
     "id": 37,
     "word": "Umleitung Detour Sign",
     "answer": "Orange signs with arrows guide drivers around closed roads. Follow numbered or colored detour route to destination.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -589,14 +589,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:16:29.303Z"
+    "lastUpdated": "2025-11-23T22:06:54.547Z"
   },
   {
     "id": 38,
     "word": "Minimum Speed Limit",
     "answer": "Round blue sign with white number shows minimum required speed. Applies unless conditions make it unsafe to maintain speed.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -605,14 +605,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:24:24.658Z"
+    "lastUpdated": "2025-11-23T22:08:45.863Z"
   },
   {
     "id": 39,
     "word": "Gefahrzeichen Steinschlag",
     "answer": "Red triangle warns of falling rocks or debris from cliffs. Drive alertly, avoid stopping in danger zone if possible.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -621,14 +621,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:42:55.132Z"
+    "lastUpdated": "2025-11-23T22:06:31.898Z"
   },
   {
     "id": 40,
     "word": "Stau-Ende Traffic Jam Ends",
     "answer": "Sign indicates end of congestion zone. May resume normal speed gradually while monitoring traffic ahead.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -637,14 +637,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:45:57.801Z"
+    "lastUpdated": "2025-11-23T22:07:13.357Z"
   },
   {
     "id": 41,
     "word": "Vorrang Streetcar Priority",
     "answer": "Streetcars always have priority unless otherwise signed. Yield when they're entering or leaving stops, crossing paths.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -653,14 +653,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:51:44.072Z"
+    "lastUpdated": "2025-11-23T22:06:52.265Z"
   },
   {
     "id": 42,
     "word": "Gefahrzeichen Seitenwind",
     "answer": "Red triangle warns of strong crosswinds. Grip steering firmly, reduce speed, especially with high-profile vehicles or trailers.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -669,14 +669,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:00:47.669Z"
+    "lastUpdated": "2025-11-23T22:07:00.831Z"
   },
   {
     "id": 43,
     "word": "Durchfahrt Verboten All Vehicles",
     "answer": "Red circle prohibits all vehicle traffic. May have exceptions shown on additional signs for residents or deliveries.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -685,14 +685,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:24:36.830Z"
+    "lastUpdated": "2025-11-23T22:10:51.569Z"
   },
   {
     "id": 44,
     "word": "Advisory Speed Limit",
     "answer": "Square blue sign with white number recommends speed but isn't legally binding. Often used on highways as recommended maximum.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -701,14 +701,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:16:49.849Z"
+    "lastUpdated": "2025-11-23T22:09:49.118Z"
   },
   {
     "id": 45,
     "word": "Gefahrzeichen Schnee Glatteis",
     "answer": "Red triangle with snowflake warns of ice or snow on road. Reduce speed significantly, increase following distance, drive gently.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -717,7 +717,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:03:58.345Z"
+    "lastUpdated": "2025-11-23T22:06:50.373Z"
   },
   {
     "id": 46,

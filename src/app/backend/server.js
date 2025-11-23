@@ -127,6 +127,24 @@ class FileService {
   }
 
   /**
+   * Validate vocab list format
+   * @param {Array} list - List to validate
+   * @throws {Error} If invalid format
+   */
+  static validateVocabList(list) {
+    if (!Array.isArray(list)) {
+      throw new Error('Content must be an array');
+    }
+
+    for (let i = 0; i < list.length; i++) {
+      const item = list[i];
+      if (!item.id || !item.word || !item.answer) {
+        throw new Error(`Invalid item at index ${i}: must have id, word, and answer`);
+      }
+    }
+  }
+
+  /**
    * Apply daily decay rules to all courses
    */
   static async applyDailyDecay() {
@@ -164,7 +182,7 @@ class FileService {
             return sum + (item.states?.filter(s => s !== 'none').length || 0);
           }, 0);
 
-          const avgFilled = Math.floor(totalFilled / pageItems.length);
+          const avgFilled = Math.round(totalFilled / pageItems.length);
 
           // Apply decay to each item on this page
           for (let i = pageStart; i < pageEnd; i++) {
@@ -328,6 +346,9 @@ app.post('/api/courses', async (req, res) => {
   }
 
   try {
+    // Validate content format
+    FileService.validateVocabList(content);
+
     const courses = await FileService.loadCourses();
 
     // Generate filename
@@ -350,6 +371,9 @@ app.post('/api/courses', async (req, res) => {
     res.json({ success: true, course: newCourse });
   } catch (err) {
     console.error('Error creating course:', err);
+    if (err.message.startsWith('Invalid item') || err.message === 'Content must be an array') {
+      return res.status(400).json({ error: err.message });
+    }
     res.status(500).json({ error: 'Could not create course' });
   }
 });
@@ -367,6 +391,9 @@ app.post('/api/courses/:id/append', async (req, res) => {
   }
 
   try {
+    // Validate content format
+    FileService.validateVocabList(content);
+
     const courses = await FileService.loadCourses();
     const course = courses.find(c => c.filename === `${courseId}.json`);
 
@@ -395,6 +422,9 @@ app.post('/api/courses/:id/append', async (req, res) => {
     res.json({ success: true, added: newItems.length });
   } catch (err) {
     console.error('Error appending to course:', err);
+    if (err.message.startsWith('Invalid item') || err.message === 'Content must be an array') {
+      return res.status(400).json({ error: err.message });
+    }
     res.status(500).json({ error: 'Could not append to course' });
   }
 });
