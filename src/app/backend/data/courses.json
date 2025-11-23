@@ -6,36 +6,6 @@
     "pageSize": 15
   },
   {
-    "id": "2",
-    "name": "Data science",
-    "filename": "2.json",
-    "pageSize": 15
-  },
-  {
-    "id": "3",
-    "name": "TMS",
-    "filename": "3.json",
-    "pageSize": 15
-  },
-  {
-    "id": "4",
-    "name": "SQL",
-    "filename": "4.json",
-    "pageSize": 15
-  },
-  {
-    "id": "5",
-    "name": "Python",
-    "filename": "5.json",
-    "pageSize": 15
-  },
-  {
-    "id": "6",
-    "name": "Express js",
-    "filename": "6.json",
-    "pageSize": 15
-  },
-  {
     "id": "7",
     "name": "Keras",
     "filename": "7.json",
@@ -45,36 +15,6 @@
     "id": "8",
     "name": "Driving Test",
     "filename": "8.json",
-    "pageSize": 15
-  },
-  {
-    "id": "9",
-    "name": "FE",
-    "filename": "9.json",
-    "pageSize": 15
-  },
-  {
-    "id": "10",
-    "name": "Angular",
-    "filename": "10.json",
-    "pageSize": 15
-  },
-  {
-    "id": "11",
-    "name": "DL",
-    "filename": "11.json",
-    "pageSize": 15
-  },
-  {
-    "id": "12",
-    "name": "ML",
-    "filename": "12.json",
-    "pageSize": 15
-  },
-  {
-    "id": "13",
-    "name": "AI",
-    "filename": "13.json",
     "pageSize": 15
   },
   {

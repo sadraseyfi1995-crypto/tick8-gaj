@@ -3684,7 +3684,7 @@
     "word": "Random Crop",
     "answer": "Augmentation extracting random patches from images, teaching models spatial invariance and increasing effective dataset size.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "cross",
       "cross",
@@ -3693,7 +3693,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-08T08:58:47.695Z"
+    "lastUpdated": "2025-11-23T18:06:33.996Z"
   },
   {
     "id": 232,
@@ -3732,7 +3732,7 @@
     "word": "One-Hot Encoding",
     "answer": "Converting categorical variables into binary vectors where one element is 1 and others 0, enabling categorical input processing.",
     "states": [
-      "cross",
+      "tick",
       "tick",
       "tick",
       "cross",
@@ -3741,7 +3741,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-08T09:04:15.913Z"
+    "lastUpdated": "2025-11-23T18:06:36.325Z"
   },
   {
     "id": 235,
@@ -3876,7 +3876,7 @@
     "word": "Stride",
     "answer": "Number of pixels the filter moves when sliding across input; larger strides reduce output dimensions more aggressively.",
     "states": [
-      "cross",
+      "tick",
       "tick",
       "tick",
       "tick",
@@ -3885,7 +3885,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-09T09:34:56.361Z"
+    "lastUpdated": "2025-11-23T18:06:28.559Z"
   },
   {
     "id": 244,
@@ -3924,7 +3924,7 @@
     "word": "Same Padding",
     "answer": "Padding added so output dimensions match input dimensions when stride is 1, preserving spatial size.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "tick",
       "tick",
@@ -3933,14 +3933,14 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-09T09:35:00.845Z"
+    "lastUpdated": "2025-11-23T18:06:18.008Z"
   },
   {
     "id": 247,
     "word": "Dilated Convolution",
     "answer": "Convolution with gaps between filter elements, exponentially expanding receptive field without increasing parameters or reducing resolution.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "cross",
       "tick",
@@ -3949,7 +3949,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-09T09:35:02.830Z"
+    "lastUpdated": "2025-11-23T18:06:22.353Z"
   },
   {
     "id": 248,
@@ -4020,7 +4020,7 @@
     "word": "Fine-Tuning",
     "answer": "Unfreezing some or all pre-trained layers and training them with small learning rate on new dataset.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "cross",
       "cross",
@@ -4029,7 +4029,7 @@
       "cross",
       "tick"
     ],
-    "lastUpdated": "2025-11-09T09:35:26.935Z"
+    "lastUpdated": "2025-11-23T18:05:58.180Z"
   },
   {
     "id": 253,
@@ -4893,7 +4893,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-14T22:06:45.658Z"
+    "lastUpdated": "2025-11-23T17:40:11.057Z"
   },
   {
     "id": 307,
@@ -4932,7 +4932,7 @@
     "word": "Bidirectional RNN",
     "answer": "Processing sequence in both forward and backward directions, capturing context from entire sequence for each position.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -4941,7 +4941,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-14T22:06:51.540Z"
+    "lastUpdated": "2025-11-23T17:54:00.636Z"
   },
   {
     "id": 310,
