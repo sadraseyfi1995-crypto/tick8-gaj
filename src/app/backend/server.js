@@ -317,6 +317,89 @@ app.get('/api/courses', async (req, res) => {
 });
 
 /**
+ * POST /api/courses
+ * Create a new course
+ */
+app.post('/api/courses', async (req, res) => {
+  const { name, pageSize, content } = req.body;
+
+  if (!name || !content) {
+    return res.status(400).json({ error: 'Name and content are required' });
+  }
+
+  try {
+    const courses = await FileService.loadCourses();
+
+    // Generate filename
+    const sanitizedName = name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+    const filename = `${sanitizedName}-${Date.now()}.json`;
+
+    // Save content file
+    await FileService.saveToFile(filename, content);
+
+    // Add to courses
+    const newCourse = {
+      name,
+      filename,
+      pageSize: pageSize || 15,
+      order: courses.length + 1
+    };
+    courses.push(newCourse);
+    await FileService.saveCourses(courses);
+
+    res.json({ success: true, course: newCourse });
+  } catch (err) {
+    console.error('Error creating course:', err);
+    res.status(500).json({ error: 'Could not create course' });
+  }
+});
+
+/**
+ * POST /api/courses/:id/append
+ * Append data to an existing course
+ */
+app.post('/api/courses/:id/append', async (req, res) => {
+  const courseId = req.params.id;
+  const { content } = req.body;
+
+  if (!content || !Array.isArray(content)) {
+    return res.status(400).json({ error: 'Content array is required' });
+  }
+
+  try {
+    const courses = await FileService.loadCourses();
+    const course = courses.find(c => c.filename === `${courseId}.json`);
+
+    if (!course) {
+      return res.status(404).json({ error: 'Course not found' });
+    }
+
+    // Load existing data
+    const vocab = await FileService.loadVocabFile(course.filename);
+
+    // Find max ID
+    const maxId = vocab.reduce((max, item) => Math.max(max, parseInt(item.id) || 0), 0);
+
+    // Re-index new items
+    const newItems = content.map((item, index) => ({
+      ...item,
+      id: (maxId + 1 + index).toString(),
+      states: item.states || [], // Ensure states exist
+      lastUpdated: new Date().toISOString()
+    }));
+
+    // Append and save
+    const updatedVocab = vocab.concat(newItems);
+    await FileService.saveToFile(course.filename, updatedVocab);
+
+    res.json({ success: true, added: newItems.length });
+  } catch (err) {
+    console.error('Error appending to course:', err);
+    res.status(500).json({ error: 'Could not append to course' });
+  }
+});
+
+/**
  * PUT /api/courses/:id
  * Update course metadata
  */

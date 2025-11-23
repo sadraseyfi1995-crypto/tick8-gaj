@@ -4325,7 +4325,7 @@
     "answer": "Dense vector representation of words mapping them to continuous space where semantic similarity corresponds to proximity.",
     "states": [
       "tick",
-      "cross",
+      "tick",
       "cross",
       "cross",
       "cross",
@@ -4333,14 +4333,14 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-10T19:51:47.840Z"
+    "lastUpdated": "2025-11-23T20:16:36.714Z"
   },
   {
     "id": 272,
     "word": "Embedding Layer",
     "answer": "Neural network layer converting discrete tokens (words, characters) into continuous dense vectors of fixed dimension.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "cross",
       "cross",
@@ -4349,7 +4349,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-10T19:51:49.255Z"
+    "lastUpdated": "2025-11-23T20:16:40.104Z"
   },
   {
     "id": 273,
@@ -4393,11 +4393,11 @@
       "cross",
       "tick",
       "tick",
-      "cross",
+      "none",
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-10T19:51:48.513Z"
+    "lastUpdated": "2025-11-23T20:16:42.996Z"
   },
   {
     "id": 276,
@@ -4884,7 +4884,7 @@
     "word": "Greedy Decoding",
     "answer": "Selecting highest probability token at each step, fast but potentially suboptimal for sequence generation.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -4893,7 +4893,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T17:40:11.057Z"
+    "lastUpdated": "2025-11-23T18:27:45.243Z"
   },
   {
     "id": 307,

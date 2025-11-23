@@ -1,5 +1,18 @@
 <div class="container">
     <h2>Course Management</h2>
+
+    <div class="create-section">
+        <h3>Create New Course</h3>
+        <div class="form-row">
+            <input type="text" [(ngModel)]="newCourse.name" placeholder="Course Name" class="form-control">
+            <input type="number" [(ngModel)]="newCourse.pageSize" placeholder="Page Size" class="form-control"
+                style="width: 100px;">
+        </div>
+        <textarea [(ngModel)]="newCourse.content" placeholder="JSON Content (Array)" class="form-control"
+            rows="5"></textarea>
+        <button (click)="createCourse()" class="btn btn-success">Create Course</button>
+    </div>
+
     <table class="table">
         <thead>
             <tr>
@@ -11,22 +24,35 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let course of courses">
-                <td>
-                    <input type="text" [(ngModel)]="course.name" class="form-control">
-                </td>
-                <td>
-                    <input type="number" [(ngModel)]="course.order" class="form-control">
-                </td>
-                <td>
-                    <input type="number" [(ngModel)]="course.pageSize" class="form-control">
-                </td>
-                <td>{{ course.filename }}</td>
-                <td>
-                    <button (click)="updateCourse(course)" class="btn btn-primary">Save</button>
-                    <button (click)="deleteCourse(course)" class="btn btn-danger">Delete</button>
-                </td>
-            </tr>
+            <ng-container *ngFor="let course of courses">
+                <tr>
+                    <td>
+                        <input type="text" [(ngModel)]="course.name" class="form-control">
+                    </td>
+                    <td>
+                        <input type="number" [(ngModel)]="course.order" class="form-control">
+                    </td>
+                    <td>
+                        <input type="number" [(ngModel)]="course.pageSize" class="form-control">
+                    </td>
+                    <td>{{ course.filename }}</td>
+                    <td>
+                        <button (click)="updateCourse(course)" class="btn btn-primary">Save</button>
+                        <button (click)="toggleAppend(course)" class="btn btn-info">Append</button>
+                        <button (click)="deleteCourse(course)" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr *ngIf="expandedCourseId === course.id" class="append-row">
+                    <td colspan="5">
+                        <div class="append-container">
+                            <h4>Append to {{course.name}}</h4>
+                            <textarea [(ngModel)]="appendContent[course.id]"
+                                placeholder="JSON Content to Append (Array)" class="form-control" rows="5"></textarea>
+                            <button (click)="submitAppend(course)" class="btn btn-success">Submit Append</button>
+                        </div>
+                    </td>
+                </tr>
+            </ng-container>
         </tbody>
     </table>
 </div>

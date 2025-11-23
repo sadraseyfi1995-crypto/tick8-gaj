@@ -90,6 +90,20 @@ export class DataHandlerService {
       .pipe(catchError(this.handleError));
   }
 
+  createCourse(courseData: any, content: any[]): Observable<any> {
+    return this.http.post<any>('http://localhost:3000/api/courses', {
+      name: courseData.name,
+      pageSize: courseData.pageSize,
+      content: content
+    }).pipe(catchError(this.handleError));
+  }
+
+  appendToCourse(courseId: string, content: any[]): Observable<any> {
+    return this.http.post<any>(`http://localhost:3000/api/courses/${courseId}/append`, {
+      content: content
+    }).pipe(catchError(this.handleError));
+  }
+
   triggerDailyDecay(): Observable<any> {
     return this.http.post<any>('http://localhost:3000/api/maintenance/decay', {})
       .pipe(catchError(this.handleError));

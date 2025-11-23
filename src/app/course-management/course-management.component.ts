@@ -8,6 +8,13 @@ import { DataHandlerService } from '../data-handler.service';
 })
 export class CourseManagementComponent implements OnInit {
   courses: any[] = [];
+  newCourse = {
+    name: '',
+    pageSize: 15,
+    content: ''
+  };
+  appendContent: { [key: string]: string } = {};
+  expandedCourseId: string | null = null;
 
   constructor(private dataHandler: DataHandlerService) { }
 
@@ -22,6 +29,59 @@ export class CourseManagementComponent implements OnInit {
         id: c.filename.replace('.json', '') // Ensure ID is available
       }));
     });
+  }
+
+  createCourse() {
+    try {
+      const content = JSON.parse(this.newCourse.content);
+      if (!Array.isArray(content)) {
+        alert('Content must be a JSON array');
+        return;
+      }
+
+      this.dataHandler.createCourse(this.newCourse, content).subscribe(() => {
+        alert('Course created successfully');
+        this.newCourse = { name: '', pageSize: 15, content: '' };
+        this.loadCourses();
+      }, err => {
+        alert('Failed to create course');
+        console.error(err);
+      });
+    } catch (e) {
+      alert('Invalid JSON content');
+    }
+  }
+
+  toggleAppend(course: any) {
+    if (this.expandedCourseId === course.id) {
+      this.expandedCourseId = null;
+    } else {
+      this.expandedCourseId = course.id;
+      if (!this.appendContent[course.id]) {
+        this.appendContent[course.id] = '';
+      }
+    }
+  }
+
+  submitAppend(course: any) {
+    try {
+      const content = JSON.parse(this.appendContent[course.id]);
+      if (!Array.isArray(content)) {
+        alert('Content must be a JSON array');
+        return;
+      }
+
+      this.dataHandler.appendToCourse(course.id, content).subscribe((res) => {
+        alert(`Successfully appended ${res.added} items`);
+        this.appendContent[course.id] = '';
+        this.expandedCourseId = null;
+      }, err => {
+        alert('Failed to append content');
+        console.error(err);
+      });
+    } catch (e) {
+      alert('Invalid JSON content');
+    }
   }
 
   updateCourse(course: any) {
