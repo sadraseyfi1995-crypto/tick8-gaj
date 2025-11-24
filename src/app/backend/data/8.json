@@ -7,13 +7,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:54:58.237Z"
+    "lastUpdated": "2025-11-24T17:16:49.455Z"
   },
   {
     "id": 2,
@@ -23,13 +23,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:55:21.524Z"
+    "lastUpdated": "2025-11-24T17:17:34.334Z"
   },
   {
     "id": 3,
@@ -39,13 +39,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:55:30.474Z"
+    "lastUpdated": "2025-11-24T17:17:22.615Z"
   },
   {
     "id": 4,
@@ -55,13 +55,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:04:04.687Z"
+    "lastUpdated": "2025-11-24T17:18:05.500Z"
   },
   {
     "id": 5,
@@ -71,13 +71,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:55:02.355Z"
+    "lastUpdated": "2025-11-24T17:16:50.556Z"
   },
   {
     "id": 6,
@@ -87,13 +87,13 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:55:24.104Z"
+    "lastUpdated": "2025-11-24T17:17:47.084Z"
   },
   {
     "id": 7,
@@ -103,13 +103,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:55:31.697Z"
+    "lastUpdated": "2025-11-24T17:17:56.957Z"
   },
   {
     "id": 8,
@@ -119,13 +119,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:04:11.676Z"
+    "lastUpdated": "2025-11-24T17:18:07.218Z"
   },
   {
     "id": 9,
@@ -135,13 +135,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:55:11.063Z"
+    "lastUpdated": "2025-11-24T17:16:51.788Z"
   },
   {
     "id": 10,
@@ -151,13 +151,13 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:55:25.317Z"
+    "lastUpdated": "2025-11-24T17:17:41.508Z"
   },
   {
     "id": 11,
@@ -167,13 +167,13 @@
       "tick",
       "tick",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:59:54.818Z"
+    "lastUpdated": "2025-11-24T17:17:28.242Z"
   },
   {
     "id": 12,
@@ -183,13 +183,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:04:14.781Z"
+    "lastUpdated": "2025-11-24T17:18:08.447Z"
   },
   {
     "id": 13,
@@ -199,13 +199,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T13:55:19.174Z"
+    "lastUpdated": "2025-11-24T17:18:18.906Z"
   },
   {
     "id": 14,
@@ -231,13 +231,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T14:04:03.049Z"
+    "lastUpdated": "2025-11-24T17:18:01.580Z"
   },
   {
     "id": 16,
@@ -246,14 +246,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:12.115Z"
+    "lastUpdated": "2025-11-24T17:18:50.596Z"
   },
   {
     "id": 17,
@@ -262,14 +262,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:28.648Z"
+    "lastUpdated": "2025-11-24T17:18:54.172Z"
   },
   {
     "id": 18,
@@ -278,14 +278,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:46.513Z"
+    "lastUpdated": "2025-11-24T17:19:04.796Z"
   },
   {
     "id": 19,
@@ -294,14 +294,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:50.549Z"
+    "lastUpdated": "2025-11-24T17:19:10.824Z"
   },
   {
     "id": 20,
@@ -310,14 +310,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:14.195Z"
+    "lastUpdated": "2025-11-24T17:18:46.567Z"
   },
   {
     "id": 21,
@@ -326,14 +326,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:29.487Z"
+    "lastUpdated": "2025-11-24T17:18:58.737Z"
   },
   {
     "id": 22,
@@ -342,14 +342,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:45.101Z"
+    "lastUpdated": "2025-11-24T17:19:06.266Z"
   },
   {
     "id": 23,
@@ -358,14 +358,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:06:13.747Z"
+    "lastUpdated": "2025-11-24T17:19:15.838Z"
   },
   {
     "id": 24,
@@ -374,14 +374,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:17.234Z"
+    "lastUpdated": "2025-11-24T17:18:39.922Z"
   },
   {
     "id": 25,
@@ -390,14 +390,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:30.382Z"
+    "lastUpdated": "2025-11-24T17:18:59.772Z"
   },
   {
     "id": 26,
@@ -406,14 +406,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:06:06.573Z"
+    "lastUpdated": "2025-11-24T17:19:08.954Z"
   },
   {
     "id": 27,
@@ -422,14 +422,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:54.483Z"
+    "lastUpdated": "2025-11-24T17:19:16.923Z"
   },
   {
     "id": 28,
@@ -438,14 +438,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:27.211Z"
+    "lastUpdated": "2025-11-24T17:18:41.021Z"
   },
   {
     "id": 29,
@@ -454,14 +454,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:32.875Z"
+    "lastUpdated": "2025-11-24T17:19:02.222Z"
   },
   {
     "id": 30,
@@ -470,14 +470,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:05:44.282Z"
+    "lastUpdated": "2025-11-24T17:19:07.439Z"
   },
   {
     "id": 31,
@@ -485,7 +485,7 @@
     "answer": "Cars with trailers limited to 80 km/h outside towns, 100 km/h on highways with approval. Lower limits may apply.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -493,7 +493,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:06:19.823Z"
+    "lastUpdated": "2025-11-24T17:19:27.023Z"
   },
   {
     "id": 32,
@@ -501,7 +501,7 @@
     "answer": "Shows distance to hazard or how long regulation continues. Helps drivers prepare appropriately for upcoming situation.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -509,7 +509,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:09:45.421Z"
+    "lastUpdated": "2025-11-24T17:19:42.147Z"
   },
   {
     "id": 33,
@@ -517,7 +517,7 @@
     "answer": "Red triangle warns of road narrowing ahead. Reduce speed, prepare to yield if oncoming traffic present in narrow section.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -525,7 +525,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:09:38.678Z"
+    "lastUpdated": "2025-11-24T17:21:27.637Z"
   },
   {
     "id": 34,
@@ -533,7 +533,7 @@
     "answer": "Blue sign with walking figure indicates pedestrian-only area. Vehicle entry generally prohibited except delivery vehicles at specified times.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -541,7 +541,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:08:35.888Z"
+    "lastUpdated": "2025-11-24T17:21:28.846Z"
   },
   {
     "id": 35,
@@ -549,7 +549,7 @@
     "answer": "Priority at next intersection only; doesn't extend beyond. Other signs or rules determine priority at subsequent intersections.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -557,7 +557,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:06:21.548Z"
+    "lastUpdated": "2025-11-24T17:19:30.389Z"
   },
   {
     "id": 36,
@@ -565,7 +565,7 @@
     "answer": "Red triangle with bumps warns of uneven road surface ahead. Reduce speed to avoid vehicle damage and maintain control.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -573,7 +573,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:07:10.799Z"
+    "lastUpdated": "2025-11-24T17:19:43.554Z"
   },
   {
     "id": 37,
@@ -581,7 +581,7 @@
     "answer": "Orange signs with arrows guide drivers around closed roads. Follow numbered or colored detour route to destination.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -589,7 +589,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:06:54.547Z"
+    "lastUpdated": "2025-11-24T17:21:16.831Z"
   },
   {
     "id": 38,
@@ -597,7 +597,7 @@
     "answer": "Round blue sign with white number shows minimum required speed. Applies unless conditions make it unsafe to maintain speed.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -605,7 +605,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:08:45.863Z"
+    "lastUpdated": "2025-11-24T17:21:29.894Z"
   },
   {
     "id": 39,
@@ -613,7 +613,7 @@
     "answer": "Red triangle warns of falling rocks or debris from cliffs. Drive alertly, avoid stopping in danger zone if possible.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -621,7 +621,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:06:31.898Z"
+    "lastUpdated": "2025-11-24T17:19:36.856Z"
   },
   {
     "id": 40,
@@ -629,7 +629,7 @@
     "answer": "Sign indicates end of congestion zone. May resume normal speed gradually while monitoring traffic ahead.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -637,7 +637,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:07:13.357Z"
+    "lastUpdated": "2025-11-24T17:19:44.723Z"
   },
   {
     "id": 41,
@@ -645,7 +645,7 @@
     "answer": "Streetcars always have priority unless otherwise signed. Yield when they're entering or leaving stops, crossing paths.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -653,7 +653,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:06:52.265Z"
+    "lastUpdated": "2025-11-24T17:21:15.239Z"
   },
   {
     "id": 42,
@@ -661,7 +661,7 @@
     "answer": "Red triangle warns of strong crosswinds. Grip steering firmly, reduce speed, especially with high-profile vehicles or trailers.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -669,7 +669,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:07:00.831Z"
+    "lastUpdated": "2025-11-24T17:21:31.734Z"
   },
   {
     "id": 43,
@@ -677,7 +677,7 @@
     "answer": "Red circle prohibits all vehicle traffic. May have exceptions shown on additional signs for residents or deliveries.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -685,7 +685,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:10:51.569Z"
+    "lastUpdated": "2025-11-24T17:19:38.990Z"
   },
   {
     "id": 44,
@@ -693,6 +693,38 @@
     "answer": "Square blue sign with white number recommends speed but isn't legally binding. Often used on highways as recommended maximum.",
     "states": [
       "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-24T17:20:48.031Z"
+  },
+  {
+    "id": 45,
+    "word": "Gefahrzeichen Schnee Glatteis",
+    "answer": "Red triangle with snowflake warns of ice or snow on road. Reduce speed significantly, increase following distance, drive gently.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-24T17:21:22.771Z"
+  },
+  {
+    "id": 46,
+    "word": "Einmündung Junction Ahead",
+    "answer": "Sign shows road merging from side. If on priority road, you have right-of-way. Still check for merging vehicles.",
+    "states": [
+      "cross",
       "none",
       "none",
       "none",
@@ -701,12 +733,12 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:09:49.118Z"
+    "lastUpdated": "2025-11-24T17:22:32.009Z"
   },
   {
-    "id": 45,
-    "word": "Gefahrzeichen Schnee Glatteis",
-    "answer": "Red triangle with snowflake warns of ice or snow on road. Reduce speed significantly, increase following distance, drive gently.",
+    "id": 47,
+    "word": "Variable Speed Limits",
+    "answer": "Electronic overhead signs show changing speed limits based on traffic, weather, or accidents. Limits are legally binding when displayed.",
     "states": [
       "tick",
       "none",
@@ -717,46 +749,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T22:06:50.373Z"
-  },
-  {
-    "id": 46,
-    "word": "Einmündung Junction Ahead",
-    "answer": "Sign shows road merging from side. If on priority road, you have right-of-way. Still check for merging vehicles.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-18T21:45:51.518Z"
-  },
-  {
-    "id": 47,
-    "word": "Variable Speed Limits",
-    "answer": "Electronic overhead signs show changing speed limits based on traffic, weather, or accidents. Limits are legally binding when displayed.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-18T21:53:21.662Z"
+    "lastUpdated": "2025-11-24T17:25:35.807Z"
   },
   {
     "id": 48,
     "word": "Gefahrzeichen Kinder Children",
     "answer": "Red triangle with running children warns of school, playground, or area with children. Reduce speed, expect sudden movements.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -765,14 +765,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:54:31.348Z"
+    "lastUpdated": "2025-11-24T17:25:09.648Z"
   },
   {
     "id": 49,
     "word": "Fahrtrichtung Arrows",
     "answer": "White arrows on blue background show mandatory direction at intersection. Must follow arrow direction, cannot choose alternative.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -781,14 +781,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:39:13.863Z"
+    "lastUpdated": "2025-11-24T17:26:09.788Z"
   },
   {
     "id": 50,
     "word": "Ladezone Loading Zone",
     "answer": "Parking area reserved for loading/unloading goods. Time restrictions usually apply. Regular parking may be prohibited.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -797,14 +797,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:52:42.284Z"
+    "lastUpdated": "2025-11-24T17:22:40.882Z"
   },
   {
     "id": 51,
     "word": "Gefahrzeichen Querrinne",
     "answer": "Red triangle warns of groove or depression across roadway. Reduce speed to prevent damage and loss of vehicle control.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -813,14 +813,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:54:08.550Z"
+    "lastUpdated": "2025-11-24T17:25:31.503Z"
   },
   {
     "id": 52,
     "word": "Vorfahrt Aufgehoben Priority Ends",
     "answer": "Yellow diamond with gray diagonal stripes cancels priority road. Standard right-before-left or other signs now apply.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -829,14 +829,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:54:39.977Z"
+    "lastUpdated": "2025-11-24T17:25:15.430Z"
   },
   {
     "id": 53,
     "word": "Truck Speed Limit",
     "answer": "Trucks over 3.5 tons limited to 80 km/h outside towns, 60 km/h with trailer. Different limits on highways.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -845,14 +845,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:39:32.216Z"
+    "lastUpdated": "2025-11-24T17:25:58.988Z"
   },
   {
     "id": 54,
     "word": "Gefahrzeichen Flugbetrieb",
     "answer": "Red triangle with airplane warns of low-flying aircraft near airport. Expect noise, don't stop unnecessarily, stay alert.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -861,14 +861,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:52:45.218Z"
+    "lastUpdated": "2025-11-24T17:22:47.452Z"
   },
   {
     "id": 55,
     "word": "Radweg Bicycle Path",
     "answer": "Blue round sign with bicycle indicates mandatory bike path. Bicycles must use path; cars prohibited except for crossing.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -877,14 +877,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:54:09.979Z"
+    "lastUpdated": "2025-11-24T17:24:55.208Z"
   },
   {
     "id": 56,
     "word": "Kreisverkehr Entry Yield",
     "answer": "Yield sign with roundabout arrows means traffic in circle has priority. Wait for gap, merge smoothly without stopping unnecessarily.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -893,14 +893,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:55:06.375Z"
+    "lastUpdated": "2025-11-24T17:27:20.892Z"
   },
   {
     "id": 57,
     "word": "Gefahrzeichen Bewegliche Brücke",
     "answer": "Red triangle warns of movable bridge ahead. Bridge may open; watch for signals, be prepared to stop.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -909,14 +909,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:45:12.120Z"
+    "lastUpdated": "2025-11-24T17:26:02.081Z"
   },
   {
     "id": 58,
     "word": "Zusatzzeichen Pfeil Direction",
     "answer": "Arrow below sign indicates which direction regulation applies. Important for one-sided parking restrictions or priority.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -925,14 +925,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:52:53.508Z"
+    "lastUpdated": "2025-11-24T17:27:25.677Z"
   },
   {
     "id": 59,
     "word": "Rain Speed Adjustment",
     "answer": "No specific posted limit for rain, but adapt speed to conditions. Reduce significantly if visibility impaired or aquaplaning risk.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -941,14 +941,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:54:12.059Z"
+    "lastUpdated": "2025-11-24T17:24:53.776Z"
   },
   {
     "id": 60,
     "word": "Gefahrzeichen Fußgängerüberweg",
     "answer": "Red triangle warns of pedestrian crossing ahead. Slow down, be prepared to stop for pedestrians waiting or crossing.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -957,7 +957,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T21:55:23.095Z"
+    "lastUpdated": "2025-11-24T17:26:18.437Z"
   },
   {
     "id": 61,

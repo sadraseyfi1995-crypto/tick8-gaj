@@ -4727,13 +4727,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:51:09.060Z"
+    "lastUpdated": "2025-11-24T17:15:10.294Z"
   },
   {
     "id": 297,
@@ -4743,13 +4743,13 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:51:13.322Z"
+    "lastUpdated": "2025-11-24T17:15:12.278Z"
   },
   {
     "id": 298,
@@ -4759,13 +4759,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:56:13.850Z"
+    "lastUpdated": "2025-11-24T17:15:13.176Z"
   },
   {
     "id": 299,
@@ -4775,13 +4775,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:56:08.950Z"
+    "lastUpdated": "2025-11-24T17:15:14.110Z"
   },
   {
     "id": 300,
@@ -4791,13 +4791,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:51:11.753Z"
+    "lastUpdated": "2025-11-24T17:15:11.276Z"
   },
   {
     "id": 301,
@@ -4806,14 +4806,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:56:56.886Z"
+    "lastUpdated": "2025-11-24T17:15:16.920Z"
   },
   {
     "id": 302,
@@ -4822,14 +4822,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:56:55.818Z"
+    "lastUpdated": "2025-11-24T17:15:18.168Z"
   },
   {
     "id": 303,
@@ -4838,14 +4838,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:57:15.951Z"
+    "lastUpdated": "2025-11-24T17:15:27.945Z"
   },
   {
     "id": 304,
@@ -4854,14 +4854,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:57:08.932Z"
+    "lastUpdated": "2025-11-24T17:15:24.360Z"
   },
   {
     "id": 305,
@@ -4870,14 +4870,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T15:57:17.690Z"
+    "lastUpdated": "2025-11-24T17:15:32.132Z"
   },
   {
     "id": 306,
@@ -4885,7 +4885,7 @@
     "answer": "Selecting highest probability token at each step, fast but potentially suboptimal for sequence generation.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -4893,7 +4893,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T18:27:45.243Z"
+    "lastUpdated": "2025-11-24T17:16:24.163Z"
   },
   {
     "id": 307,
@@ -4901,6 +4901,70 @@
     "answer": "Sampling next token from k most probable candidates, balancing randomness and quality in text generation.",
     "states": [
       "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-24T17:16:12.727Z"
+  },
+  {
+    "id": 308,
+    "word": "Nucleus Sampling (Top-P)",
+    "answer": "Sampling from smallest token set whose cumulative probability exceeds threshold p, dynamically adjusting candidate pool size.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-24T17:16:11.709Z"
+  },
+  {
+    "id": 309,
+    "word": "Bidirectional RNN",
+    "answer": "Processing sequence in both forward and backward directions, capturing context from entire sequence for each position.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-24T17:16:17.010Z"
+  },
+  {
+    "id": 310,
+    "word": "Stateful RNN",
+    "answer": "RNN preserving hidden state across batches, enabling learning from very long sequences split into chunks.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-24T17:16:14.898Z"
+  },
+  {
+    "id": 311,
+    "word": "Return Sequences",
+    "answer": "RNN configuration outputting hidden state at every time step rather than only final step, used for stacked RNNs.",
+    "states": [
+      "cross",
       "none",
       "none",
       "none",
@@ -4909,12 +4973,12 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T16:50:53.462Z"
+    "lastUpdated": "2025-11-24T17:30:47.974Z"
   },
   {
-    "id": 308,
-    "word": "Nucleus Sampling (Top-P)",
-    "answer": "Sampling from smallest token set whose cumulative probability exceeds threshold p, dynamically adjusting candidate pool size.",
+    "id": 312,
+    "word": "Attention Weights",
+    "answer": "Normalized scores indicating how much each input position should influence current output, often visualized to interpret models.",
     "states": [
       "tick",
       "none",
@@ -4925,78 +4989,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-23T16:50:54.795Z"
-  },
-  {
-    "id": 309,
-    "word": "Bidirectional RNN",
-    "answer": "Processing sequence in both forward and backward directions, capturing context from entire sequence for each position.",
-    "states": [
-      "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-23T17:54:00.636Z"
-  },
-  {
-    "id": 310,
-    "word": "Stateful RNN",
-    "answer": "RNN preserving hidden state across batches, enabling learning from very long sequences split into chunks.",
-    "states": [
-      "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-23T16:50:41.849Z"
-  },
-  {
-    "id": 311,
-    "word": "Return Sequences",
-    "answer": "RNN configuration outputting hidden state at every time step rather than only final step, used for stacked RNNs.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-15T19:17:56.785Z"
-  },
-  {
-    "id": 312,
-    "word": "Attention Weights",
-    "answer": "Normalized scores indicating how much each input position should influence current output, often visualized to interpret models.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-15T19:18:02.075Z"
+    "lastUpdated": "2025-11-24T17:27:47.629Z"
   },
   {
     "id": 313,
     "word": "Query, Key, Value (QKV)",
     "answer": "Three projections in attention mechanism: query determines what to look for, keys what to match, values provide information.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5005,14 +5005,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-15T19:18:03.176Z"
+    "lastUpdated": "2025-11-24T17:27:44.297Z"
   },
   {
     "id": 314,
     "word": "Multi-Head Attention",
     "answer": "Running multiple attention mechanisms in parallel, allowing model to attend to different representation subspaces simultaneously.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5021,14 +5021,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-15T19:18:04.040Z"
+    "lastUpdated": "2025-11-24T17:27:45.923Z"
   },
   {
     "id": 315,
     "word": "Causal Masking",
     "answer": "Preventing attention to future positions during training, ensuring model only uses past information when predicting next token.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -5037,7 +5037,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-15T19:18:00.917Z"
+    "lastUpdated": "2025-11-24T17:30:52.766Z"
   },
   {
     "id": 316,
