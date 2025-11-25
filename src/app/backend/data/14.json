@@ -36,7 +36,7 @@
     "word": "Find maximum in array",
     "answer": "Iterate through array keeping track of the largest value seen so far.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -45,7 +45,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-10-30T21:22:11.609Z"
+    "lastUpdated": "2025-11-25T21:16:23.476Z"
   },
   {
     "id": 4,

@@ -4676,7 +4676,7 @@
     "word": "Cyclic Learning Rate",
     "answer": "Varying learning rate between bounds in cycles, potentially escaping local minima and accelerating convergence.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "cross",
       "cross",
@@ -4685,7 +4685,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-11T19:40:09.657Z"
+    "lastUpdated": "2025-11-25T18:19:46.197Z"
   },
   {
     "id": 294,
@@ -4708,7 +4708,7 @@
     "word": "Cutout Augmentation",
     "answer": "Randomly masking square regions in images, forcing model to rely on broader context rather than specific features.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "cross",
       "cross",
@@ -4717,7 +4717,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-11T19:40:07.517Z"
+    "lastUpdated": "2025-11-25T18:19:44.336Z"
   },
   {
     "id": 296,
@@ -4728,12 +4728,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:10.294Z"
+    "lastUpdated": "2025-11-25T18:19:50.125Z"
   },
   {
     "id": 297,
@@ -4744,12 +4744,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:12.278Z"
+    "lastUpdated": "2025-11-25T18:19:53.269Z"
   },
   {
     "id": 298,
@@ -4760,12 +4760,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:13.176Z"
+    "lastUpdated": "2025-11-25T18:19:58.468Z"
   },
   {
     "id": 299,
@@ -4776,12 +4776,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:14.110Z"
+    "lastUpdated": "2025-11-25T18:20:00.257Z"
   },
   {
     "id": 300,
@@ -4792,12 +4792,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:11.276Z"
+    "lastUpdated": "2025-11-25T18:20:03.773Z"
   },
   {
     "id": 301,
@@ -4807,13 +4807,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:16.920Z"
+    "lastUpdated": "2025-11-25T18:20:10.010Z"
   },
   {
     "id": 302,
@@ -4823,13 +4823,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:18.168Z"
+    "lastUpdated": "2025-11-25T18:20:12.116Z"
   },
   {
     "id": 303,
@@ -4839,13 +4839,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:27.945Z"
+    "lastUpdated": "2025-11-25T18:20:15.683Z"
   },
   {
     "id": 304,
@@ -4855,13 +4855,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:24.360Z"
+    "lastUpdated": "2025-11-25T18:21:24.622Z"
   },
   {
     "id": 305,
@@ -4871,13 +4871,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:15:32.132Z"
+    "lastUpdated": "2025-11-25T18:21:29.714Z"
   },
   {
     "id": 306,
@@ -4886,14 +4886,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:16:24.163Z"
+    "lastUpdated": "2025-11-25T18:21:32.758Z"
   },
   {
     "id": 307,
@@ -4902,14 +4902,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:16:12.727Z"
+    "lastUpdated": "2025-11-25T18:21:34.639Z"
   },
   {
     "id": 308,
@@ -4918,14 +4918,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:16:11.709Z"
+    "lastUpdated": "2025-11-25T18:21:36.227Z"
   },
   {
     "id": 309,
@@ -4934,14 +4934,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:16:17.010Z"
+    "lastUpdated": "2025-11-25T18:21:38.340Z"
   },
   {
     "id": 310,
@@ -4950,14 +4950,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:16:14.898Z"
+    "lastUpdated": "2025-11-25T18:27:10.567Z"
   },
   {
     "id": 311,
@@ -4965,7 +4965,7 @@
     "answer": "RNN configuration outputting hidden state at every time step rather than only final step, used for stacked RNNs.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -4973,7 +4973,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:30:47.974Z"
+    "lastUpdated": "2025-11-25T18:36:02.335Z"
   },
   {
     "id": 312,
@@ -4981,7 +4981,7 @@
     "answer": "Normalized scores indicating how much each input position should influence current output, often visualized to interpret models.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -4989,7 +4989,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:27:47.629Z"
+    "lastUpdated": "2025-11-25T18:35:58.919Z"
   },
   {
     "id": 313,
@@ -4997,7 +4997,7 @@
     "answer": "Three projections in attention mechanism: query determines what to look for, keys what to match, values provide information.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5005,7 +5005,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:27:44.297Z"
+    "lastUpdated": "2025-11-25T18:35:57.243Z"
   },
   {
     "id": 314,
@@ -5013,7 +5013,7 @@
     "answer": "Running multiple attention mechanisms in parallel, allowing model to attend to different representation subspaces simultaneously.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5021,12 +5021,28 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:27:45.923Z"
+    "lastUpdated": "2025-11-25T18:34:39.415Z"
   },
   {
     "id": 315,
     "word": "Causal Masking",
     "answer": "Preventing attention to future positions during training, ensuring model only uses past information when predicting next token.",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-25T18:36:49.978Z"
+  },
+  {
+    "id": 316,
+    "word": "Cross-Attention",
+    "answer": "Attention mechanism where queries come from one sequence (decoder) and keys/values from another (encoder).",
     "states": [
       "cross",
       "none",
@@ -5037,30 +5053,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-24T17:30:52.766Z"
-  },
-  {
-    "id": 316,
-    "word": "Cross-Attention",
-    "answer": "Attention mechanism where queries come from one sequence (decoder) and keys/values from another (encoder).",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-16T13:29:29.765Z"
+    "lastUpdated": "2025-11-25T20:47:41.787Z"
   },
   {
     "id": 317,
     "word": "Scaled Dot-Product Attention",
     "answer": "Computing attention by taking dot product of queries and keys, scaling by dimension, then applying softmax.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5069,14 +5069,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-16T13:29:42.767Z"
+    "lastUpdated": "2025-11-25T18:43:28.503Z"
   },
   {
     "id": 318,
     "word": "Attention Is All You Need",
     "answer": "Landmark paper introducing transformer architecture, replacing recurrence with self-attention for parallel sequence processing.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5085,14 +5085,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-16T13:29:43.816Z"
+    "lastUpdated": "2025-11-25T18:36:58.827Z"
   },
   {
     "id": 319,
     "word": "Gradient Accumulation",
     "answer": "Summing gradients over multiple forward passes before updating weights, simulating larger batch sizes with limited memory.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5101,14 +5101,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-16T13:29:45.268Z"
+    "lastUpdated": "2025-11-25T18:42:44.404Z"
   },
   {
     "id": 320,
     "word": "Mixed Precision Training",
     "answer": "Using 16-bit floats for most operations and 32-bit for critical ones, reducing memory and accelerating training on modern GPUs.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -5117,7 +5117,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-16T13:29:41.405Z"
+    "lastUpdated": "2025-11-25T21:00:26.322Z"
   },
   {
     "id": 321,

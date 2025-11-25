@@ -996,7 +996,7 @@
     "word": "Gefahrzeichen Amphibienwanderung",
     "answer": "Red triangle warns of migrating amphibians crossing road seasonally. Drive slowly, watch road surface to avoid killing animals.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -1005,14 +1005,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T22:24:18.477Z"
+    "lastUpdated": "2025-11-25T17:24:22.825Z"
   },
   {
     "id": 64,
     "word": "Parkscheibe Parking Disc",
     "answer": "Blue disc showing arrival time required in restricted zones. Set to arrival time rounded up to next half-hour.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -1021,7 +1021,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T22:32:18.502Z"
+    "lastUpdated": "2025-11-25T18:15:58.137Z"
   },
   {
     "id": 65,
@@ -1060,7 +1060,7 @@
     "word": "Absolutes Halteverbot Total Stop Ban",
     "answer": "Blue circle with red border and diagonal red line prohibits all stopping and parking. Applies in direction of arrow.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -1069,14 +1069,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T22:24:22.570Z"
+    "lastUpdated": "2025-11-25T17:24:40.168Z"
   },
   {
     "id": 68,
     "word": "Bus Priority Merging",
     "answer": "Buses signaling to leave stop have priority to merge into traffic. Drivers must allow buses to pull out safely.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -1085,7 +1085,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T22:33:31.584Z"
+    "lastUpdated": "2025-11-25T18:15:39.487Z"
   },
   {
     "id": 69,
@@ -1124,7 +1124,7 @@
     "word": "Opposite Direction Right Of Way",
     "answer": "Red arrow facing you means yield to oncoming traffic in narrow section. Blue arrow means you have priority.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -1133,14 +1133,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T22:25:49.834Z"
+    "lastUpdated": "2025-11-25T17:25:20.419Z"
   },
   {
     "id": 72,
     "word": "Gefahrzeichen Ufer Water Edge",
     "answer": "Red triangle warns road near water without barrier. Drive carefully, risk of skidding into water if leaving road.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -1149,7 +1149,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T22:33:59.517Z"
+    "lastUpdated": "2025-11-25T18:02:55.871Z"
   },
   {
     "id": 73,
@@ -1188,7 +1188,7 @@
     "word": "Gefahrzeichen Bahnübergang Gate",
     "answer": "Red triangle warns of railway crossing with barriers ahead. Stop at red lights or closed gates, never drive around.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -1197,7 +1197,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-18T22:31:07.882Z"
+    "lastUpdated": "2025-11-25T18:15:18.897Z"
   },
   {
     "id": 76,

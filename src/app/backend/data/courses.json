@@ -21,6 +21,18 @@
     "id": "14",
     "name": "LeetCode",
     "filename": "14.json",
-    "pageSize": 2
+    "pageSize": 1
+  },
+  {
+    "name": "Google ML",
+    "filename": "google-ml-1764091222562.json",
+    "pageSize": 2,
+    "order": 5
+  },
+  {
+    "name": "Google SWE",
+    "filename": "google-swe-1764102975826.json",
+    "pageSize": 1,
+    "order": 6
   }
 ]

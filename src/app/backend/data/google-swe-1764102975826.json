@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "word": "Sliding Window Pattern",
+    "answer": "A technique using two pointers to create a window that slides through an array or string, maintaining a subset of elements to solve subarray or substring problems efficiently.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-25T21:10:33.728Z"
+  },
+  {
+    "id": 2,
+    "word": "Fixed-Size Sliding Window",
+    "answer": "Window maintains constant size k, sliding one position at each step. Used for problems like maximum sum of k consecutive elements or average of subarrays."
+  },
+  {
+    "id": 3,
+    "word": "Variable-Size Sliding Window",
+    "answer": "Window expands and contracts based on conditions. Used for longest substring problems or finding subarrays meeting specific criteria like sum or unique character constraints."
+  },
+  {
+    "id": 4,
+    "word": "Two Pointer Technique",
+    "answer": "Uses two pointers moving through data structure from different positions or directions. Common patterns include opposite ends, same direction, or fast-slow pointers for optimization."
+  },
+  {
+    "id": 5,
+    "word": "Opposite Direction Two Pointers",
+    "answer": "Pointers start at opposite ends and move toward each other. Used for palindrome checking, pair sum problems in sorted arrays, and container with most water."
+  },
+  {
+    "id": 6,
+    "word": "Same Direction Two Pointers",
+    "answer": "Both pointers move forward, usually at different speeds. Used for removing duplicates, partitioning arrays, or finding subarrays with specific properties in linear time."
+  },
+  {
+    "id": 7,
+    "word": "Fast-Slow Pointer Pattern",
+    "answer": "Two pointers move at different speeds through a data structure. Used for cycle detection, finding middle elements, or detecting patterns in linked lists and arrays."
+  },
+  {
+    "id": 8,
+    "word": "Substring Pattern Matching",
+    "answer": "Finding occurrences of patterns within strings. Techniques include naive search, KMP algorithm, Rabin-Karp hashing, and Boyer-Moore for efficient pattern detection in text."
+  },
+  {
+    "id": 9,
+    "word": "KMP Algorithm",
+    "answer": "Knuth-Morris-Pratt uses prefix table to avoid re-examining characters after mismatch. Achieves O(n+m) time complexity for pattern matching by preprocessing the pattern string."
+  },
+  {
+    "id": 10,
+    "word": "Rabin-Karp Algorithm",
+    "answer": "Uses rolling hash to find pattern matches in O(n+m) average time. Compares hash values first, then verifies actual strings only on hash collision."
+  },
+  {
+    "id": 11,
+    "word": "In-Place Array Modification",
+    "answer": "Modifying array without extra space by overwriting elements strategically. Uses techniques like swapping, two pointers, or index manipulation to achieve O(1) space complexity."
+  },
+  {
+    "id": 12,
+    "word": "Prefix Sum Array",
+    "answer": "Preprocessed array where each element stores sum of all previous elements. Enables O(1) range sum queries after O(n) preprocessing, useful for subarray sum problems."
+  },
+  {
+    "id": 13,
+    "word": "Kadane's Algorithm",
+    "answer": "Finds maximum sum contiguous subarray in O(n) time using dynamic programming. Tracks current subarray sum, resetting when negative, and maintains global maximum throughout."
+  },
+  {
+    "id": 14,
+    "word": "Dutch National Flag Problem",
+    "answer": "Partitions array into three sections in one pass using three pointers. Sorts elements with three distinct values in O(n) time and O(1) space."
+  },
+  {
+    "id": 15,
+    "word": "String Building Optimization",
+    "answer": "In JavaScript, use array.join() instead of string concatenation in loops. String immutability makes concatenation O(n²), while array joining achieves O(n) performance."
+  },
+  {
+    "id": 16,
+    "word": "Anagram Detection",
+    "answer": "Checking if two strings contain same characters with same frequencies. Use character frequency maps or sorted string comparison for O(n) or O(n log n) solutions."
+  },
+  {
+    "id": 17,
+    "word": "Palindrome Verification",
+    "answer": "Checking if string reads same forwards and backwards. Use two pointers from ends moving inward, comparing characters until they meet or cross for O(n) solution."
+  },
+  {
+    "id": 18,
+    "word": "Longest Substring Without Repeating",
+    "answer": "Finding maximum length substring with all unique characters. Use sliding window with hash set to track characters, expanding right and contracting left on duplicates."
+  },
+  {
+    "id": 19,
+    "word": "Subarray With Target Sum",
+    "answer": "Finding contiguous subarray that sums to target value. Use sliding window for positive numbers or prefix sum with hash map for arrays with negatives."
+  },
+  {
+    "id": 20,
+    "word": "Array Rotation Techniques",
+    "answer": "Moving elements circularly left or right. Optimal approach reverses entire array, then reverses first k and remaining n-k elements separately for O(n) time, O(1) space."
+  },
+  {
+    "id": 21,
+    "word": "Boyer-Moore Voting Algorithm",
+    "answer": "Finds majority element appearing more than n/2 times in O(n) time and O(1) space. Maintains candidate and counter, canceling out different elements."
+  },
+  {
+    "id": 22,
+    "word": "String Compression",
+    "answer": "Reducing string size by encoding consecutive characters. Example: 'aaabbc' becomes 'a3b2c1'. Useful for run-length encoding and data compression problems with character counting."
+  },
+  {
+    "id": 23,
+    "word": "Matrix Traversal Patterns",
+    "answer": "Visiting 2D array elements in specific orders: row-wise, column-wise, diagonal, spiral, or zigzag. Each pattern requires different index manipulation and boundary condition handling."
+  },
+  {
+    "id": 24,
+    "word": "Edge Case Handling",
+    "answer": "Addressing boundary conditions: empty arrays, single elements, all duplicates, negative numbers, integer overflow, null values, and special characters in strings for robust solutions."
+  },
+  {
+    "id": 25,
+    "word": "Time-Space Tradeoff",
+    "answer": "Balancing algorithm speed versus memory usage. Often can reduce time complexity by using extra space for caching, hashing, or preprocessing, or vice versa."
+  }
+]
