@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
-import { ICourse } from './sidebar/sidebar.component';
 import { VocabComponentModel } from './vocab/vocab.component';
+import { ICourse } from './models/course.model';
 
 @Injectable({
   providedIn: 'root'

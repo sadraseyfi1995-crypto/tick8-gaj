@@ -1,23 +1,16 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { SidebarMode } from '../layout/layout.component';
 import { Router, ActivatedRoute } from '@angular/router';
 import { SharedService } from '../shared.service';
-
-export interface ICourse {
-  id: string,
-  name: string,
-  order: number,
-  pageSize?: number
-}
-
 import { DataHandlerService } from '../data-handler.service';
+import { ICourse } from '../models/course.model';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent {
+export class SidebarComponent implements OnInit {
   @Input() mode: SidebarMode = 'expanded';
   @Output() toggleMode = new EventEmitter<SidebarMode>();
 
@@ -25,8 +18,10 @@ export class SidebarComponent {
     private router: Router,
     private route: ActivatedRoute,
     private sharedService: SharedService,
-    private dataHandler: DataHandlerService
-  ) {
+    public dataHandler: DataHandlerService
+  ) { }
+
+  ngOnInit(): void {
     this.dataHandler.getCourses().subscribe(courses => {
       this.dataHandler.courses = courses.map((c: any) => ({
         id: c.filename.replace('.json', ''),
@@ -38,6 +33,12 @@ export class SidebarComponent {
   }
 
   setCourse(courseId: string) {
+    const course = this.dataHandler.courses.find(item => item.id === courseId);
+    if (!course) {
+      console.error(`Course with id ${courseId} not found`);
+      return;
+    }
+
     this.router.navigate(['/'], {
       queryParams: {
         course: courseId,
@@ -46,7 +47,7 @@ export class SidebarComponent {
       queryParamsHandling: 'merge',
       replaceUrl: true
     });
-    this.sharedService.setChosenCourse(this.dataHandler.courses.find(item => item.id === courseId)!);
+    this.sharedService.setChosenCourse(course);
   }
 
   get sortedCourses() {

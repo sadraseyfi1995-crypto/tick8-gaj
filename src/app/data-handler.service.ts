@@ -5,7 +5,7 @@ import { VboxState, VocabComponentModel } from './vocab/vocab.component';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 
 import { SharedService } from './shared.service';
-import { ICourse } from './sidebar/sidebar.component';
+import { ICourse } from './models/course.model';
 
 @Injectable({
   providedIn: 'root'
