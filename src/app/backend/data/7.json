@@ -4677,7 +4677,7 @@
     "answer": "Varying learning rate between bounds in cycles, potentially escaping local minima and accelerating convergence.",
     "states": [
       "tick",
-      "cross",
+      "tick",
       "cross",
       "cross",
       "tick",
@@ -4685,7 +4685,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-25T18:19:46.197Z"
+    "lastUpdated": "2025-11-29T23:11:40.940Z"
   },
   {
     "id": 294,
@@ -4709,7 +4709,7 @@
     "answer": "Randomly masking square regions in images, forcing model to rely on broader context rather than specific features.",
     "states": [
       "tick",
-      "cross",
+      "tick",
       "cross",
       "cross",
       "cross",
@@ -4717,7 +4717,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-25T18:19:44.336Z"
+    "lastUpdated": "2025-11-29T23:11:42.635Z"
   },
   {
     "id": 296,
@@ -4729,11 +4729,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:19:50.125Z"
+    "lastUpdated": "2025-11-28T22:40:10.361Z"
   },
   {
     "id": 297,
@@ -4745,11 +4745,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:19:53.269Z"
+    "lastUpdated": "2025-11-28T22:40:12.480Z"
   },
   {
     "id": 298,
@@ -4761,11 +4761,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:19:58.468Z"
+    "lastUpdated": "2025-11-28T22:40:14.051Z"
   },
   {
     "id": 299,
@@ -4777,11 +4777,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:20:00.257Z"
+    "lastUpdated": "2025-11-28T22:40:15.112Z"
   },
   {
     "id": 300,
@@ -4793,11 +4793,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:20:03.773Z"
+    "lastUpdated": "2025-11-28T22:40:11.492Z"
   },
   {
     "id": 301,
@@ -4808,12 +4808,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "cross",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:20:10.010Z"
+    "lastUpdated": "2025-11-29T23:18:11.191Z"
   },
   {
     "id": 302,
@@ -4824,12 +4824,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "cross",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:20:12.116Z"
+    "lastUpdated": "2025-11-29T23:13:04.787Z"
   },
   {
     "id": 303,
@@ -4840,12 +4840,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:20:15.683Z"
+    "lastUpdated": "2025-11-29T23:12:47.494Z"
   },
   {
     "id": 304,
@@ -4856,12 +4856,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:21:24.622Z"
+    "lastUpdated": "2025-11-29T23:12:49.732Z"
   },
   {
     "id": 305,
@@ -4872,12 +4872,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T18:21:29.714Z"
+    "lastUpdated": "2025-11-29T23:13:00.105Z"
   },
   {
     "id": 306,
@@ -4887,13 +4887,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:21:32.758Z"
+    "lastUpdated": "2025-11-29T23:18:14.407Z"
   },
   {
     "id": 307,
@@ -4903,13 +4903,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:21:34.639Z"
+    "lastUpdated": "2025-11-29T23:18:20.541Z"
   },
   {
     "id": 308,
@@ -4919,13 +4919,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:21:36.227Z"
+    "lastUpdated": "2025-11-29T23:18:24.940Z"
   },
   {
     "id": 309,
@@ -4935,13 +4935,13 @@
       "cross",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:21:38.340Z"
+    "lastUpdated": "2025-11-29T23:18:25.926Z"
   },
   {
     "id": 310,
@@ -4951,13 +4951,13 @@
       "cross",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:27:10.567Z"
+    "lastUpdated": "2025-11-29T23:18:19.391Z"
   },
   {
     "id": 311,
@@ -4966,14 +4966,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:36:02.335Z"
+    "lastUpdated": "2025-11-29T23:19:24.429Z"
   },
   {
     "id": 312,
@@ -4982,14 +4982,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:35:58.919Z"
+    "lastUpdated": "2025-11-29T23:18:41.078Z"
   },
   {
     "id": 313,
@@ -4998,14 +4998,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:35:57.243Z"
+    "lastUpdated": "2025-11-29T23:18:41.924Z"
   },
   {
     "id": 314,
@@ -5014,14 +5014,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:34:39.415Z"
+    "lastUpdated": "2025-11-29T23:18:43.848Z"
   },
   {
     "id": 315,
@@ -5030,14 +5030,14 @@
     "states": [
       "cross",
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:36:49.978Z"
+    "lastUpdated": "2025-11-29T23:18:45.752Z"
   },
   {
     "id": 316,
@@ -5045,15 +5045,15 @@
     "answer": "Attention mechanism where queries come from one sequence (decoder) and keys/values from another (encoder).",
     "states": [
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T20:47:41.787Z"
+    "lastUpdated": "2025-11-29T23:19:32.240Z"
   },
   {
     "id": 317,
@@ -5061,15 +5061,15 @@
     "answer": "Computing attention by taking dot product of queries and keys, scaling by dimension, then applying softmax.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:43:28.503Z"
+    "lastUpdated": "2025-11-29T23:19:28.886Z"
   },
   {
     "id": 318,
@@ -5077,15 +5077,15 @@
     "answer": "Landmark paper introducing transformer architecture, replacing recurrence with self-attention for parallel sequence processing.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:36:58.827Z"
+    "lastUpdated": "2025-11-29T23:19:29.913Z"
   },
   {
     "id": 319,
@@ -5093,7 +5093,199 @@
     "answer": "Summing gradients over multiple forward passes before updating weights, simulating larger batch sizes with limited memory.",
     "states": [
       "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:19:30.950Z"
+  },
+  {
+    "id": 320,
+    "word": "Mixed Precision Training",
+    "answer": "Using 16-bit floats for most operations and 32-bit for critical ones, reducing memory and accelerating training on modern GPUs.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:19:54.906Z"
+  },
+  {
+    "id": 321,
+    "word": "Input Pipeline Optimization",
+    "answer": "Techniques like prefetching, parallel data loading, and caching to prevent GPU idle time during training.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:26:58.897Z"
+  },
+  {
+    "id": 322,
+    "word": "Time Distributed Layer",
+    "answer": "Wrapper applying same layer independently to each time step in sequence, sharing weights across temporal dimension.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:20:08.148Z"
+  },
+  {
+    "id": 323,
+    "word": "Repeat Vector",
+    "answer": "Layer replicating single vector across multiple time steps, bridging encoder's single output to decoder's sequence input.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:20:09.009Z"
+  },
+  {
+    "id": 324,
+    "word": "Embedding Collapse",
+    "answer": "Problem where different tokens learn nearly identical embeddings, reducing model expressiveness and hurting performance.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:20:23.688Z"
+  },
+  {
+    "id": 325,
+    "word": "Out-Of-Vocabulary (OOV)",
+    "answer": "Words not present in training vocabulary, handled through special tokens, subword tokenization, or character-level processing.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:20:12.230Z"
+  },
+  {
+    "id": 326,
+    "word": "Vocabulary Size",
+    "answer": "Number of unique tokens model can handle, balancing coverage against embedding matrix size and computational cost.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:27:10.266Z"
+  },
+  {
+    "id": 327,
+    "word": "Pretrained Embeddings",
+    "answer": "Word vectors learned from large corpus used to initialize embedding layer, transferring semantic knowledge to downstream tasks.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:27:12.342Z"
+  },
+  {
+    "id": 328,
+    "word": "Embedding Fine-Tuning",
+    "answer": "Training pretrained embeddings on task-specific data, adapting general semantic knowledge to domain-specific vocabulary.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:27:14.247Z"
+  },
+  {
+    "id": 329,
+    "word": "Skip Connection",
+    "answer": "Direct pathway bypassing one or more layers, helping gradients flow and enabling training of deeper architectures.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:27:16.537Z"
+  },
+  {
+    "id": 330,
+    "word": "Dense Block",
+    "answer": "Architecture pattern where each layer receives inputs from all previous layers, maximizing feature reuse and gradient flow.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:27:11.231Z"
+  },
+  {
+    "id": 331,
+    "word": "Inception Module",
+    "answer": "Parallel convolutions with different kernel sizes concatenated, capturing multi-scale features in single layer.",
+    "states": [
+      "cross",
+      "tick",
       "none",
       "none",
       "none",
@@ -5101,12 +5293,76 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:42:44.404Z"
+    "lastUpdated": "2025-11-29T23:27:38.729Z"
   },
   {
-    "id": 320,
-    "word": "Mixed Precision Training",
-    "answer": "Using 16-bit floats for most operations and 32-bit for critical ones, reducing memory and accelerating training on modern GPUs.",
+    "id": 332,
+    "word": "Squeeze-And-Excitation (SE) Block",
+    "answer": "Module recalibrating channel-wise features by explicitly modeling interdependencies, improving representation quality.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:27:26.472Z"
+  },
+  {
+    "id": 333,
+    "word": "Spatial Pyramid Pooling",
+    "answer": "Pooling input at multiple scales and concatenating results, enabling fixed-size output from variable-size inputs.",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:37:04.996Z"
+  },
+  {
+    "id": 334,
+    "word": "Feature Pyramid Network (FPN)",
+    "answer": "Architecture combining low-resolution semantic features with high-resolution spatial features for multi-scale detection.",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:51:00.535Z"
+  },
+  {
+    "id": 335,
+    "word": "U-Net Architecture",
+    "answer": "Encoder-decoder with skip connections between symmetric layers, widely used for image segmentation tasks.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T23:27:39.523Z"
+  },
+  {
+    "id": 336,
+    "word": "VGGNet",
+    "answer": "Deep CNN using small 3x3 filters stacked deeply, demonstrating importance of network depth.",
     "states": [
       "cross",
       "none",
@@ -5117,270 +5373,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T21:00:26.322Z"
-  },
-  {
-    "id": 321,
-    "word": "Input Pipeline Optimization",
-    "answer": "Techniques like prefetching, parallel data loading, and caching to prevent GPU idle time during training.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:16:16.355Z"
-  },
-  {
-    "id": 322,
-    "word": "Time Distributed Layer",
-    "answer": "Wrapper applying same layer independently to each time step in sequence, sharing weights across temporal dimension.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:15:53.979Z"
-  },
-  {
-    "id": 323,
-    "word": "Repeat Vector",
-    "answer": "Layer replicating single vector across multiple time steps, bridging encoder's single output to decoder's sequence input.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:15:55.847Z"
-  },
-  {
-    "id": 324,
-    "word": "Embedding Collapse",
-    "answer": "Problem where different tokens learn nearly identical embeddings, reducing model expressiveness and hurting performance.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:16:05.644Z"
-  },
-  {
-    "id": 325,
-    "word": "Out-Of-Vocabulary (OOV)",
-    "answer": "Words not present in training vocabulary, handled through special tokens, subword tokenization, or character-level processing.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:15:49.432Z"
-  },
-  {
-    "id": 326,
-    "word": "Vocabulary Size",
-    "answer": "Number of unique tokens model can handle, balancing coverage against embedding matrix size and computational cost.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:16:44.085Z"
-  },
-  {
-    "id": 327,
-    "word": "Pretrained Embeddings",
-    "answer": "Word vectors learned from large corpus used to initialize embedding layer, transferring semantic knowledge to downstream tasks.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:16:51.243Z"
-  },
-  {
-    "id": 328,
-    "word": "Embedding Fine-Tuning",
-    "answer": "Training pretrained embeddings on task-specific data, adapting general semantic knowledge to domain-specific vocabulary.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:16:52.249Z"
-  },
-  {
-    "id": 329,
-    "word": "Skip Connection",
-    "answer": "Direct pathway bypassing one or more layers, helping gradients flow and enabling training of deeper architectures.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:16:53.601Z"
-  },
-  {
-    "id": 330,
-    "word": "Dense Block",
-    "answer": "Architecture pattern where each layer receives inputs from all previous layers, maximizing feature reuse and gradient flow.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:16:56.302Z"
-  },
-  {
-    "id": 331,
-    "word": "Inception Module",
-    "answer": "Parallel convolutions with different kernel sizes concatenated, capturing multi-scale features in single layer.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:29:55.893Z"
-  },
-  {
-    "id": 332,
-    "word": "Squeeze-And-Excitation (SE) Block",
-    "answer": "Module recalibrating channel-wise features by explicitly modeling interdependencies, improving representation quality.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T22:01:00.587Z"
-  },
-  {
-    "id": 333,
-    "word": "Spatial Pyramid Pooling",
-    "answer": "Pooling input at multiple scales and concatenating results, enabling fixed-size output from variable-size inputs.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T22:02:58.608Z"
-  },
-  {
-    "id": 334,
-    "word": "Feature Pyramid Network (FPN)",
-    "answer": "Architecture combining low-resolution semantic features with high-resolution spatial features for multi-scale detection.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T22:02:57.764Z"
-  },
-  {
-    "id": 335,
-    "word": "U-Net Architecture",
-    "answer": "Encoder-decoder with skip connections between symmetric layers, widely used for image segmentation tasks.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:29:29.780Z"
-  },
-  {
-    "id": 336,
-    "word": "VGGNet",
-    "answer": "Deep CNN using small 3x3 filters stacked deeply, demonstrating importance of network depth.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T22:06:14.476Z"
+    "lastUpdated": "2025-11-29T23:52:18.100Z"
   },
   {
     "id": 337,
     "word": "ResNet",
     "answer": "Architecture introducing residual connections, enabling training of networks with 100+ layers by solving vanishing gradients.",
     "states": [
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5389,14 +5389,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T22:06:28.336Z"
+    "lastUpdated": "2025-11-29T23:52:55.743Z"
   },
   {
     "id": 338,
     "word": "MobileNet",
     "answer": "Efficient CNN using depthwise separable convolutions, designed for mobile and embedded vision applications.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -5405,14 +5405,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T22:12:37.325Z"
+    "lastUpdated": "2025-11-29T23:57:10.853Z"
   },
   {
     "id": 339,
     "word": "EfficientNet",
     "answer": "Architecture family systematically scaling depth, width, and resolution for optimal accuracy-efficiency tradeoff.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -5421,14 +5421,14 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T22:12:46.221Z"
+    "lastUpdated": "2025-11-30T00:08:17.309Z"
   },
   {
     "id": 340,
     "word": "Neural Architecture Search (NAS)",
     "answer": "Automated method discovering optimal network architectures through search algorithms rather than manual design.",
     "states": [
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -5437,7 +5437,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-19T22:13:08.837Z"
+    "lastUpdated": "2025-11-30T00:12:59.958Z"
   },
   {
     "id": 341,

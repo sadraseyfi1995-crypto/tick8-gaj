@@ -5,6 +5,54 @@
     "answer": "A technique using two pointers to create a window that slides through an array or string, maintaining a subset of elements to solve subarray or substring problems efficiently.",
     "states": [
       "cross",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-29T11:44:49.768Z"
+  },
+  {
+    "id": 2,
+    "word": "Fixed-Size Sliding Window",
+    "answer": "Window maintains constant size k, sliding one position at each step. Used for problems like maximum sum of k consecutive elements or average of subarrays.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-28T23:00:28.090Z"
+  },
+  {
+    "id": 3,
+    "word": "Variable-Size Sliding Window",
+    "answer": "Window expands and contracts based on conditions. Used for longest substring problems or finding subarrays meeting specific criteria like sum or unique character constraints.",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-28T23:00:30.924Z"
+  },
+  {
+    "id": 4,
+    "word": "Two Pointer Technique",
+    "answer": "Uses two pointers moving through data structure from different positions or directions. Common patterns include opposite ends, same direction, or fast-slow pointers for optimization.",
+    "states": [
+      "cross",
       "none",
       "none",
       "none",
@@ -13,22 +61,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T21:10:33.728Z"
-  },
-  {
-    "id": 2,
-    "word": "Fixed-Size Sliding Window",
-    "answer": "Window maintains constant size k, sliding one position at each step. Used for problems like maximum sum of k consecutive elements or average of subarrays."
-  },
-  {
-    "id": 3,
-    "word": "Variable-Size Sliding Window",
-    "answer": "Window expands and contracts based on conditions. Used for longest substring problems or finding subarrays meeting specific criteria like sum or unique character constraints."
-  },
-  {
-    "id": 4,
-    "word": "Two Pointer Technique",
-    "answer": "Uses two pointers moving through data structure from different positions or directions. Common patterns include opposite ends, same direction, or fast-slow pointers for optimization."
+    "lastUpdated": "2025-11-28T23:00:49.138Z"
   },
   {
     "id": 5,

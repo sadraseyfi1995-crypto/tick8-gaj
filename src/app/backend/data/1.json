@@ -9835,14 +9835,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:03:21.835Z"
+    "lastUpdated": "2025-11-29T13:45:21.239Z"
   },
   {
     "id": 617,
@@ -9851,14 +9851,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:55:48.921Z"
+    "lastUpdated": "2025-11-29T13:45:45.518Z"
   },
   {
     "id": 618,
@@ -9867,14 +9867,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:56:25.550Z"
+    "lastUpdated": "2025-11-29T13:45:47.284Z"
   },
   {
     "id": 619,
@@ -9883,14 +9883,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "cross",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:58:52.074Z"
+    "lastUpdated": "2025-11-29T13:46:06.645Z"
   },
   {
     "id": 620,
@@ -9899,14 +9899,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T18:03:20.709Z"
+    "lastUpdated": "2025-11-29T13:45:22.016Z"
   },
   {
     "id": 621,
@@ -9915,14 +9915,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:56:02.157Z"
+    "lastUpdated": "2025-11-29T13:45:44.684Z"
   },
   {
     "id": 622,
@@ -9931,14 +9931,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:56:29.122Z"
+    "lastUpdated": "2025-11-29T13:45:52.346Z"
   },
   {
     "id": 623,
@@ -9947,14 +9947,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:56:40.351Z"
+    "lastUpdated": "2025-11-29T13:46:01.623Z"
   },
   {
     "id": 624,
@@ -9963,14 +9963,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:55:40.962Z"
+    "lastUpdated": "2025-11-29T13:45:22.877Z"
   },
   {
     "id": 625,
@@ -9978,15 +9978,15 @@
     "answer": "Area of responsibility or jurisdiction.",
     "states": [
       "cross",
-      "none",
-      "none",
+      "cross",
+      "cross",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:58:57.180Z"
+    "lastUpdated": "2025-11-29T13:45:38.538Z"
   },
   {
     "id": 626,
@@ -9995,14 +9995,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:56:30.233Z"
+    "lastUpdated": "2025-11-29T13:45:53.081Z"
   },
   {
     "id": 627,
@@ -10011,14 +10011,14 @@
     "states": [
       "cross",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:56:45.047Z"
+    "lastUpdated": "2025-11-29T13:46:03.370Z"
   },
   {
     "id": 628,
@@ -10027,14 +10027,14 @@
     "states": [
       "tick",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:55:42.180Z"
+    "lastUpdated": "2025-11-29T13:45:23.866Z"
   },
   {
     "id": 629,
@@ -10043,14 +10043,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:55:43.464Z"
+    "lastUpdated": "2025-11-29T13:45:30.832Z"
   },
   {
     "id": 630,
@@ -10059,14 +10059,14 @@
     "states": [
       "cross",
       "cross",
-      "none",
+      "cross",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-21T17:58:19.221Z"
+    "lastUpdated": "2025-11-29T13:45:57.130Z"
   },
   {
     "id": 631,
@@ -10121,7 +10121,7 @@
     "word": "Die Schichtarbeit",
     "answer": "Shift work with rotating schedules.",
     "states": [
-      "cross",
+      "tick",
       "cross",
       "cross",
       "cross",
@@ -10130,7 +10130,7 @@
       "tick",
       "tick"
     ],
-    "lastUpdated": "2025-11-17T15:14:45.859Z"
+    "lastUpdated": "2025-11-29T13:46:16.656Z"
   },
   {
     "id": 635,
@@ -11039,10 +11039,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:44:44.735Z"
+    "lastUpdated": "2025-11-27T18:19:58.993Z"
   },
   {
     "id": 692,
@@ -11055,10 +11055,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:22.550Z"
+    "lastUpdated": "2025-11-27T18:21:19.903Z"
   },
   {
     "id": 693,
@@ -11071,10 +11071,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:37.220Z"
+    "lastUpdated": "2025-11-27T18:21:39.259Z"
   },
   {
     "id": 694,
@@ -11087,10 +11087,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:57.533Z"
+    "lastUpdated": "2025-11-27T18:21:23.634Z"
   },
   {
     "id": 695,
@@ -11103,10 +11103,10 @@
       "cross",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:44:47.329Z"
+    "lastUpdated": "2025-11-27T18:19:59.945Z"
   },
   {
     "id": 696,
@@ -11119,10 +11119,10 @@
       "tick",
       "tick",
       "cross",
-      "none",
-      "none"
+      "cross",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:33.944Z"
+    "lastUpdated": "2025-11-27T18:21:17.779Z"
   },
   {
     "id": 697,
@@ -11135,10 +11135,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:39.313Z"
+    "lastUpdated": "2025-11-27T18:21:14.243Z"
   },
   {
     "id": 698,
@@ -11151,10 +11151,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:48.375Z"
+    "lastUpdated": "2025-11-27T18:21:24.604Z"
   },
   {
     "id": 699,
@@ -11167,10 +11167,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:44:49.785Z"
+    "lastUpdated": "2025-11-27T18:20:03.946Z"
   },
   {
     "id": 700,
@@ -11183,10 +11183,10 @@
       "cross",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:26.027Z"
+    "lastUpdated": "2025-11-27T18:21:37.334Z"
   },
   {
     "id": 701,
@@ -11199,10 +11199,10 @@
       "cross",
       "tick",
       "tick",
-      "none",
-      "none"
+      "cross",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:52.365Z"
+    "lastUpdated": "2025-11-27T18:21:36.051Z"
   },
   {
     "id": 702,
@@ -11215,10 +11215,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:49.509Z"
+    "lastUpdated": "2025-11-27T18:21:25.985Z"
   },
   {
     "id": 703,
@@ -11231,10 +11231,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:44:55.591Z"
+    "lastUpdated": "2025-11-27T18:20:04.980Z"
   },
   {
     "id": 704,
@@ -11247,10 +11247,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:27.050Z"
+    "lastUpdated": "2025-11-27T18:21:27.948Z"
   },
   {
     "id": 705,
@@ -11263,10 +11263,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:45:55.428Z"
+    "lastUpdated": "2025-11-27T18:21:27.007Z"
   },
   {
     "id": 706,
@@ -11278,11 +11278,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:46:07.720Z"
+    "lastUpdated": "2025-11-28T20:09:15.621Z"
   },
   {
     "id": 707,
@@ -11294,11 +11294,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:46:14.446Z"
+    "lastUpdated": "2025-11-28T20:12:47.268Z"
   },
   {
     "id": 708,
@@ -11310,11 +11310,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:04.868Z"
+    "lastUpdated": "2025-11-28T20:10:18.661Z"
   },
   {
     "id": 709,
@@ -11326,11 +11326,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:46:57.916Z"
+    "lastUpdated": "2025-11-28T20:10:09.711Z"
   },
   {
     "id": 710,
@@ -11342,11 +11342,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:46:09.543Z"
+    "lastUpdated": "2025-11-28T20:09:16.786Z"
   },
   {
     "id": 711,
@@ -11358,11 +11358,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:46:43.124Z"
+    "lastUpdated": "2025-11-28T20:09:49.366Z"
   },
   {
     "id": 712,
@@ -11374,11 +11374,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:01.210Z"
+    "lastUpdated": "2025-11-28T20:10:17.062Z"
   },
   {
     "id": 713,
@@ -11390,11 +11390,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:28.517Z"
+    "lastUpdated": "2025-11-28T20:12:44.175Z"
   },
   {
     "id": 714,
@@ -11406,11 +11406,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:46:12.310Z"
+    "lastUpdated": "2025-11-28T20:09:27.819Z"
   },
   {
     "id": 715,
@@ -11422,11 +11422,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:46:54.479Z"
+    "lastUpdated": "2025-11-28T20:10:15.175Z"
   },
   {
     "id": 716,
@@ -11438,11 +11438,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:02.224Z"
+    "lastUpdated": "2025-11-28T20:10:04.228Z"
   },
   {
     "id": 717,
@@ -11454,11 +11454,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:29.302Z"
+    "lastUpdated": "2025-11-28T20:10:02.626Z"
   },
   {
     "id": 718,
@@ -11470,11 +11470,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:46:13.233Z"
+    "lastUpdated": "2025-11-28T20:09:41.972Z"
   },
   {
     "id": 719,
@@ -11486,11 +11486,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:11.775Z"
+    "lastUpdated": "2025-11-28T20:12:36.957Z"
   },
   {
     "id": 720,
@@ -11502,11 +11502,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:03.349Z"
+    "lastUpdated": "2025-11-28T20:10:05.766Z"
   },
   {
     "id": 721,
@@ -11517,12 +11517,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:44.657Z"
+    "lastUpdated": "2025-11-29T12:41:05.331Z"
   },
   {
     "id": 722,
@@ -11533,12 +11533,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:43.301Z"
+    "lastUpdated": "2025-11-29T12:44:13.714Z"
   },
   {
     "id": 723,
@@ -11549,12 +11549,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:48:05.846Z"
+    "lastUpdated": "2025-11-29T12:44:12.981Z"
   },
   {
     "id": 724,
@@ -11565,12 +11565,12 @@
       "cross",
       "tick",
       "cross",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "cross",
+      "cross",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:01.530Z"
+    "lastUpdated": "2025-11-29T12:44:25.456Z"
   },
   {
     "id": 725,
@@ -11581,12 +11581,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:46.828Z"
+    "lastUpdated": "2025-11-29T12:41:06.878Z"
   },
   {
     "id": 726,
@@ -11597,12 +11597,12 @@
       "tick",
       "cross",
       "cross",
-      "none",
-      "none",
-      "none",
-      "none"
+      "cross",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:48:49.200Z"
+    "lastUpdated": "2025-11-29T12:44:17.609Z"
   },
   {
     "id": 727,
@@ -11613,12 +11613,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:48:09.304Z"
+    "lastUpdated": "2025-11-29T12:44:11.118Z"
   },
   {
     "id": 728,
@@ -11629,12 +11629,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:52.111Z"
+    "lastUpdated": "2025-11-29T12:44:11.924Z"
   },
   {
     "id": 729,
@@ -11645,12 +11645,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:48.017Z"
+    "lastUpdated": "2025-11-29T12:41:08.742Z"
   },
   {
     "id": 730,
@@ -11661,12 +11661,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:41.127Z"
+    "lastUpdated": "2025-11-29T12:44:05.153Z"
   },
   {
     "id": 731,
@@ -11677,12 +11677,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:54.509Z"
+    "lastUpdated": "2025-11-29T12:44:09.094Z"
   },
   {
     "id": 732,
@@ -11693,12 +11693,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:53.065Z"
+    "lastUpdated": "2025-11-29T12:44:10.102Z"
   },
   {
     "id": 733,
@@ -11709,12 +11709,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:04.350Z"
+    "lastUpdated": "2025-11-29T12:41:17.465Z"
   },
   {
     "id": 734,
@@ -11725,12 +11725,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:47:39.860Z"
+    "lastUpdated": "2025-11-29T12:44:06.781Z"
   },
   {
     "id": 735,
@@ -11741,12 +11741,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:48:03.621Z"
+    "lastUpdated": "2025-11-29T12:44:07.805Z"
   },
   {
     "id": 736,
@@ -11756,13 +11756,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:10.358Z"
+    "lastUpdated": "2025-11-30T03:56:22.200Z"
   },
   {
     "id": 737,
@@ -11772,13 +11772,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:19.008Z"
+    "lastUpdated": "2025-11-30T03:56:27.903Z"
   },
   {
     "id": 738,
@@ -11788,13 +11788,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:24.274Z"
+    "lastUpdated": "2025-11-30T03:56:35.067Z"
   },
   {
     "id": 739,
@@ -11804,13 +11804,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:34.073Z"
+    "lastUpdated": "2025-11-30T04:14:22.354Z"
   },
   {
     "id": 740,
@@ -11820,13 +11820,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:11.534Z"
+    "lastUpdated": "2025-11-30T03:56:23.381Z"
   },
   {
     "id": 741,
@@ -11836,13 +11836,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:20.034Z"
+    "lastUpdated": "2025-11-30T03:56:29.037Z"
   },
   {
     "id": 742,
@@ -11852,13 +11852,13 @@
       "tick",
       "cross",
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:29.597Z"
+    "lastUpdated": "2025-11-30T03:56:38.229Z"
   },
   {
     "id": 743,
@@ -11868,13 +11868,13 @@
       "cross",
       "cross",
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:45.925Z"
+    "lastUpdated": "2025-11-30T04:14:20.870Z"
   },
   {
     "id": 744,
@@ -11884,13 +11884,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:13.978Z"
+    "lastUpdated": "2025-11-30T03:56:24.450Z"
   },
   {
     "id": 745,
@@ -11900,13 +11900,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:21.892Z"
+    "lastUpdated": "2025-11-30T03:56:32.601Z"
   },
   {
     "id": 746,
@@ -11916,13 +11916,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:31.605Z"
+    "lastUpdated": "2025-11-30T03:57:03.842Z"
   },
   {
     "id": 747,
@@ -11932,13 +11932,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:36.193Z"
+    "lastUpdated": "2025-11-30T03:57:10.394Z"
   },
   {
     "id": 748,
@@ -11948,13 +11948,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:17.593Z"
+    "lastUpdated": "2025-11-30T03:56:25.484Z"
   },
   {
     "id": 749,
@@ -11964,13 +11964,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:22.967Z"
+    "lastUpdated": "2025-11-30T03:56:33.679Z"
   },
   {
     "id": 750,
@@ -11980,13 +11980,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:49:32.830Z"
+    "lastUpdated": "2025-11-30T03:57:04.969Z"
   },
   {
     "id": 751,
@@ -11995,14 +11995,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:03.440Z"
+    "lastUpdated": "2025-12-03T18:09:02.188Z"
   },
   {
     "id": 752,
@@ -12011,14 +12011,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:15.050Z"
+    "lastUpdated": "2025-12-03T18:09:06.287Z"
   },
   {
     "id": 753,
@@ -12027,14 +12027,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:26.614Z"
+    "lastUpdated": "2025-12-03T18:09:13.782Z"
   },
   {
     "id": 754,
@@ -12043,14 +12043,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:22.755Z"
+    "lastUpdated": "2025-12-03T18:09:22.063Z"
   },
   {
     "id": 755,
@@ -12059,14 +12059,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:04.417Z"
+    "lastUpdated": "2025-12-03T18:09:03.231Z"
   },
   {
     "id": 756,
@@ -12075,14 +12075,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:13.940Z"
+    "lastUpdated": "2025-12-03T18:09:08.146Z"
   },
   {
     "id": 757,
@@ -12091,14 +12091,14 @@
     "states": [
       "cross",
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:51:26.207Z"
+    "lastUpdated": "2025-12-03T18:09:15.127Z"
   },
   {
     "id": 758,
@@ -12107,14 +12107,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:24.222Z"
+    "lastUpdated": "2025-12-03T18:09:20.885Z"
   },
   {
     "id": 759,
@@ -12123,14 +12123,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:05.552Z"
+    "lastUpdated": "2025-12-03T18:09:04.332Z"
   },
   {
     "id": 760,
@@ -12139,14 +12139,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:11.925Z"
+    "lastUpdated": "2025-12-03T18:09:09.165Z"
   },
   {
     "id": 761,
@@ -12155,14 +12155,14 @@
     "states": [
       "tick",
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:51:22.369Z"
+    "lastUpdated": "2025-12-03T18:09:16.061Z"
   },
   {
     "id": 762,
@@ -12171,14 +12171,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:20.477Z"
+    "lastUpdated": "2025-12-03T18:09:19.897Z"
   },
   {
     "id": 763,
@@ -12187,14 +12187,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:06.675Z"
+    "lastUpdated": "2025-12-03T18:09:05.132Z"
   },
   {
     "id": 764,
@@ -12203,14 +12203,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:10.909Z"
+    "lastUpdated": "2025-12-03T18:09:11.920Z"
   },
   {
     "id": 765,
@@ -12219,14 +12219,14 @@
     "states": [
       "tick",
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:50:33.298Z"
+    "lastUpdated": "2025-12-03T18:09:18.114Z"
   },
   {
     "id": 766,
@@ -12234,15 +12234,15 @@
     "answer": "A certificate of completion.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:51:30.107Z"
+    "lastUpdated": "2025-12-04T21:03:06.065Z"
   },
   {
     "id": 767,
@@ -12250,15 +12250,15 @@
     "answer": "A document certifying something.",
     "states": [
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:56:30.685Z"
+    "lastUpdated": "2025-12-04T21:05:48.363Z"
   },
   {
     "id": 768,
@@ -12266,15 +12266,15 @@
     "answer": "Education or general knowledge.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:54:56.506Z"
+    "lastUpdated": "2025-12-04T21:05:53.049Z"
   },
   {
     "id": 769,
@@ -12282,15 +12282,15 @@
     "answer": "Continuing education or training.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:55:37.919Z"
+    "lastUpdated": "2025-12-04T21:07:50.481Z"
   },
   {
     "id": 770,
@@ -12298,15 +12298,15 @@
     "answer": "Adult education programs.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:56:18.994Z"
+    "lastUpdated": "2025-12-04T21:03:07.516Z"
   },
   {
     "id": 771,
@@ -12314,15 +12314,15 @@
     "answer": "Distance learning or correspondence course.",
     "states": [
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:55:19.198Z"
+    "lastUpdated": "2025-12-04T21:05:51.259Z"
   },
   {
     "id": 772,
@@ -12330,15 +12330,15 @@
     "answer": "An online course or e-learning.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:54:23.905Z"
+    "lastUpdated": "2025-12-04T21:05:54.454Z"
   },
   {
     "id": 773,
@@ -12346,15 +12346,15 @@
     "answer": "Adult education center or community college.",
     "states": [
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "cross",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:57:23.511Z"
+    "lastUpdated": "2025-12-04T21:08:38.126Z"
   },
   {
     "id": 774,
@@ -12362,15 +12362,15 @@
     "answer": "A language school.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:54:37.339Z"
+    "lastUpdated": "2025-12-04T21:03:11.621Z"
   },
   {
     "id": 775,
@@ -12378,15 +12378,15 @@
     "answer": "A language course.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:54:26.215Z"
+    "lastUpdated": "2025-12-04T21:05:46.191Z"
   },
   {
     "id": 776,
@@ -12394,15 +12394,15 @@
     "answer": "A scholarship for students.",
     "states": [
       "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "tick"
     ],
-    "lastUpdated": "2025-11-25T06:55:23.698Z"
+    "lastUpdated": "2025-12-04T21:07:42.883Z"
   },
   {
     "id": 777,
@@ -12410,7 +12410,1031 @@
     "answer": "Tuition fees for studying.",
     "states": [
       "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-12-04T21:08:39.926Z"
+  },
+  {
+    "id": 778,
+    "word": "Der Stundenplan",
+    "answer": "A class schedule or timetable.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-12-04T21:03:12.876Z"
+  },
+  {
+    "id": 779,
+    "word": "Das Thema",
+    "answer": "A topic or subject matter.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-12-04T21:05:44.640Z"
+  },
+  {
+    "id": 780,
+    "word": "Der Inhalt",
+    "answer": "Content or subject matter.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick"
+    ],
+    "lastUpdated": "2025-12-04T21:05:56.284Z"
+  },
+  {
+    "id": 781,
+    "word": "Die Aufgabe",
+    "answer": "An assignment or task.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:08:43.003Z"
+  },
+  {
+    "id": 782,
+    "word": "Die Lösung",
+    "answer": "A solution or answer.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:09:50.421Z"
+  },
+  {
+    "id": 783,
+    "word": "Das Beispiel",
+    "answer": "An example to illustrate something.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:13:20.880Z"
+  },
+  {
+    "id": 784,
+    "word": "Die Forschung",
+    "answer": "Research or investigation.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:14:00.531Z"
+  },
+  {
+    "id": 785,
+    "word": "Das Experiment",
+    "answer": "An experiment or test.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:08:43.922Z"
+  },
+  {
+    "id": 786,
+    "word": "Die Theorie",
+    "answer": "A theory or theoretical concept.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:13:09.474Z"
+  },
+  {
+    "id": 787,
+    "word": "Die Praxis",
+    "answer": "Practice or practical application.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:13:22.021Z"
+  },
+  {
+    "id": 788,
+    "word": "Das Praktikum",
+    "answer": "An internship or practical training.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:13:59.722Z"
+  },
+  {
+    "id": 789,
+    "word": "Die Fachhochschule",
+    "answer": "University of applied sciences.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:09:45.341Z"
+  },
+  {
+    "id": 790,
+    "word": "Das Gymnasium",
+    "answer": "Academic secondary school in Germany.",
+    "states": [
+      "tick",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:13:53.563Z"
+  },
+  {
+    "id": 791,
+    "word": "Die Realschule",
+    "answer": "Secondary school for intermediate education.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:13:54.874Z"
+  },
+  {
+    "id": 792,
+    "word": "Die Hauptschule",
+    "answer": "Basic secondary school in Germany.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:13:57.278Z"
+  },
+  {
+    "id": 793,
+    "word": "Die Grundschule",
+    "answer": "Primary or elementary school.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:08:46.621Z"
+  },
+  {
+    "id": 794,
+    "word": "Der Kindergarten",
+    "answer": "Preschool or kindergarten.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:13:13.621Z"
+  },
+  {
+    "id": 795,
+    "word": "Die Berufsschule",
+    "answer": "Vocational school for apprentices.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:13:24.753Z"
+  },
+  {
+    "id": 796,
+    "word": "Die Kommilitonin",
+    "answer": "A female fellow student.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
       "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:14:04.263Z"
+  },
+  {
+    "id": 797,
+    "word": "Der Kommilitone",
+    "answer": "A male fellow student.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-04T21:14:05.212Z"
+  },
+  {
+    "id": 798,
+    "word": "Das Schulbuch",
+    "answer": "A textbook or schoolbook.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:40.807Z"
+  },
+  {
+    "id": 799,
+    "word": "Das Heft",
+    "answer": "A notebook or exercise book.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:42.635Z"
+  },
+  {
+    "id": 800,
+    "word": "Die Abschlussprüfung",
+    "answer": "Final exam or graduation test.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:26.849Z"
+  },
+  {
+    "id": 801,
+    "word": "Der Fahrplan",
+    "answer": "Timetable or schedule showing departure and arrival times for public transport.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:33.091Z"
+  },
+  {
+    "id": 802,
+    "word": "Umsteigen",
+    "answer": "To change trains, buses, or other transport; to transfer.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:39.402Z"
+  },
+  {
+    "id": 803,
+    "word": "Der Zug",
+    "answer": "Train.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:43.579Z"
+  },
+  {
+    "id": 804,
+    "word": "Das Gepäck",
+    "answer": "Luggage or baggage.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:16.864Z"
+  },
+  {
+    "id": 805,
+    "word": "Die Reservierung",
+    "answer": "Reservation or booking.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:33.909Z"
+  },
+  {
+    "id": 806,
+    "word": "Der Bahnhof",
+    "answer": "Train station.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:37.949Z"
+  },
+  {
+    "id": 807,
+    "word": "Der Flughafen",
+    "answer": "Airport.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:48.934Z"
+  },
+  {
+    "id": 808,
+    "word": "Die Haltestelle",
+    "answer": "Bus or tram stop.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:23.881Z"
+  },
+  {
+    "id": 809,
+    "word": "Das Gleis",
+    "answer": "Platform or track at a train station.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:19.633Z"
+  },
+  {
+    "id": 810,
+    "word": "Die Abfahrt",
+    "answer": "Departure.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:21.185Z"
+  },
+  {
+    "id": 811,
+    "word": "Die Ankunft",
+    "answer": "Arrival.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:53.116Z"
+  },
+  {
+    "id": 812,
+    "word": "Die Verspätung",
+    "answer": "Delay.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:57.437Z"
+  },
+  {
+    "id": 813,
+    "word": "Der Fahrkartenautomat",
+    "answer": "Ticket vending machine.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:20:59.755Z"
+  },
+  {
+    "id": 814,
+    "word": "Die Fahrkarte",
+    "answer": "Ticket for transport.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:20:17.251Z"
+  },
+  {
+    "id": 815,
+    "word": "Die Tageskarte",
+    "answer": "Day pass or day ticket.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:54.099Z"
+  },
+  {
+    "id": 816,
+    "word": "Die Monatskarte",
+    "answer": "Monthly pass or ticket.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:58.192Z"
+  },
+  {
+    "id": 817,
+    "word": "Entwerten",
+    "answer": "To validate or stamp a ticket.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:21:51.915Z"
+  },
+  {
+    "id": 818,
+    "word": "Der Schaffner",
+    "answer": "Ticket inspector or conductor.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:28.540Z"
+  },
+  {
+    "id": 819,
+    "word": "Die U-Bahn",
+    "answer": "Subway or underground train.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:55.209Z"
+  },
+  {
+    "id": 820,
+    "word": "Die Straßenbahn",
+    "answer": "Tram or streetcar.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:59.066Z"
+  },
+  {
+    "id": 821,
+    "word": "Der Bus",
+    "answer": "Bus.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:20:12.032Z"
+  },
+  {
+    "id": 822,
+    "word": "Das Taxi",
+    "answer": "Taxi or cab.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:20:14.730Z"
+  },
+  {
+    "id": 823,
+    "word": "Die Fahrt",
+    "answer": "Journey, trip, or ride.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:19:56.274Z"
+  },
+  {
+    "id": 824,
+    "word": "Der Reisepass",
+    "answer": "Passport.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:20:00.045Z"
+  },
+  {
+    "id": 825,
+    "word": "Das Visum",
+    "answer": "Visa.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:20:11.096Z"
+  },
+  {
+    "id": 826,
+    "word": "Der Personalausweis",
+    "answer": "Identity card or ID.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:30.959Z"
+  },
+  {
+    "id": 827,
+    "word": "Die Bordkarte",
+    "answer": "Boarding pass.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:37.482Z"
+  },
+  {
+    "id": 828,
+    "word": "Das Gate",
+    "answer": "Airport gate.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:42.714Z"
+  },
+  {
+    "id": 829,
+    "word": "Der Check-In",
+    "answer": "Check-in at airport or hotel.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:47.546Z"
+  },
+  {
+    "id": 830,
+    "word": "Das Handgepäck",
+    "answer": "Hand luggage or carry-on baggage.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:33.089Z"
+  },
+  {
+    "id": 831,
+    "word": "Der Koffer",
+    "answer": "Suitcase.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:39.092Z"
+  },
+  {
+    "id": 832,
+    "word": "Die Gepäckaufbewahrung",
+    "answer": "Luggage storage or left luggage.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:58.714Z"
+  },
+  {
+    "id": 833,
+    "word": "Die Auskunft",
+    "answer": "Information desk or inquiries.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:23:08.122Z"
+  },
+  {
+    "id": 834,
+    "word": "Der Ausgang",
+    "answer": "Exit.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:34.818Z"
+  },
+  {
+    "id": 835,
+    "word": "Der Eingang",
+    "answer": "Entrance.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:40.180Z"
+  },
+  {
+    "id": 836,
+    "word": "Der Notausgang",
+    "answer": "Emergency exit.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:52.982Z"
+  },
+  {
+    "id": 837,
+    "word": "Die Richtung",
+    "answer": "Direction.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:49.774Z"
+  },
+  {
+    "id": 838,
+    "word": "Geradeaus",
+    "answer": "Straight ahead.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:35.606Z"
+  },
+  {
+    "id": 839,
+    "word": "Links",
+    "answer": "Left.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:41.265Z"
+  },
+  {
+    "id": 840,
+    "word": "Rechts",
+    "answer": "Right.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:22:50.816Z"
+  },
+  {
+    "id": 841,
+    "word": "Die Kreuzung",
+    "answer": "Intersection or crossroads.",
+    "states": [
+      "tick",
+      "tick",
       "none",
       "none",
       "none",
@@ -12418,12 +13442,236 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T06:57:28.820Z"
+    "lastUpdated": "2025-12-03T18:23:12.712Z"
   },
   {
-    "id": 778,
-    "word": "Der Stundenplan",
-    "answer": "A class schedule or timetable.",
+    "id": 842,
+    "word": "Die Ampel",
+    "answer": "Traffic light.",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:28:42.866Z"
+  },
+  {
+    "id": 843,
+    "word": "Die Brücke",
+    "answer": "Bridge.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:25:32.022Z"
+  },
+  {
+    "id": 844,
+    "word": "Die Unterführung",
+    "answer": "Underpass or subway (pedestrian).",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:28:05.877Z"
+  },
+  {
+    "id": 845,
+    "word": "Der Fußgänger",
+    "answer": "Pedestrian.",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:23:19.435Z"
+  },
+  {
+    "id": 846,
+    "word": "Der Zebrastreifen",
+    "answer": "Pedestrian crossing or crosswalk.",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:28:48.008Z"
+  },
+  {
+    "id": 847,
+    "word": "Die Entfernung",
+    "answer": "Distance.",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:28:35.669Z"
+  },
+  {
+    "id": 848,
+    "word": "Die Strecke",
+    "answer": "Route, distance, or stretch.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:27:40.748Z"
+  },
+  {
+    "id": 849,
+    "word": "Die Autobahn",
+    "answer": "Highway or motorway.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:25:27.699Z"
+  },
+  {
+    "id": 850,
+    "word": "Die Landstraße",
+    "answer": "Country road.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:25:42.221Z"
+  },
+  {
+    "id": 851,
+    "word": "Der Stau",
+    "answer": "Traffic jam.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:25:34.331Z"
+  },
+  {
+    "id": 852,
+    "word": "Die Umleitung",
+    "answer": "Detour or diversion.",
+    "states": [
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:28:09.229Z"
+  },
+  {
+    "id": 853,
+    "word": "Parken",
+    "answer": "To park.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:25:28.466Z"
+  },
+  {
+    "id": 854,
+    "word": "Der Parkplatz",
+    "answer": "Parking lot or parking space.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:25:39.082Z"
+  },
+  {
+    "id": 855,
+    "word": "Das Parkhaus",
+    "answer": "Parking garage or multi-story car park.",
+    "states": [
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:25:36.145Z"
+  },
+  {
+    "id": 856,
+    "word": "Tanken",
+    "answer": "To refuel or fill up with gas.",
     "states": [
       "cross",
       "none",
@@ -12434,929 +13682,231 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T06:54:43.522Z"
-  },
-  {
-    "id": 779,
-    "word": "Das Thema",
-    "answer": "A topic or subject matter.",
-    "states": [
-      "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-25T06:54:19.150Z"
-  },
-  {
-    "id": 780,
-    "word": "Der Inhalt",
-    "answer": "Content or subject matter.",
-    "states": [
-      "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-25T06:54:20.850Z"
-  },
-  {
-    "id": 781,
-    "word": "Die Aufgabe",
-    "answer": "An assignment or task.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:45:44.369Z"
-  },
-  {
-    "id": 782,
-    "word": "Die Lösung",
-    "answer": "A solution or answer.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:49:39.812Z"
-  },
-  {
-    "id": 783,
-    "word": "Das Beispiel",
-    "answer": "An example to illustrate something.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:51:00.895Z"
-  },
-  {
-    "id": 784,
-    "word": "Die Forschung",
-    "answer": "Research or investigation.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:02:04.412Z"
-  },
-  {
-    "id": 785,
-    "word": "Das Experiment",
-    "answer": "An experiment or test.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:45:45.682Z"
-  },
-  {
-    "id": 786,
-    "word": "Die Theorie",
-    "answer": "A theory or theoretical concept.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:49:40.891Z"
-  },
-  {
-    "id": 787,
-    "word": "Die Praxis",
-    "answer": "Practice or practical application.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:51:11.955Z"
-  },
-  {
-    "id": 788,
-    "word": "Das Praktikum",
-    "answer": "An internship or practical training.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:02:05.643Z"
-  },
-  {
-    "id": 789,
-    "word": "Die Fachhochschule",
-    "answer": "University of applied sciences.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:48:48.990Z"
-  },
-  {
-    "id": 790,
-    "word": "Das Gymnasium",
-    "answer": "Academic secondary school in Germany.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:49:42.064Z"
-  },
-  {
-    "id": 791,
-    "word": "Die Realschule",
-    "answer": "Secondary school for intermediate education.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:54:51.759Z"
-  },
-  {
-    "id": 792,
-    "word": "Die Hauptschule",
-    "answer": "Basic secondary school in Germany.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:02:13.031Z"
-  },
-  {
-    "id": 793,
-    "word": "Die Grundschule",
-    "answer": "Primary or elementary school.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:49:30.261Z"
-  },
-  {
-    "id": 794,
-    "word": "Der Kindergarten",
-    "answer": "Preschool or kindergarten.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:49:43.137Z"
-  },
-  {
-    "id": 795,
-    "word": "Die Berufsschule",
-    "answer": "Vocational school for apprentices.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:54:57.875Z"
-  },
-  {
-    "id": 796,
-    "word": "Die Kommilitonin",
-    "answer": "A female fellow student.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:03:56.011Z"
-  },
-  {
-    "id": 797,
-    "word": "Der Kommilitone",
-    "answer": "A male fellow student.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:49:37.110Z"
-  },
-  {
-    "id": 798,
-    "word": "Das Schulbuch",
-    "answer": "A textbook or schoolbook.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:49:46.825Z"
-  },
-  {
-    "id": 799,
-    "word": "Das Heft",
-    "answer": "A notebook or exercise book.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T20:54:58.902Z"
-  },
-  {
-    "id": 800,
-    "word": "Die Abschlussprüfung",
-    "answer": "Final exam or graduation test.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:06:21.741Z"
-  },
-  {
-    "id": 801,
-    "word": "Der Fahrplan",
-    "answer": "Timetable or schedule showing departure and arrival times for public transport.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:08:43.730Z"
-  },
-  {
-    "id": 802,
-    "word": "Umsteigen",
-    "answer": "To change trains, buses, or other transport; to transfer.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:09:17.944Z"
-  },
-  {
-    "id": 803,
-    "word": "Der Zug",
-    "answer": "Train.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:12:03.863Z"
-  },
-  {
-    "id": 804,
-    "word": "Das Gepäck",
-    "answer": "Luggage or baggage.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:12:20.741Z"
-  },
-  {
-    "id": 805,
-    "word": "Die Reservierung",
-    "answer": "Reservation or booking.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:08:50.011Z"
-  },
-  {
-    "id": 806,
-    "word": "Der Bahnhof",
-    "answer": "Train station.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:09:23.558Z"
-  },
-  {
-    "id": 807,
-    "word": "Der Flughafen",
-    "answer": "Airport.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:12:04.781Z"
-  },
-  {
-    "id": 808,
-    "word": "Die Haltestelle",
-    "answer": "Bus or tram stop.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:13:56.243Z"
-  },
-  {
-    "id": 809,
-    "word": "Das Gleis",
-    "answer": "Platform or track at a train station.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:08:55.883Z"
-  },
-  {
-    "id": 810,
-    "word": "Die Abfahrt",
-    "answer": "Departure.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:09:27.834Z"
-  },
-  {
-    "id": 811,
-    "word": "Die Ankunft",
-    "answer": "Arrival.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:12:06.310Z"
-  },
-  {
-    "id": 812,
-    "word": "Die Verspätung",
-    "answer": "Delay.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:13:59.168Z"
-  },
-  {
-    "id": 813,
-    "word": "Der Fahrkartenautomat",
-    "answer": "Ticket vending machine.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:09:05.987Z"
-  },
-  {
-    "id": 814,
-    "word": "Die Fahrkarte",
-    "answer": "Ticket for transport.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:09:30.882Z"
-  },
-  {
-    "id": 815,
-    "word": "Die Tageskarte",
-    "answer": "Day pass or day ticket.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:12:11.004Z"
-  },
-  {
-    "id": 816,
-    "word": "Die Monatskarte",
-    "answer": "Monthly pass or ticket.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:14:00.688Z"
-  },
-  {
-    "id": 817,
-    "word": "Entwerten",
-    "answer": "To validate or stamp a ticket.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:09:11.194Z"
-  },
-  {
-    "id": 818,
-    "word": "Der Schaffner",
-    "answer": "Ticket inspector or conductor.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:12:02.528Z"
-  },
-  {
-    "id": 819,
-    "word": "Die U-Bahn",
-    "answer": "Subway or underground train.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:12:15.738Z"
-  },
-  {
-    "id": 820,
-    "word": "Die Straßenbahn",
-    "answer": "Tram or streetcar.",
-    "states": [
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-11-19T21:14:04.163Z"
-  },
-  {
-    "id": 821,
-    "word": "Der Bus",
-    "answer": "Bus."
-  },
-  {
-    "id": 822,
-    "word": "Das Taxi",
-    "answer": "Taxi or cab."
-  },
-  {
-    "id": 823,
-    "word": "Die Fahrt",
-    "answer": "Journey, trip, or ride."
-  },
-  {
-    "id": 824,
-    "word": "Der Reisepass",
-    "answer": "Passport."
-  },
-  {
-    "id": 825,
-    "word": "Das Visum",
-    "answer": "Visa."
-  },
-  {
-    "id": 826,
-    "word": "Der Personalausweis",
-    "answer": "Identity card or ID."
-  },
-  {
-    "id": 827,
-    "word": "Die Bordkarte",
-    "answer": "Boarding pass."
-  },
-  {
-    "id": 828,
-    "word": "Das Gate",
-    "answer": "Airport gate."
-  },
-  {
-    "id": 829,
-    "word": "Der Check-In",
-    "answer": "Check-in at airport or hotel."
-  },
-  {
-    "id": 830,
-    "word": "Das Handgepäck",
-    "answer": "Hand luggage or carry-on baggage."
-  },
-  {
-    "id": 831,
-    "word": "Der Koffer",
-    "answer": "Suitcase."
-  },
-  {
-    "id": 832,
-    "word": "Die Gepäckaufbewahrung",
-    "answer": "Luggage storage or left luggage."
-  },
-  {
-    "id": 833,
-    "word": "Die Auskunft",
-    "answer": "Information desk or inquiries."
-  },
-  {
-    "id": 834,
-    "word": "Der Ausgang",
-    "answer": "Exit."
-  },
-  {
-    "id": 835,
-    "word": "Der Eingang",
-    "answer": "Entrance."
-  },
-  {
-    "id": 836,
-    "word": "Der Notausgang",
-    "answer": "Emergency exit."
-  },
-  {
-    "id": 837,
-    "word": "Die Richtung",
-    "answer": "Direction."
-  },
-  {
-    "id": 838,
-    "word": "Geradeaus",
-    "answer": "Straight ahead."
-  },
-  {
-    "id": 839,
-    "word": "Links",
-    "answer": "Left."
-  },
-  {
-    "id": 840,
-    "word": "Rechts",
-    "answer": "Right."
-  },
-  {
-    "id": 841,
-    "word": "Die Kreuzung",
-    "answer": "Intersection or crossroads."
-  },
-  {
-    "id": 842,
-    "word": "Die Ampel",
-    "answer": "Traffic light."
-  },
-  {
-    "id": 843,
-    "word": "Die Brücke",
-    "answer": "Bridge."
-  },
-  {
-    "id": 844,
-    "word": "Die Unterführung",
-    "answer": "Underpass or subway (pedestrian)."
-  },
-  {
-    "id": 845,
-    "word": "Der Fußgänger",
-    "answer": "Pedestrian."
-  },
-  {
-    "id": 846,
-    "word": "Der Zebrastreifen",
-    "answer": "Pedestrian crossing or crosswalk."
-  },
-  {
-    "id": 847,
-    "word": "Die Entfernung",
-    "answer": "Distance."
-  },
-  {
-    "id": 848,
-    "word": "Die Strecke",
-    "answer": "Route, distance, or stretch."
-  },
-  {
-    "id": 849,
-    "word": "Die Autobahn",
-    "answer": "Highway or motorway."
-  },
-  {
-    "id": 850,
-    "word": "Die Landstraße",
-    "answer": "Country road."
-  },
-  {
-    "id": 851,
-    "word": "Der Stau",
-    "answer": "Traffic jam."
-  },
-  {
-    "id": 852,
-    "word": "Die Umleitung",
-    "answer": "Detour or diversion."
-  },
-  {
-    "id": 853,
-    "word": "Parken",
-    "answer": "To park."
-  },
-  {
-    "id": 854,
-    "word": "Der Parkplatz",
-    "answer": "Parking lot or parking space."
-  },
-  {
-    "id": 855,
-    "word": "Das Parkhaus",
-    "answer": "Parking garage or multi-story car park."
-  },
-  {
-    "id": 856,
-    "word": "Tanken",
-    "answer": "To refuel or fill up with gas."
+    "lastUpdated": "2025-12-03T18:34:55.978Z"
   },
   {
     "id": 857,
     "word": "Die Tankstelle",
-    "answer": "Gas station or petrol station."
+    "answer": "Gas station or petrol station.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:33:24.170Z"
   },
   {
     "id": 858,
     "word": "Die Panne",
-    "answer": "Breakdown or mechanical failure."
+    "answer": "Breakdown or mechanical failure.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:35:07.366Z"
   },
   {
     "id": 859,
     "word": "Der Unfall",
-    "answer": "Accident."
+    "answer": "Accident.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:33:28.170Z"
   },
   {
     "id": 860,
     "word": "Die Werkstatt",
-    "answer": "Workshop or garage for repairs."
+    "answer": "Workshop or garage for repairs.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:32:59.485Z"
   },
   {
     "id": 861,
     "word": "Das Hotel",
-    "answer": "Hotel."
+    "answer": "Hotel.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:33:20.078Z"
   },
   {
     "id": 862,
     "word": "Die Pension",
-    "answer": "Guesthouse or bed and breakfast."
+    "answer": "Guesthouse or bed and breakfast.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:34:49.060Z"
   },
   {
     "id": 863,
     "word": "Die Jugendherberge",
-    "answer": "Youth hostel."
+    "answer": "Youth hostel.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:34:44.693Z"
   },
   {
     "id": 864,
     "word": "Das Zimmer",
-    "answer": "Room."
+    "answer": "Room.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:32:54.195Z"
   },
   {
     "id": 865,
     "word": "Das Einzelzimmer",
-    "answer": "Single room."
+    "answer": "Single room.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:36:39.283Z"
   },
   {
     "id": 866,
     "word": "Das Doppelzimmer",
-    "answer": "Double room."
+    "answer": "Double room.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:34:15.313Z"
   },
   {
     "id": 867,
     "word": "Die Übernachtung",
-    "answer": "Overnight stay."
+    "answer": "Overnight stay.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:35:14.116Z"
   },
   {
     "id": 868,
     "word": "Das Frühstück",
-    "answer": "Breakfast."
+    "answer": "Breakfast.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:32:55.442Z"
   },
   {
     "id": 869,
     "word": "Inbegriffen",
-    "answer": "Included."
+    "answer": "Included.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:37:34.856Z"
   },
   {
     "id": 870,
     "word": "Der Schlüssel",
-    "answer": "Key."
+    "answer": "Key.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-03T18:33:35.953Z"
   },
   {
     "id": 871,

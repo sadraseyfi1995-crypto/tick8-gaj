@@ -5,15 +5,15 @@
     "answer": "An ordered array of numbers representing magnitude and direction in n-dimensional space. Denoted as column or row format.",
     "states": [
       "tick",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:37:18.354Z"
+    "lastUpdated": "2025-12-01T12:26:26.594Z"
   },
   {
     "id": 2,
@@ -21,6 +21,182 @@
     "answer": "A rectangular array of numbers arranged in rows and columns. Used to represent linear transformations and systems of equations.",
     "states": [
       "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:27.690Z"
+  },
+  {
+    "id": 3,
+    "word": "Scalar",
+    "answer": "A single numerical value with magnitude but no direction. Used to scale vectors or matrices through multiplication.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:29.499Z"
+  },
+  {
+    "id": 4,
+    "word": "Dot Product",
+    "answer": "Sum of element-wise products of two vectors. Results in a scalar measuring similarity or projection between vectors.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:30.377Z"
+  },
+  {
+    "id": 5,
+    "word": "Matrix Multiplication",
+    "answer": "Combines two matrices by computing dot products of rows and columns. Result dimensions: (m×n) × (n×p) = (m×p).",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:32.317Z"
+  },
+  {
+    "id": 6,
+    "word": "Transpose",
+    "answer": "Flips a matrix over its diagonal, swapping rows and columns. Denoted as A^T where element (i,j) becomes (j,i).",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:33.299Z"
+  },
+  {
+    "id": 7,
+    "word": "Identity Matrix",
+    "answer": "Square matrix with ones on diagonal and zeros elsewhere. Acts as multiplicative identity: AI = IA = A.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:37.732Z"
+  },
+  {
+    "id": 8,
+    "word": "Inverse Matrix",
+    "answer": "Matrix A⁻¹ where AA⁻¹ = I. Only exists for square, non-singular matrices with non-zero determinant.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:47.120Z"
+  },
+  {
+    "id": 9,
+    "word": "Determinant",
+    "answer": "Scalar value computed from square matrix elements. Indicates if matrix is invertible and measures volume scaling of transformations.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:50.267Z"
+  },
+  {
+    "id": 10,
+    "word": "Rank",
+    "answer": "Maximum number of linearly independent rows or columns in a matrix. Indicates dimensionality of output space.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:28:01.769Z"
+  },
+  {
+    "id": 11,
+    "word": "Eigenvalue",
+    "answer": "Scalar λ satisfying Av = λv for eigenvector v. Represents scaling factor along eigenvector direction under transformation A.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:28:04.123Z"
+  },
+  {
+    "id": 12,
+    "word": "Eigenvector",
+    "answer": "Non-zero vector that only scales (not rotates) when matrix is applied. Direction remains unchanged, only magnitude changes.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:28:05.691Z"
+  },
+  {
+    "id": 13,
+    "word": "Singular Value Decomposition (SVD)",
+    "answer": "Factorizes any matrix A into A = UΣV^T where U, V are orthogonal and Σ is diagonal with singular values.",
+    "states": [
+      "cross",
       "none",
       "none",
       "none",
@@ -29,67 +205,23 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-25T18:38:04.585Z"
-  },
-  {
-    "id": 3,
-    "word": "Scalar",
-    "answer": "A single numerical value with magnitude but no direction. Used to scale vectors or matrices through multiplication."
-  },
-  {
-    "id": 4,
-    "word": "Dot Product",
-    "answer": "Sum of element-wise products of two vectors. Results in a scalar measuring similarity or projection between vectors."
-  },
-  {
-    "id": 5,
-    "word": "Matrix Multiplication",
-    "answer": "Combines two matrices by computing dot products of rows and columns. Result dimensions: (m×n) × (n×p) = (m×p)."
-  },
-  {
-    "id": 6,
-    "word": "Transpose",
-    "answer": "Flips a matrix over its diagonal, swapping rows and columns. Denoted as A^T where element (i,j) becomes (j,i)."
-  },
-  {
-    "id": 7,
-    "word": "Identity Matrix",
-    "answer": "Square matrix with ones on diagonal and zeros elsewhere. Acts as multiplicative identity: AI = IA = A."
-  },
-  {
-    "id": 8,
-    "word": "Inverse Matrix",
-    "answer": "Matrix A⁻¹ where AA⁻¹ = I. Only exists for square, non-singular matrices with non-zero determinant."
-  },
-  {
-    "id": 9,
-    "word": "Determinant",
-    "answer": "Scalar value computed from square matrix elements. Indicates if matrix is invertible and measures volume scaling of transformations."
-  },
-  {
-    "id": 10,
-    "word": "Rank",
-    "answer": "Maximum number of linearly independent rows or columns in a matrix. Indicates dimensionality of output space."
-  },
-  {
-    "id": 11,
-    "word": "Eigenvalue",
-    "answer": "Scalar λ satisfying Av = λv for eigenvector v. Represents scaling factor along eigenvector direction under transformation A."
-  },
-  {
-    "id": 12,
-    "word": "Eigenvector",
-    "answer": "Non-zero vector that only scales (not rotates) when matrix is applied. Direction remains unchanged, only magnitude changes."
-  },
-  {
-    "id": 13,
-    "word": "Singular Value Decomposition (SVD)",
-    "answer": "Factorizes any matrix A into A = UΣV^T where U, V are orthogonal and Σ is diagonal with singular values."
+    "lastUpdated": "2025-12-01T12:28:51.582Z"
   },
   {
     "id": 14,
     "word": "Principal Component Analysis (PCA)",
-    "answer": "Dimensionality reduction technique finding orthogonal directions of maximum variance. Uses eigendecomposition of covariance matrix."
+    "answer": "Dimensionality reduction technique finding orthogonal directions of maximum variance. Uses eigendecomposition of covariance matrix.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:30:42.658Z"
   },
   {
     "id": 15,
