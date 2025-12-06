@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
+import { GOOGLE_CONFIG } from '../auth/google.config';
 
 @Component({
     selector: 'app-login',
@@ -38,7 +39,7 @@ export class LoginComponent implements AfterViewInit {
         this.errorMessage = null;
 
         // Open Google OAuth popup manually
-        const clientId = '756031099059-a9njf86rbc742hfukari2s2koui01q5p.apps.googleusercontent.com';
+        const clientId = GOOGLE_CONFIG.clientId;
         // IMPORTANT: This must match exactly what is in Google Cloud Console "Authorized redirect URIs"
         const redirectUri = encodeURIComponent(window.location.origin);
         const scope = encodeURIComponent('openid email profile');
