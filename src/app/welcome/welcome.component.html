@@ -12,7 +12,7 @@
         </p>
 
         <div class="cta-section">
-            <a routerLink="/login" class="cta-button primary">
+            <a *ngIf="!authService.isAuthenticated()" routerLink="/login" class="cta-button primary">
                 Get Started
                 <span class="arrow">→</span>
             </a>

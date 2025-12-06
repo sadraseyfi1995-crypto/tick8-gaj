@@ -5458,22 +5458,66 @@
   {
     "id": 342,
     "word": "One Cycle Policy",
-    "answer": "Training schedule with single learning rate cycle from low to high to low, enabling faster convergence."
+    "answer": "Training schedule with single learning rate cycle from low to high to low, enabling faster convergence.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-06T18:02:02.827Z"
   },
   {
     "id": 343,
     "word": "Discriminative Fine-Tuning",
-    "answer": "Using different learning rates for different layers during fine-tuning, updating earlier layers more conservatively."
+    "answer": "Using different learning rates for different layers during fine-tuning, updating earlier layers more conservatively.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-06T18:02:03.840Z"
   },
   {
     "id": 344,
     "word": "Gradual Unfreezing",
-    "answer": "Progressively unfreezing layers from top to bottom during fine-tuning, preventing catastrophic forgetting."
+    "answer": "Progressively unfreezing layers from top to bottom during fine-tuning, preventing catastrophic forgetting.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-06T18:02:04.973Z"
   },
   {
     "id": 345,
     "word": "Class Imbalance",
-    "answer": "Situation where training samples unevenly distributed across classes, potentially biasing model toward majority class."
+    "answer": "Situation where training samples unevenly distributed across classes, potentially biasing model toward majority class.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-06T18:02:06.480Z"
   },
   {
     "id": 346,

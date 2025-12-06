@@ -80,7 +80,7 @@ export class LoginComponent implements AfterViewInit {
                     // Authenticate with backend
                     this.authService.authenticateWithGoogle(idToken).subscribe({
                         next: () => {
-                            window.location.href = '/book';
+                            window.location.href = '/';
                         },
                         error: (err) => {
                             console.error('Backend auth failed:', err);

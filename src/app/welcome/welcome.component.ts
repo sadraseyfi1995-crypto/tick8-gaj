@@ -9,12 +9,9 @@ import { AuthService } from '../auth/auth.service';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(public authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
-    if (this.authService.isAuthenticated()) {
-      this.router.navigate(['/book']);
-    }
   }
 
 }
