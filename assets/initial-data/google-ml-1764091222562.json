@@ -1,0 +1,756 @@
+[
+  {
+    "id": 1,
+    "word": "Vector",
+    "answer": "An ordered array of numbers representing magnitude and direction in n-dimensional space. Denoted as column or row format.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:26.594Z"
+  },
+  {
+    "id": 2,
+    "word": "Matrix",
+    "answer": "A rectangular array of numbers arranged in rows and columns. Used to represent linear transformations and systems of equations.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:27.690Z"
+  },
+  {
+    "id": 3,
+    "word": "Scalar",
+    "answer": "A single numerical value with magnitude but no direction. Used to scale vectors or matrices through multiplication.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:29.499Z"
+  },
+  {
+    "id": 4,
+    "word": "Dot Product",
+    "answer": "Sum of element-wise products of two vectors. Results in a scalar measuring similarity or projection between vectors.",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:30.377Z"
+  },
+  {
+    "id": 5,
+    "word": "Matrix Multiplication",
+    "answer": "Combines two matrices by computing dot products of rows and columns. Result dimensions: (m×n) × (n×p) = (m×p).",
+    "states": [
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:32.317Z"
+  },
+  {
+    "id": 6,
+    "word": "Transpose",
+    "answer": "Flips a matrix over its diagonal, swapping rows and columns. Denoted as A^T where element (i,j) becomes (j,i).",
+    "states": [
+      "cross",
+      "tick",
+      "cross",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:33.299Z"
+  },
+  {
+    "id": 7,
+    "word": "Identity Matrix",
+    "answer": "Square matrix with ones on diagonal and zeros elsewhere. Acts as multiplicative identity: AI = IA = A.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:37.732Z"
+  },
+  {
+    "id": 8,
+    "word": "Inverse Matrix",
+    "answer": "Matrix A⁻¹ where AA⁻¹ = I. Only exists for square, non-singular matrices with non-zero determinant.",
+    "states": [
+      "cross",
+      "cross",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:47.120Z"
+  },
+  {
+    "id": 9,
+    "word": "Determinant",
+    "answer": "Scalar value computed from square matrix elements. Indicates if matrix is invertible and measures volume scaling of transformations.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:26:50.267Z"
+  },
+  {
+    "id": 10,
+    "word": "Rank",
+    "answer": "Maximum number of linearly independent rows or columns in a matrix. Indicates dimensionality of output space.",
+    "states": [
+      "cross",
+      "cross",
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:28:01.769Z"
+  },
+  {
+    "id": 11,
+    "word": "Eigenvalue",
+    "answer": "Scalar λ satisfying Av = λv for eigenvector v. Represents scaling factor along eigenvector direction under transformation A.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:28:04.123Z"
+  },
+  {
+    "id": 12,
+    "word": "Eigenvector",
+    "answer": "Non-zero vector that only scales (not rotates) when matrix is applied. Direction remains unchanged, only magnitude changes.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:28:05.691Z"
+  },
+  {
+    "id": 13,
+    "word": "Singular Value Decomposition (SVD)",
+    "answer": "Factorizes any matrix A into A = UΣV^T where U, V are orthogonal and Σ is diagonal with singular values.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:28:51.582Z"
+  },
+  {
+    "id": 14,
+    "word": "Principal Component Analysis (PCA)",
+    "answer": "Dimensionality reduction technique finding orthogonal directions of maximum variance. Uses eigendecomposition of covariance matrix.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-01T12:30:42.658Z"
+  },
+  {
+    "id": 15,
+    "word": "Eigendecomposition",
+    "answer": "Factorizes square matrix A into A = QΛQ⁻¹ where Q contains eigenvectors and Λ is diagonal with eigenvalues."
+  },
+  {
+    "id": 16,
+    "word": "Trace",
+    "answer": "Sum of diagonal elements of a square matrix. Equals sum of eigenvalues and is invariant under basis changes."
+  },
+  {
+    "id": 17,
+    "word": "Norm",
+    "answer": "Function measuring vector or matrix size. Common types: L1 (Manhattan), L2 (Euclidean), L∞ (maximum), Frobenius norms."
+  },
+  {
+    "id": 18,
+    "word": "L2 Norm",
+    "answer": "Euclidean length of a vector: √(x₁² + x₂² + ... + xₙ²). Most common norm in machine learning."
+  },
+  {
+    "id": 19,
+    "word": "L1 Norm",
+    "answer": "Manhattan distance: sum of absolute values |x₁| + |x₂| + ... + |xₙ|. Promotes sparsity in optimization."
+  },
+  {
+    "id": 20,
+    "word": "Frobenius Norm",
+    "answer": "Matrix norm computed as square root of sum of squared elements. Equivalent to L2 norm of vectorized matrix."
+  },
+  {
+    "id": 21,
+    "word": "Orthogonal Vectors",
+    "answer": "Two vectors with dot product equal to zero. They are perpendicular in geometric space with no projection overlap."
+  },
+  {
+    "id": 22,
+    "word": "Orthogonal Matrix",
+    "answer": "Square matrix where columns are orthonormal vectors. Satisfies Q^T Q = I, meaning Q^T = Q⁻¹."
+  },
+  {
+    "id": 23,
+    "word": "Orthonormal Vectors",
+    "answer": "Vectors that are both orthogonal (perpendicular) and normalized (unit length). Form ideal basis for vector spaces."
+  },
+  {
+    "id": 24,
+    "word": "Vector Space",
+    "answer": "Set closed under vector addition and scalar multiplication. Includes all possible linear combinations of vectors."
+  },
+  {
+    "id": 25,
+    "word": "Span",
+    "answer": "Set of all possible linear combinations of given vectors. Represents all points reachable by scaling and adding vectors."
+  },
+  {
+    "id": 26,
+    "word": "Basis",
+    "answer": "Minimal set of linearly independent vectors spanning a vector space. Every vector can be uniquely represented as linear combination."
+  },
+  {
+    "id": 27,
+    "word": "Linear Independence",
+    "answer": "Vectors where no vector can be written as linear combination of others. Essential for forming a basis."
+  },
+  {
+    "id": 28,
+    "word": "Linear Dependence",
+    "answer": "Vectors where at least one can be expressed as linear combination of others. Indicates redundancy in representation."
+  },
+  {
+    "id": 29,
+    "word": "Column Space",
+    "answer": "Span of matrix columns; all possible outputs Ax. Also called range or image of the transformation."
+  },
+  {
+    "id": 30,
+    "word": "Row Space",
+    "answer": "Span of matrix rows; equivalent to column space of transpose. Orthogonal complement of null space."
+  },
+  {
+    "id": 31,
+    "word": "Null Space",
+    "answer": "Set of vectors x where Ax = 0. Represents inputs that map to zero under transformation A."
+  },
+  {
+    "id": 32,
+    "word": "Dimension",
+    "answer": "Number of vectors in a basis for a vector space. Equals number of free variables or independent directions."
+  },
+  {
+    "id": 33,
+    "word": "Linear Transformation",
+    "answer": "Function preserving vector addition and scalar multiplication. Represented by matrix multiplication: T(x) = Ax."
+  },
+  {
+    "id": 34,
+    "word": "Positive Definite Matrix",
+    "answer": "Symmetric matrix where x^T Ax > 0 for all non-zero x. All eigenvalues are positive; common in optimization."
+  },
+  {
+    "id": 35,
+    "word": "Positive Semidefinite Matrix",
+    "answer": "Symmetric matrix where x^T Ax ≥ 0 for all x. All eigenvalues are non-negative; includes covariance matrices."
+  },
+  {
+    "id": 36,
+    "word": "Symmetric Matrix",
+    "answer": "Square matrix equal to its transpose: A = A^T. Has real eigenvalues and orthogonal eigenvectors."
+  },
+  {
+    "id": 37,
+    "word": "Diagonal Matrix",
+    "answer": "Matrix with non-zero values only on main diagonal. Multiplication is computationally efficient; eigenvalues are diagonal entries."
+  },
+  {
+    "id": 38,
+    "word": "Hadamard Product",
+    "answer": "Element-wise multiplication of matrices: (A ⊙ B)ᵢⱼ = AᵢⱼBᵢⱼ. Common in neural networks for gating mechanisms."
+  },
+  {
+    "id": 39,
+    "word": "Outer Product",
+    "answer": "Matrix formed from two vectors: uv^T. Creates rank-1 matrix where element (i,j) equals uᵢvⱼ."
+  },
+  {
+    "id": 40,
+    "word": "Inner Product",
+    "answer": "Generalization of dot product with defined properties: linearity, symmetry, positive definiteness. Measures vector similarity."
+  },
+  {
+    "id": 41,
+    "word": "Cross Product",
+    "answer": "Vector operation in 3D producing orthogonal vector. Magnitude equals parallelogram area; used in computer graphics."
+  },
+  {
+    "id": 42,
+    "word": "Matrix Condition Number",
+    "answer": "Ratio of largest to smallest singular value. Measures sensitivity to perturbations; high values indicate numerical instability."
+  },
+  {
+    "id": 43,
+    "word": "Singular Matrix",
+    "answer": "Square matrix with determinant zero, thus non-invertible. Columns/rows are linearly dependent; loses information."
+  },
+  {
+    "id": 44,
+    "word": "Full Rank Matrix",
+    "answer": "Matrix where rank equals minimum of dimensions. All rows/columns are linearly independent; preserves maximum information."
+  },
+  {
+    "id": 45,
+    "word": "Low Rank Approximation",
+    "answer": "Approximating matrix with fewer singular values via SVD. Reduces dimensionality while preserving most information."
+  },
+  {
+    "id": 46,
+    "word": "QR Decomposition",
+    "answer": "Factorizes matrix A into A = QR where Q is orthogonal and R is upper triangular. Useful for solving systems."
+  },
+  {
+    "id": 47,
+    "word": "LU Decomposition",
+    "answer": "Factorizes matrix A into lower triangular L and upper triangular U: A = LU. Efficient for solving linear systems."
+  },
+  {
+    "id": 48,
+    "word": "Cholesky Decomposition",
+    "answer": "Factorizes positive definite matrix into A = LL^T where L is lower triangular. Computationally efficient for certain matrices."
+  },
+  {
+    "id": 49,
+    "word": "Gram-Schmidt Process",
+    "answer": "Algorithm converting linearly independent vectors into orthonormal set. Sequentially orthogonalizes and normalizes vectors."
+  },
+  {
+    "id": 50,
+    "word": "Projection",
+    "answer": "Transformation mapping vector onto subspace. Orthogonal projection minimizes distance to subspace; formula: proj = (v·u/u·u)u."
+  },
+  {
+    "id": 51,
+    "word": "Least Squares Solution",
+    "answer": "Solution minimizing ||Ax - b||². Found via normal equations: x = (A^T A)⁻¹A^T b when A^T A is invertible."
+  },
+  {
+    "id": 52,
+    "word": "Moore-Penrose Pseudoinverse",
+    "answer": "Generalized inverse for non-square or singular matrices. Denoted A⁺; provides least squares solution when exact solution doesn't exist."
+  },
+  {
+    "id": 53,
+    "word": "Change Of Basis",
+    "answer": "Expressing vector in different coordinate system. Given by transformation matrix P where v_new = P⁻¹v_old."
+  },
+  {
+    "id": 54,
+    "word": "Similarity Transformation",
+    "answer": "Transformation A' = P⁻¹AP changing basis while preserving eigenvalues. Represents same operator in different coordinates."
+  },
+  {
+    "id": 55,
+    "word": "Kronecker Product",
+    "answer": "Block matrix operation A ⊗ B creating larger matrix. Each element aᵢⱼ is replaced by aᵢⱼB; used in multilinear algebra."
+  },
+  {
+    "id": 56,
+    "word": "Block Matrix",
+    "answer": "Matrix partitioned into smaller submatrices. Allows efficient computation by treating blocks as single elements."
+  },
+  {
+    "id": 57,
+    "word": "Vandermonde Matrix",
+    "answer": "Matrix with geometric progression in rows: Vᵢⱼ = xᵢʲ⁻¹. Used in polynomial interpolation and signal processing."
+  },
+  {
+    "id": 58,
+    "word": "Toeplitz Matrix",
+    "answer": "Matrix with constant diagonals: aᵢⱼ = aᵢ₋ⱼ. Common in time series and convolution operations."
+  },
+  {
+    "id": 59,
+    "word": "Circulant Matrix",
+    "answer": "Special Toeplitz matrix where each row is cyclic shift of previous. Diagonalized by Fourier transform; used in convolutions."
+  },
+  {
+    "id": 60,
+    "word": "Covariance Matrix",
+    "answer": "Symmetric matrix encoding pairwise covariances between features. Diagonal contains variances; positive semidefinite by construction."
+  },
+  {
+    "id": 61,
+    "word": "Correlation Matrix",
+    "answer": "Normalized covariance matrix with ones on diagonal. Elements range [-1,1] representing linear relationship strength."
+  },
+  {
+    "id": 62,
+    "word": "Gram Matrix",
+    "answer": "Matrix of inner products G = X^T X. Positive semidefinite; measures similarity between data points or features."
+  },
+  {
+    "id": 63,
+    "word": "Affine Transformation",
+    "answer": "Linear transformation followed by translation: y = Ax + b. Preserves parallelism and ratios of distances."
+  },
+  {
+    "id": 64,
+    "word": "Rotation Matrix",
+    "answer": "Orthogonal matrix representing rotation. Has determinant +1 and preserves distances and angles in space."
+  },
+  {
+    "id": 65,
+    "word": "Reflection Matrix",
+    "answer": "Orthogonal matrix flipping space across hyperplane. Has determinant -1 and one eigenvalue equal to -1."
+  },
+  {
+    "id": 66,
+    "word": "Scaling Matrix",
+    "answer": "Diagonal matrix multiplying each coordinate by factor. Eigenvalues are diagonal entries representing scaling per dimension."
+  },
+  {
+    "id": 67,
+    "word": "Shear Matrix",
+    "answer": "Matrix producing slant transformation while keeping one axis fixed. Off-diagonal elements determine shearing direction and magnitude."
+  },
+  {
+    "id": 68,
+    "word": "Spectral Theorem",
+    "answer": "States symmetric matrices can be diagonalized by orthogonal matrices. Enables eigendecomposition: A = QΛQ^T."
+  },
+  {
+    "id": 69,
+    "word": "Rayleigh Quotient",
+    "answer": "Scalar R(x) = x^T Ax / x^T x for symmetric A. Bounded by min and max eigenvalues; used in optimization."
+  },
+  {
+    "id": 70,
+    "word": "Power Iteration",
+    "answer": "Iterative algorithm finding dominant eigenvector by repeatedly multiplying matrix by vector and normalizing."
+  },
+  {
+    "id": 71,
+    "word": "Jacobian Matrix",
+    "answer": "Matrix of first-order partial derivatives of vector function. Represents local linear approximation; used in backpropagation."
+  },
+  {
+    "id": 72,
+    "word": "Hessian Matrix",
+    "answer": "Matrix of second-order partial derivatives. Symmetric for smooth functions; describes local curvature for optimization."
+  },
+  {
+    "id": 73,
+    "word": "Gradient Vector",
+    "answer": "Vector of partial derivatives pointing in direction of steepest ascent. Perpendicular to level sets of function."
+  },
+  {
+    "id": 74,
+    "word": "Matrix Norm Properties",
+    "answer": "Valid norm satisfies: non-negativity, definiteness, homogeneity, triangle inequality. Common: Frobenius, spectral, nuclear norms."
+  },
+  {
+    "id": 75,
+    "word": "Spectral Norm",
+    "answer": "Matrix norm equal to largest singular value. Measures maximum stretching factor; ||A||₂ = σ_max(A)."
+  },
+  {
+    "id": 76,
+    "word": "Nuclear Norm",
+    "answer": "Sum of singular values of matrix. Convex relaxation of rank; promotes low-rank solutions in optimization."
+  },
+  {
+    "id": 77,
+    "word": "Matrix Calculus Chain Rule",
+    "answer": "For composite functions, derivatives multiply as Jacobians: ∂f/∂x = (∂f/∂y)(∂y/∂x). Foundation of backpropagation."
+  },
+  {
+    "id": 78,
+    "word": "Vectorization",
+    "answer": "Stacking matrix columns into single vector: vec(A). Enables expressing matrix operations as vector operations."
+  },
+  {
+    "id": 79,
+    "word": "Broadcasting",
+    "answer": "Implicit replication of arrays to compatible shapes for element-wise operations. Enables efficient vectorized computation."
+  },
+  {
+    "id": 80,
+    "word": "Matrix Exponential",
+    "answer": "Function exp(A) = I + A + A²/2! + A³/3! + ... Generalizes scalar exponential; used in differential equations."
+  },
+  {
+    "id": 81,
+    "word": "Convolution As Matrix Multiplication",
+    "answer": "Convolution operation can be expressed as multiplication by Toeplitz/circulant matrix. Enables efficient CNN gradient computation."
+  },
+  {
+    "id": 82,
+    "word": "Tensor Product",
+    "answer": "Generalization of outer product to higher dimensions. Creates tensor from lower-order tensors; denoted ⊗."
+  },
+  {
+    "id": 83,
+    "word": "Bilinear Form",
+    "answer": "Scalar-valued function B(x,y) = x^T Ay linear in both arguments. Represents quadratic relationships between vectors."
+  },
+  {
+    "id": 84,
+    "word": "Quadratic Form",
+    "answer": "Scalar function Q(x) = x^T Ax for symmetric matrix A. Sign of eigenvalues determines convexity properties."
+  },
+  {
+    "id": 85,
+    "word": "Matrix Square Root",
+    "answer": "Matrix B where B² = A. For positive semidefinite A, computed via eigendecomposition: B = QΛ^(1/2)Q^T."
+  },
+  {
+    "id": 86,
+    "word": "Whitening Transformation",
+    "answer": "Linear transformation making covariance matrix identity. Removes correlations: x_white = Σ^(-1/2)(x - μ)."
+  },
+  {
+    "id": 87,
+    "word": "Linear System Ax=B",
+    "answer": "Set of linear equations solved for x. Methods: matrix inversion, Gaussian elimination, iterative solvers, decompositions."
+  },
+  {
+    "id": 88,
+    "word": "Homogeneous System",
+    "answer": "Linear system Ax = 0. Always has trivial solution x = 0; non-trivial solutions exist when A is singular."
+  },
+  {
+    "id": 89,
+    "word": "Gaussian Elimination",
+    "answer": "Algorithm for solving linear systems by row reduction to echelon form. Systematically eliminates variables."
+  },
+  {
+    "id": 90,
+    "word": "Back Substitution",
+    "answer": "Process solving upper triangular system by working backwards from last equation. Common after Gaussian elimination."
+  },
+  {
+    "id": 91,
+    "word": "Forward Substitution",
+    "answer": "Process solving lower triangular system by working forward from first equation. Used after LU decomposition."
+  },
+  {
+    "id": 92,
+    "word": "Pivoting",
+    "answer": "Row/column swapping during elimination for numerical stability. Partial pivoting exchanges rows; full pivoting exchanges both."
+  },
+  {
+    "id": 93,
+    "word": "Ill-Conditioned System",
+    "answer": "System where small input changes cause large output changes. High condition number indicates numerical instability."
+  },
+  {
+    "id": 94,
+    "word": "Overdetermined System",
+    "answer": "More equations than unknowns (m > n). Typically no exact solution; solved via least squares minimization."
+  },
+  {
+    "id": 95,
+    "word": "Underdetermined System",
+    "answer": "Fewer equations than unknowns (m < n). Infinitely many solutions; often add regularization to select one."
+  },
+  {
+    "id": 96,
+    "word": "Tikhonov Regularization",
+    "answer": "Adds penalty ||x||² to least squares objective. Produces stable solution for ill-posed problems; equivalent to ridge regression."
+  },
+  {
+    "id": 97,
+    "word": "Matrix Differentiation Identity",
+    "answer": "Key rules: ∂(x^T Ax)/∂x = (A + A^T)x; for symmetric A, equals 2Ax. Essential for gradient computation."
+  },
+  {
+    "id": 98,
+    "word": "Woodbury Matrix Identity",
+    "answer": "Efficient formula for inverse of rank-k update: (A + UCV)⁻¹. Avoids full inversion; useful for online learning."
+  },
+  {
+    "id": 99,
+    "word": "Sherman-Morrison Formula",
+    "answer": "Special Woodbury case for rank-1 update: (A + uv^T)⁻¹. Enables efficient inverse updates in algorithms."
+  },
+  {
+    "id": 100,
+    "word": "Singular Value",
+    "answer": "Non-negative square root of eigenvalue of A^T A. Measures importance of corresponding principal component direction."
+  },
+  {
+    "id": 101,
+    "word": "Left Singular Vectors",
+    "answer": "Columns of U in SVD A = UΣV^T. Orthonormal basis for column space; eigenvectors of AA^T."
+  },
+  {
+    "id": 102,
+    "word": "Right Singular Vectors",
+    "answer": "Columns of V in SVD A = UΣV^T. Orthonormal basis for row space; eigenvectors of A^T A."
+  },
+  {
+    "id": 103,
+    "word": "Truncated SVD",
+    "answer": "Keeping only top k singular values/vectors. Provides best rank-k approximation minimizing Frobenius norm error."
+  },
+  {
+    "id": 104,
+    "word": "Eckart-Young Theorem",
+    "answer": "Truncated SVD provides optimal low-rank matrix approximation. Minimizes ||A - A_k||_F over all rank-k matrices."
+  },
+  {
+    "id": 105,
+    "word": "Matrix Approximation Error",
+    "answer": "Difference between original and approximated matrix. Frobenius norm error equals sum of squared discarded singular values."
+  },
+  {
+    "id": 106,
+    "word": "Geometric Interpretation Of SVD",
+    "answer": "Any linear transformation decomposes into rotation (V^T), scaling (Σ), rotation (U). Provides geometric insight into operations."
+  },
+  {
+    "id": 107,
+    "word": "PCA Reconstruction",
+    "answer": "Projecting onto principal components then back: x_approx = VV^T x. Minimizes reconstruction error for given dimensionality."
+  },
+  {
+    "id": 108,
+    "word": "Explained Variance Ratio",
+    "answer": "Proportion of variance captured by component: λᵢ / Σλⱼ. Helps choose number of components to retain."
+  },
+  {
+    "id": 109,
+    "word": "Centering Data For PCA",
+    "answer": "Subtracting mean before PCA: X_centered = X - mean(X). Essential for finding variance-maximizing directions."
+  },
+  {
+    "id": 110,
+    "word": "Standardization For PCA",
+    "answer": "Scaling features to unit variance after centering. Prevents high-variance features from dominating principal components."
+  },
+  {
+    "id": 111,
+    "word": "Kernel Trick In Linear Algebra",
+    "answer": "Computing inner products in high-dimensional space via kernel function. Avoids explicit transformation; K(x,y) = φ(x)^T φ(y)."
+  },
+  {
+    "id": 112,
+    "word": "Positive Definite Kernel",
+    "answer": "Function producing positive definite Gram matrix for any point set. Corresponds to valid inner product in feature space."
+  },
+  {
+    "id": 113,
+    "word": "Neural Network Weight Matrix",
+    "answer": "Parameters defining linear transformation between layers. Each column corresponds to one neuron's incoming weights."
+  },
+  {
+    "id": 114,
+    "word": "Batch Matrix Multiplication",
+    "answer": "Simultaneously computing multiple matrix products. Efficiently processes mini-batches: Y = XW where X has batch dimension."
+  },
+  {
+    "id": 115,
+    "word": "Einstein Summation Notation",
+    "answer": "Compact notation for tensor operations using index repetition. Example: matrix multiply is Cᵢⱼ = ΣₖAᵢₖBₖⱼ."
+  },
+  {
+    "id": 116,
+    "word": "Matrix Factorization",
+    "answer": "Decomposing matrix into product of simpler matrices. Common in recommendation systems: R ≈ UV^T for low-rank U,V."
+  },
+  {
+    "id": 117,
+    "word": "Non-Negative Matrix Factorization",
+    "answer": "Factorization V ≈ WH with non-negativity constraints. Produces sparse, interpretable representations; used in topic modeling."
+  },
+  {
+    "id": 118,
+    "word": "Sparse Matrix",
+    "answer": "Matrix with mostly zero elements. Stored efficiently using special formats; common in NLP and graph representations."
+  },
+  {
+    "id": 119,
+    "word": "Dense Matrix",
+    "answer": "Matrix with most elements non-zero. Opposite of sparse; standard representation for fully-connected layer weights."
+  },
+  {
+    "id": 120,
+    "word": "Linear Algebra In Backpropagation",
+    "answer": "Gradient computation uses chain rule with Jacobians. Efficiently computed via matrix operations: ∂L/∂W = ∂L/∂Y × X^T."
+  }
+]

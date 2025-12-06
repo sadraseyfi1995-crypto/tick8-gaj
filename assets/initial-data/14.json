@@ -1,0 +1,1244 @@
+[
+  {
+    "id": 1,
+    "word": "Two Sum (array, target)",
+    "answer": "Find two indices whose values sum to target using a hash map for O(n) time.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-23T22:56:36.709Z"
+  },
+  {
+    "id": 2,
+    "word": "Reverse a string",
+    "answer": "Use two pointers from start and end, swapping characters until they meet in the middle.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-23T22:56:44.983Z"
+  },
+  {
+    "id": 3,
+    "word": "Find maximum in array",
+    "answer": "Iterate through array keeping track of the largest value seen so far.",
+    "states": [
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-25T21:16:23.476Z"
+  },
+  {
+    "id": 4,
+    "word": "Check if palindrome string",
+    "answer": "Compare characters from both ends moving inward, ignoring non-alphanumeric characters and case.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-02T06:25:17.383Z"
+  },
+  {
+    "id": 5,
+    "word": "Merge two sorted arrays",
+    "answer": "Use two pointers to compare elements from each array, adding smaller one to result.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-23T03:18:09.885Z"
+  },
+  {
+    "id": 6,
+    "word": "Remove duplicates from sorted array",
+    "answer": "Use two pointers: one for reading, one for writing unique elements in place.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T16:05:05.875Z"
+  },
+  {
+    "id": 7,
+    "word": "Valid parentheses (brackets)",
+    "answer": "Use a stack to match opening brackets with closing ones, ensuring proper nesting.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-30T21:24:35.055Z"
+  },
+  {
+    "id": 8,
+    "word": "Find single number (others appear twice)",
+    "answer": "XOR all numbers together; duplicates cancel out, leaving only the single number.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-02T19:48:40.444Z"
+  },
+  {
+    "id": 9,
+    "word": "Reverse linked list",
+    "answer": "Iterate through list, reversing pointers by keeping track of previous, current, and next nodes.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-25T05:37:56.275Z"
+  },
+  {
+    "id": 10,
+    "word": "Maximum subarray sum (Kadane)",
+    "answer": "Track current sum; reset to zero if negative, update maximum sum found.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-29T04:20:07.549Z"
+  },
+  {
+    "id": 11,
+    "word": "Contains duplicate in array",
+    "answer": "Use a hash set to check if each element was seen before.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-01T16:15:26.027Z"
+  },
+  {
+    "id": 12,
+    "word": "Best time to buy and sell stock",
+    "answer": "Track minimum price seen and maximum profit by selling at current price.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-06T19:54:45.636Z"
+  },
+  {
+    "id": 13,
+    "word": "Move zeroes to end of array",
+    "answer": "Use two pointers: one to read, one to write non-zero elements, preserving order.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-25T23:53:18.718Z"
+  },
+  {
+    "id": 14,
+    "word": "Find intersection of two arrays",
+    "answer": "Use hash set for one array, then check elements of second array.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-30T21:18:53.584Z"
+  },
+  {
+    "id": 15,
+    "word": "FizzBuzz (print numbers with conditions)",
+    "answer": "Print Fizz for multiples of three, Buzz for five, FizzBuzz for both, otherwise number.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-30T21:32:21.449Z"
+  },
+  {
+    "id": 16,
+    "word": "Reverse integer",
+    "answer": "Extract digits using modulo and division, building reversed number while checking for overflow.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-10T21:47:03.900Z"
+  },
+  {
+    "id": 17,
+    "word": "First unique character in string",
+    "answer": "Count character frequencies using hash map, then find first with count of one.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-26T04:55:14.973Z"
+  },
+  {
+    "id": 18,
+    "word": "Valid anagram (two strings)",
+    "answer": "Count character frequencies of both strings and compare for equality.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-30T21:21:52.529Z"
+  },
+  {
+    "id": 19,
+    "word": "Climbing stairs (ways to reach top)",
+    "answer": "Each step can be reached from previous two steps; use Fibonacci-like recurrence.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-10-31T16:22:53.531Z"
+  },
+  {
+    "id": 20,
+    "word": "Linked list cycle detection",
+    "answer": "Use fast and slow pointers; if they meet, a cycle exists.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-11T20:46:07.032Z"
+  },
+  {
+    "id": 21,
+    "word": "Merge two sorted linked lists",
+    "answer": "Compare heads of both lists, repeatedly adding smaller node to result list.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T19:19:54.336Z"
+  },
+  {
+    "id": 22,
+    "word": "Binary tree maximum depth",
+    "answer": "Recursively find maximum depth of left and right subtrees, add one for current level."
+  },
+  {
+    "id": 23,
+    "word": "Symmetric binary tree check",
+    "answer": "Recursively compare left subtree with mirrored right subtree for structural and value equality."
+  },
+  {
+    "id": 24,
+    "word": "Convert sorted array to BST",
+    "answer": "Choose middle element as root, recursively build left and right subtrees from halves."
+  },
+  {
+    "id": 25,
+    "word": "Power of two check",
+    "answer": "Check if number is positive and has only one bit set using bitwise AND.",
+    "states": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-11-15T19:29:26.642Z"
+  },
+  {
+    "id": 26,
+    "word": "Missing number in sequence",
+    "answer": "Calculate expected sum of sequence, subtract actual sum to find missing number."
+  },
+  {
+    "id": 27,
+    "word": "Implement queue using stacks",
+    "answer": "Use two stacks: one for enqueue, one for dequeue, transferring elements when needed."
+  },
+  {
+    "id": 28,
+    "word": "Implement stack using queues",
+    "answer": "Use one or two queues, rotating elements to keep newest element at front."
+  },
+  {
+    "id": 29,
+    "word": "Min stack (get minimum in O(1))",
+    "answer": "Maintain second stack tracking minimum value at each level of main stack."
+  },
+  {
+    "id": 30,
+    "word": "Majority element (appears >n/2 times)",
+    "answer": "Use Boyer-Moore voting algorithm: maintain candidate and count, updating when count reaches zero."
+  },
+  {
+    "id": 31,
+    "word": "Happy number check",
+    "answer": "Replace number with sum of squared digits; detect cycle using set or slow-fast pointers."
+  },
+  {
+    "id": 32,
+    "word": "Count primes less than n",
+    "answer": "Use Sieve of Eratosthenes: mark multiples of each prime as composite."
+  },
+  {
+    "id": 33,
+    "word": "Isomorphic strings check",
+    "answer": "Map characters from first string to second, ensuring one-to-one consistent mapping."
+  },
+  {
+    "id": 34,
+    "word": "Reverse bits of integer",
+    "answer": "Extract each bit and place in reversed position using bit shifting."
+  },
+  {
+    "id": 35,
+    "word": "Number of 1 bits (Hamming weight)",
+    "answer": "Count set bits by repeatedly removing rightmost one bit using bitwise operations."
+  },
+  {
+    "id": 36,
+    "word": "House robber (max sum, no adjacent)",
+    "answer": "Track maximum money robbing up to current house, considering rob or skip decision."
+  },
+  {
+    "id": 37,
+    "word": "Pascal's triangle generation",
+    "answer": "Each element is sum of two elements above it; first and last elements are one."
+  },
+  {
+    "id": 38,
+    "word": "Valid palindrome (alphanumeric only)",
+    "answer": "Use two pointers, comparing characters while ignoring non-alphanumeric and case."
+  },
+  {
+    "id": 39,
+    "word": "Binary tree level order traversal",
+    "answer": "Use queue for breadth-first search, processing nodes level by level."
+  },
+  {
+    "id": 40,
+    "word": "Binary tree inorder traversal",
+    "answer": "Visit left subtree, current node, then right subtree recursively or using stack."
+  },
+  {
+    "id": 41,
+    "word": "Same tree check (structural equality)",
+    "answer": "Recursively compare node values and structure of both trees at each position."
+  },
+  {
+    "id": 42,
+    "word": "Invert binary tree",
+    "answer": "Recursively swap left and right children of each node in the tree."
+  },
+  {
+    "id": 43,
+    "word": "Path sum in binary tree",
+    "answer": "Recursively subtract node value from target, check if leaf reaches zero."
+  },
+  {
+    "id": 44,
+    "word": "Minimum depth of binary tree",
+    "answer": "Find shortest path from root to leaf using BFS or recursive depth calculation."
+  },
+  {
+    "id": 45,
+    "word": "Balanced binary tree check",
+    "answer": "Recursively check if height difference between left and right subtrees exceeds one."
+  },
+  {
+    "id": 46,
+    "word": "Delete node in linked list (only access to node)",
+    "answer": "Copy next node's value to current node, then delete next node."
+  },
+  {
+    "id": 47,
+    "word": "Middle of linked list",
+    "answer": "Use slow and fast pointers; when fast reaches end, slow is at middle."
+  },
+  {
+    "id": 48,
+    "word": "Palindrome linked list check",
+    "answer": "Find middle, reverse second half, then compare both halves for equality."
+  },
+  {
+    "id": 49,
+    "word": "Remove linked list elements with value",
+    "answer": "Use dummy head, traverse list skipping nodes with target value by adjusting pointers."
+  },
+  {
+    "id": 50,
+    "word": "Intersection of two linked lists",
+    "answer": "Find length difference, align starts, then traverse together until nodes match."
+  },
+  {
+    "id": 51,
+    "word": "Excel column number from title",
+    "answer": "Convert base-26 letter system to decimal number, treating A as one."
+  },
+  {
+    "id": 52,
+    "word": "Excel column title from number",
+    "answer": "Convert decimal to base-26 with A as one using repeated division and modulo."
+  },
+  {
+    "id": 53,
+    "word": "Factorial trailing zeroes count",
+    "answer": "Count factors of five in factorial by dividing n by increasing powers of five."
+  },
+  {
+    "id": 54,
+    "word": "Rotate array right by k steps",
+    "answer": "Reverse entire array, then reverse first k and remaining elements separately."
+  },
+  {
+    "id": 55,
+    "word": "Contains duplicate within k distance",
+    "answer": "Use sliding window hash set of size k to check for duplicates."
+  },
+  {
+    "id": 56,
+    "word": "Implement strStr (find substring)",
+    "answer": "Scan through string checking if substring matches at each position."
+  },
+  {
+    "id": 57,
+    "word": "Length of last word in string",
+    "answer": "Trim trailing spaces, then count characters backward until reaching another space."
+  },
+  {
+    "id": 58,
+    "word": "Plus one (increment large integer array)",
+    "answer": "Add one to last digit, handle carries by moving left until no carry remains."
+  },
+  {
+    "id": 59,
+    "word": "Add binary strings",
+    "answer": "Add digits from right to left with carry, like manual addition."
+  },
+  {
+    "id": 60,
+    "word": "Sqrt(x) using integer division",
+    "answer": "Use binary search between zero and x to find largest integer whose square fits."
+  },
+  {
+    "id": 61,
+    "word": "Roman to integer conversion",
+    "answer": "Sum values, subtracting when smaller numeral appears before larger one."
+  },
+  {
+    "id": 62,
+    "word": "Longest common prefix in string array",
+    "answer": "Compare characters at same position across all strings until mismatch found."
+  },
+  {
+    "id": 63,
+    "word": "Valid perfect square check",
+    "answer": "Use binary search to find if any integer squared equals the number."
+  },
+  {
+    "id": 64,
+    "word": "Add digits until single digit",
+    "answer": "Sum digits repeatedly until one digit remains; or use digital root formula."
+  },
+  {
+    "id": 65,
+    "word": "Ugly number check (only 2,3,5 factors)",
+    "answer": "Repeatedly divide by two, three, and five; check if result is one."
+  },
+  {
+    "id": 66,
+    "word": "Word pattern matching (bijection)",
+    "answer": "Map each pattern character to word, ensuring one-to-one consistent correspondence."
+  },
+  {
+    "id": 67,
+    "word": "Range sum query (immutable array)",
+    "answer": "Precompute prefix sums; range sum is difference between two prefix values."
+  },
+  {
+    "id": 68,
+    "word": "Power of three check",
+    "answer": "Check if number is positive and dividing repeatedly by three reaches one."
+  },
+  {
+    "id": 69,
+    "word": "Power of four check",
+    "answer": "Check if power of two and only bit is at even position."
+  },
+  {
+    "id": 70,
+    "word": "Reverse string vowels only",
+    "answer": "Use two pointers, swapping only when both point to vowels."
+  },
+  {
+    "id": 71,
+    "word": "Intersection of two arrays II (with duplicates)",
+    "answer": "Count frequencies in both arrays, take minimum count for each number."
+  },
+  {
+    "id": 72,
+    "word": "Valid perfect square sum (two squares)",
+    "answer": "Use two pointers from zero and sqrt(n), adjusting based on sum comparison."
+  },
+  {
+    "id": 73,
+    "word": "Find disappeared numbers in array (1 to n)",
+    "answer": "Mark presence by negating values at corresponding indices, then find positive positions."
+  },
+  {
+    "id": 74,
+    "word": "Assign cookies (greedy)",
+    "answer": "Sort both arrays, assign smallest satisfying cookie to each child greedily."
+  },
+  {
+    "id": 75,
+    "word": "Island perimeter in grid",
+    "answer": "Count land cells times four, subtract two for each adjacent land pair."
+  },
+  {
+    "id": 76,
+    "word": "Find complement of integer",
+    "answer": "XOR number with mask of all ones matching the number's bit length."
+  },
+  {
+    "id": 77,
+    "word": "Fibonacci number calculation",
+    "answer": "Use iterative approach with two variables tracking previous two numbers."
+  },
+  {
+    "id": 78,
+    "word": "Hamming distance (differing bits)",
+    "answer": "XOR two numbers and count number of one bits in result."
+  },
+  {
+    "id": 79,
+    "word": "Keyboard row words check",
+    "answer": "Create set for each keyboard row, check if all letters belong to same row."
+  },
+  {
+    "id": 80,
+    "word": "Next greater element using stack",
+    "answer": "Use stack to track decreasing elements; pop when finding greater element."
+  },
+  {
+    "id": 81,
+    "word": "Base 7 conversion",
+    "answer": "Repeatedly divide by seven, collecting remainders to build result in reverse."
+  },
+  {
+    "id": 82,
+    "word": "Relative ranks (gold, silver, bronze)",
+    "answer": "Sort scores with indices, assign ranks or medal names based on position."
+  },
+  {
+    "id": 83,
+    "word": "Perfect number check (equals sum of divisors)",
+    "answer": "Find divisors up to square root, sum them and compare to number."
+  },
+  {
+    "id": 84,
+    "word": "Detect capital usage in word",
+    "answer": "Check if all capitals, all lowercase, or only first capital."
+  },
+  {
+    "id": 85,
+    "word": "Longest palindrome length from characters",
+    "answer": "Count character frequencies; sum even counts plus one if any odd exists."
+  },
+  {
+    "id": 86,
+    "word": "Find mode in binary search tree",
+    "answer": "Inorder traversal gives sorted sequence; track current value frequency."
+  },
+  {
+    "id": 87,
+    "word": "Minimum absolute difference in BST",
+    "answer": "Inorder traversal gives sorted values; find minimum difference between consecutive elements."
+  },
+  {
+    "id": 88,
+    "word": "Diameter of binary tree",
+    "answer": "Find longest path between any two nodes; recursively calculate through each node."
+  },
+  {
+    "id": 89,
+    "word": "Student attendance record check",
+    "answer": "Count absences (max one) and check for three consecutive lates."
+  },
+  {
+    "id": 90,
+    "word": "Reverse string II (every 2k characters)",
+    "answer": "Process string in chunks of 2k, reversing first k characters of each."
+  },
+  {
+    "id": 91,
+    "word": "Array partition for maximum sum of mins",
+    "answer": "Sort array and sum every other element starting from first."
+  },
+  {
+    "id": 92,
+    "word": "Subtree of another tree check",
+    "answer": "Check if trees match at current node or in left or right subtrees."
+  },
+  {
+    "id": 93,
+    "word": "Distribute candies (maximum types)",
+    "answer": "Return minimum of unique candy types and half the total count."
+  },
+  {
+    "id": 94,
+    "word": "Shortest completing word (license plate)",
+    "answer": "Count letters in plate; find shortest word containing all required letters."
+  },
+  {
+    "id": 95,
+    "word": "Binary number addition",
+    "answer": "Add bits from right to left with carry, like decimal addition."
+  },
+  {
+    "id": 96,
+    "word": "Average of levels in binary tree",
+    "answer": "Use level-order traversal, calculating average of each level separately."
+  },
+  {
+    "id": 97,
+    "word": "Maximum average subarray (length k)",
+    "answer": "Use sliding window to maintain sum of k elements, tracking maximum."
+  },
+  {
+    "id": 98,
+    "word": "Set mismatch (duplicate and missing)",
+    "answer": "Find duplicate using XOR or set; calculate missing using expected sum."
+  },
+  {
+    "id": 99,
+    "word": "Two sum IV (BST)",
+    "answer": "Convert to sorted array via inorder traversal, use two pointers."
+  },
+  {
+    "id": 100,
+    "word": "Longest continuous increasing subsequence",
+    "answer": "Track current increasing sequence length, update maximum when sequence breaks."
+  },
+  {
+    "id": 101,
+    "word": "Valid palindrome II (delete one character)",
+    "answer": "Use two pointers; when mismatch found, try skipping either character."
+  },
+  {
+    "id": 102,
+    "word": "Repeated substring pattern check",
+    "answer": "Check if string equals rotation of itself by doubling and searching."
+  },
+  {
+    "id": 103,
+    "word": "Find pivot index (equal left-right sums)",
+    "answer": "Calculate total sum; iterate tracking left sum, checking if right sum matches."
+  },
+  {
+    "id": 104,
+    "word": "Self dividing number check",
+    "answer": "Check each digit is non-zero and divides the number evenly."
+  },
+  {
+    "id": 105,
+    "word": "Flood fill (change connected colors)",
+    "answer": "Use DFS or BFS from starting pixel, changing all connected same-colored pixels."
+  },
+  {
+    "id": 106,
+    "word": "Shortest distance to character in string",
+    "answer": "Scan left tracking last occurrence, then right, taking minimum distance."
+  },
+  {
+    "id": 107,
+    "word": "Jewels and stones count",
+    "answer": "Create set of jewel types, count stones that match jewel types."
+  },
+  {
+    "id": 108,
+    "word": "Rotate string check",
+    "answer": "Check if second string appears in first string concatenated with itself."
+  },
+  {
+    "id": 109,
+    "word": "Unique Morse code words count",
+    "answer": "Map each word to Morse code, count unique transformations using set."
+  },
+  {
+    "id": 110,
+    "word": "Largest triangle area from points",
+    "answer": "Try all point triplets, calculate area using coordinate formula."
+  },
+  {
+    "id": 111,
+    "word": "Toeplitz matrix check (diagonals constant)",
+    "answer": "Check if each element equals element at previous row and column."
+  },
+  {
+    "id": 112,
+    "word": "Is subsequence check",
+    "answer": "Use pointer in target, advancing when matching character found in source."
+  },
+  {
+    "id": 113,
+    "word": "Leaf-similar trees check",
+    "answer": "Collect leaf values from both trees in order, compare sequences."
+  },
+  {
+    "id": 114,
+    "word": "Monotonic array check (all increasing or decreasing)",
+    "answer": "Check if array never increases or never decreases throughout."
+  },
+  {
+    "id": 115,
+    "word": "Uncommon words from two sentences",
+    "answer": "Count word frequencies in both sentences, return words appearing exactly once total."
+  },
+  {
+    "id": 116,
+    "word": "Projection area of 3D shapes",
+    "answer": "Sum xy-plane maxes, xz-plane row maxes, and yz-plane column maxes."
+  },
+  {
+    "id": 117,
+    "word": "Surface area of 3D shapes",
+    "answer": "Count exposed faces: top, bottom, and sides considering adjacent heights."
+  },
+  {
+    "id": 118,
+    "word": "Middle node of singly linked list",
+    "answer": "Use two pointers moving at different speeds to find center."
+  },
+  {
+    "id": 119,
+    "word": "Lemonade change (can make change)",
+    "answer": "Track five and ten dollar bills, making change for each customer greedily."
+  },
+  {
+    "id": 120,
+    "word": "Transpose matrix",
+    "answer": "Swap rows and columns by creating new matrix with dimensions reversed."
+  },
+  {
+    "id": 121,
+    "word": "Binary gap (longest distance between ones)",
+    "answer": "Convert to binary, track current gap length between consecutive one bits."
+  },
+  {
+    "id": 122,
+    "word": "Buddy strings (swap two characters to match)",
+    "answer": "Find exactly two differing positions that swap correctly, or check for duplicates."
+  },
+  {
+    "id": 123,
+    "word": "Largest perimeter triangle",
+    "answer": "Sort lengths, find largest triplet satisfying triangle inequality from end."
+  },
+  {
+    "id": 124,
+    "word": "Sort array by parity (evens first)",
+    "answer": "Use two pointers to partition array, swapping odd-even pairs until meeting."
+  },
+  {
+    "id": 125,
+    "word": "Reverse only letters in string",
+    "answer": "Use two pointers, swapping only letters while preserving non-letter positions."
+  },
+  {
+    "id": 126,
+    "word": "Sort array by parity II (alternating even-odd)",
+    "answer": "Place even-indexed numbers in even positions, odd-indexed in odd positions."
+  },
+  {
+    "id": 127,
+    "word": "Smallest range I (reduce max-min difference)",
+    "answer": "Find current range; if less than twice k, can reduce to zero."
+  },
+  {
+    "id": 128,
+    "word": "Verifying alien dictionary order",
+    "answer": "Create character order map, compare adjacent words lexicographically using custom order."
+  },
+  {
+    "id": 129,
+    "word": "Univalued binary tree (all same value)",
+    "answer": "Recursively check if all nodes have same value as root."
+  },
+  {
+    "id": 130,
+    "word": "Fair candy swap (equal sums after swap)",
+    "answer": "Calculate sum difference; find pair where difference equals half of total difference."
+  },
+  {
+    "id": 131,
+    "word": "Increasing order search tree (flatten BST)",
+    "answer": "Perform inorder traversal, linking nodes in a right-only chain."
+  },
+  {
+    "id": 132,
+    "word": "Range sum of BST (between bounds)",
+    "answer": "Recursively sum nodes within range, pruning branches outside bounds."
+  },
+  {
+    "id": 133,
+    "word": "N repeated element in 2N array",
+    "answer": "Use hash set to detect first repeated element encountered."
+  },
+  {
+    "id": 134,
+    "word": "Squares of sorted array",
+    "answer": "Use two pointers from ends, placing larger squared value from back."
+  },
+  {
+    "id": 135,
+    "word": "Validate stack sequences (push-pop)",
+    "answer": "Simulate operations with stack, checking if sequence produces correct output."
+  },
+  {
+    "id": 136,
+    "word": "Add to array form of integer",
+    "answer": "Add number to array digit by digit from right, handling carries."
+  },
+  {
+    "id": 137,
+    "word": "Largest values from tree labels",
+    "answer": "Sum labels at each level using BFS, grouping by depth."
+  },
+  {
+    "id": 138,
+    "word": "Divisor game (optimal play)",
+    "answer": "Winning strategy exists when N is even; player with odd loses."
+  },
+  {
+    "id": 139,
+    "word": "Complement of base 10 integer",
+    "answer": "Flip all bits in binary representation of the number."
+  },
+  {
+    "id": 140,
+    "word": "Remove all adjacent duplicates in string",
+    "answer": "Use stack, pushing characters and popping when matching top."
+  },
+  {
+    "id": 141,
+    "word": "N-th Tribonacci number",
+    "answer": "Like Fibonacci but sum of previous three numbers; use iterative approach."
+  },
+  {
+    "id": 142,
+    "word": "Height checker (positions not at correct height)",
+    "answer": "Sort array, count positions where original differs from sorted version."
+  },
+  {
+    "id": 143,
+    "word": "Duplicate zeros in array (in-place)",
+    "answer": "Scan right to left, shifting elements and duplicating zeros encountered."
+  },
+  {
+    "id": 144,
+    "word": "Longest common prefix using trie",
+    "answer": "Build trie from words, traverse until branching or end of word."
+  },
+  {
+    "id": 145,
+    "word": "Find common characters in all strings",
+    "answer": "Count minimum frequency of each character across all strings."
+  },
+  {
+    "id": 146,
+    "word": "Day of year from date",
+    "answer": "Sum days in previous months plus current day, adjusting for leap year."
+  },
+  {
+    "id": 147,
+    "word": "Find town judge (trusted by all, trusts none)",
+    "answer": "Count incoming and outgoing trusts; judge has n-1 incoming, zero outgoing."
+  },
+  {
+    "id": 148,
+    "word": "Relative sort array (custom order)",
+    "answer": "Count frequencies, output elements in first array's order, then remaining sorted."
+  },
+  {
+    "id": 149,
+    "word": "Occurrences after bigram",
+    "answer": "Scan for consecutive word pairs matching pattern, collect following words."
+  },
+  {
+    "id": 150,
+    "word": "Remove outermost parentheses",
+    "answer": "Track depth counter, include characters only when depth is positive."
+  },
+  {
+    "id": 151,
+    "word": "Sum of root to leaf binary numbers",
+    "answer": "DFS accumulating binary value; add to sum when reaching leaf."
+  },
+  {
+    "id": 152,
+    "word": "Camelcase matching (query pattern)",
+    "answer": "Match uppercase letters in order, allowing lowercase insertions between them."
+  },
+  {
+    "id": 153,
+    "word": "Number of equivalent domino pairs",
+    "answer": "Normalize domino pairs, count frequencies of each normalized form."
+  },
+  {
+    "id": 154,
+    "word": "Defanging IP address (replace dots)",
+    "answer": "Replace each period with bracket-enclosed period string."
+  },
+  {
+    "id": 155,
+    "word": "Partition array into three equal sum parts",
+    "answer": "Check if total divisible by three; find two split points with equal sums."
+  },
+  {
+    "id": 156,
+    "word": "Distribute candies to people",
+    "answer": "Give increasing amounts in rounds until candies exhausted."
+  },
+  {
+    "id": 157,
+    "word": "Greatest common divisor of strings",
+    "answer": "Find longest string that divides both strings by repeated concatenation."
+  },
+  {
+    "id": 158,
+    "word": "Flip and invert binary matrix",
+    "answer": "Reverse each row, then flip all bits from zero to one and vice versa."
+  },
+  {
+    "id": 159,
+    "word": "Robot return to origin (movement commands)",
+    "answer": "Count up-down and left-right movements; check if both net to zero."
+  },
+  {
+    "id": 160,
+    "word": "Cousins in binary tree (same level, different parents)",
+    "answer": "Find depth and parent of both nodes, compare results."
+  },
+  {
+    "id": 161,
+    "word": "Prefixes of string dividing entire string",
+    "answer": "Check each prefix length that divides total length by repetition."
+  },
+  {
+    "id": 162,
+    "word": "Play with chips (minimum cost to same position)",
+    "answer": "Count chips at odd and even positions; moving cost is minimum."
+  },
+  {
+    "id": 163,
+    "word": "Prime arrangements (primes at prime indices)",
+    "answer": "Count primes, calculate factorial of primes times factorial of composites."
+  },
+  {
+    "id": 164,
+    "word": "Largest unique number in array",
+    "answer": "Count frequencies, return largest number appearing exactly once."
+  },
+  {
+    "id": 165,
+    "word": "Smallest integer divisible by K",
+    "answer": "Build number with only ones; track remainders to detect cycle."
+  },
+  {
+    "id": 166,
+    "word": "Minimum cost to connect sticks",
+    "answer": "Use min-heap, repeatedly combining two smallest sticks until one remains."
+  },
+  {
+    "id": 167,
+    "word": "Maximum number of balloons from text",
+    "answer": "Count frequencies of b-a-l-o-n; divide l and o counts by two."
+  },
+  {
+    "id": 168,
+    "word": "Previous permutation with one swap",
+    "answer": "Find rightmost decreasing pair, swap with largest smaller element to right."
+  },
+  {
+    "id": 169,
+    "word": "Moving stones until consecutive",
+    "answer": "Calculate minimum and maximum moves to make positions consecutive."
+  },
+  {
+    "id": 170,
+    "word": "Compare strings by frequency of smallest character",
+    "answer": "Count smallest character in each string, compare frequency arrays."
+  },
+  {
+    "id": 171,
+    "word": "Split balanced strings (equal L and R)",
+    "answer": "Track balance counter, increment count each time balance reaches zero."
+  },
+  {
+    "id": 172,
+    "word": "Remove palindromic subsequences",
+    "answer": "If palindrome, one removal; otherwise two removals always work."
+  },
+  {
+    "id": 173,
+    "word": "Day of week from date",
+    "answer": "Use Zeller's congruence formula or count days from known reference date."
+  },
+  {
+    "id": 174,
+    "word": "Find N unique integers sum to zero",
+    "answer": "Create pairs of negatives and positives; add zero if N is odd."
+  },
+  {
+    "id": 175,
+    "word": "Matrix cells in distance order",
+    "answer": "Calculate Manhattan distance for each cell, sort by distance."
+  },
+  {
+    "id": 176,
+    "word": "Decompressing run-length encoded list",
+    "answer": "Read frequency-value pairs, repeat each value specified number of times."
+  },
+  {
+    "id": 177,
+    "word": "Element appearing more than 25% in array",
+    "answer": "Count frequency of each element, return one exceeding quarter threshold."
+  },
+  {
+    "id": 178,
+    "word": "Minimum absolute difference in sorted array",
+    "answer": "Find minimum difference between adjacent elements after sorting."
+  },
+  {
+    "id": 179,
+    "word": "Index pairs of a string (trie matching)",
+    "answer": "Use trie of words to find all starting and ending positions in string."
+  },
+  {
+    "id": 180,
+    "word": "Intersection size of two arrays",
+    "answer": "Use hash set for one array, count matches from second array."
+  },
+  {
+    "id": 181,
+    "word": "How many numbers are smaller than current",
+    "answer": "Sort with indices or count elements less than each value."
+  },
+  {
+    "id": 182,
+    "word": "Kids with greatest number of candies",
+    "answer": "Find maximum, check if each kid plus extra exceeds or equals maximum."
+  },
+  {
+    "id": 183,
+    "word": "Destination city (no outgoing path)",
+    "answer": "Find city appearing as destination but never as source."
+  },
+  {
+    "id": 184,
+    "word": "Reformat string (alternate letters and digits)",
+    "answer": "Separate letters and digits, interleave starting with longer group."
+  },
+  {
+    "id": 185,
+    "word": "Lucky numbers in matrix (row min, column max)",
+    "answer": "Find minimum in each row that is also maximum in its column."
+  },
+  {
+    "id": 186,
+    "word": "Find winner on tic tac toe game",
+    "answer": "Track row, column, and diagonal sums for each player."
+  },
+  {
+    "id": 187,
+    "word": "Make two arrays equal by reversing subarrays",
+    "answer": "Sort both arrays and check if they match exactly."
+  },
+  {
+    "id": 188,
+    "word": "Count largest group (digit sum grouping)",
+    "answer": "Group numbers by digit sum, return count of largest group."
+  },
+  {
+    "id": 189,
+    "word": "Minimum value to get positive step by step",
+    "answer": "Track minimum prefix sum; return difference needed to keep positive."
+  },
+  {
+    "id": 190,
+    "word": "Find lucky integer (frequency equals value)",
+    "answer": "Count frequencies, return largest number where value equals its frequency."
+  },
+  {
+    "id": 191,
+    "word": "Maximum product of two elements in array",
+    "answer": "Find two largest elements, multiply their decremented values."
+  },
+  {
+    "id": 192,
+    "word": "Shuffle array (interleave two halves)",
+    "answer": "Take alternating elements from first and second half in order."
+  },
+  {
+    "id": 193,
+    "word": "Final prices with special discount",
+    "answer": "For each price, find next smaller or equal price and subtract."
+  },
+  {
+    "id": 194,
+    "word": "Reformatting date string",
+    "answer": "Parse day, month name, and year; convert to standard format."
+  },
+  {
+    "id": 195,
+    "word": "Running sum of 1D array",
+    "answer": "Accumulate sum while iterating, storing cumulative total at each position."
+  },
+  {
+    "id": 196,
+    "word": "XOR operation in array (formula)",
+    "answer": "Use XOR properties and patterns based on n and start value."
+  },
+  {
+    "id": 197,
+    "word": "Make array strictly increasing",
+    "answer": "Check if one element removal allows strictly increasing sequence."
+  },
+  {
+    "id": 198,
+    "word": "Thousand separator for number",
+    "answer": "Insert separator every three digits from right in number string."
+  },
+  {
+    "id": 199,
+    "word": "Can make arithmetic progression from sequence",
+    "answer": "Sort array, check if all consecutive differences are equal."
+  },
+  {
+    "id": 200,
+    "word": "Number of good pairs (equal values)",
+    "answer": "Count frequency of each number, sum combinations using formula n*(n-1)/2."
+  }
+]

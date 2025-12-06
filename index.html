@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Tick8Gaj</title>
+  <base href="/tick8-gaj/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    // Check if we are in a popup and have a token
+    if (window.opener && (window.location.hash.includes('id_token=') || window.location.hash.includes('access_token='))) {
+      console.log('Tick8: OAuth callback detected in popup');
+      // Send token to opener
+      window.opener.postMessage({
+        type: 'GOOGLE_AUTH_SUCCESS',
+        hash: window.location.hash
+      }, window.location.origin);
+
+      // Close popup
+      window.close();
+
+      // Stop further loading
+      document.documentElement.innerHTML = '<body><h1>Signing in...</h1><p>Please wait...</p></body>';
+      window.stop();
+    }
+  </script>
+  <script src="https://accounts.google.com/gsi/client" async="" defer></script>
+<style>body{margin:0}</style><link rel="stylesheet" href="styles.eae72988cd519eb0.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.eae72988cd519eb0.css"></noscript></head>
+
+<body>
+  <app-root></app-root>
+<script src="runtime.1e4b2d2d6f1822dc.js" type="module"></script><script src="polyfills.64decc5b50f19b9c.js" type="module"></script><script src="main.85ef2d698afd9ed9.js" type="module"></script>
+
+</body></html>
