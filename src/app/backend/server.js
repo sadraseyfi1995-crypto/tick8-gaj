@@ -3,6 +3,7 @@ const cors = require('cors');
 const fs = require('fs').promises;
 const fsSync = require('fs');
 const path = require('path');
+const { setupAuthRoutes, optionalAuthMiddleware } = require('./auth');
 
 const app = express();
 
@@ -16,6 +17,9 @@ const CONFIG = {
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Setup authentication routes
+setupAuthRoutes(app);
 
 // Utilities
 class FileService {

@@ -1,9 +1,7 @@
 <app-header></app-header>
 
 <div class="layout-body">
-  <app-sidebar
-    [mode]="sidebarMode"
-    (toggleMode)="onSidebarToggle($event)">
+  <app-sidebar *ngIf="authService.isAuthenticated()" [mode]="sidebarMode" (toggleMode)="onSidebarToggle($event)">
   </app-sidebar>
 
   <main class="layout-main">

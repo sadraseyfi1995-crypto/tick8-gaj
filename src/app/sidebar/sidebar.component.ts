@@ -4,6 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { SharedService } from '../shared.service';
 import { DataHandlerService } from '../data-handler.service';
 import { ICourse } from '../models/course.model';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -18,7 +19,8 @@ export class SidebarComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private sharedService: SharedService,
-    public dataHandler: DataHandlerService
+    public dataHandler: DataHandlerService,
+    public authService: AuthService
   ) { }
 
   ngOnInit(): void {
@@ -39,7 +41,7 @@ export class SidebarComponent implements OnInit {
       return;
     }
 
-    this.router.navigate(['/'], {
+    this.router.navigate(['/book'], {
       queryParams: {
         course: courseId,
         page: null

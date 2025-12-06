@@ -5365,7 +5365,7 @@
     "answer": "Deep CNN using small 3x3 filters stacked deeply, demonstrating importance of network depth.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5373,7 +5373,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-29T23:52:18.100Z"
+    "lastUpdated": "2025-12-06T09:04:51.755Z"
   },
   {
     "id": 337,
@@ -5381,7 +5381,7 @@
     "answer": "Architecture introducing residual connections, enabling training of networks with 100+ layers by solving vanishing gradients.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5389,7 +5389,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-29T23:52:55.743Z"
+    "lastUpdated": "2025-12-06T09:04:53.055Z"
   },
   {
     "id": 338,
@@ -5397,7 +5397,7 @@
     "answer": "Efficient CNN using depthwise separable convolutions, designed for mobile and embedded vision applications.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5405,7 +5405,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-29T23:57:10.853Z"
+    "lastUpdated": "2025-12-06T09:04:54.193Z"
   },
   {
     "id": 339,
@@ -5413,7 +5413,7 @@
     "answer": "Architecture family systematically scaling depth, width, and resolution for optimal accuracy-efficiency tradeoff.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5421,7 +5421,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-30T00:08:17.309Z"
+    "lastUpdated": "2025-12-06T09:05:14.546Z"
   },
   {
     "id": 340,
@@ -5429,7 +5429,7 @@
     "answer": "Automated method discovering optimal network architectures through search algorithms rather than manual design.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5437,7 +5437,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-11-30T00:12:59.958Z"
+    "lastUpdated": "2025-12-06T09:05:04.327Z"
   },
   {
     "id": 341,

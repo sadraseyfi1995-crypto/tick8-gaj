@@ -1,9 +1,29 @@
 <header class="app-header">
   <div class="header-left">
-    <h1>My App</h1>
+    <a [routerLink]="isLoggedIn ? '/book' : '/'" class="logo-link">
+      <span class="logo-icon">✓</span>
+      <h1>tick8</h1>
+    </a>
   </div>
   <div class="header-right">
-    <!-- any top-right controls, user avatar etc -->
-    <button>Profile</button>
+    <!-- Logged in state -->
+    <ng-container *ngIf="isLoggedIn && user">
+      <div class="user-info">
+        <img *ngIf="user.picture" [src]="user.picture" [alt]="user.name" class="user-avatar"
+          referrerpolicy="no-referrer">
+        <span class="user-name">{{ user.name }}</span>
+      </div>
+      <button class="logout-btn" (click)="logout()">
+        <span class="logout-icon">↪</span>
+        Logout
+      </button>
+    </ng-container>
+
+    <!-- Logged out state -->
+    <ng-container *ngIf="!isLoggedIn">
+      <a routerLink="/login" class="login-link">
+        Sign In
+      </a>
+    </ng-container>
   </div>
 </header>

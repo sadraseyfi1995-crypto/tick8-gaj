@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { VocabComponent } from './vocab/vocab.component';
 import { BookComponent } from './book/book.component';
-import { HttpClientModule } from '@angular/common/http';
 import { PageComponent } from './page/page.component';
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +14,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
 import { CopyDirective } from './copy-to-clipboard-button.directive';
 import { CourseManagementComponent } from './course-management/course-management.component';
+import { LoginComponent } from './login/login.component';
+import { AuthInterceptor } from './auth/auth.interceptor';
+import { AuthGuard } from './auth/auth.guard';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -26,18 +30,28 @@ import { CourseManagementComponent } from './course-management/course-management
     SidebarComponent,
     LayoutComponent,
     CopyDirective,
-    CourseManagementComponent
+    CourseManagementComponent,
+    LoginComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: BookComponent },
-      { path: 'manage-courses', component: CourseManagementComponent }
+      { path: '', component: WelcomeComponent },
+      { path: 'book', component: BookComponent, canActivate: [AuthGuard] },
+      { path: 'login', component: LoginComponent },
+      { path: 'manage-courses', component: CourseManagementComponent, canActivate: [AuthGuard] }
     ]),
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
