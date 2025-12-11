@@ -13,7 +13,7 @@
     height: 100%;
     backface-visibility: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -34,6 +34,7 @@
   &.flipped .front {
     transform: rotateY(-180deg);
   }
+
   &.flipped .back {
     transform: rotateY(0deg);
   }
@@ -104,4 +105,28 @@
 
 .old {
   border: 1px dashed #5e0000;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+    opacity: 1;
+  }
 }

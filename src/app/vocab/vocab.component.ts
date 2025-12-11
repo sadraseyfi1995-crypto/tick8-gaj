@@ -105,4 +105,16 @@ export class VocabComponent implements OnInit {
     const stateText = state === 'none' ? 'not checked' : state === 'tick' ? 'checked' : 'checked with cross';
     return `Box ${index + 1}: ${stateText}`;
   }
+
+  /** Copy card data as JSON to clipboard */
+  copyCard(): void {
+    const cardData = {
+      word: this.vocab.word,
+      answer: this.vocab.answer || '',
+      states: this.vocab.states
+    };
+    navigator.clipboard.writeText(JSON.stringify(cardData, null, 2))
+      .then(() => console.log('Card copied!'))
+      .catch(err => console.error('Copy failed:', err));
+  }
 }

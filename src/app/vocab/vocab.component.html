@@ -1,8 +1,12 @@
 <div class="vocab-card" [class.flipped]="flipped" [class.old]="!areSameDay(vocab.lastUpdated)" tabindex="0"
   (click)="toggleFlip()" (keydown)="onCardKeydown($event)" role="button" [attr.aria-pressed]="flipped"
-  aria-label="Vocabulary card. Press to flip to see answer." [copy]="vocab.word">
+  aria-label="Vocabulary card. Press to flip to see answer.">
   <!-- Front Side -->
   <div class="side front">
+    <button class="copy-btn" (click)="$event.stopPropagation(); copyCard()" title="Copy card as JSON"
+      aria-label="Copy card">
+      📋
+    </button>
     <div class="word">{{ vocab.word }}</div>
 
     <div class="boxes">

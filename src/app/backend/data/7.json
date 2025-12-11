@@ -5288,12 +5288,12 @@
       "tick",
       "tick",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T22:12:53.786Z"
+    "lastUpdated": "2025-12-11T22:03:43.724Z"
   },
   {
     "id": 332,
@@ -5304,12 +5304,12 @@
       "tick",
       "cross",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T22:19:42.008Z"
+    "lastUpdated": "2025-12-11T22:03:44.859Z"
   },
   {
     "id": 333,
@@ -5352,7 +5352,7 @@
       "tick",
       "tick",
       "tick",
-      "tick",
+      "none",
       "none",
       "none",
       "none"

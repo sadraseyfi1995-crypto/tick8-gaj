@@ -31,4 +31,28 @@
   text-align: center;
   font-size: 1rem;
   color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.copy-all-btn {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.15s ease;
+
+  &:hover {
+    background: #e0e0e0;
+    border-color: #999;
+  }
+
+  &:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
 }

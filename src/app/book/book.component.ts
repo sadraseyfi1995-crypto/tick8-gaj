@@ -93,4 +93,23 @@ export class BookComponent {
       this.nextPage();
     }
   }
+
+  /** Copy all cards on the current page as JSON array to clipboard */
+  copyAllCards(): void {
+    const currentCards = this.chunkedQuestions[this.currentPage];
+    if (!currentCards || currentCards.length === 0) {
+      console.log('No cards to copy');
+      return;
+    }
+
+    const cardsData = currentCards.map(card => ({
+      word: card.word,
+      answer: card.answer || '',
+      states: card.states
+    }));
+
+    navigator.clipboard.writeText(JSON.stringify(cardsData, null, 2))
+      .then(() => console.log('All cards copied!'))
+      .catch(err => console.error('Copy failed:', err));
+  }
 }

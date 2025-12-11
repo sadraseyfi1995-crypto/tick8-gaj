@@ -12,7 +12,6 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
-import { CopyDirective } from './copy-to-clipboard-button.directive';
 import { CourseManagementComponent } from './course-management/course-management.component';
 import { LoginComponent } from './login/login.component';
 import { AuthInterceptor } from './auth/auth.interceptor';
@@ -29,7 +28,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
     HeaderComponent,
     SidebarComponent,
     LayoutComponent,
-    CopyDirective,
     CourseManagementComponent,
     LoginComponent,
     WelcomeComponent
