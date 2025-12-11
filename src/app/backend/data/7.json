@@ -4971,9 +4971,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:19:48.907Z"
+    "lastUpdated": "2025-12-09T21:34:49.626Z"
   },
   {
     "id": 312,
@@ -4987,9 +4987,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:19:42.053Z"
+    "lastUpdated": "2025-12-09T21:34:54.357Z"
   },
   {
     "id": 313,
@@ -5003,9 +5003,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:19:41.155Z"
+    "lastUpdated": "2025-12-09T21:35:00.361Z"
   },
   {
     "id": 314,
@@ -5019,9 +5019,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:19:43.140Z"
+    "lastUpdated": "2025-12-09T21:34:59.053Z"
   },
   {
     "id": 315,
@@ -5035,9 +5035,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:19:45.447Z"
+    "lastUpdated": "2025-12-09T21:34:52.168Z"
   },
   {
     "id": 316,
@@ -5050,10 +5050,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "cross",
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:27:21.416Z"
+    "lastUpdated": "2025-12-11T21:25:17.519Z"
   },
   {
     "id": 317,
@@ -5066,10 +5066,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:27:20.082Z"
+    "lastUpdated": "2025-12-11T21:25:21.170Z"
   },
   {
     "id": 318,
@@ -5082,10 +5082,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:19:53.183Z"
+    "lastUpdated": "2025-12-11T21:25:22.527Z"
   },
   {
     "id": 319,
@@ -5098,10 +5098,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:26:26.485Z"
+    "lastUpdated": "2025-12-11T21:25:25.214Z"
   },
   {
     "id": 320,
@@ -5114,10 +5114,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none"
+      "tick",
+      "tick"
     ],
-    "lastUpdated": "2025-12-05T18:27:17.891Z"
+    "lastUpdated": "2025-12-11T21:26:51.534Z"
   },
   {
     "id": 321,
@@ -5129,11 +5129,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "cross",
       "none"
     ],
-    "lastUpdated": "2025-12-05T18:27:24.632Z"
+    "lastUpdated": "2025-12-11T21:43:15.155Z"
   },
   {
     "id": 322,
@@ -5145,11 +5145,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-06T04:54:45.482Z"
+    "lastUpdated": "2025-12-11T21:27:04.968Z"
   },
   {
     "id": 323,
@@ -5161,11 +5161,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-05T18:27:27.501Z"
+    "lastUpdated": "2025-12-11T21:27:03.257Z"
   },
   {
     "id": 324,
@@ -5177,11 +5177,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-06T04:54:30.450Z"
+    "lastUpdated": "2025-12-11T21:27:01.077Z"
   },
   {
     "id": 325,
@@ -5193,11 +5193,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-05T18:27:25.678Z"
+    "lastUpdated": "2025-12-11T21:26:57.369Z"
   },
   {
     "id": 326,
@@ -5208,12 +5208,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T04:54:53.876Z"
+    "lastUpdated": "2025-12-11T21:43:24.525Z"
   },
   {
     "id": 327,
@@ -5224,12 +5224,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T04:54:59.277Z"
+    "lastUpdated": "2025-12-11T21:44:27.173Z"
   },
   {
     "id": 328,
@@ -5240,12 +5240,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T04:55:00.278Z"
+    "lastUpdated": "2025-12-11T21:44:28.141Z"
   },
   {
     "id": 329,
@@ -5256,12 +5256,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T04:55:03.430Z"
+    "lastUpdated": "2025-12-11T21:44:06.798Z"
   },
   {
     "id": 330,
@@ -5272,12 +5272,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T04:54:56.460Z"
+    "lastUpdated": "2025-12-11T21:43:37.270Z"
   },
   {
     "id": 331,
@@ -5287,13 +5287,13 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "cross",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T05:44:02.245Z"
+    "lastUpdated": "2025-12-09T22:12:53.786Z"
   },
   {
     "id": 332,
@@ -5303,13 +5303,13 @@
       "cross",
       "tick",
       "cross",
-      "none",
+      "cross",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T05:45:15.506Z"
+    "lastUpdated": "2025-12-09T22:19:42.008Z"
   },
   {
     "id": 333,
@@ -5351,13 +5351,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T04:57:35.993Z"
+    "lastUpdated": "2025-12-11T21:50:35.434Z"
   },
   {
     "id": 336,
@@ -5366,14 +5366,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "cross",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T09:04:51.755Z"
+    "lastUpdated": "2025-12-09T21:47:20.630Z"
   },
   {
     "id": 337,
@@ -5382,14 +5382,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T09:04:53.055Z"
+    "lastUpdated": "2025-12-09T21:46:10.942Z"
   },
   {
     "id": 338,
@@ -5398,14 +5398,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T09:04:54.193Z"
+    "lastUpdated": "2025-12-09T21:46:12.052Z"
   },
   {
     "id": 339,
@@ -5414,14 +5414,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T09:05:14.546Z"
+    "lastUpdated": "2025-12-09T21:46:22.363Z"
   },
   {
     "id": 340,
@@ -5430,14 +5430,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T09:05:04.327Z"
+    "lastUpdated": "2025-12-09T21:47:00.184Z"
   },
   {
     "id": 341,
@@ -5445,7 +5445,7 @@
     "answer": "Technique plotting loss versus learning rate to identify optimal range before full training.",
     "states": [
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5453,7 +5453,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T12:53:10.976Z"
+    "lastUpdated": "2025-12-09T21:48:43.350Z"
   },
   {
     "id": 342,
@@ -5461,7 +5461,7 @@
     "answer": "Training schedule with single learning rate cycle from low to high to low, enabling faster convergence.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5469,7 +5469,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T18:02:02.827Z"
+    "lastUpdated": "2025-12-09T21:48:45.291Z"
   },
   {
     "id": 343,
@@ -5477,7 +5477,7 @@
     "answer": "Using different learning rates for different layers during fine-tuning, updating earlier layers more conservatively.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5485,7 +5485,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T18:02:03.840Z"
+    "lastUpdated": "2025-12-09T21:48:49.717Z"
   },
   {
     "id": 344,
@@ -5493,7 +5493,7 @@
     "answer": "Progressively unfreezing layers from top to bottom during fine-tuning, preventing catastrophic forgetting.",
     "states": [
       "cross",
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -5501,12 +5501,28 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T18:02:04.973Z"
+    "lastUpdated": "2025-12-09T21:49:01.209Z"
   },
   {
     "id": 345,
     "word": "Class Imbalance",
     "answer": "Situation where training samples unevenly distributed across classes, potentially biasing model toward majority class.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-09T21:48:41.307Z"
+  },
+  {
+    "id": 346,
+    "word": "Class Weights",
+    "answer": "Assigning higher loss penalties to underrepresented classes, compensating for imbalanced training data.",
     "states": [
       "cross",
       "none",
@@ -5517,32 +5533,71 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T18:02:06.480Z"
-  },
-  {
-    "id": 346,
-    "word": "Class Weights",
-    "answer": "Assigning higher loss penalties to underrepresented classes, compensating for imbalanced training data."
+    "lastUpdated": "2025-12-09T21:49:24.517Z"
   },
   {
     "id": 347,
     "word": "Focal Loss",
-    "answer": "Loss function down-weighting easy examples to focus training on hard negatives, addressing class imbalance."
+    "answer": "Loss function down-weighting easy examples to focus training on hard negatives, addressing class imbalance.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-09T22:03:19.384Z"
   },
   {
     "id": 348,
     "word": "SMOTE",
-    "answer": "Synthetic Minority Over-sampling Technique, creating artificial samples for minority classes by interpolating between existing examples."
+    "answer": "Synthetic Minority Over-sampling Technique, creating artificial samples for minority classes by interpolating between existing examples.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-09T22:05:50.189Z"
   },
   {
     "id": 349,
     "word": "Confusion Matrix",
-    "answer": "Table showing true vs predicted classifications, revealing which classes model confuses with each other."
+    "answer": "Table showing true vs predicted classifications, revealing which classes model confuses with each other.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-09T21:56:51.962Z"
   },
   {
     "id": 350,
     "word": "Precision",
-    "answer": "Proportion of positive predictions that are actually correct, measuring model's exactness."
+    "answer": "Proportion of positive predictions that are actually correct, measuring model's exactness.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-09T21:57:48.841Z"
   },
   {
     "id": 351,

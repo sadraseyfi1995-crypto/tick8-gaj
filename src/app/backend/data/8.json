@@ -731,9 +731,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "cross"
     ],
-    "lastUpdated": "2025-12-04T17:57:35.116Z"
+    "lastUpdated": "2025-12-09T17:45:20.837Z"
   },
   {
     "id": 47,
@@ -747,9 +747,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T18:51:01.029Z"
+    "lastUpdated": "2025-12-09T17:46:57.357Z"
   },
   {
     "id": 48,
@@ -763,9 +763,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T18:51:02.153Z"
+    "lastUpdated": "2025-12-09T17:55:09.538Z"
   },
   {
     "id": 49,
@@ -779,9 +779,9 @@
       "tick",
       "tick",
       "cross",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T19:00:19.771Z"
+    "lastUpdated": "2025-12-09T17:55:12.486Z"
   },
   {
     "id": 50,
@@ -795,9 +795,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-04T17:57:33.236Z"
+    "lastUpdated": "2025-12-09T17:45:24.186Z"
   },
   {
     "id": 51,
@@ -811,9 +811,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T18:50:58.007Z"
+    "lastUpdated": "2025-12-09T17:48:33.820Z"
   },
   {
     "id": 52,
@@ -827,9 +827,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T19:00:45.176Z"
+    "lastUpdated": "2025-12-09T18:04:07.702Z"
   },
   {
     "id": 53,
@@ -843,9 +843,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T18:57:38.067Z"
+    "lastUpdated": "2025-12-09T18:04:15.556Z"
   },
   {
     "id": 54,
@@ -859,9 +859,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T18:50:39.195Z"
+    "lastUpdated": "2025-12-09T17:45:37.621Z"
   },
   {
     "id": 55,
@@ -875,9 +875,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T18:50:56.649Z"
+    "lastUpdated": "2025-12-09T17:47:06.671Z"
   },
   {
     "id": 56,
@@ -891,9 +891,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T18:58:15.749Z"
+    "lastUpdated": "2025-12-09T17:48:38.605Z"
   },
   {
     "id": 57,
@@ -907,9 +907,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "cross"
     ],
-    "lastUpdated": "2025-12-03T19:00:26.555Z"
+    "lastUpdated": "2025-12-09T18:03:54.121Z"
   },
   {
     "id": 58,
@@ -923,9 +923,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T18:50:35.920Z"
+    "lastUpdated": "2025-12-09T17:46:22.354Z"
   },
   {
     "id": 59,
@@ -939,9 +939,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T18:50:44.763Z"
+    "lastUpdated": "2025-12-09T18:04:03.420Z"
   },
   {
     "id": 60,
@@ -955,9 +955,9 @@
       "tick",
       "tick",
       "tick",
-      "none"
+      "tick"
     ],
-    "lastUpdated": "2025-12-03T19:01:07.015Z"
+    "lastUpdated": "2025-12-09T18:04:01.314Z"
   },
   {
     "id": 61,
@@ -970,10 +970,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:11:19.658Z"
+    "lastUpdated": "2025-12-09T21:04:33.067Z"
   },
   {
     "id": 62,
@@ -985,11 +985,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
-      "none",
+      "tick",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-11-30T08:09:09.978Z"
+    "lastUpdated": "2025-12-09T21:07:12.335Z"
   },
   {
     "id": 63,
@@ -1002,10 +1002,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "cross",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:12:47.031Z"
+    "lastUpdated": "2025-12-09T21:06:09.941Z"
   },
   {
     "id": 64,
@@ -1018,10 +1018,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:11:51.731Z"
+    "lastUpdated": "2025-12-09T18:27:45.790Z"
   },
   {
     "id": 65,
@@ -1034,10 +1034,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:11:23.089Z"
+    "lastUpdated": "2025-12-09T18:27:36.342Z"
   },
   {
     "id": 66,
@@ -1050,10 +1050,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:12:36.857Z"
+    "lastUpdated": "2025-12-09T19:24:24.350Z"
   },
   {
     "id": 67,
@@ -1066,10 +1066,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:12:50.806Z"
+    "lastUpdated": "2025-12-09T19:52:57.994Z"
   },
   {
     "id": 68,
@@ -1082,10 +1082,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:11:52.793Z"
+    "lastUpdated": "2025-12-09T19:24:14.751Z"
   },
   {
     "id": 69,
@@ -1098,10 +1098,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:11:24.706Z"
+    "lastUpdated": "2025-12-09T18:27:37.734Z"
   },
   {
     "id": 70,
@@ -1114,10 +1114,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "cross",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:14:03.733Z"
+    "lastUpdated": "2025-12-09T19:39:41.738Z"
   },
   {
     "id": 71,
@@ -1130,10 +1130,10 @@
       "cross",
       "cross",
       "cross",
-      "none",
+      "cross",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:13:50.813Z"
+    "lastUpdated": "2025-12-09T19:53:00.432Z"
   },
   {
     "id": 72,
@@ -1146,10 +1146,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:12:03.756Z"
+    "lastUpdated": "2025-12-09T19:37:34.038Z"
   },
   {
     "id": 73,
@@ -1162,10 +1162,10 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:11:28.240Z"
+    "lastUpdated": "2025-12-09T18:27:40.073Z"
   },
   {
     "id": 74,
@@ -1178,10 +1178,10 @@
       "tick",
       "cross",
       "tick",
-      "none",
+      "cross",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:14:12.991Z"
+    "lastUpdated": "2025-12-09T20:44:43.558Z"
   },
   {
     "id": 75,
@@ -1194,10 +1194,10 @@
       "cross",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:13:43.350Z"
+    "lastUpdated": "2025-12-09T20:05:09.673Z"
   },
   {
     "id": 76,
@@ -1209,11 +1209,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:14:49.355Z"
+    "lastUpdated": "2025-12-09T21:07:19.039Z"
   },
   {
     "id": 77,
@@ -1225,11 +1225,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:16:51.805Z"
+    "lastUpdated": "2025-12-09T21:10:19.806Z"
   },
   {
     "id": 78,
@@ -1241,11 +1241,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:17:00.213Z"
+    "lastUpdated": "2025-12-09T21:11:32.485Z"
   },
   {
     "id": 79,
@@ -1257,11 +1257,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:18:24.956Z"
+    "lastUpdated": "2025-12-09T21:11:52.867Z"
   },
   {
     "id": 80,
@@ -1273,11 +1273,11 @@
       "cross",
       "cross",
       "cross",
-      "none",
+      "cross",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:15:56.972Z"
+    "lastUpdated": "2025-12-09T21:11:11.564Z"
   },
   {
     "id": 81,
@@ -1289,11 +1289,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:16:53.487Z"
+    "lastUpdated": "2025-12-09T21:10:22.699Z"
   },
   {
     "id": 82,
@@ -1305,11 +1305,11 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:18:19.140Z"
+    "lastUpdated": "2025-12-09T21:15:22.507Z"
   },
   {
     "id": 83,
@@ -1321,11 +1321,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:18:01.855Z"
+    "lastUpdated": "2025-12-09T21:15:02.165Z"
   },
   {
     "id": 84,
@@ -1337,11 +1337,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "cross",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:16:08.164Z"
+    "lastUpdated": "2025-12-09T21:10:48.780Z"
   },
   {
     "id": 85,
@@ -1353,11 +1353,11 @@
       "cross",
       "cross",
       "cross",
-      "none",
+      "cross",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:16:55.803Z"
+    "lastUpdated": "2025-12-09T21:10:38.096Z"
   },
   {
     "id": 86,
@@ -1369,11 +1369,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:18:22.912Z"
+    "lastUpdated": "2025-12-09T21:12:06.726Z"
   },
   {
     "id": 87,
@@ -1385,11 +1385,11 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:18:33.272Z"
+    "lastUpdated": "2025-12-09T21:15:13.807Z"
   },
   {
     "id": 88,
@@ -1401,11 +1401,11 @@
       "tick",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:16:50.274Z"
+    "lastUpdated": "2025-12-09T21:10:58.333Z"
   },
   {
     "id": 89,
@@ -1417,11 +1417,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:16:58.562Z"
+    "lastUpdated": "2025-12-09T21:10:34.069Z"
   },
   {
     "id": 90,
@@ -1433,11 +1433,11 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:17:15.196Z"
+    "lastUpdated": "2025-12-09T21:14:54.918Z"
   },
   {
     "id": 91,
@@ -1448,12 +1448,12 @@
       "cross",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:18:39.049Z"
+    "lastUpdated": "2025-12-09T21:16:25.144Z"
   },
   {
     "id": 92,
@@ -1464,12 +1464,12 @@
       "cross",
       "cross",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:19:20.085Z"
+    "lastUpdated": "2025-12-09T21:19:47.770Z"
   },
   {
     "id": 93,
@@ -1480,12 +1480,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "cross",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:19:58.458Z"
+    "lastUpdated": "2025-12-09T21:19:53.317Z"
   },
   {
     "id": 94,
@@ -1496,12 +1496,12 @@
       "cross",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:22:27.664Z"
+    "lastUpdated": "2025-12-09T21:33:04.681Z"
   },
   {
     "id": 95,
@@ -1512,12 +1512,12 @@
       "cross",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:18:57.650Z"
+    "lastUpdated": "2025-12-09T21:17:53.052Z"
   },
   {
     "id": 96,
@@ -1528,12 +1528,12 @@
       "cross",
       "cross",
       "cross",
-      "none",
+      "cross",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:19:29.128Z"
+    "lastUpdated": "2025-12-09T21:19:32.612Z"
   },
   {
     "id": 97,
@@ -1544,12 +1544,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:20:14.693Z"
+    "lastUpdated": "2025-12-09T21:32:29.893Z"
   },
   {
     "id": 98,
@@ -1560,12 +1560,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "cross",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:22:32.103Z"
+    "lastUpdated": "2025-12-09T21:32:55.582Z"
   },
   {
     "id": 99,
@@ -1576,12 +1576,12 @@
       "cross",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:19:01.812Z"
+    "lastUpdated": "2025-12-09T21:16:38.732Z"
   },
   {
     "id": 100,
@@ -1592,12 +1592,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:19:39.072Z"
+    "lastUpdated": "2025-12-09T21:19:01.910Z"
   },
   {
     "id": 101,
@@ -1608,12 +1608,12 @@
       "tick",
       "tick",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:21:21.886Z"
+    "lastUpdated": "2025-12-09T21:28:43.243Z"
   },
   {
     "id": 102,
@@ -1624,12 +1624,12 @@
       "cross",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:22:41.966Z"
+    "lastUpdated": "2025-12-09T21:32:41.412Z"
   },
   {
     "id": 103,
@@ -1640,12 +1640,12 @@
       "tick",
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:19:03.688Z"
+    "lastUpdated": "2025-12-09T21:18:07.329Z"
   },
   {
     "id": 104,
@@ -1656,12 +1656,12 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:19:53.455Z"
+    "lastUpdated": "2025-12-09T21:19:13.897Z"
   },
   {
     "id": 105,
@@ -1672,12 +1672,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-03T20:22:51.598Z"
+    "lastUpdated": "2025-12-09T21:32:34.453Z"
   },
   {
     "id": 106,
