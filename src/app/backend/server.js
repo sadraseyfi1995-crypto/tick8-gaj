@@ -219,6 +219,20 @@ class FileService {
                 }
               }
             }
+            // Boost if item has fewer filled states than average
+            else if (currentFilled < avgFilled) {
+              const toAdd = avgFilled - currentFilled;
+              let added = 0;
+
+              // Add 'boost' from leftmost empty positions (0 → 7)
+              for (let pos = 0; pos < item.states.length && added < toAdd; pos++) {
+                if (item.states[pos] === 'none') {
+                  item.states[pos] = 'boost';
+                  added++;
+                  modified = true;
+                }
+              }
+            }
           }
         }
 

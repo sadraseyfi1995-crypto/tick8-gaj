@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DataHandlerService } from '../data-handler.service';
 
-export type VboxState = 'none' | 'tick' | 'cross';
+export type VboxState = 'none' | 'tick' | 'cross' | 'boost';
 
 export interface VocabComponentModel {
   id?: number | string;

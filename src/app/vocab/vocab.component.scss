@@ -98,6 +98,12 @@
   color: #b30f0f;
 }
 
+.box[data-state='boost'] {
+  background: #f0f4ff;
+  border-color: #6366f1;
+  color: #4338ca;
+}
+
 .icon {
   width: 12px;
   height: 12px;
