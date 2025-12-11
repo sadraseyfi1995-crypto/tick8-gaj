@@ -104,7 +104,12 @@
 }
 
 .old {
-  border: 1px dashed #5e0000;
+  border-left: 4px solid #f59e0b;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(255, 255, 255, 0) 50%);
+
+  .side {
+    background: #fffbeb;
+  }
 }
 
 .copy-btn {

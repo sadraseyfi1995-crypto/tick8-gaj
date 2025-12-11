@@ -19,7 +19,6 @@
                 <th>Name</th>
                 <th>Order</th>
                 <th>Page Size</th>
-                <th>Filename</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -35,7 +34,6 @@
                     <td>
                         <input type="number" [(ngModel)]="course.pageSize" class="form-control">
                     </td>
-                    <td>{{ course.filename }}</td>
                     <td>
                         <button (click)="updateCourse(course)" class="btn btn-primary">Save</button>
                         <button (click)="toggleAppend(course)" class="btn btn-info">Append</button>
@@ -43,7 +41,7 @@
                     </td>
                 </tr>
                 <tr *ngIf="expandedCourseId === course.id" class="append-row">
-                    <td colspan="5">
+                    <td colspan="4">
                         <div class="append-container">
                             <h4>Append to {{course.name}}</h4>
                             <textarea [(ngModel)]="appendContent[course.id]"
