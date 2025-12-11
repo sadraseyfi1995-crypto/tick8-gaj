@@ -11,7 +11,7 @@ import { ICourse } from './models/course.model';
   providedIn: 'root'
 })
 export class DataHandlerService {
-  private apiUrl = 'http://localhost:3000/api/vocab-files';
+  private apiUrl = 'https://tick8-api-616079701914.europe-west1.run.app/api/vocab-files';
   public data: VocabComponentModel[] = [];
   public data$ = new BehaviorSubject<VocabComponentModel[]>([]);
   public courses: ICourse[] = [];
@@ -76,22 +76,22 @@ export class DataHandlerService {
   }
 
   getCourses(): Observable<any[]> {
-    return this.http.get<any[]>('http://localhost:3000/api/courses')
+    return this.http.get<any[]>('https://tick8-api-616079701914.europe-west1.run.app/api/courses')
       .pipe(catchError(this.handleError));
   }
 
   deleteCourse(id: string): Observable<any> {
-    return this.http.delete<any>(`http://localhost:3000/api/courses/${id}`)
+    return this.http.delete<any>(`https://tick8-api-616079701914.europe-west1.run.app/api/courses/${id}`)
       .pipe(catchError(this.handleError));
   }
 
   updateCourse(id: string, updates: any): Observable<any> {
-    return this.http.put<any>(`http://localhost:3000/api/courses/${id}`, updates)
+    return this.http.put<any>(`https://tick8-api-616079701914.europe-west1.run.app/api/courses/${id}`, updates)
       .pipe(catchError(this.handleError));
   }
 
   createCourse(courseData: any, content: any[]): Observable<any> {
-    return this.http.post<any>('http://localhost:3000/api/courses', {
+    return this.http.post<any>('https://tick8-api-616079701914.europe-west1.run.app/api/courses', {
       name: courseData.name,
       pageSize: courseData.pageSize,
       content: content
@@ -99,13 +99,13 @@ export class DataHandlerService {
   }
 
   appendToCourse(courseId: string, content: any[]): Observable<any> {
-    return this.http.post<any>(`http://localhost:3000/api/courses/${courseId}/append`, {
+    return this.http.post<any>(`https://tick8-api-616079701914.europe-west1.run.app/api/courses/${courseId}/append`, {
       content: content
     }).pipe(catchError(this.handleError));
   }
 
   triggerDailyDecay(): Observable<any> {
-    return this.http.post<any>('http://localhost:3000/api/maintenance/decay', {})
+    return this.http.post<any>('https://tick8-api-616079701914.europe-west1.run.app/api/maintenance/decay', {})
       .pipe(catchError(this.handleError));
   }
 

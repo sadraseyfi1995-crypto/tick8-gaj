@@ -15,7 +15,15 @@ const CONFIG = {
 };
 
 // Middleware
-app.use(cors());
+const corsOptions = {
+  origin: [
+    'http://localhost:4200',
+    'https://tick8-43c1a.web.app',
+    'https://tick8-43c1a.firebaseapp.com'
+  ],
+  credentials: true
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Setup authentication routes

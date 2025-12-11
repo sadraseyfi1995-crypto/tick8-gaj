@@ -8,7 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start:be": "cd src/app/backend && npm start",
-    "start:all": "concurrently \"npm start\" \"npm run start:be\""
+    "start:all": "concurrently \"npm start\" \"npm run start:be\"",
+    "deploy:fe": "ng build && source ~/.nvm/nvm.sh && nvm use 20 && npx firebase deploy",
+    "deploy:be": "cd src/app/backend && export CLOUDSDK_PYTHON=/opt/homebrew/opt/python@3.13/libexec/bin/python3 && /opt/homebrew/share/google-cloud-sdk/bin/gcloud run deploy tick8-api --source . --region europe-west1 --allow-unauthenticated",
+    "deploy:all": "npm run deploy:be && npm run deploy:fe"
   },
   "private": true,
   "dependencies": {

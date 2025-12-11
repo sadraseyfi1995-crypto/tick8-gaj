@@ -23,7 +23,7 @@ export interface AuthResponse {
     providedIn: 'root'
 })
 export class AuthService {
-    private apiUrl = 'http://localhost:3000/api/auth';
+    private apiUrl = 'https://tick8-api-616079701914.europe-west1.run.app/api/auth';
     private tokenKey = 'tick8_auth_token';
     private userKey = 'tick8_user';
 
