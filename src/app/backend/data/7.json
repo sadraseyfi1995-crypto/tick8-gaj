@@ -5319,13 +5319,13 @@
       "cross",
       "cross",
       "cross",
-      "none",
-      "none",
+      "cross",
+      "cross",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T05:45:17.273Z"
+    "lastUpdated": "2025-12-11T22:06:47.944Z"
   },
   {
     "id": 334,
@@ -5335,13 +5335,13 @@
       "cross",
       "cross",
       "cross",
-      "none",
-      "none",
+      "cross",
+      "cross",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-06T05:45:18.434Z"
+    "lastUpdated": "2025-12-11T22:06:50.045Z"
   },
   {
     "id": 335,
@@ -5352,12 +5352,12 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-11T21:50:35.434Z"
+    "lastUpdated": "2025-12-11T22:04:48.750Z"
   },
   {
     "id": 336,
@@ -5367,13 +5367,13 @@
       "cross",
       "tick",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:47:20.630Z"
+    "lastUpdated": "2025-12-11T22:06:54.257Z"
   },
   {
     "id": 337,
@@ -5383,13 +5383,13 @@
       "tick",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:46:10.942Z"
+    "lastUpdated": "2025-12-11T22:06:55.053Z"
   },
   {
     "id": 338,
@@ -5399,13 +5399,13 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:46:12.052Z"
+    "lastUpdated": "2025-12-11T22:06:55.866Z"
   },
   {
     "id": 339,
@@ -5415,13 +5415,13 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:46:22.363Z"
+    "lastUpdated": "2025-12-11T22:06:56.722Z"
   },
   {
     "id": 340,
@@ -5431,13 +5431,13 @@
       "cross",
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:47:00.184Z"
+    "lastUpdated": "2025-12-11T22:06:57.844Z"
   },
   {
     "id": 341,
@@ -5446,14 +5446,14 @@
     "states": [
       "tick",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:48:43.350Z"
+    "lastUpdated": "2025-12-11T22:07:02.616Z"
   },
   {
     "id": 342,
@@ -5462,14 +5462,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:48:45.291Z"
+    "lastUpdated": "2025-12-11T22:07:04.196Z"
   },
   {
     "id": 343,
@@ -5478,14 +5478,14 @@
     "states": [
       "cross",
       "tick",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:48:49.717Z"
+    "lastUpdated": "2025-12-11T22:07:05.737Z"
   },
   {
     "id": 344,
@@ -5494,19 +5494,35 @@
     "states": [
       "cross",
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:49:01.209Z"
+    "lastUpdated": "2025-12-11T22:07:08.955Z"
   },
   {
     "id": 345,
     "word": "Class Imbalance",
     "answer": "Situation where training samples unevenly distributed across classes, potentially biasing model toward majority class.",
+    "states": [
+      "cross",
+      "tick",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-11T22:07:03.370Z"
+  },
+  {
+    "id": 346,
+    "word": "Class Weights",
+    "answer": "Assigning higher loss penalties to underrepresented classes, compensating for imbalanced training data.",
     "states": [
       "cross",
       "tick",
@@ -5517,23 +5533,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:48:41.307Z"
-  },
-  {
-    "id": 346,
-    "word": "Class Weights",
-    "answer": "Assigning higher loss penalties to underrepresented classes, compensating for imbalanced training data.",
-    "states": [
-      "cross",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none",
-      "none"
-    ],
-    "lastUpdated": "2025-12-09T21:49:24.517Z"
+    "lastUpdated": "2025-12-11T22:09:31.561Z"
   },
   {
     "id": 347,
@@ -5541,7 +5541,7 @@
     "answer": "Loss function down-weighting easy examples to focus training on hard negatives, addressing class imbalance.",
     "states": [
       "cross",
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -5549,7 +5549,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T22:03:19.384Z"
+    "lastUpdated": "2025-12-11T22:12:25.753Z"
   },
   {
     "id": 348,
@@ -5557,7 +5557,7 @@
     "answer": "Synthetic Minority Over-sampling Technique, creating artificial samples for minority classes by interpolating between existing examples.",
     "states": [
       "cross",
-      "none",
+      "cross",
       "none",
       "none",
       "none",
@@ -5565,7 +5565,7 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T22:05:50.189Z"
+    "lastUpdated": "2025-12-11T22:09:41.116Z"
   },
   {
     "id": 349,
@@ -5573,7 +5573,7 @@
     "answer": "Table showing true vs predicted classifications, revealing which classes model confuses with each other.",
     "states": [
       "cross",
-      "none",
+      "tick",
       "none",
       "none",
       "none",
@@ -5581,12 +5581,28 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:56:51.962Z"
+    "lastUpdated": "2025-12-11T22:09:35.100Z"
   },
   {
     "id": 350,
     "word": "Precision",
     "answer": "Proportion of positive predictions that are actually correct, measuring model's exactness.",
+    "states": [
+      "cross",
+      "tick",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-11T22:09:09.344Z"
+  },
+  {
+    "id": 351,
+    "word": "Recall",
+    "answer": "Proportion of actual positives correctly identified, measuring model's completeness or sensitivity.",
     "states": [
       "cross",
       "none",
@@ -5597,32 +5613,71 @@
       "none",
       "none"
     ],
-    "lastUpdated": "2025-12-09T21:57:48.841Z"
-  },
-  {
-    "id": 351,
-    "word": "Recall",
-    "answer": "Proportion of actual positives correctly identified, measuring model's completeness or sensitivity."
+    "lastUpdated": "2025-12-11T22:21:24.090Z"
   },
   {
     "id": 352,
     "word": "F1 Score",
-    "answer": "Harmonic mean of precision and recall, balancing both metrics into single performance measure."
+    "answer": "Harmonic mean of precision and recall, balancing both metrics into single performance measure.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-11T22:22:07.464Z"
   },
   {
     "id": 353,
     "word": "ROC Curve",
-    "answer": "Plot of true positive rate vs false positive rate across thresholds, visualizing classifier performance."
+    "answer": "Plot of true positive rate vs false positive rate across thresholds, visualizing classifier performance.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-11T22:25:13.600Z"
   },
   {
     "id": 354,
     "word": "AUC-ROC",
-    "answer": "Area under ROC curve, summarizing overall classifier quality independent of threshold choice."
+    "answer": "Area under ROC curve, summarizing overall classifier quality independent of threshold choice.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-11T22:26:34.111Z"
   },
   {
     "id": 355,
     "word": "TensorBoard Callback",
-    "answer": "Keras callback logging metrics, graphs, and embeddings for visualization in TensorBoard during training."
+    "answer": "Keras callback logging metrics, graphs, and embeddings for visualization in TensorBoard during training.",
+    "states": [
+      "cross",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "lastUpdated": "2025-12-11T22:25:54.272Z"
   },
   {
     "id": 356,

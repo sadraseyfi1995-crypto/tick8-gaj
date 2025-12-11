@@ -106,15 +106,10 @@ export class VocabComponent implements OnInit {
     return `Box ${index + 1}: ${stateText}`;
   }
 
-  /** Copy card data as JSON to clipboard */
+  /** Copy card word to clipboard */
   copyCard(): void {
-    const cardData = {
-      word: this.vocab.word,
-      answer: this.vocab.answer || '',
-      states: this.vocab.states
-    };
-    navigator.clipboard.writeText(JSON.stringify(cardData, null, 2))
-      .then(() => console.log('Card copied!'))
+    navigator.clipboard.writeText(this.vocab.word)
+      .then(() => console.log('Word copied!'))
       .catch(err => console.error('Copy failed:', err));
   }
 }

@@ -94,7 +94,7 @@ export class BookComponent {
     }
   }
 
-  /** Copy all cards on the current page as JSON array to clipboard */
+  /** Copy all words on the current page as JSON array to clipboard */
   copyAllCards(): void {
     const currentCards = this.chunkedQuestions[this.currentPage];
     if (!currentCards || currentCards.length === 0) {
@@ -102,14 +102,10 @@ export class BookComponent {
       return;
     }
 
-    const cardsData = currentCards.map(card => ({
-      word: card.word,
-      answer: card.answer || '',
-      states: card.states
-    }));
+    const words = currentCards.map(card => card.word);
 
-    navigator.clipboard.writeText(JSON.stringify(cardsData, null, 2))
-      .then(() => console.log('All cards copied!'))
+    navigator.clipboard.writeText(JSON.stringify(words, null, 2))
+      .then(() => console.log('All words copied!'))
       .catch(err => console.error('Copy failed:', err));
   }
 }
