@@ -266,6 +266,42 @@ class UserFileService {
     await fs.unlink(filepath);
     return { deleted: true, snapshotId };
   }
+
+  /**
+   * Check and create automatic weekly snapshot if needed
+   */
+  static async checkAutoSnapshot(email) {
+    try {
+      await this.ensureUserDataDir(email);
+      const userDir = this.getUserDataDir(email);
+      const stateFile = path.join(userDir, 'server_state.json');
+
+      let state = {};
+      if (fsSync.existsSync(stateFile)) {
+        state = JSON.parse(await fs.readFile(stateFile, 'utf-8'));
+      }
+
+      const now = new Date();
+      const weekNumber = Math.floor(now.getTime() / (7 * 24 * 60 * 60 * 1000));
+
+      if (state.lastAutoSnapshotWeek === weekNumber) {
+        return { created: false };
+      }
+
+      // Create automatic snapshot
+      const snapshot = await this.createSnapshot(email, 'Auto-weekly backup');
+
+      // Update state
+      state.lastAutoSnapshotWeek = weekNumber;
+      await fs.writeFile(stateFile, JSON.stringify(state, null, 2), 'utf-8');
+
+      console.log(`Auto-snapshot created for ${email}: ${snapshot.id}`);
+      return { created: true, snapshot };
+    } catch (err) {
+      console.error('Error creating auto-snapshot:', err);
+      return { created: false, error: err.message };
+    }
+  }
 }
 
 // Utilities
@@ -647,10 +683,16 @@ app.patch('/api/vocab-files/:courseId/:id', authMiddleware, async (req, res) => 
 /**
  * GET /api/courses
  * Get all courses for the logged-in user
+ * Also triggers automatic weekly snapshot
  */
 app.get('/api/courses', authMiddleware, async (req, res) => {
   try {
-    const courses = await UserFileService.loadCourses(req.user.email);
+    const email = req.user.email;
+
+    // Check for automatic weekly snapshot
+    await UserFileService.checkAutoSnapshot(email);
+
+    const courses = await UserFileService.loadCourses(email);
     res.json(courses);
   } catch (err) {
     console.error('Error loading courses:', err);
