@@ -3,7 +3,7 @@ const cors = require('cors');
 const fs = require('fs').promises;
 const fsSync = require('fs');
 const path = require('path');
-const { setupAuthRoutes, optionalAuthMiddleware } = require('./auth');
+const { setupAuthRoutes, authMiddleware, optionalAuthMiddleware } = require('./auth');
 
 const app = express();
 
@@ -28,6 +28,124 @@ app.use(express.json());
 
 // Setup authentication routes
 setupAuthRoutes(app);
+
+/**
+ * UserFileService - Handles per-user data storage
+ */
+class UserFileService {
+  /**
+   * Get user data directory path
+   * @param {string} email - User email
+   * @returns {string} User data directory path
+   */
+  static getUserDataDir(email) {
+    return path.join(CONFIG.dataDir, 'users', email);
+  }
+
+  /**
+   * Ensure user data directory exists, copy default data if new user
+   * @param {string} email - User email
+   */
+  static async ensureUserDataDir(email) {
+    const userDir = this.getUserDataDir(email);
+
+    if (!fsSync.existsSync(userDir)) {
+      await fs.mkdir(userDir, { recursive: true });
+
+      // Copy default courses.json if it exists
+      const defaultCoursesPath = path.join(CONFIG.dataDir, 'courses.json');
+      if (fsSync.existsSync(defaultCoursesPath)) {
+        const courses = JSON.parse(await fs.readFile(defaultCoursesPath, 'utf-8'));
+        await fs.writeFile(path.join(userDir, 'courses.json'), JSON.stringify(courses, null, 2), 'utf-8');
+
+        // Copy each course file
+        for (const course of courses) {
+          const srcPath = path.join(CONFIG.dataDir, course.filename);
+          if (fsSync.existsSync(srcPath)) {
+            const destPath = path.join(userDir, course.filename);
+            await fs.copyFile(srcPath, destPath);
+          }
+        }
+      }
+    }
+  }
+
+  /**
+   * Load courses for a user
+   * @param {string} email - User email
+   * @returns {Promise<Array>} Courses list
+   */
+  static async loadCourses(email) {
+    await this.ensureUserDataDir(email);
+    const filepath = path.join(this.getUserDataDir(email), 'courses.json');
+    if (!fsSync.existsSync(filepath)) {
+      return [];
+    }
+    const raw = await fs.readFile(filepath, 'utf-8');
+    return JSON.parse(raw);
+  }
+
+  /**
+   * Save courses for a user
+   * @param {string} email - User email
+   * @param {Array} courses - Courses list
+   */
+  static async saveCourses(email, courses) {
+    await this.ensureUserDataDir(email);
+    const filepath = path.join(this.getUserDataDir(email), 'courses.json');
+    await fs.writeFile(filepath, JSON.stringify(courses, null, 2), 'utf-8');
+  }
+
+  /**
+   * Load vocab file for a user
+   * @param {string} email - User email
+   * @param {string} filename - Vocab filename
+   * @returns {Promise<Array>} Vocab data
+   */
+  static async loadVocabFile(email, filename) {
+    await this.ensureUserDataDir(email);
+    const sanitized = FileService.sanitizeFilename(filename);
+    const filepath = path.join(this.getUserDataDir(email), sanitized);
+
+    if (!fsSync.existsSync(filepath)) {
+      const error = new Error('File not found');
+      error.statusCode = 404;
+      throw error;
+    }
+
+    const raw = await fs.readFile(filepath, 'utf-8');
+    return JSON.parse(raw);
+  }
+
+  /**
+   * Save vocab file for a user
+   * @param {string} email - User email
+   * @param {string} filename - Vocab filename
+   * @param {Array} data - Vocab data
+   */
+  static async saveVocabFile(email, filename, data) {
+    await this.ensureUserDataDir(email);
+    const sanitized = FileService.sanitizeFilename(filename);
+    const filepath = path.join(this.getUserDataDir(email), sanitized);
+    const tmpPath = `${filepath}.tmp`;
+
+    await fs.writeFile(tmpPath, JSON.stringify(data, null, 2), 'utf-8');
+    await fs.rename(tmpPath, filepath);
+  }
+
+  /**
+   * Delete vocab file for a user
+   * @param {string} email - User email
+   * @param {string} filename - Vocab filename
+   */
+  static async deleteVocabFile(email, filename) {
+    const sanitized = FileService.sanitizeFilename(filename);
+    const filepath = path.join(this.getUserDataDir(email), sanitized);
+    if (fsSync.existsSync(filepath)) {
+      await fs.unlink(filepath);
+    }
+  }
+}
 
 // Utilities
 class FileService {
@@ -258,15 +376,97 @@ class FileService {
   }
 }
 
-// API Routes
+// ===========================================
+// API Routes (All require authentication)
+// ===========================================
+
 /**
  * POST /api/maintenance/decay
- * Trigger daily decay manually
+ * Trigger daily decay manually for the logged-in user
  */
-app.post('/api/maintenance/decay', async (req, res) => {
+app.post('/api/maintenance/decay', authMiddleware, async (req, res) => {
   try {
-    const result = await FileService.applyDailyDecay();
-    res.json(result);
+    const email = req.user.email;
+    const today = new Date().toISOString().split('T')[0];
+
+    // Check if already run today for this user
+    const userDir = UserFileService.getUserDataDir(email);
+    const stateFile = path.join(userDir, 'server_state.json');
+    let state = {};
+    if (fsSync.existsSync(stateFile)) {
+      state = JSON.parse(await fs.readFile(stateFile, 'utf-8'));
+    }
+
+    if (state.lastDecay === today) {
+      return res.json({ run: false, message: 'Already run today' });
+    }
+
+    const courses = await UserFileService.loadCourses(email);
+    let totalModified = 0;
+
+    for (const course of courses) {
+      try {
+        const vocab = await UserFileService.loadVocabFile(email, course.filename);
+        const pageSize = course.pageSize || 15;
+        let modified = false;
+
+        // Process each page independently
+        for (let pageStart = 0; pageStart < vocab.length; pageStart += pageSize) {
+          const pageEnd = Math.min(pageStart + pageSize, vocab.length);
+          const pageItems = vocab.slice(pageStart, pageEnd);
+
+          // Calculate average filled states for this page
+          const totalFilled = pageItems.reduce((sum, item) => {
+            return sum + (item.states?.filter(s => s !== 'none').length || 0);
+          }, 0);
+
+          const avgFilled = Math.round(totalFilled / pageItems.length);
+
+          // Apply decay to each item on this page
+          for (let i = pageStart; i < pageEnd; i++) {
+            const item = vocab[i];
+            if (!item.states || item.states.length === 0) continue;
+
+            const currentFilled = item.states.filter(s => s !== 'none').length;
+
+            if (currentFilled > avgFilled) {
+              const toRemove = currentFilled - avgFilled;
+              let removed = 0;
+              for (let pos = item.states.length - 1; pos >= 0 && removed < toRemove; pos--) {
+                if (item.states[pos] !== 'none') {
+                  item.states[pos] = 'none';
+                  removed++;
+                  modified = true;
+                }
+              }
+            } else if (currentFilled < avgFilled) {
+              const toAdd = avgFilled - currentFilled;
+              let added = 0;
+              for (let pos = 0; pos < item.states.length && added < toAdd; pos++) {
+                if (item.states[pos] === 'none') {
+                  item.states[pos] = 'boost';
+                  added++;
+                  modified = true;
+                }
+              }
+            }
+          }
+        }
+
+        if (modified) {
+          await UserFileService.saveVocabFile(email, course.filename, vocab);
+          totalModified++;
+        }
+      } catch (err) {
+        console.error(`Error applying decay to course ${course.name}:`, err);
+      }
+    }
+
+    // Save per-user state
+    state.lastDecay = today;
+    await fs.writeFile(stateFile, JSON.stringify(state, null, 2), 'utf-8');
+
+    res.json({ run: true, message: `Daily decay applied to ${totalModified} course(s)` });
   } catch (err) {
     console.error('Error running daily decay:', err);
     res.status(500).json({ error: 'Internal server error' });
@@ -275,47 +475,37 @@ app.post('/api/maintenance/decay', async (req, res) => {
 
 /**
  * GET /api/vocab-files/:filename
- * Load a vocab file by filename
+ * Load a vocab file by filename for the logged-in user
  */
-app.get('/api/vocab-files/:filename', async (req, res) => {
+app.get('/api/vocab-files/:filename', authMiddleware, async (req, res) => {
   try {
-    const data = await FileService.loadVocabFile(req.params.filename);
+    const data = await UserFileService.loadVocabFile(req.user.email, req.params.filename);
     res.json(data);
   } catch (err) {
     console.error('Error loading vocab file:', err);
-
     const statusCode = err.statusCode || 500;
-    const message = err.statusCode === 404
-      ? 'File not found'
-      : err.message === 'Invalid filename format. Use alphanumeric, hyphens, underscores, and .json extension only.'
-        ? err.message
-        : 'Could not load file';
-
-    res.status(statusCode).json({ error: message });
+    res.status(statusCode).json({ error: err.message || 'Could not load file' });
   }
 });
 
 /**
  * PATCH /api/vocab-files/:courseId/:id
- * Update a specific vocab item
+ * Update a specific vocab item for the logged-in user
  */
-app.patch('/api/vocab-files/:courseId/:id', async (req, res) => {
+app.patch('/api/vocab-files/:courseId/:id', authMiddleware, async (req, res) => {
+  const email = req.user.email;
   const filename = `${req.params.courseId}.json`;
   const itemId = req.params.id;
   const updates = req.body;
 
   try {
-    // Load vocab file
-    const vocab = await FileService.loadVocabFile(filename);
-
-    // Find item to update
+    const vocab = await UserFileService.loadVocabFile(email, filename);
     const itemIndex = vocab.findIndex(item => item.id == itemId);
 
     if (itemIndex === -1) {
       return res.status(404).json({ error: 'Item not found' });
     }
 
-    // Update item
     const updatedItem = {
       ...vocab[itemIndex],
       states: updates,
@@ -323,36 +513,23 @@ app.patch('/api/vocab-files/:courseId/:id', async (req, res) => {
     };
 
     vocab[itemIndex] = updatedItem;
+    await UserFileService.saveVocabFile(email, filename, vocab);
 
-    // Save changes
-    const sanitized = FileService.sanitizeFilename(filename);
-    await FileService.saveToFile(sanitized, vocab);
-
-    res.json({
-      success: true,
-      item: updatedItem
-    });
+    res.json({ success: true, item: updatedItem });
   } catch (err) {
     console.error('Error updating vocab item:', err);
-
     const statusCode = err.statusCode || 500;
-    const message = err.statusCode === 404
-      ? 'File not found'
-      : err.message === 'Invalid filename format. Use alphanumeric, hyphens, underscores, and .json extension only.'
-        ? err.message
-        : 'Unable to save changes';
-
-    res.status(statusCode).json({ error: message });
+    res.status(statusCode).json({ error: err.message || 'Unable to save changes' });
   }
 });
 
 /**
  * GET /api/courses
- * Get all courses
+ * Get all courses for the logged-in user
  */
-app.get('/api/courses', async (req, res) => {
+app.get('/api/courses', authMiddleware, async (req, res) => {
   try {
-    const courses = await FileService.loadCourses();
+    const courses = await UserFileService.loadCourses(req.user.email);
     res.json(courses);
   } catch (err) {
     console.error('Error loading courses:', err);
@@ -362,9 +539,10 @@ app.get('/api/courses', async (req, res) => {
 
 /**
  * POST /api/courses
- * Create a new course
+ * Create a new course for the logged-in user
  */
-app.post('/api/courses', async (req, res) => {
+app.post('/api/courses', authMiddleware, async (req, res) => {
+  const email = req.user.email;
   const { name, pageSize, content } = req.body;
 
   if (!name || !content) {
@@ -372,19 +550,14 @@ app.post('/api/courses', async (req, res) => {
   }
 
   try {
-    // Validate content format
     FileService.validateVocabList(content);
 
-    const courses = await FileService.loadCourses();
-
-    // Generate filename
+    const courses = await UserFileService.loadCourses(email);
     const sanitizedName = name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
     const filename = `${sanitizedName}-${Date.now()}.json`;
 
-    // Save content file
-    await FileService.saveToFile(filename, content);
+    await UserFileService.saveVocabFile(email, filename, content);
 
-    // Add to courses
     const newCourse = {
       name,
       filename,
@@ -392,7 +565,7 @@ app.post('/api/courses', async (req, res) => {
       order: courses.length + 1
     };
     courses.push(newCourse);
-    await FileService.saveCourses(courses);
+    await UserFileService.saveCourses(email, courses);
 
     res.json({ success: true, course: newCourse });
   } catch (err) {
@@ -406,9 +579,10 @@ app.post('/api/courses', async (req, res) => {
 
 /**
  * POST /api/courses/:id/append
- * Append data to an existing course
+ * Append data to an existing course for the logged-in user
  */
-app.post('/api/courses/:id/append', async (req, res) => {
+app.post('/api/courses/:id/append', authMiddleware, async (req, res) => {
+  const email = req.user.email;
   const courseId = req.params.id;
   const { content } = req.body;
 
@@ -417,33 +591,27 @@ app.post('/api/courses/:id/append', async (req, res) => {
   }
 
   try {
-    // Validate content format
     FileService.validateVocabList(content);
 
-    const courses = await FileService.loadCourses();
+    const courses = await UserFileService.loadCourses(email);
     const course = courses.find(c => c.filename === `${courseId}.json`);
 
     if (!course) {
       return res.status(404).json({ error: 'Course not found' });
     }
 
-    // Load existing data
-    const vocab = await FileService.loadVocabFile(course.filename);
-
-    // Find max ID
+    const vocab = await UserFileService.loadVocabFile(email, course.filename);
     const maxId = vocab.reduce((max, item) => Math.max(max, parseInt(item.id) || 0), 0);
 
-    // Re-index new items
     const newItems = content.map((item, index) => ({
       ...item,
       id: (maxId + 1 + index).toString(),
-      states: item.states || [], // Ensure states exist
+      states: item.states || [],
       lastUpdated: new Date().toISOString()
     }));
 
-    // Append and save
     const updatedVocab = vocab.concat(newItems);
-    await FileService.saveToFile(course.filename, updatedVocab);
+    await UserFileService.saveVocabFile(email, course.filename, updatedVocab);
 
     res.json({ success: true, added: newItems.length });
   } catch (err) {
@@ -457,29 +625,28 @@ app.post('/api/courses/:id/append', async (req, res) => {
 
 /**
  * PUT /api/courses/:id
- * Update course metadata
+ * Update course metadata for the logged-in user
  */
-app.put('/api/courses/:id', async (req, res) => {
+app.put('/api/courses/:id', authMiddleware, async (req, res) => {
+  const email = req.user.email;
   const courseId = req.params.id;
   const updates = req.body;
 
   try {
-    const courses = await FileService.loadCourses();
+    const courses = await UserFileService.loadCourses(email);
     const courseIndex = courses.findIndex(c => c.filename === `${courseId}.json`);
 
     if (courseIndex === -1) {
       return res.status(404).json({ error: 'Course not found' });
     }
 
-    // Update fields
     courses[courseIndex] = {
       ...courses[courseIndex],
       ...updates,
-      // Prevent updating filename via this endpoint for safety
       filename: courses[courseIndex].filename
     };
 
-    await FileService.saveCourses(courses);
+    await UserFileService.saveCourses(email, courses);
     res.json({ success: true, course: courses[courseIndex] });
   } catch (err) {
     console.error('Error updating course:', err);
@@ -489,16 +656,14 @@ app.put('/api/courses/:id', async (req, res) => {
 
 /**
  * DELETE /api/courses/:id
- * Delete a course and its corresponding file
+ * Delete a course and its file for the logged-in user
  */
-app.delete('/api/courses/:id', async (req, res) => {
+app.delete('/api/courses/:id', authMiddleware, async (req, res) => {
+  const email = req.user.email;
   const courseId = req.params.id;
 
   try {
-    // Load courses
-    const courses = await FileService.loadCourses();
-
-    // Find course by filename (id + .json)
+    const courses = await UserFileService.loadCourses(email);
     const courseIndex = courses.findIndex(c => c.filename === `${courseId}.json`);
 
     if (courseIndex === -1) {
@@ -507,16 +672,14 @@ app.delete('/api/courses/:id', async (req, res) => {
 
     const course = courses[courseIndex];
 
-    // Delete the data file
     try {
-      await FileService.deleteFile(course.filename);
+      await UserFileService.deleteVocabFile(email, course.filename);
     } catch (err) {
       console.warn(`Could not delete file ${course.filename}:`, err);
     }
 
-    // Remove from mapping
     courses.splice(courseIndex, 1);
-    await FileService.saveCourses(courses);
+    await UserFileService.saveCourses(email, courses);
 
     res.json({ success: true, message: `Course '${course.name}' deleted` });
   } catch (err) {
