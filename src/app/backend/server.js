@@ -145,6 +145,127 @@ class UserFileService {
       await fs.unlink(filepath);
     }
   }
+
+  // ==================== Snapshot Methods ====================
+
+  /**
+   * Get snapshots directory for a user
+   */
+  static getSnapshotsDir(email) {
+    return path.join(this.getUserDataDir(email), 'snapshots');
+  }
+
+  /**
+   * Create a snapshot of all user data
+   */
+  static async createSnapshot(email, note = '') {
+    await this.ensureUserDataDir(email);
+    const snapshotsDir = this.getSnapshotsDir(email);
+    await fs.mkdir(snapshotsDir, { recursive: true });
+
+    const now = new Date();
+    const date = now.toISOString().split('T')[0];
+    const timestamp = now.getTime();
+    const id = `${date}-${timestamp}`;
+
+    // Load current data
+    const courses = await this.loadCourses(email);
+    const vocabFiles = {};
+    for (const course of courses) {
+      try {
+        vocabFiles[course.filename] = await this.loadVocabFile(email, course.filename);
+      } catch (err) {
+        console.warn(`Could not load ${course.filename} for snapshot`);
+      }
+    }
+
+    const snapshot = {
+      id,
+      date,
+      createdAt: now.toISOString(),
+      note,
+      courses,
+      vocabFiles
+    };
+
+    const filepath = path.join(snapshotsDir, `snapshot-${id}.json`);
+    await fs.writeFile(filepath, JSON.stringify(snapshot, null, 2), 'utf-8');
+
+    return { id, date, createdAt: snapshot.createdAt, note };
+  }
+
+  /**
+   * List all snapshots for a user
+   */
+  static async listSnapshots(email) {
+    const snapshotsDir = this.getSnapshotsDir(email);
+    if (!fsSync.existsSync(snapshotsDir)) {
+      return [];
+    }
+
+    const files = await fs.readdir(snapshotsDir);
+    const snapshots = [];
+
+    for (const file of files) {
+      if (file.startsWith('snapshot-') && file.endsWith('.json')) {
+        const filepath = path.join(snapshotsDir, file);
+        const content = JSON.parse(await fs.readFile(filepath, 'utf-8'));
+        snapshots.push({
+          id: content.id,
+          date: content.date,
+          createdAt: content.createdAt,
+          note: content.note || ''
+        });
+      }
+    }
+
+    // Sort by createdAt descending (newest first)
+    snapshots.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    return snapshots;
+  }
+
+  /**
+   * Restore a snapshot
+   */
+  static async restoreSnapshot(email, snapshotId) {
+    const snapshotsDir = this.getSnapshotsDir(email);
+    const filepath = path.join(snapshotsDir, `snapshot-${snapshotId}.json`);
+
+    if (!fsSync.existsSync(filepath)) {
+      const error = new Error('Snapshot not found');
+      error.statusCode = 404;
+      throw error;
+    }
+
+    const snapshot = JSON.parse(await fs.readFile(filepath, 'utf-8'));
+
+    // Restore courses
+    await this.saveCourses(email, snapshot.courses);
+
+    // Restore vocab files
+    for (const [filename, data] of Object.entries(snapshot.vocabFiles)) {
+      await this.saveVocabFile(email, filename, data);
+    }
+
+    return { restored: true, snapshotId };
+  }
+
+  /**
+   * Delete a snapshot
+   */
+  static async deleteSnapshot(email, snapshotId) {
+    const snapshotsDir = this.getSnapshotsDir(email);
+    const filepath = path.join(snapshotsDir, `snapshot-${snapshotId}.json`);
+
+    if (!fsSync.existsSync(filepath)) {
+      const error = new Error('Snapshot not found');
+      error.statusCode = 404;
+      throw error;
+    }
+
+    await fs.unlink(filepath);
+    return { deleted: true, snapshotId };
+  }
 }
 
 // Utilities
@@ -685,6 +806,69 @@ app.delete('/api/courses/:id', authMiddleware, async (req, res) => {
   } catch (err) {
     console.error('Error deleting course:', err);
     res.status(500).json({ error: 'Could not delete course' });
+  }
+});
+
+// ===========================================
+// Snapshot API Routes
+// ===========================================
+
+/**
+ * POST /api/snapshots
+ * Create a snapshot of current user data
+ */
+app.post('/api/snapshots', authMiddleware, async (req, res) => {
+  try {
+    const { note } = req.body;
+    const result = await UserFileService.createSnapshot(req.user.email, note || '');
+    res.json({ success: true, snapshot: result });
+  } catch (err) {
+    console.error('Error creating snapshot:', err);
+    res.status(500).json({ error: 'Could not create snapshot' });
+  }
+});
+
+/**
+ * GET /api/snapshots
+ * List all snapshots for the logged-in user
+ */
+app.get('/api/snapshots', authMiddleware, async (req, res) => {
+  try {
+    const snapshots = await UserFileService.listSnapshots(req.user.email);
+    res.json(snapshots);
+  } catch (err) {
+    console.error('Error listing snapshots:', err);
+    res.status(500).json({ error: 'Could not list snapshots' });
+  }
+});
+
+/**
+ * POST /api/snapshots/:id/restore
+ * Restore a snapshot
+ */
+app.post('/api/snapshots/:id/restore', authMiddleware, async (req, res) => {
+  try {
+    const result = await UserFileService.restoreSnapshot(req.user.email, req.params.id);
+    res.json({ success: true, ...result });
+  } catch (err) {
+    console.error('Error restoring snapshot:', err);
+    const statusCode = err.statusCode || 500;
+    res.status(statusCode).json({ error: err.message || 'Could not restore snapshot' });
+  }
+});
+
+/**
+ * DELETE /api/snapshots/:id
+ * Delete a snapshot
+ */
+app.delete('/api/snapshots/:id', authMiddleware, async (req, res) => {
+  try {
+    const result = await UserFileService.deleteSnapshot(req.user.email, req.params.id);
+    res.json({ success: true, ...result });
+  } catch (err) {
+    console.error('Error deleting snapshot:', err);
+    const statusCode = err.statusCode || 500;
+    res.status(statusCode).json({ error: err.message || 'Could not delete snapshot' });
   }
 });
 

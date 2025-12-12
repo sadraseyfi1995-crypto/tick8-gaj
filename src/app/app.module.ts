@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { AuthGuard } from './auth/auth.guard';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { SnapshotManagementComponent } from './snapshot-management/snapshot-management.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     LayoutComponent,
     CourseManagementComponent,
     LoginComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    SnapshotManagementComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
       { path: '', component: WelcomeComponent },
       { path: 'book', component: BookComponent, canActivate: [AuthGuard] },
       { path: 'login', component: LoginComponent },
-      { path: 'manage-courses', component: CourseManagementComponent, canActivate: [AuthGuard] }
+      { path: 'manage-courses', component: CourseManagementComponent, canActivate: [AuthGuard] },
+      { path: 'snapshots', component: SnapshotManagementComponent, canActivate: [AuthGuard] }
     ]),
   ],
   providers: [

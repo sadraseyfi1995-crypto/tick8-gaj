@@ -1,0 +1,40 @@
+<div class="container">
+    <h2>📸 Snapshots</h2>
+
+    <div class="message" *ngIf="message">{{ message }}</div>
+
+    <div class="create-section">
+        <input type="text" [(ngModel)]="newNote" placeholder="Snapshot note (optional)" class="form-control">
+        <button (click)="createSnapshot()" [disabled]="isLoading" class="btn btn-primary">
+            Create Snapshot
+        </button>
+    </div>
+
+    <table class="table" *ngIf="snapshots.length > 0">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Note</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let snapshot of snapshots">
+                <td>{{ formatDate(snapshot.createdAt) }}</td>
+                <td>{{ snapshot.note || '-' }}</td>
+                <td>
+                    <button (click)="restoreSnapshot(snapshot.id)" [disabled]="isLoading" class="btn btn-success">
+                        🔄 Restore
+                    </button>
+                    <button (click)="deleteSnapshot(snapshot.id)" [disabled]="isLoading" class="btn btn-danger">
+                        🗑️ Delete
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p *ngIf="snapshots.length === 0 && !isLoading" class="empty-message">
+        No snapshots yet. Create one to save your current progress!
+    </p>
+</div>
