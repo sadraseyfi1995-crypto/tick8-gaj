@@ -1,19 +1,19 @@
-<nav [class.collapsed]="mode === 'collapsed'" class="sidebar">
+<nav [class.collapsed]="mode === 'collapsed'" [class.mobile-hidden]="mode === 'mobile-hidden'" class="sidebar">
     <ul>
-        <li>
+        <li *ngIf="mode !== 'mobile-hidden'">
             <button (click)="onToggleClick()">
                 <span class="icon">☰</span>
                 <span class="label" *ngIf="mode === 'expanded'">Toggle</span>
             </button>
         </li>
         <li>
-            <button routerLink="/manage-courses">
+            <button routerLink="/manage-courses" (click)="onNavigate()">
                 <span class="icon">⚙️</span>
                 <span class="label" *ngIf="mode === 'expanded'">Manage</span>
             </button>
         </li>
         <li>
-            <button routerLink="/snapshots">
+            <button routerLink="/snapshots" (click)="onNavigate()">
                 <span class="icon">📸</span>
                 <span class="label" *ngIf="mode === 'expanded'">Snapshots</span>
             </button>

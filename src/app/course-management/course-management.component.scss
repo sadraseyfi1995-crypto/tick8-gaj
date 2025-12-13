@@ -3,6 +3,10 @@
     color: #e0e0e0;
     background-color: #1e1e1e;
     min-height: 100vh;
+
+    @media (max-width: 767px) {
+        padding: 12px;
+    }
 }
 
 h2 {
@@ -33,6 +37,17 @@ h2 {
 
     tr:hover {
         background-color: #2a2d2e;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        th, td {
+            padding: 8px 10px;
+            font-size: 14px;
+        }
     }
 }
 
@@ -113,11 +128,20 @@ h2 {
         display: flex;
         gap: 10px;
         margin-bottom: 10px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            gap: 8px;
+        }
     }
 
     textarea {
         margin-bottom: 10px;
         font-family: monospace;
+    }
+
+    @media (max-width: 767px) {
+        padding: 15px;
     }
 }
 

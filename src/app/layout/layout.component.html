@@ -1,7 +1,13 @@
 <app-header></app-header>
 
+<button *ngIf="isMobile && authService.isAuthenticated()" class="mobile-menu-toggle" (click)="toggleMobileMenu()" [class.active]="mobileMenuOpen">
+  <span class="hamburger-icon"></span>
+</button>
+
 <div class="layout-body">
-  <app-sidebar *ngIf="authService.isAuthenticated()" [mode]="sidebarMode" (toggleMode)="onSidebarToggle($event)">
+  <div *ngIf="isMobile && mobileMenuOpen" class="mobile-overlay" (click)="closeMobileMenu()"></div>
+
+  <app-sidebar *ngIf="authService.isAuthenticated()" [mode]="sidebarMode" (toggleMode)="onSidebarToggle($event)" (navigate)="closeMobileMenu()">
   </app-sidebar>
 
   <main class="layout-main">

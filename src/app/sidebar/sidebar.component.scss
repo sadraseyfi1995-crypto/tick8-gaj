@@ -4,10 +4,14 @@
   color: #ecf0f1;
   height: 100%;
   overflow-y: auto;
-  transition: width 0.2s ease;
+  transition: width 0.2s ease, transform 0.3s ease;
 
   &.collapsed {
     width: 60px;
+  }
+
+  &.mobile-hidden {
+    transform: translateX(-100%);
   }
 
   ul {
@@ -29,6 +33,11 @@
         width: 100%;
         padding: 8px 12px;
         cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
 
         .icon {
           display: inline-block;
@@ -39,6 +48,25 @@
           margin-left: 12px;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+
+    &.collapsed {
+      width: 200px;
+    }
+
+    &:not(.mobile-hidden) {
+      transform: translateX(0);
     }
   }
 }

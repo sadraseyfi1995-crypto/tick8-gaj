@@ -14,6 +14,7 @@ import { AuthService } from '../auth/auth.service';
 export class SidebarComponent implements OnInit {
   @Input() mode: SidebarMode = 'expanded';
   @Output() toggleMode = new EventEmitter<SidebarMode>();
+  @Output() navigate = new EventEmitter<void>();
 
   constructor(
     private router: Router,
@@ -50,6 +51,11 @@ export class SidebarComponent implements OnInit {
       replaceUrl: true
     });
     this.sharedService.setChosenCourse(course);
+    this.navigate.emit();
+  }
+
+  onNavigate() {
+    this.navigate.emit();
   }
 
   get sortedCourses() {

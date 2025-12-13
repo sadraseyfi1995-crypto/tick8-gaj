@@ -3,11 +3,19 @@
     color: #e0e0e0;
     background-color: #1e1e1e;
     min-height: 100vh;
+
+    @media (max-width: 767px) {
+        padding: 12px;
+    }
 }
 
 h2 {
     margin-bottom: 20px;
     color: #fff;
+
+    @media (max-width: 767px) {
+        font-size: 1.5rem;
+    }
 }
 
 .message {
@@ -25,6 +33,12 @@ h2 {
     background-color: #252526;
     padding: 15px;
     border-radius: 8px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+    }
 }
 
 .form-control {
@@ -63,6 +77,23 @@ h2 {
 
     tr:hover {
         background-color: #2a2d2e;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        th, td {
+            padding: 8px 10px;
+            font-size: 14px;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            font-size: 13px;
+            margin-right: 4px;
+        }
     }
 }
 
