@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 import { AppComponent } from './app.component';
 import { VocabComponent } from './vocab/vocab.component';
@@ -15,6 +18,7 @@ import { RouterModule } from '@angular/router';
 import { CourseManagementComponent } from './course-management/course-management.component';
 import { LoginComponent } from './login/login.component';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { ErrorInterceptor } from './error.interceptor';
 import { AuthGuard } from './auth/auth.guard';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SnapshotManagementComponent } from './snapshot-management/snapshot-management.component';
@@ -36,8 +40,10 @@ import { SnapshotManagementComponent } from './snapshot-management/snapshot-mana
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
+    ToastModule,
     RouterModule.forRoot([
       { path: '', component: WelcomeComponent },
       { path: 'book', component: BookComponent, canActivate: [AuthGuard] },
@@ -47,9 +53,15 @@ import { SnapshotManagementComponent } from './snapshot-management/snapshot-mana
     ]),
   ],
   providers: [
+    MessageService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorInterceptor,
       multi: true
     }
   ],

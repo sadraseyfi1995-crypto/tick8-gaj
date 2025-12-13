@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, catchError, filter, throwError, BehaviorSubject } from 'rxjs';
+import { Observable, filter, BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { VboxState, VocabComponentModel } from './vocab/vocab.component';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
@@ -65,29 +65,24 @@ export class DataHandlerService {
   }
 
   getAll(): Observable<VocabComponentModel[]> {
-    return this.http.get<VocabComponentModel[]>(this.apiUrl + (this.sharedService.getChosenCourseId() ? '/' + this.sharedService.getChosenCourseId() + '.json' : ''))
-      .pipe(catchError(this.handleError));
+    return this.http.get<VocabComponentModel[]>(this.apiUrl + (this.sharedService.getChosenCourseId() ? '/' + this.sharedService.getChosenCourseId() + '.json' : ''));
   }
 
   updateById(id: number | string, updates: VboxState[]): Observable<{ success: boolean; item?: VocabComponentModel }> {
     const url = `${this.apiUrl}/${this.sharedService.getChosenCourseId()}/${id}`;
-    return this.http.patch<{ success: boolean; item?: VocabComponentModel }>(url, updates)
-      .pipe(catchError(this.handleError));
+    return this.http.patch<{ success: boolean; item?: VocabComponentModel }>(url, updates);
   }
 
   getCourses(): Observable<any[]> {
-    return this.http.get<any[]>('https://tick8-api-616079701914.europe-west1.run.app/api/courses')
-      .pipe(catchError(this.handleError));
+    return this.http.get<any[]>('https://tick8-api-616079701914.europe-west1.run.app/api/courses');
   }
 
   deleteCourse(id: string): Observable<any> {
-    return this.http.delete<any>(`https://tick8-api-616079701914.europe-west1.run.app/api/courses/${id}`)
-      .pipe(catchError(this.handleError));
+    return this.http.delete<any>(`https://tick8-api-616079701914.europe-west1.run.app/api/courses/${id}`);
   }
 
   updateCourse(id: string, updates: any): Observable<any> {
-    return this.http.put<any>(`https://tick8-api-616079701914.europe-west1.run.app/api/courses/${id}`, updates)
-      .pipe(catchError(this.handleError));
+    return this.http.put<any>(`https://tick8-api-616079701914.europe-west1.run.app/api/courses/${id}`, updates);
   }
 
   createCourse(courseData: any, content: any[]): Observable<any> {
@@ -95,22 +90,16 @@ export class DataHandlerService {
       name: courseData.name,
       pageSize: courseData.pageSize,
       content: content
-    }).pipe(catchError(this.handleError));
+    });
   }
 
   appendToCourse(courseId: string, content: any[]): Observable<any> {
     return this.http.post<any>(`https://tick8-api-616079701914.europe-west1.run.app/api/courses/${courseId}/append`, {
       content: content
-    }).pipe(catchError(this.handleError));
+    });
   }
 
   triggerDailyDecay(): Observable<any> {
-    return this.http.post<any>('https://tick8-api-616079701914.europe-west1.run.app/api/maintenance/decay', {})
-      .pipe(catchError(this.handleError));
-  }
-
-  private handleError(err: any) {
-    console.error('VocabApiService error', err);
-    return throwError(() => new Error(err.message || 'Server error'));
+    return this.http.post<any>('https://tick8-api-616079701914.europe-west1.run.app/api/maintenance/decay', {});
   }
 }
