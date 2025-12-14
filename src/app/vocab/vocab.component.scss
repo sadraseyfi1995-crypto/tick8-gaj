@@ -82,9 +82,13 @@
 
 .boxes {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  flex-wrap: nowrap;
+  gap: 5px;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    gap: 4px;
+  }
 }
 
 .box {
@@ -99,6 +103,12 @@
   cursor: pointer;
   outline: none;
   transition: all 0.12s ease;
+  flex-shrink: 0;
+
+  @media (max-width: 600px) {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .box:focus {
