@@ -431,106 +431,8 @@ class FileService {
     }
   }
 
-  /**
-   * Apply daily decay rules to all courses
-   */
-  static async applyDailyDecay() {
-    const courses = await this.loadCourses();
-    const today = new Date().toISOString().split('T')[0];
-
-    // Check if already run today
-    const stateFile = path.join(CONFIG.dataDir, 'server_state.json');
-    let state = {};
-    if (this.fileExists(stateFile)) {
-      state = JSON.parse(await fs.readFile(stateFile, 'utf-8'));
-    }
-
-    if (state.lastDecay === today) {
-      console.log('Daily decay already run today.');
-      return { run: false, message: 'Already run today' };
-    }
-
-    console.log('Running daily decay...');
-    let totalModified = 0;
-
-    for (const course of courses) {
-      try {
-        const vocab = await this.loadVocabFile(course.filename);
-        const pageSize = course.pageSize || 15;
-        let modified = false;
-
-        // Process each page independently
-        for (let pageStart = 0; pageStart < vocab.length; pageStart += pageSize) {
-          const pageEnd = Math.min(pageStart + pageSize, vocab.length);
-          const pageItems = vocab.slice(pageStart, pageEnd);
-
-          // Calculate average filled states for this page
-          const totalFilled = pageItems.reduce((sum, item) => {
-            return sum + (item.states?.filter(s => s !== 'none').length || 0);
-          }, 0);
-
-          const avgFilled = Math.round(totalFilled / pageItems.length);
-
-          // Apply decay to each item on this page
-          for (let i = pageStart; i < pageEnd; i++) {
-            const item = vocab[i];
-
-            // Skip items without states
-            if (!item.states || item.states.length === 0) continue;
-
-            const currentFilled = item.states.filter(s => s !== 'none').length;
-
-            // Only decay if item has more filled states than average
-            if (currentFilled > avgFilled) {
-              const toRemove = currentFilled - avgFilled;
-              let removed = 0;
-
-              // Remove from rightmost positions first (7 → 0)
-              for (let pos = item.states.length - 1; pos >= 0 && removed < toRemove; pos--) {
-                if (item.states[pos] !== 'none') {
-                  item.states[pos] = 'none';
-                  removed++;
-                  modified = true;
-                }
-              }
-            }
-            // Boost if item has fewer filled states than average
-            else if (currentFilled < avgFilled) {
-              const toAdd = avgFilled - currentFilled;
-              let added = 0;
-
-              // Add 'boost' from leftmost empty positions (0 → 7)
-              for (let pos = 0; pos < item.states.length && added < toAdd; pos++) {
-                if (item.states[pos] === 'none') {
-                  item.states[pos] = 'boost';
-                  added++;
-                  modified = true;
-                }
-              }
-            }
-          }
-        }
-
-        if (modified) {
-          await this.saveToFile(course.filename, vocab);
-          totalModified++;
-          console.log(`Applied decay to course: ${course.name}`);
-        }
-      } catch (err) {
-        console.error(`Error applying decay to course ${course.name}:`, err);
-      }
-    }
-
-    // Update state
-    state.lastDecay = today;
-    await fs.writeFile(stateFile, JSON.stringify(state, null, 2), 'utf-8');
-
-    console.log(`Daily decay complete. Modified ${totalModified} course(s).`);
-    return {
-      run: true,
-      message: `Daily decay applied to ${totalModified} course(s)`
-    };
-  }
+  // Note: Daily decay is now handled per-user in the POST /api/maintenance/decay endpoint
+  // This ensures each user's data is processed independently with their own state tracking
 }
 
 // ===========================================
@@ -577,7 +479,9 @@ app.post('/api/maintenance/decay', authMiddleware, async (req, res) => {
             return sum + (item.states?.filter(s => s !== 'none').length || 0);
           }, 0);
 
-          const avgFilled = Math.round(totalFilled / pageItems.length);
+          // Use floor instead of round to be more conservative with decay
+          // This prevents removing marks when the distribution is already balanced
+          const avgFilled = Math.floor(totalFilled / pageItems.length);
 
           // Apply decay to each item on this page
           for (let i = pageStart; i < pageEnd; i++) {
@@ -586,6 +490,7 @@ app.post('/api/maintenance/decay', authMiddleware, async (req, res) => {
 
             const currentFilled = item.states.filter(s => s !== 'none').length;
 
+            // Only modify if item has MORE filled states than average (decay)
             if (currentFilled > avgFilled) {
               const toRemove = currentFilled - avgFilled;
               let removed = 0;
@@ -596,7 +501,9 @@ app.post('/api/maintenance/decay', authMiddleware, async (req, res) => {
                   modified = true;
                 }
               }
-            } else if (currentFilled < avgFilled) {
+            }
+            // Only boost if item has FEWER filled states than average
+            else if (currentFilled < avgFilled) {
               const toAdd = avgFilled - currentFilled;
               let added = 0;
               for (let pos = 0; pos < item.states.length && added < toAdd; pos++) {
@@ -607,6 +514,7 @@ app.post('/api/maintenance/decay', authMiddleware, async (req, res) => {
                 }
               }
             }
+            // If currentFilled === avgFilled, do nothing (no changes needed)
           }
         }
 

@@ -10,9 +10,20 @@ export class AppComponent implements OnInit {
   constructor(public vocabService: DataHandlerService) { }
 
   ngOnInit() {
-    this.vocabService.triggerDailyDecay().subscribe({
-      next: (res) => console.log('Daily maintenance:', res.message),
-      error: (err) => console.error('Daily maintenance failed', err)
-    });
+    // Only trigger decay once per session, not on every component init
+    const lastDecayTrigger = sessionStorage.getItem('lastDecayTrigger');
+    const today = new Date().toISOString().split('T')[0];
+
+    if (lastDecayTrigger !== today) {
+      this.vocabService.triggerDailyDecay().subscribe({
+        next: (res) => {
+          console.log('Daily maintenance:', res.message);
+          if (res.run) {
+            sessionStorage.setItem('lastDecayTrigger', today);
+          }
+        },
+        error: (err) => console.error('Daily maintenance failed', err)
+      });
+    }
   }
 }
