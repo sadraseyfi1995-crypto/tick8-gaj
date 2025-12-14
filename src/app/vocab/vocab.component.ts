@@ -84,9 +84,25 @@ export class VocabComponent implements OnInit {
 
   onStatesChanged(id: number | string, newStates: VboxState[]) {
     // sync to backend
+    console.log(`💾 Saving changes for card ${id}:`, newStates);
     this.vocabService.updateById(id, newStates).subscribe({
-      next: () => console.log('State updated'),
-      error: err => console.error('Update failed', err)
+      next: (response) => {
+        console.log('✓ State saved successfully:', response);
+
+        // Update local data store to prevent stale data from overwriting our changes
+        const currentData = this.vocabService.data$.getValue();
+        const itemIndex = currentData.findIndex(item => item.id === id);
+        if (itemIndex !== -1) {
+          currentData[itemIndex].states = newStates;
+          currentData[itemIndex].lastUpdated = new Date();
+          this.vocabService.data$.next([...currentData]);
+          console.log('✓ Local data store updated');
+        }
+      },
+      error: err => {
+        console.error('✗ Save failed:', err);
+        alert('Failed to save your changes! Please try again.');
+      }
     });
   }
 

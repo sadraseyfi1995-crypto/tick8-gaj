@@ -519,6 +519,7 @@ app.post('/api/maintenance/decay', authMiddleware, async (req, res) => {
         }
 
         if (modified) {
+          console.log(`⚠️  DECAY: Modifying course ${course.name} for user ${email}`);
           await UserFileService.saveVocabFile(email, course.filename, vocab);
           totalModified++;
         }
@@ -563,11 +564,15 @@ app.patch('/api/vocab-files/:courseId/:id', authMiddleware, async (req, res) => 
   const itemId = req.params.id;
   const updates = req.body;
 
+  console.log(`📝 PATCH request - User: ${email}, File: ${filename}, ID: ${itemId}`);
+  console.log(`📝 Updates:`, updates);
+
   try {
     const vocab = await UserFileService.loadVocabFile(email, filename);
     const itemIndex = vocab.findIndex(item => item.id == itemId);
 
     if (itemIndex === -1) {
+      console.error(`❌ Item ${itemId} not found in ${filename}`);
       return res.status(404).json({ error: 'Item not found' });
     }
 
@@ -580,6 +585,7 @@ app.patch('/api/vocab-files/:courseId/:id', authMiddleware, async (req, res) => 
     vocab[itemIndex] = updatedItem;
     await UserFileService.saveVocabFile(email, filename, vocab);
 
+    console.log(`✓ Successfully saved changes for card ${itemId}`);
     res.json({ success: true, item: updatedItem });
   } catch (err) {
     console.error('Error updating vocab item:', err);
