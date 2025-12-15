@@ -10,7 +10,7 @@ const app = express();
 // Configuration
 // ===========================================
 const CONFIG = {
-  dataDir: path.join(__dirname, 'data'),
+  dataDir: process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(__dirname, 'data'),
   port: process.env.PORT || 3000,
   filenamePattern: /^[a-zA-Z0-9_-]+\.json$/,
   snapshotIdPattern: /^[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]+$/,
