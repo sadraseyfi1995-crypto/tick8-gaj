@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, filter, BehaviorSubject } from 'rxjs';
+import { Observable, filter, BehaviorSubject, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { VboxState, VocabComponentModel } from './vocab/vocab.component';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
@@ -65,7 +65,11 @@ export class DataHandlerService {
   }
 
   getAll(): Observable<VocabComponentModel[]> {
-    return this.http.get<VocabComponentModel[]>(this.apiUrl + (this.sharedService.getChosenCourseId() ? '/' + this.sharedService.getChosenCourseId() + '.json' : ''));
+    const courseId = this.sharedService.getChosenCourseId();
+    if (!courseId) {
+      return of([]);
+    }
+    return this.http.get<VocabComponentModel[]>(this.apiUrl + '/' + courseId + '.json');
   }
 
   updateById(id: number | string, updates: VboxState[]): Observable<{ success: boolean; item?: VocabComponentModel }> {
