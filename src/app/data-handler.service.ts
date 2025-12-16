@@ -106,4 +106,8 @@ export class DataHandlerService {
   triggerDailyDecay(): Observable<any> {
     return this.http.post<any>('https://tick8-api-616079701914.europe-west1.run.app/api/maintenance/decay', {});
   }
+
+  generateVocab(prompt: string): Observable<any[]> {
+    return this.http.post<any[]>('https://tick8-api-616079701914.europe-west1.run.app/api/generate-vocab', { prompt });
+  }
 }

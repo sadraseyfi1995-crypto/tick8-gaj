@@ -17,6 +17,10 @@ export class CourseManagementComponent implements OnInit {
   appendContent: { [key: string]: string } = {};
   expandedCourseId: string | null = null;
 
+  // AI Generation State
+  aiPrompt: string = '';
+  isGenerating: boolean = false;
+
   constructor(private dataHandler: DataHandlerService, private messageService: MessageService) { }
 
   ngOnInit(): void {
@@ -29,6 +33,61 @@ export class CourseManagementComponent implements OnInit {
         ...c,
         id: c.filename.replace('.json', '') // Ensure ID is available
       }));
+    });
+  }
+
+  generateFromAI() {
+    if (!this.aiPrompt.trim()) {
+      this.messageService.add({ severity: 'warn', summary: 'Warning', detail: 'Please enter a prompt' });
+      return;
+    }
+
+    this.isGenerating = true;
+    this.dataHandler.generateVocab(this.aiPrompt).subscribe({
+      next: (vocabList) => {
+        this.newCourse.content = JSON.stringify(vocabList, null, 2);
+        this.messageService.add({ severity: 'success', summary: 'AI Success', detail: 'Vocabulary generated from your prompt' });
+        this.isGenerating = false;
+
+        // Auto-fill name if empty
+        if (!this.newCourse.name) {
+          this.newCourse.name = 'AI Generated Course';
+        }
+      },
+      error: (err) => {
+        console.error(err);
+        this.messageService.add({ severity: 'error', summary: 'AI Error', detail: 'Failed to generate content' });
+        this.isGenerating = false;
+      }
+    });
+  }
+
+  aiAppendPrompt: string = '';
+
+  generateAppendFromAI(course: any) {
+    if (!this.aiAppendPrompt.trim()) {
+      this.messageService.add({ severity: 'warn', summary: 'Warning', detail: 'Please enter a prompt' });
+      return;
+    }
+
+    this.isGenerating = true;
+    this.dataHandler.generateVocab(this.aiAppendPrompt).subscribe({
+      next: (vocabList) => {
+        // If there is existing content in the text area, we might want to append to it or replace it.
+        // For simplicity, let's just set it or separate by a comma if it's invalid JSON,
+        // but since we expect a JSON array, replacing it is safer, OR we can try to merge if the user knows what they are doing.
+        // Actually, the user asked for "append", so generating a list to BE appended is what's needed.
+        // We just put it in the textarea.
+        this.appendContent[course.id] = JSON.stringify(vocabList, null, 2);
+
+        this.messageService.add({ severity: 'success', summary: 'AI Success', detail: 'Vocabulary generated for append' });
+        this.isGenerating = false;
+      },
+      error: (err) => {
+        console.error(err);
+        this.messageService.add({ severity: 'error', summary: 'AI Error', detail: 'Failed to generate content' });
+        this.isGenerating = false;
+      }
     });
   }
 

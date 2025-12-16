@@ -622,6 +622,56 @@ app.post('/api/maintenance/decay', authMiddleware, asyncHandler(async (req, res)
 }));
 
 // ===========================================
+// AI Generation Routes
+// ===========================================
+
+const { GoogleGenerativeAI } = require('@google/generative-ai');
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'fake_key_for_build');
+const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
+
+/**
+ * POST /api/generate-vocab
+ * Generate vocab list from prompt
+ */
+app.post('/api/generate-vocab', authMiddleware, asyncHandler(async (req, res) => {
+  const { prompt } = req.body;
+
+  if (!prompt || typeof prompt !== 'string') {
+    throw new AppError('Prompt is required', 400);
+  }
+
+  if (!process.env.GEMINI_API_KEY) {
+    throw new AppError('Server is not configured for AI generation (missing key)', 503);
+  }
+
+  const systemPrompt = `
+    You are a vocabulary generator.
+    Convert the following user prompt into a JSON array of vocabulary items.
+    Each item MUST have these exact fields: "id" (string number, starting from "1"), "word" (target language), and "answer" (native language/definition).
+    Output ONLY the valid JSON array. No markdown formatting, no explanations.
+    Example output: [{"id": "1", "word": "Hola", "answer": "Hello"}, {"id": "2", "word": "Adiós", "answer": "Goodbye"}]
+    User Prompt: ${prompt}
+  `;
+
+  try {
+    const result = await model.generateContent(systemPrompt);
+    const response = await result.response;
+    const text = response.text();
+
+    // Clean up potential markdown formatting code blocks
+    const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+
+    const vocabList = JSON.parse(cleanText);
+    validateVocabList(vocabList); // Reuse existing validator
+
+    res.json(vocabList);
+  } catch (err) {
+    console.error('AI Generation Error:', err);
+    throw new AppError('Failed to generate content: ' + err.message, 500);
+  }
+}));
+
+// ===========================================
 // Vocab Routes
 // ===========================================
 

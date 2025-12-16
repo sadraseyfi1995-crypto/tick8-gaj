@@ -12,6 +12,17 @@
             placeholder='[{"id": "1", "word": "Hallo", "answer": "Hello"}, {"id": "2", "word": "Danke", "answer": "Thank you"}]'></textarea>
         <small class="hint">JSON array with id, word, and answer fields</small>
         <button (click)="createCourse()" class="btn btn-success">Create Course</button>
+
+        <div class="ai-section" style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ccc;">
+            <h4>Or Generate with AI</h4>
+            <div class="form-row">
+                <input type="text" [(ngModel)]="aiPrompt" placeholder="E.g., '10 common spanish fruits'"
+                    class="form-control" (keyup.enter)="generateFromAI()">
+                <button (click)="generateFromAI()" class="btn btn-info" [disabled]="isGenerating">
+                    {{ isGenerating ? 'Generating...' : 'Generate Content' }}
+                </button>
+            </div>
+        </div>
     </div>
 
     <table class="table">
@@ -49,6 +60,19 @@
                                 placeholder='[{"id": "1", "word": "Bitte", "answer": "Please"}, {"id": "2", "word": "Tschüss", "answer": "Bye"}]'></textarea>
                             <small class="hint">JSON array with id, word, and answer fields</small>
                             <button (click)="submitAppend(course)" class="btn btn-success">Submit Append</button>
+
+                            <div class="ai-section"
+                                style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee;">
+                                <h6>Or Generate Append Content with AI</h6>
+                                <div class="form-row">
+                                    <input type="text" [(ngModel)]="aiAppendPrompt" placeholder="E.g., '5 extra verbs'"
+                                        class="form-control" (keyup.enter)="generateAppendFromAI(course)">
+                                    <button (click)="generateAppendFromAI(course)" class="btn btn-info"
+                                        [disabled]="isGenerating">
+                                        {{ isGenerating ? 'Generating...' : 'Generate' }}
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </td>
                 </tr>
