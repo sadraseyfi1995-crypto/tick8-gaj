@@ -827,7 +827,14 @@ app.get('/api/vocab-files/:filename', authMiddleware, async (req, res, next) => 
     }
 
     const content = await storage.read(filePath);
-    res.json(JSON.parse(content));
+    const data = JSON.parse(content);
+
+    // Return just the array content for the frontend
+    if (Array.isArray(data)) {
+      res.json(data);
+    } else {
+      res.json(data.content || []);
+    }
   } catch (err) {
     next(err);
   }
@@ -858,7 +865,15 @@ app.patch('/api/vocab-files/:courseId/:id', authMiddleware, async (req, res, nex
     }
 
     const content = await storage.read(filePath);
-    const vocab = JSON.parse(content);
+    let data = JSON.parse(content);
+    let vocab = [];
+
+    // Backward compat check
+    if (Array.isArray(data)) {
+      vocab = data;
+    } else {
+      vocab = data.content;
+    }
 
     // Find item
     const itemIndex = vocab.findIndex(item => String(item.id) === itemId);
@@ -876,7 +891,13 @@ app.patch('/api/vocab-files/:courseId/:id', authMiddleware, async (req, res, nex
 
     vocab[itemIndex] = updatedItem;
 
-    await storage.write(filePath, vocab);
+    // Write back attempting to preserve format
+    if (Array.isArray(data)) {
+      await storage.write(filePath, vocab);
+    } else {
+      data.content = vocab;
+      await storage.write(filePath, data);
+    }
 
     res.json({ success: true, item: updatedItem });
   } catch (err) {
@@ -910,21 +931,34 @@ app.get('/api/courses', authMiddleware, async (req, res, next) => {
           const content = await storage.read(filePath);
           const data = JSON.parse(content);
 
+          let courseMeta = {
+            filename: file,
+            name: file.replace('.json', '').replace(/_/g, ' '),
+            size: 0,
+            pageSize: CONFIG.defaultPageSize
+          };
+
           if (Array.isArray(data)) {
-            // It's a course file
-            courses.push({
-              filename: file,
-              name: file.replace('.json', '').replace(/_/g, ' '), // Replace underscores with spaces for display
-              // We could store metadata inside the file too, but for now file name is key
-              size: data.length
-            });
+            courseMeta.size = data.length;
+          } else {
+            courseMeta.size = data.content?.length || 0;
+            if (data.metadata?.pageSize) {
+              courseMeta.pageSize = data.metadata.pageSize;
+            }
+            if (data.metadata?.order) {
+              courseMeta.order = data.metadata.order;
+            }
           }
+          courses.push(courseMeta);
         } catch (err) {
           console.error(`Error reading course file ${file}:`, err);
           // Skip invalid files
         }
       }
     }
+
+    // Sort courses by order
+    courses.sort((a, b) => (a.order || 0) - (b.order || 0));
 
     res.json(courses);
   } catch (err) {
@@ -958,15 +992,17 @@ app.post('/api/courses', authMiddleware, async (req, res, next) => {
       throw new AppError('Course with this name already exists', 409);
     }
 
-    // Prepare data with metadata if needed, but current schema is just the array for compatibility?
-    // Wait, previous implementation might have just stored the array. 
-    // Let's store just the array to maintain compatibility with "validateVocabList" check on read?
-    // Actually, storing just the array is simple.
-    // Ideally we store { meta: {}, data: [] } but let's stick to array for now or check previous implementation.
-    // Previous implementation: "await fs.writeFile(filepath, JSON.stringify(content, null, 2));"
-    // So it was just the array.
+    // New format: Object with metadata
+    const newCourseData = {
+      metadata: {
+        created: new Date().toISOString(),
+        name: name, // Original name
+        pageSize: parseInt(pageSize) || CONFIG.defaultPageSize
+      },
+      content: content
+    };
 
-    await storage.write(filePath, content);
+    await storage.write(filePath, newCourseData);
 
     res.status(201).json({ message: 'Course created', filename: safeFilename });
   } catch (err) {
@@ -989,7 +1025,84 @@ app.get('/api/courses/:id', authMiddleware, async (req, res, next) => {
     }
 
     const content = await storage.read(filePath);
-    res.json(JSON.parse(content));
+    const data = JSON.parse(content);
+
+    // Return backward compatible array? or full object?
+    // Frontend uses: .loadVocabFile from this? NO.
+    // Frontend uses /api/vocab-files.
+    // This endpoint seems unused or redundant? 
+    // Wait, let's check frontend usage. data-handler calls 'getCourses' (list)
+    // and 'getAll' -> api/vocab-files.
+    // 'server.js' defines it.
+    // I will return parsed content logic same as /vocab-files just in case.
+    if (Array.isArray(data)) {
+      res.json(data);
+    } else {
+      res.json(data.content || []);
+    }
+  } catch (err) {
+    next(err);
+  }
+});
+
+/**
+ * PUT /api/courses/:id
+ * Update course metadata
+ */
+app.put('/api/courses/:id', authMiddleware, async (req, res, next) => {
+  try {
+    const userEmail = sanitizeEmail(req.user.email);
+    const courseId = sanitizeFilename(`${req.params.id}.json`);
+    const filePath = `${userEmail}/${courseId}`;
+    const updates = sanitizeCourseUpdate(req.body);
+
+    if (!(await storage.exists(filePath))) {
+      throw new AppError('Course not found', 404);
+    }
+
+    // Read current data
+    const rawContent = await storage.read(filePath);
+    let data = JSON.parse(rawContent);
+
+    // Migrate if legacy array
+    if (Array.isArray(data)) {
+      data = {
+        metadata: {
+          created: new Date().toISOString(),
+          pageSize: CONFIG.defaultPageSize
+        },
+        content: data
+      };
+    }
+
+    // Update metadata
+    if (updates.pageSize) data.metadata.pageSize = updates.pageSize;
+    if (updates.order !== undefined) data.metadata.order = updates.order;
+    // name is handled separately via rename below, but we can store it too
+    if (updates.name) data.metadata.name = updates.name;
+
+    // Handle rename
+    if (updates.name) {
+      const newName = updates.name.replace(/\s+/g, '_');
+      const newFilename = sanitizeFilename(`${newName}.json`);
+      const newFilePath = `${userEmail}/${newFilename}`;
+
+      if (newFilename !== courseId) {
+        if (await storage.exists(newFilePath)) {
+          throw new AppError('Course with this name already exists', 409);
+        }
+        await storage.write(newFilePath, data);
+        await storage.delete(filePath);
+
+        res.json({ success: true, course: updates });
+        return;
+      }
+    }
+
+    // Write back (if no rename)
+    await storage.write(filePath, data);
+
+    res.json({ success: true, course: updates });
   } catch (err) {
     next(err);
   }
@@ -997,28 +1110,23 @@ app.get('/api/courses/:id', authMiddleware, async (req, res, next) => {
 
 /**
  * DELETE /api/courses/:id
-
-  const courses = await UserFileService.loadCourses(email);
-  const courseIndex = courses.findIndex(c => c.filename === `${courseId}.json`);
-
-  if (courseIndex === -1) {
-    throw new AppError('Course not found', 404);
-  }
-
-  const course = courses[courseIndex];
-
-  // Delete file (ignore errors if already deleted)
+ * Delete a course
+ */
+app.delete('/api/courses/:id', authMiddleware, async (req, res, next) => {
   try {
-    await UserFileService.deleteVocabFile(email, course.filename);
+    const userEmail = sanitizeEmail(req.user.email);
+    const courseId = sanitizeFilename(`${req.params.id}.json`);
+    const filePath = `${userEmail}/${courseId}`;
+
+    if (await storage.exists(filePath)) {
+      await storage.delete(filePath);
+    }
+    // Idempotent success
+    res.json({ success: true, message: 'Course deleted' });
   } catch (err) {
-    console.warn(`Could not delete file ${course.filename}:`, err.message);
+    next(err);
   }
-
-  courses.splice(courseIndex, 1);
-  await UserFileService.saveCourses(email, courses);
-
-  res.json({ success: true, message: `Course '${course.name}' deleted` });
-}));
+});
 
 // ===========================================
 // Snapshot Routes

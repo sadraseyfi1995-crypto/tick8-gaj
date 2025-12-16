@@ -15,6 +15,7 @@ export class DataHandlerService {
   public data: VocabComponentModel[] = [];
   public data$ = new BehaviorSubject<VocabComponentModel[]>([]);
   public courses: ICourse[] = [];
+  public courses$ = new BehaviorSubject<ICourse[]>([]);
 
   constructor(private http: HttpClient,
     private route: ActivatedRoute,
@@ -78,7 +79,19 @@ export class DataHandlerService {
   }
 
   getCourses(): Observable<any[]> {
-    return this.http.get<any[]>('https://tick8-api-616079701914.europe-west1.run.app/api/courses');
+    return this.http.get<any[]>(`https://tick8-api-616079701914.europe-west1.run.app/api/courses?t=${new Date().getTime()}`);
+  }
+
+  refreshCourses() {
+    this.getCourses().subscribe(courses => {
+      this.courses = courses.map((c: any) => ({
+        id: c.filename.replace('.json', ''),
+        name: c.name,
+        order: c.order || 0,
+        pageSize: c.pageSize || 15
+      }));
+      this.courses$.next(this.courses);
+    });
   }
 
   deleteCourse(id: string): Observable<any> {

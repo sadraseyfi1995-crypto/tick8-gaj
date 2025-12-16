@@ -2,36 +2,45 @@
   (click)="toggleFlip()" (keydown)="onCardKeydown($event)" role="button" [attr.aria-pressed]="flipped"
   aria-label="Vocabulary card. Press to flip to see answer.">
   <!-- Front Side -->
+  <!-- Front Side -->
   <div class="side front">
     <button class="copy-btn" (click)="$event.stopPropagation(); copyCard()" title="Copy card as JSON"
       aria-label="Copy card">
       📋
     </button>
-    <div class="word">{{ vocab.word }}</div>
+    <div class="card-scroll-area">
+      <div class="card-center-content">
+        <div class="word">{{ vocab.word }}</div>
 
-    <div class="boxes">
-      <button *ngFor="let s of vocab.states; let i = index" class="box" [attr.data-state]="s"
-        (click)="$event.stopPropagation(); cycleBox(i)" (keydown)="$event.stopPropagation(); onBoxKeydown($event, i)"
-        role="checkbox" [attr.aria-checked]="getAriaChecked(s)" [attr.aria-label]="getAriaLabel(i, s)"
-        title="Cycle state">
-        <ng-container [ngSwitch]="s">
-          <ng-container *ngSwitchCase="'tick'">
-            <ng-container *ngTemplateOutlet="tickIcon"></ng-container>
-          </ng-container>
-          <ng-container *ngSwitchCase="'cross'">
-            <ng-container *ngTemplateOutlet="crossIcon"></ng-container>
-          </ng-container>
-          <ng-container *ngSwitchCase="'boost'">
-            <ng-container *ngTemplateOutlet="boostIcon"></ng-container>
-          </ng-container>
-        </ng-container>
-      </button>
+        <div class="boxes">
+          <button *ngFor="let s of vocab.states; let i = index" class="box" [attr.data-state]="s"
+            (click)="$event.stopPropagation(); cycleBox(i)"
+            (keydown)="$event.stopPropagation(); onBoxKeydown($event, i)" role="checkbox"
+            [attr.aria-checked]="getAriaChecked(s)" [attr.aria-label]="getAriaLabel(i, s)" title="Cycle state">
+            <ng-container [ngSwitch]="s">
+              <ng-container *ngSwitchCase="'tick'">
+                <ng-container *ngTemplateOutlet="tickIcon"></ng-container>
+              </ng-container>
+              <ng-container *ngSwitchCase="'cross'">
+                <ng-container *ngTemplateOutlet="crossIcon"></ng-container>
+              </ng-container>
+              <ng-container *ngSwitchCase="'boost'">
+                <ng-container *ngTemplateOutlet="boostIcon"></ng-container>
+              </ng-container>
+            </ng-container>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Back Side -->
   <div class="side back">
-    <div class="answer">{{ vocab.answer }}</div>
+    <div class="card-scroll-area">
+      <div class="card-center-content">
+        <div class="answer">{{ vocab.answer }}</div>
+      </div>
+    </div>
   </div>
 </div>
 

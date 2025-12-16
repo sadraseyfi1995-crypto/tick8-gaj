@@ -25,14 +25,13 @@ export class SidebarComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.dataHandler.getCourses().subscribe(courses => {
-      this.dataHandler.courses = courses.map((c: any) => ({
-        id: c.filename.replace('.json', ''),
-        name: c.name,
-        order: 0, // Default order if not present
-        pageSize: c.pageSize || 15 // Use backend pageSize or default to 15
-      }));
-    });
+    // Subscribe to the shared course list
+    this.dataHandler.courses$.subscribe(); // Ensure subscription is active if needed, but we rely on dataHandler.courses array which is updated?
+    // Actually, we should bind to dataHandler.courses directly or use the subject if we want to be reactive.
+    // The previous code mapped courses in the component. dataHandler.refreshCourses() does mapping now.
+
+    // Trigger initial load
+    this.dataHandler.refreshCourses();
   }
 
   setCourse(courseId: string) {

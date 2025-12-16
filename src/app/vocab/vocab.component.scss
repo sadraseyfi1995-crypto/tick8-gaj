@@ -26,12 +26,45 @@
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     background: #fff;
+    // Removed flex centering here to allow scroll area to take full space
+    padding: 0; // Move padding to inner content
+    box-sizing: border-box;
+    overflow: hidden; // Prevent border radius clipping issues
+  }
+
+  .card-scroll-area {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 12px; // Original padding moved here
+    box-sizing: border-box;
+
+    // Scrollbar styling for a nice UI
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+  }
+
+  .card-center-content {
+    margin: auto 0; // Centers vertically if content is small, allows scroll if large
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 12px;
-    box-sizing: border-box;
   }
 
   .front {

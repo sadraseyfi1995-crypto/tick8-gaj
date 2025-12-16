@@ -28,11 +28,10 @@ export class CourseManagementComponent implements OnInit {
   }
 
   loadCourses() {
-    this.dataHandler.getCourses().subscribe(courses => {
-      this.courses = courses.map(c => ({
-        ...c,
-        id: c.filename.replace('.json', '') // Ensure ID is available
-      }));
+    this.dataHandler.refreshCourses();
+    // Subscribe to the subject to update local view
+    this.dataHandler.courses$.subscribe(courses => {
+      this.courses = courses;
     });
   }
 
