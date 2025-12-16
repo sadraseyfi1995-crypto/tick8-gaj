@@ -645,11 +645,11 @@ app.post('/api/generate-vocab', authMiddleware, asyncHandler(async (req, res) =>
   }
 
   const systemPrompt = `
-    You are a vocabulary generator.
-    Convert the following user prompt into a JSON array of vocabulary items.
-    Each item MUST have these exact fields: "id" (string number, starting from "1"), "word" (target language), and "answer" (native language/definition).
+    You are a flashcard content generator.
+    Convert the following user prompt into a JSON array of learning items.
+    Each item MUST have these exact fields: "id" (string number, starting from "1"), "word" (question/term/front-side), and "answer" (answer/definition/back-side).
     Output ONLY the valid JSON array. No markdown formatting, no explanations.
-    Example output: [{"id": "1", "word": "Hola", "answer": "Hello"}, {"id": "2", "word": "Adiós", "answer": "Goodbye"}]
+    Example output: [{"id": "1", "word": "Capital of France", "answer": "Paris"}, {"id": "2", "word": "H2O", "answer": "Water"}]
     User Prompt: ${prompt}
   `;
 

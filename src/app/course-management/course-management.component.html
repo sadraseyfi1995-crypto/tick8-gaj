@@ -9,17 +9,22 @@
                 style="width: 100px;">
         </div>
         <textarea [(ngModel)]="newCourse.content" class="form-control" rows="5"
-            placeholder='[{"id": "1", "word": "Hallo", "answer": "Hello"}, {"id": "2", "word": "Danke", "answer": "Thank you"}]'></textarea>
+            placeholder='[{"id": "1", "word": "Question", "answer": "Answer"}, {"id": "2", "word": "Term", "answer": "Definition"}]'></textarea>
         <small class="hint">JSON array with id, word, and answer fields</small>
         <button (click)="createCourse()" class="btn btn-success">Create Course</button>
 
         <div class="ai-section" style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ccc;">
             <h4>Or Generate with AI</h4>
             <div class="form-row">
-                <input type="text" [(ngModel)]="aiPrompt" placeholder="E.g., '10 common spanish fruits'"
+                <input type="text" [(ngModel)]="aiPrompt"
+                    placeholder="E.g., 'Capital cities of Europe' or 'JavaScript interview questions'"
                     class="form-control" (keyup.enter)="generateFromAI()">
                 <button (click)="generateFromAI()" class="btn btn-info" [disabled]="isGenerating">
                     {{ isGenerating ? 'Generating...' : 'Generate Content' }}
+                </button>
+                <button (click)="copyExternalPrompt(aiPrompt)" class="btn btn-secondary"
+                    title="Copy prompt to use in ChatGPT, Claude, etc.">
+                    Copy for External AI
                 </button>
             </div>
         </div>
@@ -57,7 +62,7 @@
                         <div class="append-container">
                             <h4>Append to {{course.name}}</h4>
                             <textarea [(ngModel)]="appendContent[course.id]" class="form-control" rows="5"
-                                placeholder='[{"id": "1", "word": "Bitte", "answer": "Please"}, {"id": "2", "word": "Tschüss", "answer": "Bye"}]'></textarea>
+                                placeholder='[{"id": "1", "word": "Question", "answer": "Answer"}, {"id": "2", "word": "Term", "answer": "Definition"}]'></textarea>
                             <small class="hint">JSON array with id, word, and answer fields</small>
                             <button (click)="submitAppend(course)" class="btn btn-success">Submit Append</button>
 
@@ -65,11 +70,16 @@
                                 style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee;">
                                 <h6>Or Generate Append Content with AI</h6>
                                 <div class="form-row">
-                                    <input type="text" [(ngModel)]="aiAppendPrompt" placeholder="E.g., '5 extra verbs'"
-                                        class="form-control" (keyup.enter)="generateAppendFromAI(course)">
+                                    <input type="text" [(ngModel)]="aiAppendPrompt"
+                                        placeholder="E.g., '5 important dates in WWII'" class="form-control"
+                                        (keyup.enter)="generateAppendFromAI(course)">
                                     <button (click)="generateAppendFromAI(course)" class="btn btn-info"
                                         [disabled]="isGenerating">
                                         {{ isGenerating ? 'Generating...' : 'Generate' }}
+                                    </button>
+                                    <button (click)="copyExternalPrompt(aiAppendPrompt)" class="btn btn-secondary"
+                                        title="Copy prompt to use in ChatGPT, Claude, etc.">
+                                        Copy for External AI
                                     </button>
                                 </div>
                             </div>

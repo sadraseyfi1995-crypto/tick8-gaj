@@ -91,6 +91,31 @@ export class CourseManagementComponent implements OnInit {
     });
   }
 
+
+
+  copyExternalPrompt(userPrompt: string) {
+    if (!userPrompt || !userPrompt.trim()) {
+      this.messageService.add({ severity: 'warn', summary: 'Warning', detail: 'Please enter a prompt first' });
+      return;
+    }
+
+    const template = `
+You are a flashcard content generator.
+Convert the following user prompt into a JSON array of learning items.
+Each item MUST have these exact fields: "id" (string number, starting from "1"), "word" (question/term/front-side), and "answer" (answer/definition/back-side).
+Output ONLY the valid JSON array. No markdown formatting, no explanations.
+Example output: [{"id": "1", "word": "Capital of France", "answer": "Paris"}, {"id": "2", "word": "H2O", "answer": "Water"}]
+User Prompt: ${userPrompt}
+    `.trim();
+
+    navigator.clipboard.writeText(template).then(() => {
+      this.messageService.add({ severity: 'success', summary: 'Copied', detail: 'Prompt copied to clipboard for use in other AI tools' });
+    }).catch(err => {
+      console.error('Failed to copy', err);
+      this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Failed to copy to clipboard' });
+    });
+  }
+
   createCourse() {
     try {
       const content = JSON.parse(this.newCourse.content);
