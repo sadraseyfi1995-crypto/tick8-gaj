@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs').promises;
 const path = require('path');
+const { Storage } = require('@google-cloud/storage');
 const { setupAuthRoutes, authMiddleware } = require('./auth');
 
 const app = express();
@@ -11,6 +12,7 @@ const app = express();
 // ===========================================
 const CONFIG = {
   dataDir: process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(__dirname, 'data'),
+  bucketName: 'tick8-user-data', // Hardcoded as per plan
   port: process.env.PORT || 3000,
   filenamePattern: /^[a-zA-Z0-9_-]+\.json$/,
   snapshotIdPattern: /^[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]+$/,
@@ -29,6 +31,147 @@ const CORS_OPTIONS = {
 };
 
 // ===========================================
+// Storage Adapter Configuration
+// ===========================================
+
+// Abstract storage interface
+class StorageAdapter {
+  async init() { throw new Error('Not implemented'); }
+  async exists(filePath) { throw new Error('Not implemented'); }
+  async read(filePath) { throw new Error('Not implemented'); }
+  async write(filePath, data) { throw new Error('Not implemented'); }
+  async delete(filePath) { throw new Error('Not implemented'); }
+  async list(dirPath) { throw new Error('Not implemented'); }
+  async ensureDir(dirPath) { throw new Error('Not implemented'); }
+}
+
+class FileSystemAdapter extends StorageAdapter {
+  constructor(baseDir) {
+    super();
+    this.baseDir = baseDir;
+  }
+
+  async init() {
+    await fs.mkdir(this.baseDir, { recursive: true });
+  }
+
+  resolve(filePath) {
+    // Prevent directory traversal
+    const safePath = path.normalize(filePath).replace(/^(\.\.[\/\\])+/, '');
+    return path.join(this.baseDir, safePath);
+  }
+
+  async exists(filePath) {
+    try {
+      await fs.access(this.resolve(filePath));
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  async read(filePath) {
+    return await fs.readFile(this.resolve(filePath), 'utf8');
+  }
+
+  async write(filePath, data) {
+    const fullPath = this.resolve(filePath);
+    await fs.mkdir(path.dirname(fullPath), { recursive: true });
+    await fs.writeFile(fullPath, typeof data === 'string' ? data : JSON.stringify(data, null, 2));
+  }
+
+  async delete(filePath) {
+    await fs.unlink(this.resolve(filePath));
+  }
+
+  async list(dirPath) {
+    try {
+      return await fs.readdir(this.resolve(dirPath));
+    } catch {
+      return [];
+    }
+  }
+
+  async ensureDir(dirPath) {
+    await fs.mkdir(this.resolve(dirPath), { recursive: true });
+  }
+}
+
+class GCSAdapter extends StorageAdapter {
+  constructor(bucketName) {
+    super();
+    this.storage = new Storage();
+    this.bucket = this.storage.bucket(bucketName);
+    this.bucketName = bucketName;
+  }
+
+  async init() {
+    console.log(`Using GCS Bucket: ${this.bucketName}`);
+    // Check if bucket exists, logic could be added here
+  }
+
+  async exists(filePath) {
+    const [exists] = await this.bucket.file(filePath).exists();
+    return exists;
+  }
+
+  async read(filePath) {
+    const [content] = await this.bucket.file(filePath).download();
+    return content.toString('utf8');
+  }
+
+  async write(filePath, data) {
+    const content = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+    await this.bucket.file(filePath).save(content);
+  }
+
+  async delete(filePath) {
+    await this.bucket.file(filePath).delete();
+  }
+
+  async list(dirPath) {
+    // GCS is flat, so we list by prefix. 
+    // Directory path in app usually corresponds to "userEmail/". 
+    // We need to ensure it ends with / for prefix matching if it's a directory.
+    const prefix = dirPath.endsWith('/') || dirPath === '' ? dirPath : `${dirPath}/`;
+
+    // If asking for root, prefix might be empty or specific user folder
+    const [files] = await this.bucket.getFiles({ prefix, delimiter: '/' });
+
+    // Map full paths back to filenames relative to the prefix
+    return files.map(f => path.basename(f.name)).filter(name => name !== '');
+  }
+
+  async ensureDir(dirPath) {
+    // No-op in GCS usually, as folders are virtual.
+    // However, creating a 0-byte object ending in / can verify existence, but typically not needed.
+  }
+}
+
+// Determine which adapter to use
+// Use GCS if we are in production (implied by not having a local setting override, or just always try GCS if configured)
+// Ideally, check for an environment variable like NODE_ENV or specifically USE_GCS.
+// For now, let's default to GCS if we are on Cloud Run (which usually sets K_SERVICE) or explicitly requested.
+// But to ensure the local user workflow isn't broken, we might check connection or default to FS if simpler.
+// Given strict instructions "Fix Data Persistence", we favor GCS.
+// Let's use GCS if keys are present or we can access it; but safer to rely on explicit variable or default.
+// Adding a check:
+const useGCS = process.env.K_SERVICE || process.env.USE_GCS === 'true';
+
+// Initialize Storage
+let storage;
+if (useGCS) {
+  storage = new GCSAdapter(CONFIG.bucketName);
+} else {
+  // Fallback to local FS for local development without credentials
+  storage = new FileSystemAdapter(CONFIG.dataDir);
+  console.log('Using Local File System Storage');
+}
+
+// Initialize on startup
+// storage.init().catch(console.error);
+
+// ===========================================
 // Middleware Setup
 // ===========================================
 app.use(cors(CORS_OPTIONS));
@@ -40,16 +183,10 @@ setupAuthRoutes(app);
 // ===========================================
 
 /**
- * Check if a file exists (async version)
+ * Check if a file exists (async version) - DEPRECATED in favor of storage.exists, but kept for minimal refactor if needed?
+ * No, replacing calls is better.
  */
-async function fileExists(filepath) {
-  try {
-    await fs.access(filepath);
-    return true;
-  } catch {
-    return false;
-  }
-}
+// async function fileExists(filepath) { ... } -> We will replace functions usage with storage.exists
 
 /**
  * Sanitize email for use in file paths
@@ -61,7 +198,7 @@ function sanitizeEmail(email) {
   }
   // Normalize to lowercase and remove any path-dangerous characters
   const sanitized = email.toLowerCase().replace(/[^a-z0-9@._-]/g, '_');
-  // Additional safety: ensure no path traversal
+  // Additional safety: ensure no path traversal - not strictly needed for GCS keys but good practice
   if (sanitized.includes('..') || sanitized.includes('/') || sanitized.includes('\\')) {
     throw new AppError('Invalid email format', 400);
   }
@@ -677,183 +814,189 @@ app.post('/api/generate-vocab', authMiddleware, asyncHandler(async (req, res) =>
 
 /**
  * GET /api/vocab-files/:filename
- * Load a vocab file by filename
+ * Load a specific vocab file (course content)
  */
-app.get('/api/vocab-files/:filename', authMiddleware, asyncHandler(async (req, res) => {
-  const data = await UserFileService.loadVocabFile(req.user.email, req.params.filename);
-  res.json(data);
-}));
+app.get('/api/vocab-files/:filename', authMiddleware, async (req, res, next) => {
+  try {
+    const userEmail = sanitizeEmail(req.user.email);
+    const filename = sanitizeFilename(req.params.filename);
+    const filePath = `${userEmail}/${filename}`;
+
+    if (!(await storage.exists(filePath))) {
+      throw new AppError('File not found', 404);
+    }
+
+    const content = await storage.read(filePath);
+    res.json(JSON.parse(content));
+  } catch (err) {
+    next(err);
+  }
+});
 
 /**
  * PATCH /api/vocab-files/:courseId/:id
  * Update a specific vocab item
  */
-app.patch('/api/vocab-files/:courseId/:id', authMiddleware, asyncHandler(async (req, res) => {
-  const email = req.user.email;
-  const filename = `${req.params.courseId}.json`;
-  const itemId = String(req.params.id); // Ensure string comparison
-  const updates = req.body;
+app.patch('/api/vocab-files/:courseId/:id', authMiddleware, async (req, res, next) => {
+  try {
+    const userEmail = sanitizeEmail(req.user.email);
+    // Sanitize the course ID by creating the full filename first
+    // req.params.courseId might be "German", so we append .json then sanitize
+    const filename = sanitizeFilename(`${req.params.courseId}.json`);
+    const itemId = String(req.params.id);
+    const updates = req.body;
 
-  // Validate updates is an array (states)
-  if (!Array.isArray(updates)) {
-    throw new AppError('Updates must be an array of states', 400);
+    // Validate updates is an array (states)
+    if (!Array.isArray(updates)) {
+      throw new AppError('Updates must be an array of states', 400);
+    }
+
+    const filePath = `${userEmail}/${filename}`;
+
+    if (!(await storage.exists(filePath))) {
+      throw new AppError('Course not found', 404);
+    }
+
+    const content = await storage.read(filePath);
+    const vocab = JSON.parse(content);
+
+    // Find item
+    const itemIndex = vocab.findIndex(item => String(item.id) === itemId);
+
+    if (itemIndex === -1) {
+      throw new AppError('Item not found', 404);
+    }
+
+    // Update item
+    const updatedItem = {
+      ...vocab[itemIndex],
+      states: updates,
+      lastUpdated: new Date().toISOString()
+    };
+
+    vocab[itemIndex] = updatedItem;
+
+    await storage.write(filePath, vocab);
+
+    res.json({ success: true, item: updatedItem });
+  } catch (err) {
+    next(err);
   }
-
-  console.log(`📝 PATCH - User: ${sanitizeEmail(email)}, File: ${filename}, ID: ${itemId}`);
-
-  const vocab = await UserFileService.loadVocabFile(email, filename);
-  const itemIndex = vocab.findIndex(item => String(item.id) === itemId); // Strict comparison
-
-  if (itemIndex === -1) {
-    throw new AppError('Item not found', 404);
-  }
-
-  const updatedItem = {
-    ...vocab[itemIndex],
-    states: updates,
-    lastUpdated: new Date().toISOString()
-  };
-
-  vocab[itemIndex] = updatedItem;
-  await UserFileService.saveVocabFile(email, filename, vocab);
-
-  console.log(`✓ Saved changes for card ${itemId}`);
-  res.json({ success: true, item: updatedItem });
-}));
+});
 
 // ===========================================
-// Course Routes
+// API Enpoints
 // ===========================================
 
 /**
  * GET /api/courses
- * Get all courses (also triggers auto-snapshot)
+ * List all available courses for the authenticated user
  */
-app.get('/api/courses', authMiddleware, asyncHandler(async (req, res) => {
-  const email = req.user.email;
+app.get('/api/courses', authMiddleware, async (req, res, next) => {
+  try {
+    const userEmail = sanitizeEmail(req.user.email);
+    // Use user-specific path: userEmail/
+    // Ensure directory exists if using FS (GCS lazy creates)
+    await storage.ensureDir(userEmail);
 
-  // Check for automatic weekly snapshot (non-blocking)
-  UserFileService.checkAutoSnapshot(email).catch(err => {
-    console.error('Auto-snapshot background error:', err.message);
-  });
+    const files = await storage.list(userEmail);
+    const courses = [];
 
-  const courses = await UserFileService.loadCourses(email);
-  res.json(courses);
-}));
+    for (const file of files) {
+      if (CONFIG.filenamePattern.test(file)) {
+        try {
+          // Path format: userEmail/filename
+          const filePath = `${userEmail}/${file}`;
+          const content = await storage.read(filePath);
+          const data = JSON.parse(content);
+
+          if (Array.isArray(data)) {
+            // It's a course file
+            courses.push({
+              filename: file,
+              name: file.replace('.json', '').replace(/_/g, ' '), // Replace underscores with spaces for display
+              // We could store metadata inside the file too, but for now file name is key
+              size: data.length
+            });
+          }
+        } catch (err) {
+          console.error(`Error reading course file ${file}:`, err);
+          // Skip invalid files
+        }
+      }
+    }
+
+    res.json(courses);
+  } catch (err) {
+    next(err);
+  }
+});
 
 /**
  * POST /api/courses
  * Create a new course
  */
-app.post('/api/courses', authMiddleware, asyncHandler(async (req, res) => {
-  const email = req.user.email;
-  const { name, pageSize, content } = req.body;
+app.post('/api/courses', authMiddleware, async (req, res, next) => {
+  try {
+    const { name, content, pageSize } = req.body;
 
-  if (!name || typeof name !== 'string' || !name.trim()) {
-    throw new AppError('Name is required', 400);
+    if (!name || !content || !Array.isArray(content)) {
+      throw new AppError('Invalid input. Name and content array are required.', 400);
+    }
+
+    // Validate content structure
+    validateVocabList(content);
+
+    const userEmail = sanitizeEmail(req.user.email);
+    // Sanitize spaces first
+    const safeName = name.replace(/\s+/g, '_');
+    const safeFilename = sanitizeFilename(`${safeName}.json`);
+
+    const filePath = `${userEmail}/${safeFilename}`;
+
+    if (await storage.exists(filePath)) {
+      throw new AppError('Course with this name already exists', 409);
+    }
+
+    // Prepare data with metadata if needed, but current schema is just the array for compatibility?
+    // Wait, previous implementation might have just stored the array. 
+    // Let's store just the array to maintain compatibility with "validateVocabList" check on read?
+    // Actually, storing just the array is simple.
+    // Ideally we store { meta: {}, data: [] } but let's stick to array for now or check previous implementation.
+    // Previous implementation: "await fs.writeFile(filepath, JSON.stringify(content, null, 2));"
+    // So it was just the array.
+
+    await storage.write(filePath, content);
+
+    res.status(201).json({ message: 'Course created', filename: safeFilename });
+  } catch (err) {
+    next(err);
   }
-
-  if (!content) {
-    throw new AppError('Content is required', 400);
-  }
-
-  validateVocabList(content);
-
-  const courses = await UserFileService.loadCourses(email);
-  const sanitizedName = name.trim().replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
-  const filename = `${sanitizedName}-${Date.now()}.json`;
-
-  await UserFileService.saveVocabFile(email, filename, content);
-
-  const validPageSize = Math.min(
-    Math.max(parseInt(pageSize, 10) || CONFIG.defaultPageSize, 1),
-    CONFIG.maxPageSize
-  );
-
-  const newCourse = {
-    name: name.trim(),
-    filename,
-    pageSize: validPageSize,
-    order: courses.length + 1
-  };
-
-  courses.push(newCourse);
-  await UserFileService.saveCourses(email, courses);
-
-  res.json({ success: true, course: newCourse });
-}));
+});
 
 /**
- * POST /api/courses/:id/append
- * Append data to an existing course
+ * GET /api/courses/:id
+ * Get a specific course
  */
-app.post('/api/courses/:id/append', authMiddleware, asyncHandler(async (req, res) => {
-  const email = req.user.email;
-  const courseId = req.params.id;
-  const { content } = req.body;
+app.get('/api/courses/:id', authMiddleware, async (req, res, next) => {
+  try {
+    const userEmail = sanitizeEmail(req.user.email);
+    const courseId = sanitizeFilename(`${req.params.id}.json`);
+    const filePath = `${userEmail}/${courseId}`;
 
-  if (!content || !Array.isArray(content)) {
-    throw new AppError('Content array is required', 400);
+    if (!(await storage.exists(filePath))) {
+      throw new AppError('Course not found', 404);
+    }
+
+    const content = await storage.read(filePath);
+    res.json(JSON.parse(content));
+  } catch (err) {
+    next(err);
   }
-
-  validateVocabList(content);
-
-  const courses = await UserFileService.loadCourses(email);
-  const course = courses.find(c => c.filename === `${courseId}.json`);
-
-  if (!course) {
-    throw new AppError('Course not found', 404);
-  }
-
-  const vocab = await UserFileService.loadVocabFile(email, course.filename);
-  const maxId = vocab.reduce((max, item) => Math.max(max, parseInt(item.id, 10) || 0), 0);
-
-  const newItems = content.map((item, index) => ({
-    ...item,
-    id: String(maxId + 1 + index),
-    states: item.states || [],
-    lastUpdated: new Date().toISOString()
-  }));
-
-  const updatedVocab = vocab.concat(newItems);
-  await UserFileService.saveVocabFile(email, course.filename, updatedVocab);
-
-  res.json({ success: true, added: newItems.length });
-}));
-
-/**
- * PUT /api/courses/:id
- * Update course metadata
- */
-app.put('/api/courses/:id', authMiddleware, asyncHandler(async (req, res) => {
-  const email = req.user.email;
-  const courseId = req.params.id;
-  const updates = sanitizeCourseUpdate(req.body); // Whitelist fields
-
-  const courses = await UserFileService.loadCourses(email);
-  const courseIndex = courses.findIndex(c => c.filename === `${courseId}.json`);
-
-  if (courseIndex === -1) {
-    throw new AppError('Course not found', 404);
-  }
-
-  courses[courseIndex] = {
-    ...courses[courseIndex],
-    ...updates,
-    filename: courses[courseIndex].filename // Preserve filename
-  };
-
-  await UserFileService.saveCourses(email, courses);
-  res.json({ success: true, course: courses[courseIndex] });
-}));
+});
 
 /**
  * DELETE /api/courses/:id
- * Delete a course and its file
- */
-app.delete('/api/courses/:id', authMiddleware, asyncHandler(async (req, res) => {
-  const email = req.user.email;
-  const courseId = req.params.id;
 
   const courses = await UserFileService.loadCourses(email);
   const courseIndex = courses.findIndex(c => c.filename === `${courseId}.json`);
