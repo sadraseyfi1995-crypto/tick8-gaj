@@ -24,7 +24,15 @@ export class AppComponent implements OnInit {
             sessionStorage.setItem('lastDecayTrigger', today);
           }
         },
-        error: (err) => console.error('Daily maintenance failed', err)
+        error: (err) => {
+          console.error('Daily maintenance failed', err);
+          // If maintenance fails (likely auth/network issue), ensure we don't get stuck
+          if (err.status === 401 || err.status === 0) {
+            // Token might be stale or network blocked, better to re-auth
+            console.warn('Auto-logout triggers due to maintenance failure');
+            this.authService.logout();
+          }
+        }
       });
     }
   }
