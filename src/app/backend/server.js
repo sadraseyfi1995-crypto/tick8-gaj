@@ -175,6 +175,16 @@ if (useGCS) {
 // Middleware Setup
 // ===========================================
 app.use(cors(CORS_OPTIONS));
+// Enable pre-flight for all routes
+app.options(/.*/, cors(CORS_OPTIONS));
+
+// Security headers for Google Auth (COOP/COEP)
+app.use((req, res, next) => {
+  res.setHeader('Cross-Origin-Opener-Policy', 'unsafe-none');
+  res.setHeader('Cross-Origin-Embedder-Policy', 'unsafe-none');
+  next();
+});
+
 app.use(express.json({ limit: '10mb' }));
 setupAuthRoutes(app);
 
@@ -293,100 +303,19 @@ class AppError extends Error {
 // UserFileService - Handles per-user data storage
 // ===========================================
 class UserFileService {
-  // Track directories being initialized to prevent race conditions
-  static initializingUsers = new Map();
-
   /**
-   * Get user data directory path
+   * Get user data directory path (relative to storage root)
    */
   static getUserDataDir(email) {
     const sanitizedEmail = sanitizeEmail(email);
-    return path.join(CONFIG.dataDir, 'users', sanitizedEmail);
+    return `users/${sanitizedEmail}`;
   }
 
   /**
-   * Get user state file path
+   * Get user state file path (relative)
    */
   static getStateFilePath(email) {
-    return path.join(this.getUserDataDir(email), 'server_state.json');
-  }
-
-  /**
-   * Ensure user data directory exists, copy default data if new user
-   * Uses locking to prevent race conditions
-   */
-  static async ensureUserDataDir(email) {
-    const sanitizedEmail = sanitizeEmail(email);
-    const userDir = this.getUserDataDir(email);
-
-    // Check if already initializing (race condition prevention)
-    if (this.initializingUsers.has(sanitizedEmail)) {
-      await this.initializingUsers.get(sanitizedEmail);
-      return;
-    }
-
-    // Check if directory already exists
-    if (await fileExists(userDir)) {
-      return;
-    }
-
-    // Create a promise for initialization and store it
-    const initPromise = this._initializeUserDir(email, userDir);
-    this.initializingUsers.set(sanitizedEmail, initPromise);
-
-    try {
-      await initPromise;
-    } finally {
-      this.initializingUsers.delete(sanitizedEmail);
-    }
-  }
-
-  /**
-   * Internal: Initialize user directory
-   */
-  static async _initializeUserDir(email, userDir) {
-    await fs.mkdir(userDir, { recursive: true });
-
-    const defaultCoursesPath = path.join(CONFIG.dataDir, 'courses.json');
-    if (!(await fileExists(defaultCoursesPath))) {
-      // No default courses, create empty courses file
-      await this.atomicWrite(path.join(userDir, 'courses.json'), []);
-      return;
-    }
-
-    const courses = JSON.parse(await fs.readFile(defaultCoursesPath, 'utf-8'));
-    await this.atomicWrite(path.join(userDir, 'courses.json'), courses);
-
-    // Copy each course file
-    const copyPromises = courses.map(async (course) => {
-      const srcPath = path.join(CONFIG.dataDir, course.filename);
-      if (await fileExists(srcPath)) {
-        const destPath = path.join(userDir, course.filename);
-        await fs.copyFile(srcPath, destPath);
-      }
-    });
-
-    await Promise.all(copyPromises);
-  }
-
-  /**
-   * Atomic write with cleanup on failure
-   */
-  static async atomicWrite(filepath, data) {
-    const tmpPath = `${filepath}.tmp.${Date.now()}`;
-
-    try {
-      await fs.writeFile(tmpPath, JSON.stringify(data, null, 2), 'utf-8');
-      await fs.rename(tmpPath, filepath);
-    } catch (err) {
-      // Clean up temp file on failure
-      try {
-        await fs.unlink(tmpPath);
-      } catch {
-        // Ignore cleanup errors
-      }
-      throw err;
-    }
+    return `${this.getUserDataDir(email)}/server_state.json`;
   }
 
   /**
@@ -394,10 +323,10 @@ class UserFileService {
    */
   static async loadState(email) {
     const stateFile = this.getStateFilePath(email);
-    if (!(await fileExists(stateFile))) {
+    if (!(await storage.exists(stateFile))) {
       return {};
     }
-    const raw = await fs.readFile(stateFile, 'utf-8');
+    const raw = await storage.read(stateFile);
     return JSON.parse(raw);
   }
 
@@ -405,59 +334,109 @@ class UserFileService {
    * Save user state
    */
   static async saveState(email, state) {
-    await this.ensureUserDataDir(email);
     const stateFile = this.getStateFilePath(email);
-    await this.atomicWrite(stateFile, state);
+    await storage.write(stateFile, state);
   }
 
   /**
-   * Load courses for a user
+   * Load courses for a user (scans directory)
    */
   static async loadCourses(email) {
-    await this.ensureUserDataDir(email);
-    const filepath = path.join(this.getUserDataDir(email), 'courses.json');
+    const userDir = this.getUserDataDir(email);
 
-    if (!(await fileExists(filepath))) {
-      return [];
+    // Ensure directory exists (mostly for FS adapter)
+    await storage.ensureDir(userDir);
+
+    const files = await storage.list(userDir);
+    const courses = [];
+
+    for (const file of files) {
+      if (CONFIG.filenamePattern.test(file)) {
+        try {
+          const filePath = `${userDir}/${file}`;
+          const content = await storage.read(filePath);
+          const data = JSON.parse(content);
+
+          let courseMeta = {
+            filename: file,
+            name: file.replace('.json', '').replace(/_/g, ' '),
+            size: 0,
+            pageSize: CONFIG.defaultPageSize
+          };
+
+          if (Array.isArray(data)) {
+            courseMeta.size = data.length;
+          } else {
+            courseMeta.size = data.content?.length || 0;
+            if (data.metadata?.pageSize) {
+              courseMeta.pageSize = data.metadata.pageSize;
+            }
+            if (data.metadata?.order) {
+              courseMeta.order = data.metadata.order;
+            }
+            if (data.metadata?.name) {
+              courseMeta.name = data.metadata.name;
+            }
+          }
+          courses.push(courseMeta);
+        } catch (err) {
+          console.error(`Error reading course file ${file}:`, err.message);
+        }
+      }
     }
-
-    const raw = await fs.readFile(filepath, 'utf-8');
-    return JSON.parse(raw);
-  }
-
-  /**
-   * Save courses for a user
-   */
-  static async saveCourses(email, courses) {
-    await this.ensureUserDataDir(email);
-    const filepath = path.join(this.getUserDataDir(email), 'courses.json');
-    await this.atomicWrite(filepath, courses);
+    return courses;
   }
 
   /**
    * Load vocab file for a user
    */
   static async loadVocabFile(email, filename) {
-    await this.ensureUserDataDir(email);
     const sanitized = sanitizeFilename(filename);
-    const filepath = path.join(this.getUserDataDir(email), sanitized);
+    const filepath = `${this.getUserDataDir(email)}/${sanitized}`;
 
-    if (!(await fileExists(filepath))) {
+    if (!(await storage.exists(filepath))) {
       throw new AppError('File not found', 404);
     }
 
-    const raw = await fs.readFile(filepath, 'utf-8');
-    return JSON.parse(raw);
+    const raw = await storage.read(filepath);
+    const data = JSON.parse(raw);
+
+    // Return the full object if it's the new format, OR wrap legacy array
+    if (Array.isArray(data)) {
+      // Convert to new format structure on the fly for consistency in services?
+      // Actually DecayService expects an array or needs to handle object.
+      // Let's standardise on returning the content array for processing?
+      // No, DecayService.applyDecay might need metadata? 
+      // Current DecayService logic: "const result = vocab.map..." - it expects ARRAY.
+      // So we must return the CONTENT array.
+      return data;
+    } else {
+      return data.content;
+    }
   }
 
   /**
    * Save vocab file for a user
+   * NOTE: This carefully handles preserving metadata if it exists
    */
-  static async saveVocabFile(email, filename, data) {
-    await this.ensureUserDataDir(email);
+  static async saveVocabFile(email, filename, newContent) {
     const sanitized = sanitizeFilename(filename);
-    const filepath = path.join(this.getUserDataDir(email), sanitized);
-    await this.atomicWrite(filepath, data);
+    const filepath = `${this.getUserDataDir(email)}/${sanitized}`;
+
+    let dataToSave = newContent;
+
+    if (await storage.exists(filepath)) {
+      const existingRaw = await storage.read(filepath);
+      const existing = JSON.parse(existingRaw);
+
+      if (!Array.isArray(existing)) {
+        // It's the new format, preserve metadata
+        existing.content = newContent;
+        dataToSave = existing;
+      }
+    }
+
+    await storage.write(filepath, dataToSave);
   }
 
   /**
@@ -465,10 +444,10 @@ class UserFileService {
    */
   static async deleteVocabFile(email, filename) {
     const sanitized = sanitizeFilename(filename);
-    const filepath = path.join(this.getUserDataDir(email), sanitized);
+    const filepath = `${this.getUserDataDir(email)}/${sanitized}`;
 
-    if (await fileExists(filepath)) {
-      await fs.unlink(filepath);
+    if (await storage.exists(filepath)) {
+      await storage.delete(filepath);
     }
   }
 
@@ -480,16 +459,16 @@ class UserFileService {
    * Get snapshots directory for a user
    */
   static getSnapshotsDir(email) {
-    return path.join(this.getUserDataDir(email), 'snapshots');
+    return `${this.getUserDataDir(email)}/snapshots`;
   }
 
   /**
    * Create a snapshot of all user data
    */
   static async createSnapshot(email, note = '') {
-    await this.ensureUserDataDir(email);
     const snapshotsDir = this.getSnapshotsDir(email);
-    await fs.mkdir(snapshotsDir, { recursive: true });
+    // storage.ensureDir not strictly needed for GCS but good for FS
+    await storage.ensureDir(snapshotsDir);
 
     // Sanitize note
     const sanitizedNote = String(note || '').slice(0, CONFIG.maxNoteLength);
@@ -499,13 +478,17 @@ class UserFileService {
     const timestamp = now.getTime();
     const id = `${date}-${timestamp}`;
 
-    // Load current data
+    // Load current data - use internal helper which returns metadata-rich course objects
     const courses = await this.loadCourses(email);
     const vocabFiles = {};
 
     const loadPromises = courses.map(async (course) => {
       try {
-        vocabFiles[course.filename] = await this.loadVocabFile(email, course.filename);
+        // We want the FULL file content (metadata + content) for backup, not just content array
+        // So we bypass loadVocabFile which we just modified to return array
+        const filepath = `${this.getUserDataDir(email)}/${course.filename}`;
+        const raw = await storage.read(filepath);
+        vocabFiles[course.filename] = JSON.parse(raw);
       } catch (err) {
         console.warn(`Could not load ${course.filename} for snapshot:`, err.message);
       }
@@ -522,8 +505,8 @@ class UserFileService {
       vocabFiles
     };
 
-    const filepath = path.join(snapshotsDir, `snapshot-${id}.json`);
-    await this.atomicWrite(filepath, snapshot);
+    const filepath = `${snapshotsDir}/snapshot-${id}.json`;
+    await storage.write(filepath, snapshot);
 
     return { id, date, createdAt: snapshot.createdAt, note: sanitizedNote };
   }
@@ -534,34 +517,43 @@ class UserFileService {
   static async listSnapshots(email) {
     const snapshotsDir = this.getSnapshotsDir(email);
 
-    if (!(await fileExists(snapshotsDir))) {
-      return [];
+    if (!(await storage.exists(snapshotsDir)) && !process.env.K_SERVICE) {
+      // For local FS, if dir doesn't exist, list fails or returns empty? 
+      // storage.list should handle it.
+      // But checking exists is safer.
+      // On GCS exists might check object existence. Folder existence is vague.
+      // Better to just try listing.
     }
 
-    const files = await fs.readdir(snapshotsDir);
-    const snapshotPromises = files
-      .filter(file => file.startsWith('snapshot-') && file.endsWith('.json'))
-      .map(async (file) => {
-        try {
-          const filepath = path.join(snapshotsDir, file);
-          const content = JSON.parse(await fs.readFile(filepath, 'utf-8'));
-          return {
-            id: content.id,
-            date: content.date,
-            createdAt: content.createdAt,
-            note: content.note || ''
-          };
-        } catch (err) {
-          console.warn(`Could not read snapshot ${file}:`, err.message);
-          return null;
-        }
-      });
+    try {
+      const files = await storage.list(snapshotsDir);
+      const snapshotPromises = files
+        .filter(file => file.startsWith('snapshot-') && file.endsWith('.json'))
+        .map(async (file) => {
+          try {
+            const filepath = `${snapshotsDir}/${file}`;
+            const content = await storage.read(filepath);
+            const data = JSON.parse(content);
+            return {
+              id: data.id,
+              date: data.date,
+              createdAt: data.createdAt,
+              note: data.note || ''
+            };
+          } catch (err) {
+            console.warn(`Could not read snapshot ${file}:`, err.message);
+            return null;
+          }
+        });
 
-    const snapshots = (await Promise.all(snapshotPromises)).filter(Boolean);
-
-    // Sort by createdAt descending (newest first)
-    snapshots.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-    return snapshots;
+      const snapshots = (await Promise.all(snapshotPromises)).filter(Boolean);
+      // Sort by createdAt descending (newest first)
+      snapshots.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+      return snapshots;
+    } catch (err) {
+      // If directory doesn't exist or other error
+      return [];
+    }
   }
 
   /**
@@ -570,20 +562,21 @@ class UserFileService {
   static async restoreSnapshot(email, snapshotId) {
     const validatedId = validateSnapshotId(snapshotId);
     const snapshotsDir = this.getSnapshotsDir(email);
-    const filepath = path.join(snapshotsDir, `snapshot-${validatedId}.json`);
+    const filepath = `${snapshotsDir}/snapshot-${validatedId}.json`;
 
-    if (!(await fileExists(filepath))) {
+    if (!(await storage.exists(filepath))) {
       throw new AppError('Snapshot not found', 404);
     }
 
-    const snapshot = JSON.parse(await fs.readFile(filepath, 'utf-8'));
-
-    // Restore courses
-    await this.saveCourses(email, snapshot.courses);
+    const raw = await storage.read(filepath);
+    const snapshot = JSON.parse(raw);
 
     // Restore vocab files
     const restorePromises = Object.entries(snapshot.vocabFiles).map(
-      ([filename, data]) => this.saveVocabFile(email, filename, data)
+      async ([filename, data]) => {
+        const destPath = `${this.getUserDataDir(email)}/${filename}`;
+        await storage.write(destPath, data);
+      }
     );
 
     await Promise.all(restorePromises);
@@ -597,13 +590,13 @@ class UserFileService {
   static async deleteSnapshot(email, snapshotId) {
     const validatedId = validateSnapshotId(snapshotId);
     const snapshotsDir = this.getSnapshotsDir(email);
-    const filepath = path.join(snapshotsDir, `snapshot-${validatedId}.json`);
+    const filepath = `${snapshotsDir}/snapshot-${validatedId}.json`;
 
-    if (!(await fileExists(filepath))) {
+    if (!(await storage.exists(filepath))) {
       throw new AppError('Snapshot not found', 404);
     }
 
-    await fs.unlink(filepath);
+    await storage.delete(filepath);
     return { deleted: true, snapshotId: validatedId };
   }
 
@@ -612,7 +605,6 @@ class UserFileService {
    */
   static async checkAutoSnapshot(email) {
     try {
-      await this.ensureUserDataDir(email);
       const state = await this.loadState(email);
 
       const now = new Date();

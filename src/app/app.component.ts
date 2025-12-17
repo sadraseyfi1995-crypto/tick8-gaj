@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataHandlerService } from './data-handler.service';
+import { AuthService } from './auth/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +8,15 @@ import { DataHandlerService } from './data-handler.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor(public vocabService: DataHandlerService) { }
+  constructor(public vocabService: DataHandlerService, private authService: AuthService) { }
 
   ngOnInit() {
     // Only trigger decay once per session, not on every component init
     const lastDecayTrigger = sessionStorage.getItem('lastDecayTrigger');
     const today = new Date().toISOString().split('T')[0];
 
-    if (lastDecayTrigger !== today) {
+    // Only run if authenticated
+    if (this.authService.isAuthenticated() && lastDecayTrigger !== today) {
       this.vocabService.triggerDailyDecay().subscribe({
         next: (res) => {
           console.log('Daily maintenance:', res.message);

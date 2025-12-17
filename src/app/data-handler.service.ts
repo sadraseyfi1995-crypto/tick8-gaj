@@ -6,6 +6,7 @@ import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 
 import { SharedService } from './shared.service';
 import { ICourse } from './models/course.model';
+import { AuthService } from './auth/auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -20,24 +21,28 @@ export class DataHandlerService {
   constructor(private http: HttpClient,
     private route: ActivatedRoute,
     private router: Router,
-    private sharedService: SharedService
+    private sharedService: SharedService,
+    private authService: AuthService
   ) {
     this.router.events
       .pipe(filter(e => e instanceof NavigationEnd))
       .subscribe(() => {
         const courseId = this.route.snapshot.queryParams['course'];
-        if (this.courses.length === 0) {
-          this.getCourses().subscribe(courses => {
-            this.courses = courses.map((c: any) => ({
-              id: c.filename.replace('.json', ''),
-              name: c.name,
-              order: 0,
-              pageSize: c.pageSize || 15
-            }));
+        // Only fetch courses if authenticated
+        if (this.authService.isAuthenticated()) {
+          if (this.courses.length === 0) {
+            this.getCourses().subscribe(courses => {
+              this.courses = courses.map((c: any) => ({
+                id: c.filename.replace('.json', ''),
+                name: c.name,
+                order: 0,
+                pageSize: c.pageSize || 15
+              }));
+              this.updateChosenCourse(courseId);
+            });
+          } else {
             this.updateChosenCourse(courseId);
-          });
-        } else {
-          this.updateChosenCourse(courseId);
+          }
         }
       })
   }

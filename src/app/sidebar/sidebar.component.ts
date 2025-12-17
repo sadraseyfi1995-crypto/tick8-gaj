@@ -30,8 +30,10 @@ export class SidebarComponent implements OnInit {
     // Actually, we should bind to dataHandler.courses directly or use the subject if we want to be reactive.
     // The previous code mapped courses in the component. dataHandler.refreshCourses() does mapping now.
 
-    // Trigger initial load
-    this.dataHandler.refreshCourses();
+    // Trigger initial load only if authenticated
+    if (this.authService.isAuthenticated()) {
+      this.dataHandler.refreshCourses();
+    }
   }
 
   setCourse(courseId: string) {
