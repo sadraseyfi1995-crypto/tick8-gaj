@@ -1101,6 +1101,78 @@ app.put('/api/courses/:id', authMiddleware, async (req, res, next) => {
 });
 
 /**
+ * POST /api/courses/:id/append
+ * Append content to an existing course
+ */
+app.post('/api/courses/:id/append', authMiddleware, async (req, res, next) => {
+  try {
+    const { content } = req.body;
+
+    if (!content || !Array.isArray(content)) {
+      throw new AppError('Invalid input. Content array is required.', 400);
+    }
+
+    // Validate content structure
+    validateVocabList(content);
+
+    const userEmail = sanitizeEmail(req.user.email);
+    const courseId = sanitizeFilename(`${req.params.id}.json`);
+    const filePath = `${userEmail}/${courseId}`;
+
+    if (!(await storage.exists(filePath))) {
+      throw new AppError('Course not found', 404);
+    }
+
+    // Read current data
+    const rawContent = await storage.read(filePath);
+    let data = JSON.parse(rawContent);
+
+    // Handle both legacy array and new object format
+    let existingContent;
+    if (Array.isArray(data)) {
+      existingContent = data;
+    } else {
+      existingContent = data.content || [];
+    }
+
+    // Find the highest existing ID to ensure new IDs don't conflict
+    let maxId = 0;
+    existingContent.forEach(item => {
+      const numId = parseInt(item.id);
+      if (!isNaN(numId) && numId > maxId) {
+        maxId = numId;
+      }
+    });
+
+    // Re-number the incoming content to avoid ID conflicts
+    const newContent = content.map((item, index) => ({
+      ...item,
+      id: String(maxId + index + 1)
+    }));
+
+    // Append new content
+    const updatedContent = [...existingContent, ...newContent];
+
+    // Write back in the same format
+    if (Array.isArray(data)) {
+      await storage.write(filePath, updatedContent);
+    } else {
+      data.content = updatedContent;
+      await storage.write(filePath, data);
+    }
+
+    res.json({
+      success: true,
+      message: 'Content appended successfully',
+      added: newContent.length,
+      total: updatedContent.length
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+/**
  * DELETE /api/courses/:id
  * Delete a course
  */
