@@ -7,7 +7,7 @@ const path = require('path');
 // Configuration
 const AUTH_CONFIG = {
     // Replace with your Google OAuth Client ID from Google Cloud Console
-    googleClientId: process.env.GOOGLE_CLIENT_ID || '756031099059-a9njf86rbc742hfukari2s2koui01q5p.apps.googleusercontent.com',
+    googleClientId: process.env.GOOGLE_CLIENT_ID || '611200183710-u4c45q0t2tpdo56ufacv5jo286eb7g5a.apps.googleusercontent.com',
 
     // JWT secret - in production, use a secure random string from env
     jwtSecret: process.env.JWT_SECRET || 'tick8-jwt-secret-change-in-production',
@@ -15,7 +15,7 @@ const AUTH_CONFIG = {
     // JWT expiration
     jwtExpiration: '7d',
 
-    // Users data directory 
+    // Users data directory
     usersDir: path.join(__dirname, 'data', 'users')
 };
 

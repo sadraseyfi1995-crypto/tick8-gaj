@@ -19,5 +19,5 @@ export const GOOGLE_CONFIG = {
      * Your Google OAuth 2.0 Client ID
      * Format: xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com
      */
-    clientId: '756031099059-a9njf86rbc742hfukari2s2koui01q5p.apps.googleusercontent.com'
+    clientId: '611200183710-u4c45q0t2tpdo56ufacv5jo286eb7g5a.apps.googleusercontent.com'
 };
