@@ -9,6 +9,7 @@ export interface VocabComponentModel {
   answer?: string;
   states?: VboxState[];
   lastUpdated?: Date;
+  liked?: boolean;
 }
 
 @Component({
@@ -127,5 +128,34 @@ export class VocabComponent implements OnInit {
     navigator.clipboard.writeText(this.vocab.word)
       .then(() => console.log('Word copied!'))
       .catch(err => console.error('Copy failed:', err));
+  }
+
+  /** Toggle like state */
+  toggleLike(event: Event): void {
+    event.stopPropagation();
+    this.vocab.liked = !this.vocab.liked;
+    this.vocab.lastUpdated = new Date();
+
+    // Save to backend
+    console.log(`💖 Toggling like for card ${this.vocab.id}:`, this.vocab.liked);
+    this.vocabService.updateById(this.vocab.id!, this.vocab.states!).subscribe({
+      next: (response) => {
+        console.log('✓ Like state saved successfully');
+
+        // Update local data store
+        const currentData = this.vocabService.data$.getValue();
+        const itemIndex = currentData.findIndex(item => item.id === this.vocab.id);
+        if (itemIndex !== -1) {
+          currentData[itemIndex].liked = this.vocab.liked;
+          currentData[itemIndex].lastUpdated = new Date();
+          this.vocabService.data$.next([...currentData]);
+        }
+      },
+      error: err => {
+        console.error('✗ Save like state failed:', err);
+        // Revert on error
+        this.vocab.liked = !this.vocab.liked;
+      }
+    });
   }
 }

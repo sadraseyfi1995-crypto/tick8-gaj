@@ -210,3 +210,54 @@
     opacity: 1;
   }
 }
+
+.like-btn {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+  z-index: 10;
+  line-height: 1;
+
+  .heart {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover .heart {
+    transform: scale(1.2);
+  }
+
+  &.liked {
+    opacity: 1;
+
+    .heart {
+      animation: heartBeat 0.3s ease;
+    }
+  }
+
+  &:active .heart {
+    transform: scale(0.9);
+  }
+
+  &:focus {
+    outline: 2px solid #ff69b4;
+    outline-offset: 2px;
+    opacity: 1;
+  }
+}
+
+@keyframes heartBeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}

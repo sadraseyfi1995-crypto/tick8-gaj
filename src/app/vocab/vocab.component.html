@@ -8,6 +8,10 @@
       aria-label="Copy card">
       📋
     </button>
+    <button class="like-btn" (click)="toggleLike($event)" [class.liked]="vocab.liked"
+      [title]="vocab.liked ? 'Unlike card' : 'Like card'" [attr.aria-label]="vocab.liked ? 'Unlike card' : 'Like card'">
+      <span class="heart">{{ vocab.liked ? '❤️' : '🤍' }}</span>
+    </button>
     <div class="card-scroll-area">
       <div class="card-center-content">
         <div class="word" [title]="vocab.word">{{ vocab.word }}</div>
