@@ -78,7 +78,7 @@ export class DataHandlerService {
     return this.http.get<VocabComponentModel[]>(this.apiUrl + '/' + courseId + '.json');
   }
 
-  updateById(id: number | string, updates: VboxState[]): Observable<{ success: boolean; item?: VocabComponentModel }> {
+  updateById(id: number | string, updates: VboxState[] | { states?: VboxState[]; liked?: boolean }): Observable<{ success: boolean; item?: VocabComponentModel }> {
     const url = `${this.apiUrl}/${this.sharedService.getChosenCourseId()}/${id}`;
     return this.http.patch<{ success: boolean; item?: VocabComponentModel }>(url, updates);
   }

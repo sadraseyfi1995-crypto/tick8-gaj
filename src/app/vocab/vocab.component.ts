@@ -136,9 +136,12 @@ export class VocabComponent implements OnInit {
     this.vocab.liked = !this.vocab.liked;
     this.vocab.lastUpdated = new Date();
 
-    // Save to backend
+    // Save to backend with both states and liked
     console.log(`💖 Toggling like for card ${this.vocab.id}:`, this.vocab.liked);
-    this.vocabService.updateById(this.vocab.id!, this.vocab.states!).subscribe({
+    this.vocabService.updateById(this.vocab.id!, {
+      states: this.vocab.states,
+      liked: this.vocab.liked
+    }).subscribe({
       next: (response) => {
         console.log('✓ Like state saved successfully');
 

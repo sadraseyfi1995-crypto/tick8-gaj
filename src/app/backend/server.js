@@ -845,9 +845,9 @@ app.patch('/api/vocab-files/:courseId/:id', authMiddleware, async (req, res, nex
     const itemId = String(req.params.id);
     const updates = req.body;
 
-    // Validate updates is an array (states)
-    if (!Array.isArray(updates)) {
-      throw new AppError('Updates must be an array of states', 400);
+    // Validate updates - can be array (legacy states only) or object (states + liked)
+    if (!Array.isArray(updates) && typeof updates !== 'object') {
+      throw new AppError('Updates must be an array of states or an object with states/liked', 400);
     }
 
     const filePath = `${userEmail}/${filename}`;
@@ -874,12 +874,24 @@ app.patch('/api/vocab-files/:courseId/:id', authMiddleware, async (req, res, nex
       throw new AppError('Item not found', 404);
     }
 
-    // Update item
+    // Update item - handle both legacy array format and new object format
     const updatedItem = {
       ...vocab[itemIndex],
-      states: updates,
       lastUpdated: new Date().toISOString()
     };
+
+    if (Array.isArray(updates)) {
+      // Legacy format: just states array
+      updatedItem.states = updates;
+    } else {
+      // New format: object with states and/or liked
+      if (updates.states !== undefined) {
+        updatedItem.states = updates.states;
+      }
+      if (updates.liked !== undefined) {
+        updatedItem.liked = updates.liked;
+      }
+    }
 
     vocab[itemIndex] = updatedItem;
 
