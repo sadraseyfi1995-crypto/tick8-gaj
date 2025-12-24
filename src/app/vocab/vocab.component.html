@@ -14,7 +14,7 @@
     </button>
     <div class="card-scroll-area">
       <div class="card-center-content">
-        <div class="word" [title]="vocab.word">{{ vocab.word }}</div>
+        <div class="word" [title]="vocab.word" [style.font-size]="wordFontSize" #wordElement>{{ vocab.word }}</div>
 
         <div class="boxes">
           <button *ngFor="let s of vocab.states; let i = index" class="box" [attr.data-state]="s"
@@ -42,7 +42,7 @@
   <div class="side back">
     <div class="card-scroll-area">
       <div class="card-center-content">
-        <div class="answer" [title]="vocab.answer">{{ vocab.answer }}</div>
+        <div class="answer" [title]="vocab.answer" [style.font-size]="answerFontSize" #answerElement>{{ vocab.answer }}</div>
       </div>
     </div>
   </div>

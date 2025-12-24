@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { DataHandlerService } from '../data-handler.service';
 
 export type VboxState = 'none' | 'tick' | 'cross' | 'boost';
@@ -17,10 +17,15 @@ export interface VocabComponentModel {
   templateUrl: './vocab.component.html',
   styleUrls: ['./vocab.component.scss']
 })
-export class VocabComponent implements OnInit {
+export class VocabComponent implements OnInit, AfterViewInit {
   @Input() vocab: VocabComponentModel = { word: '' };
+  @ViewChild('wordElement') wordElement?: ElementRef<HTMLDivElement>;
+  @ViewChild('answerElement') answerElement?: ElementRef<HTMLDivElement>;
+
   boxes = 8;
   flipped = false;
+  wordFontSize = '1.2rem';
+  answerFontSize = '1.1rem';
 
   constructor(private vocabService: DataHandlerService) {
   }
@@ -30,6 +35,49 @@ export class VocabComponent implements OnInit {
       this.vocab.states = [...this.vocab.states];
     } else {
       this.vocab.states = Array(this.boxes).fill('none') as VboxState[];
+    }
+
+    // Calculate initial font sizes based on text length
+    this.calculateFontSizes();
+  }
+
+  ngAfterViewInit(): void {
+    // Recalculate after view is initialized to ensure accurate measurements
+    setTimeout(() => this.calculateFontSizes(), 0);
+  }
+
+  /** Calculate dynamic font sizes based on text length */
+  calculateFontSizes(): void {
+    // Word font size calculation
+    const wordLength = this.vocab.word?.length || 0;
+    if (wordLength > 200) {
+      this.wordFontSize = '0.7rem';
+    } else if (wordLength > 150) {
+      this.wordFontSize = '0.75rem';
+    } else if (wordLength > 100) {
+      this.wordFontSize = '0.85rem';
+    } else if (wordLength > 60) {
+      this.wordFontSize = '0.95rem';
+    } else if (wordLength > 40) {
+      this.wordFontSize = '1.05rem';
+    } else {
+      this.wordFontSize = '1.2rem';
+    }
+
+    // Answer font size calculation
+    const answerLength = this.vocab.answer?.length || 0;
+    if (answerLength > 250) {
+      this.answerFontSize = '0.65rem';
+    } else if (answerLength > 180) {
+      this.answerFontSize = '0.7rem';
+    } else if (answerLength > 120) {
+      this.answerFontSize = '0.8rem';
+    } else if (answerLength > 80) {
+      this.answerFontSize = '0.9rem';
+    } else if (answerLength > 50) {
+      this.answerFontSize = '1rem';
+    } else {
+      this.answerFontSize = '1.1rem';
     }
   }
 
