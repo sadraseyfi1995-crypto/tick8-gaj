@@ -19,8 +19,8 @@
             </button>
         </li>
         <li *ngFor="let course of sortedCourses;">
-            <button>
-                <span (click)="setCourse(course.id)" class="label" *ngIf="mode === 'expanded'">{{course.name}}</span>
+            <button (click)="setCourse(course.id)">
+                <span class="label" *ngIf="mode === 'expanded'">{{course.name}}</span>
             </button>
         </li>
     </ul>
