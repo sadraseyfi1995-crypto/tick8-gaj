@@ -807,6 +807,9 @@ app.post('/api/generate-vocab', authMiddleware, asyncHandler(async (req, res) =>
 /**
  * GET /api/vocab-files/:filename
  * Load a specific vocab file (course content)
+ * Query params:
+ * - page: page number (0-indexed)
+ * - pageSize: items per page
  */
 app.get('/api/vocab-files/:filename', authMiddleware, async (req, res, next) => {
   try {
@@ -821,11 +824,34 @@ app.get('/api/vocab-files/:filename', authMiddleware, async (req, res, next) => 
     const content = await storage.read(filePath);
     const data = JSON.parse(content);
 
-    // Return just the array content for the frontend
+    // Extract array content
+    let vocabArray;
     if (Array.isArray(data)) {
-      res.json(data);
+      vocabArray = data;
     } else {
-      res.json(data.content || []);
+      vocabArray = data.content || [];
+    }
+
+    // Check for pagination params
+    const page = parseInt(req.query.page);
+    const pageSize = parseInt(req.query.pageSize);
+
+    if (!isNaN(page) && !isNaN(pageSize) && pageSize > 0) {
+      // Return paginated data
+      const startIndex = page * pageSize;
+      const endIndex = startIndex + pageSize;
+      const paginatedData = vocabArray.slice(startIndex, endIndex);
+
+      res.json({
+        data: paginatedData,
+        page: page,
+        pageSize: pageSize,
+        total: vocabArray.length,
+        totalPages: Math.ceil(vocabArray.length / pageSize)
+      });
+    } else {
+      // Return all data (legacy behavior)
+      res.json(vocabArray);
     }
   } catch (err) {
     next(err);

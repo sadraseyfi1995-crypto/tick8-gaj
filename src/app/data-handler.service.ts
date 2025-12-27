@@ -87,6 +87,12 @@ export class DataHandlerService {
     return this.http.get<VocabComponentModel[]>(this.apiUrl + '/' + courseId + '.json');
   }
 
+  getPage(courseId: string, page: number, pageSize: number): Observable<{ data: VocabComponentModel[], page: number, pageSize: number, total: number, totalPages: number }> {
+    return this.http.get<{ data: VocabComponentModel[], page: number, pageSize: number, total: number, totalPages: number }>(
+      `${this.apiUrl}/${courseId}.json?page=${page}&pageSize=${pageSize}`
+    );
+  }
+
   updateById(id: number | string, updates: VboxState[] | { states?: VboxState[]; liked?: boolean }): Observable<{ success: boolean; item?: VocabComponentModel }> {
     const url = `${this.apiUrl}/${this.sharedService.getChosenCourseId()}/${id}`;
     return this.http.patch<{ success: boolean; item?: VocabComponentModel }>(url, updates);

@@ -1,15 +1,8 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { VocabComponentModel } from '../vocab/vocab.component';
 import { SharedService } from '../shared.service';
 import { DataHandlerService } from '../data-handler.service';
-
-function chunkArray<T>(array: T[], chunkSize: number): T[][] {
-  const result: T[][] = [];
-  for (let i = 0; i < array.length; i += chunkSize) {
-    result.push(array.slice(i, i + chunkSize));
-  }
-  return result;
-}
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-book',
@@ -17,79 +10,81 @@ function chunkArray<T>(array: T[], chunkSize: number): T[][] {
   styleUrls: ['./book.component.scss']
 })
 export class BookComponent {
-  private _allQuestions: VocabComponentModel[] = [];
-  public get allQuestions(): VocabComponentModel[] {
-    return this._allQuestions;
-  }
-
-  public set allQuestions(value: VocabComponentModel[]) {
-    this._allQuestions = value;
-    this.createChunkedQuestions();
-  }
-  chunkedQuestions: VocabComponentModel[][] = [];
+  currentPageData: VocabComponentModel[] = [];
   currentPage: number = 0;
-  pendingPage: number | null = null;
+  totalPages: number = 0;
+  totalItems: number = 0;
+  pageSize: number = 15;
   isLoading: boolean = false;
+  currentCourseId: string = '';
 
-  constructor(private sharedService: SharedService, private dataHandler: DataHandlerService) {
-
-  }
+  constructor(
+    private sharedService: SharedService,
+    private dataHandler: DataHandlerService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    this.dataHandler.loading$.subscribe(loading => {
-      this.isLoading = loading;
-    });
-
-    this.dataHandler.data$.subscribe(data => {
-      this.allQuestions = data;
-    });
-
+    // Subscribe to course changes
     this.sharedService.chosenCourse$.subscribe(course => {
       if (course) {
-        this.pendingPage = null; // Clear pending on course change
-        this.createChunkedQuestions();
-      }
-    });
-
-    this.sharedService.pageNavigation$.subscribe(page => {
-      this.pendingPage = page;
-      this.applyPendingPage();
-    });
-  }
-
-  private createChunkedQuestions() {
-    const course = this.sharedService.getChosenCourse();
-    if (course) {
-      this.chunkedQuestions = chunkArray(this.allQuestions, course.pageSize ?? 20);
-      this.applyPendingPage();
-
-      // Ensure currentPage is valid
-      if (this.chunkedQuestions.length > 0 && this.currentPage >= this.chunkedQuestions.length) {
-        this.currentPage = this.chunkedQuestions.length - 1;
-      } else if (this.chunkedQuestions.length === 0) {
+        this.pageSize = course.pageSize ?? 15;
+        this.currentCourseId = course.id;
         this.currentPage = 0;
+        this.loadPage(0);
       }
-    }
+    });
+
+    // Subscribe to page navigation
+    this.sharedService.pageNavigation$.subscribe(page => {
+      if (page !== null && page !== this.currentPage) {
+        this.loadPage(page);
+      }
+    });
+
+    // Subscribe to query params for initial page load
+    this.route.queryParams.subscribe(params => {
+      const page = params['page'] ? parseInt(params['page']) : 0;
+      if (this.currentCourseId && page !== this.currentPage) {
+        this.loadPage(page);
+      }
+    });
   }
 
-  private applyPendingPage() {
-    if (this.pendingPage !== null && this.pendingPage < this.chunkedQuestions.length) {
-      this.currentPage = this.pendingPage;
-      this.pendingPage = null;
+  private loadPage(page: number): void {
+    const courseId = this.currentCourseId || this.sharedService.getChosenCourseId();
+    if (!courseId) {
+      return;
     }
+
+    this.isLoading = true;
+    this.dataHandler.getPage(courseId, page, this.pageSize).subscribe({
+      next: (response) => {
+        this.currentPageData = response.data;
+        this.currentPage = response.page;
+        this.totalPages = response.totalPages;
+        this.totalItems = response.total;
+        this.isLoading = false;
+      },
+      error: (err) => {
+        console.error('Error loading page:', err);
+        this.isLoading = false;
+      }
+    });
   }
 
   nextPage(): void {
-    if (this.currentPage < this.chunkedQuestions.length - 1) {
-      this.currentPage++;
+    if (this.currentPage < this.totalPages - 1) {
+      this.loadPage(this.currentPage + 1);
     }
   }
 
   previousPage(): void {
     if (this.currentPage > 0) {
-      this.currentPage--;
+      this.loadPage(this.currentPage - 1);
     }
   }
+
   @HostListener('window:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent): void {
     if (event.key === 'ArrowLeft') {
@@ -101,13 +96,12 @@ export class BookComponent {
 
   /** Copy all words on the current page as JSON array to clipboard */
   copyAllCards(): void {
-    const currentCards = this.chunkedQuestions[this.currentPage];
-    if (!currentCards || currentCards.length === 0) {
+    if (!this.currentPageData || this.currentPageData.length === 0) {
       console.log('No cards to copy');
       return;
     }
 
-    const words = currentCards.map(card => card.word);
+    const words = this.currentPageData.map((card: VocabComponentModel) => card.word);
 
     navigator.clipboard.writeText(JSON.stringify(words, null, 2))
       .then(() => console.log('All words copied!'))

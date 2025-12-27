@@ -6,24 +6,24 @@
   <div class="page-container">
     <div *ngIf="isLoading" class="loading-overlay">
       <div class="loading-spinner"></div>
-      <div class="loading-text">Loading course...</div>
+      <div class="loading-text">Loading page...</div>
     </div>
-    <ng-container *ngIf="!isLoading && allQuestions.length > 0">
-      <app-page [vocabWords]="chunkedQuestions[currentPage]">
+    <ng-container *ngIf="!isLoading && currentPageData.length > 0">
+      <app-page [vocabWords]="currentPageData">
       </app-page>
     </ng-container>
   </div>
 
-  <button class="nav-btn next" (click)="nextPage()" [disabled]="currentPage === allQuestions.length - 1 || isLoading"
+  <button class="nav-btn next" (click)="nextPage()" [disabled]="currentPage >= totalPages - 1 || isLoading"
     aria-label="Next question">
     ›
   </button>
 </div>
 
 <div class="pager-indicator">
-  Page {{ currentPage + 1 }}
+  Page {{ currentPage + 1 }} of {{ totalPages }}
   <button class="copy-all-btn" (click)="copyAllCards()" title="Copy all cards on this page as JSON"
-    aria-label="Copy all cards">
+    aria-label="Copy all cards" [disabled]="isLoading">
     📋 Copy All
   </button>
 </div>
