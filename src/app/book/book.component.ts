@@ -29,12 +29,17 @@ export class BookComponent {
   chunkedQuestions: VocabComponentModel[][] = [];
   currentPage: number = 0;
   pendingPage: number | null = null;
+  isLoading: boolean = false;
 
   constructor(private sharedService: SharedService, private dataHandler: DataHandlerService) {
 
   }
 
   ngOnInit(): void {
+    this.dataHandler.loading$.subscribe(loading => {
+      this.isLoading = loading;
+    });
+
     this.dataHandler.data$.subscribe(data => {
       this.allQuestions = data;
     });

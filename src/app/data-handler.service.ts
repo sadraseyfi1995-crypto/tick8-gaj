@@ -17,6 +17,7 @@ export class DataHandlerService {
   public data$ = new BehaviorSubject<VocabComponentModel[]>([]);
   public courses: ICourse[] = [];
   public courses$ = new BehaviorSubject<ICourse[]>([]);
+  public loading$ = new BehaviorSubject<boolean>(false);
 
   constructor(private http: HttpClient,
     private route: ActivatedRoute,
@@ -57,15 +58,23 @@ export class DataHandlerService {
   }
 
   private fetchData() {
-    this.getAll().subscribe(data => {
-      this.data = data;
-      this.data$.next(data);
+    this.loading$.next(true);
+    this.getAll().subscribe({
+      next: data => {
+        this.data = data;
+        this.data$.next(data);
 
-      // Calculate and navigate to the last filled page
-      const course = this.sharedService.getChosenCourse();
-      if (course) {
-        const lastFilledPage = this.sharedService.calculateLastFilledPage(data, course.pageSize ?? 20);
-        this.sharedService.navigateToPage(lastFilledPage);
+        // Calculate and navigate to the last filled page
+        const course = this.sharedService.getChosenCourse();
+        if (course) {
+          const lastFilledPage = this.sharedService.calculateLastFilledPage(data, course.pageSize ?? 20);
+          this.sharedService.navigateToPage(lastFilledPage);
+        }
+        this.loading$.next(false);
+      },
+      error: err => {
+        console.error('Error fetching data:', err);
+        this.loading$.next(false);
       }
     });
   }

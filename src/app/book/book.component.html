@@ -1,16 +1,20 @@
 <div class="page-wrapper">
-  <button class="nav-btn prev" (click)="previousPage()" [disabled]="currentPage === 0" aria-label="Previous page">
+  <button class="nav-btn prev" (click)="previousPage()" [disabled]="currentPage === 0 || isLoading" aria-label="Previous page">
     ‹
   </button>
 
   <div class="page-container">
-    <ng-container *ngIf="allQuestions.length > 0">
+    <div *ngIf="isLoading" class="loading-overlay">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Loading course...</div>
+    </div>
+    <ng-container *ngIf="!isLoading && allQuestions.length > 0">
       <app-page [vocabWords]="chunkedQuestions[currentPage]">
       </app-page>
     </ng-container>
   </div>
 
-  <button class="nav-btn next" (click)="nextPage()" [disabled]="currentPage === allQuestions.length - 1"
+  <button class="nav-btn next" (click)="nextPage()" [disabled]="currentPage === allQuestions.length - 1 || isLoading"
     aria-label="Next question">
     ›
   </button>
