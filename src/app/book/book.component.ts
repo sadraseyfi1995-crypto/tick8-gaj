@@ -18,6 +18,11 @@ export class BookComponent {
   isLoading: boolean = false;
   currentCourseId: string = '';
 
+  // Cache: Map<courseId, Map<pageNumber, pageData>>
+  private pageCache: Map<string, Map<number, VocabComponentModel[]>> = new Map();
+  // Metadata cache: Map<courseId, {totalPages, totalItems}>
+  private metadataCache: Map<string, { totalPages: number; totalItems: number }> = new Map();
+
   constructor(
     private sharedService: SharedService,
     private dataHandler: DataHandlerService,
@@ -29,8 +34,14 @@ export class BookComponent {
     this.sharedService.chosenCourse$.subscribe(course => {
       if (course) {
         this.pageSize = course.pageSize ?? 15;
+        const previousCourseId = this.currentCourseId;
         this.currentCourseId = course.id;
         this.currentPage = 0;
+
+        // Clear cache if switching to a different course
+        if (previousCourseId && previousCourseId !== course.id) {
+          this.clearCache();
+        }
 
         // Load the last filled page instead of page 0
         this.loadLastFilledPage();
@@ -51,6 +62,34 @@ export class BookComponent {
         this.loadPage(page);
       }
     });
+  }
+
+  private clearCache(): void {
+    this.pageCache.clear();
+    this.metadataCache.clear();
+  }
+
+  private getCachedPage(courseId: string, page: number): VocabComponentModel[] | null {
+    const courseCache = this.pageCache.get(courseId);
+    if (!courseCache) {
+      return null;
+    }
+    return courseCache.get(page) || null;
+  }
+
+  private cachePage(courseId: string, page: number, data: VocabComponentModel[]): void {
+    if (!this.pageCache.has(courseId)) {
+      this.pageCache.set(courseId, new Map());
+    }
+    this.pageCache.get(courseId)!.set(page, data);
+  }
+
+  private cacheMetadata(courseId: string, totalPages: number, totalItems: number): void {
+    this.metadataCache.set(courseId, { totalPages, totalItems });
+  }
+
+  private getCachedMetadata(courseId: string): { totalPages: number; totalItems: number } | null {
+    return this.metadataCache.get(courseId) || null;
   }
 
   private loadLastFilledPage(): void {
@@ -77,6 +116,26 @@ export class BookComponent {
       return;
     }
 
+    // Check cache first
+    const cachedData = this.getCachedPage(courseId, page);
+    if (cachedData) {
+      console.log(`✓ Loading page ${page} from cache`);
+      this.currentPageData = cachedData;
+      this.currentPage = page;
+
+      // Load metadata from cache if available
+      const metadata = this.getCachedMetadata(courseId);
+      if (metadata) {
+        this.totalPages = metadata.totalPages;
+        this.totalItems = metadata.totalItems;
+      }
+
+      this.isLoading = false;
+      return;
+    }
+
+    // Not in cache, fetch from server
+    console.log(`→ Fetching page ${page} from server`);
     this.isLoading = true;
     this.dataHandler.getPage(courseId, page, this.pageSize).subscribe({
       next: (response) => {
@@ -84,6 +143,11 @@ export class BookComponent {
         this.currentPage = response.page;
         this.totalPages = response.totalPages;
         this.totalItems = response.total;
+
+        // Cache the page data and metadata
+        this.cachePage(courseId, page, response.data);
+        this.cacheMetadata(courseId, response.totalPages, response.total);
+
         this.isLoading = false;
       },
       error: (err) => {
