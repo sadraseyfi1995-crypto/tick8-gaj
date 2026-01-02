@@ -31,7 +31,9 @@ export class BookComponent {
         this.pageSize = course.pageSize ?? 15;
         this.currentCourseId = course.id;
         this.currentPage = 0;
-        this.loadPage(0);
+
+        // Load the last filled page instead of page 0
+        this.loadLastFilledPage();
       }
     });
 
@@ -44,9 +46,27 @@ export class BookComponent {
 
     // Subscribe to query params for initial page load
     this.route.queryParams.subscribe(params => {
-      const page = params['page'] ? parseInt(params['page']) : 0;
-      if (this.currentCourseId && page !== this.currentPage) {
+      const page = params['page'] ? parseInt(params['page']) : null;
+      if (this.currentCourseId && page !== null && page !== this.currentPage) {
         this.loadPage(page);
+      }
+    });
+  }
+
+  private loadLastFilledPage(): void {
+    if (!this.currentCourseId) {
+      return;
+    }
+
+    this.isLoading = true;
+    this.dataHandler.getLastFilledPage(this.currentCourseId, this.pageSize).subscribe({
+      next: (response) => {
+        this.loadPage(response.lastFilledPage);
+      },
+      error: (err) => {
+        console.error('Error getting last filled page:', err);
+        // Fallback to page 0 on error
+        this.loadPage(0);
       }
     });
   }

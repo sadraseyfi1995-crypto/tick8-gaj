@@ -93,6 +93,12 @@ export class DataHandlerService {
     );
   }
 
+  getLastFilledPage(courseId: string, pageSize: number): Observable<{ lastFilledPage: number, lastFilledIndex: number, totalItems: number, pageSize: number }> {
+    return this.http.get<{ lastFilledPage: number, lastFilledIndex: number, totalItems: number, pageSize: number }>(
+      `${this.apiUrl}/${courseId}.json/last-filled-page?pageSize=${pageSize}`
+    );
+  }
+
   updateById(id: number | string, updates: VboxState[] | { states?: VboxState[]; liked?: boolean }): Observable<{ success: boolean; item?: VocabComponentModel }> {
     const url = `${this.apiUrl}/${this.sharedService.getChosenCourseId()}/${id}`;
     return this.http.patch<{ success: boolean; item?: VocabComponentModel }>(url, updates);

@@ -859,6 +859,58 @@ app.get('/api/vocab-files/:filename', authMiddleware, async (req, res, next) => 
 });
 
 /**
+ * GET /api/vocab-files/:filename/last-filled-page
+ * Calculate the last page with at least one filled card
+ * Query params:
+ * - pageSize: items per page
+ */
+app.get('/api/vocab-files/:filename/last-filled-page', authMiddleware, async (req, res, next) => {
+  try {
+    const userEmail = sanitizeEmail(req.user.email);
+    const filename = sanitizeFilename(req.params.filename);
+    const filePath = `${userEmail}/${filename}`;
+    const pageSize = parseInt(req.query.pageSize) || 15;
+
+    if (!(await storage.exists(filePath))) {
+      throw new AppError('File not found', 404);
+    }
+
+    const content = await storage.read(filePath);
+    const data = JSON.parse(content);
+
+    // Extract array content
+    let vocabArray;
+    if (Array.isArray(data)) {
+      vocabArray = data;
+    } else {
+      vocabArray = data.content || [];
+    }
+
+    // Find the last card that has at least one non-'none' state
+    let lastFilledIndex = -1;
+    for (let i = vocabArray.length - 1; i >= 0; i--) {
+      const card = vocabArray[i];
+      if (card.states && card.states.some(state => state !== 'none')) {
+        lastFilledIndex = i;
+        break;
+      }
+    }
+
+    // If no filled cards found, return first page
+    const lastFilledPage = lastFilledIndex === -1 ? 0 : Math.floor(lastFilledIndex / pageSize);
+
+    res.json({
+      lastFilledPage: lastFilledPage,
+      lastFilledIndex: lastFilledIndex,
+      totalItems: vocabArray.length,
+      pageSize: pageSize
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+/**
  * PATCH /api/vocab-files/:courseId/:id
  * Update a specific vocab item
  */
