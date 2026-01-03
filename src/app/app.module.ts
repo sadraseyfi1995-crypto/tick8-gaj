@@ -62,7 +62,8 @@ import { LogsViewerComponent } from './logs-viewer/logs-viewer.component';
       { path: 'reset-password', component: ResetPasswordComponent },
       { path: 'manage-courses', component: CourseManagementComponent, canActivate: [AuthGuard] },
       { path: 'snapshots', component: SnapshotManagementComponent, canActivate: [AuthGuard] },
-      { path: 'logs', component: LogsViewerComponent, canActivate: [AuthGuard] }
+      { path: 'logs', component: LogsViewerComponent, canActivate: [AuthGuard] },
+      { path: '**', redirectTo: '', pathMatch: 'full' }
     ]),
   ],
   providers: [
