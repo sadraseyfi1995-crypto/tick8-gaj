@@ -65,6 +65,13 @@
       </div>
 
       <div class="filter-group">
+        <label>Group By</label>
+        <select [(ngModel)]="groupBy">
+          <option *ngFor="let opt of groupByOptions" [value]="opt.value">{{ opt.label }}</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
         <label>Limit</label>
         <input type="number" [(ngModel)]="filterLimit" min="10" max="1000" />
       </div>
@@ -86,49 +93,59 @@
     Loading logs...
   </div>
 
-  <!-- Logs Table -->
+  <!-- Logs Table (Grouped View) -->
   <div class="logs-table-container" *ngIf="!isLoading">
-    <table class="logs-table">
-      <thead>
-        <tr>
-          <th>Timestamp</th>
-          <th>Severity</th>
-          <th>Type</th>
-          <th>Source</th>
-          <th>User</th>
-          <th>Message</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let log of logs" [class]="getSeverityClass(log.severity)">
-          <td class="timestamp">{{ formatTimestamp(log.timestamp) }}</td>
-          <td>
-            <span class="badge" [class]="getSeverityClass(log.severity)">
-              {{ log.severity }}
-            </span>
-          </td>
-          <td>
-            <span class="badge" [class]="getTypeClass(log.type)">
-              {{ log.type }}
-            </span>
-          </td>
-          <td class="source">{{ log.source }}</td>
-          <td class="user">{{ log.userEmail }}</td>
-          <td class="message">
-            <div class="message-text">{{ log.message }}</div>
-            <div class="message-details" *ngIf="log.statusCode">
-              <span class="status-code">{{ log.statusCode }}</span>
-              <span class="method" *ngIf="log.method">{{ log.method }}</span>
-            </div>
-          </td>
-          <td class="actions">
-            <button class="view-btn" (click)="showDetails(log)">👁️</button>
-            <button class="copy-btn" (click)="copyToClipboard(log)">📋</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <ng-container *ngFor="let group of getGroupedLogs()">
+      <!-- Group Header (only if grouping is enabled) -->
+      <div class="group-header" *ngIf="groupBy" (click)="toggleGroup(group.key)">
+        <span class="expand-icon">{{ isGroupExpanded(group.key) ? '▼' : '▶' }}</span>
+        <span class="group-key">{{ group.key }}</span>
+        <span class="group-count">({{ group.logs.length }})</span>
+      </div>
+
+      <!-- Logs Table (show if no grouping, or if group is expanded) -->
+      <table class="logs-table" *ngIf="!groupBy || isGroupExpanded(group.key)">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Severity</th>
+            <th>Type</th>
+            <th>Source</th>
+            <th>User</th>
+            <th>Message</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let log of group.logs" [class]="getSeverityClass(log.severity)">
+            <td class="timestamp">{{ formatTimestamp(log.timestamp) }}</td>
+            <td>
+              <span class="badge" [class]="getSeverityClass(log.severity)">
+                {{ log.severity }}
+              </span>
+            </td>
+            <td>
+              <span class="badge" [class]="getTypeClass(log.type)">
+                {{ log.type }}
+              </span>
+            </td>
+            <td class="source">{{ log.source }}</td>
+            <td class="user">{{ log.userEmail }}</td>
+            <td class="message">
+              <div class="message-text">{{ log.message }}</div>
+              <div class="message-details" *ngIf="log.statusCode">
+                <span class="status-code">{{ log.statusCode }}</span>
+                <span class="method" *ngIf="log.method">{{ log.method }}</span>
+              </div>
+            </td>
+            <td class="actions">
+              <button class="view-btn" (click)="showDetails(log)">👁️</button>
+              <button class="copy-btn" (click)="copyToClipboard(log)">📋</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-container>
 
     <div class="no-logs" *ngIf="logs.length === 0 && !isLoading">
       No logs found matching your filters.

@@ -164,6 +164,46 @@
   overflow: hidden;
 }
 
+// Group Header for grouped logs
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #e5e7eb;
+  }
+
+  .expand-icon {
+    font-size: 12px;
+    color: #6b7280;
+    width: 16px;
+  }
+
+  .group-key {
+    font-weight: 600;
+    color: #1f2937;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .group-count {
+    font-size: 13px;
+    color: #6b7280;
+    background: #fff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+}
+
 .logs-table {
   width: 100%;
   border-collapse: collapse;

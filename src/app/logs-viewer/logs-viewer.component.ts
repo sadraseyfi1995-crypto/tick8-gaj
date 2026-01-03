@@ -20,6 +20,18 @@ export class LogsViewerComponent implements OnInit {
   filterLimit = 100;
   filterDays = 7;
 
+  // Group By
+  groupBy: string = 'message';
+  groupByOptions = [
+    { value: '', label: 'No Grouping' },
+    { value: 'message', label: 'Message' },
+    { value: 'severity', label: 'Severity' },
+    { value: 'type', label: 'Type' },
+    { value: 'source', label: 'Source' },
+    { value: 'userEmail', label: 'User' }
+  ];
+  expandedGroups: Set<string> = new Set();
+
   // Selected log for detail view
   selectedLog: LogEntry | null = null;
 
@@ -27,7 +39,7 @@ export class LogsViewerComponent implements OnInit {
   types = ['frontend', 'backend', 'info', 'warning'];
   severities = ['info', 'warning', 'error'];
 
-  constructor(private logsService: LogsService) {}
+  constructor(private logsService: LogsService) { }
 
   ngOnInit(): void {
     this.loadLogs();
@@ -188,5 +200,47 @@ export class LogsViewerComponent implements OnInit {
   getUniqueSources(): string[] {
     if (!this.stats?.bySource) return [];
     return Object.keys(this.stats.bySource);
+  }
+
+  /**
+   * Get logs grouped by selected column
+   */
+  getGroupedLogs(): { key: string; logs: LogEntry[] }[] {
+    if (!this.groupBy) {
+      return [{ key: '', logs: this.logs }];
+    }
+
+    const groups = new Map<string, LogEntry[]>();
+
+    for (const log of this.logs) {
+      const key = (log as any)[this.groupBy] || '(empty)';
+      if (!groups.has(key)) {
+        groups.set(key, []);
+      }
+      groups.get(key)!.push(log);
+    }
+
+    // Sort by count descending
+    return Array.from(groups.entries())
+      .map(([key, logs]) => ({ key, logs }))
+      .sort((a, b) => b.logs.length - a.logs.length);
+  }
+
+  /**
+   * Toggle group expansion
+   */
+  toggleGroup(key: string): void {
+    if (this.expandedGroups.has(key)) {
+      this.expandedGroups.delete(key);
+    } else {
+      this.expandedGroups.add(key);
+    }
+  }
+
+  /**
+   * Check if group is expanded
+   */
+  isGroupExpanded(key: string): boolean {
+    return this.expandedGroups.has(key);
   }
 }
