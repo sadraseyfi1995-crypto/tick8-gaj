@@ -2,6 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
 import { GOOGLE_CONFIG } from '../auth/google.config';
 import { Router } from '@angular/router';
+import { ErrorLoggingService } from '../error-logging.service';
 
 @Component({
     selector: 'app-login',
@@ -21,22 +22,36 @@ export class LoginComponent implements AfterViewInit {
 
     constructor(
         private authService: AuthService,
-        private router: Router
+        private router: Router,
+        private errorLoggingService: ErrorLoggingService
     ) { }
 
     ngAfterViewInit(): void {
         // Initialize Google Sign-In button after view is ready
         setTimeout(() => {
-            this.authService.initializeGoogleSignIn('google-signin-button');
+            try {
+                this.authService.initializeGoogleSignIn('google-signin-button');
 
-            // Show fallback button after a delay if Google button didn't render
-            setTimeout(() => {
-                const googleButton = document.getElementById('google-signin-button');
-                if (googleButton && googleButton.children.length === 0) {
-                    this.showFallbackButton = true;
-                    this.statusMessage = 'Google button loading delayed. Use the button below:';
-                }
-            }, 3000);
+                // Show fallback button after a delay if Google button didn't render
+                setTimeout(() => {
+                    const googleButton = document.getElementById('google-signin-button');
+                    if (googleButton && googleButton.children.length === 0) {
+                        this.showFallbackButton = true;
+                        this.statusMessage = 'Google button loading delayed. Use the button below:';
+
+                        // Log that Google SDK failed to render
+                        this.errorLoggingService.logError(new Error('Google Sign-In button failed to render'), {
+                            source: 'login-google-button-render',
+                            severity: 'warning'
+                        });
+                    }
+                }, 3000);
+            } catch (error) {
+                this.errorLoggingService.logError(error, {
+                    source: 'login-google-init',
+                    severity: 'error'
+                });
+            }
         }, 100);
     }
 
@@ -71,6 +86,13 @@ export class LoginComponent implements AfterViewInit {
         if (!popup) {
             this.errorMessage = 'Popup blocked. Please allow popups for this site.';
             this.isLoading = false;
+
+            // Log popup blocked error
+            this.errorLoggingService.logError(new Error('Google OAuth popup blocked'), {
+                source: 'login-popup-blocked',
+                severity: 'warning',
+                context: { userAgent: navigator.userAgent }
+            });
             return;
         }
 
@@ -96,7 +118,20 @@ export class LoginComponent implements AfterViewInit {
                             console.error('Backend auth failed:', err);
                             this.errorMessage = 'Authentication failed. Please try again.';
                             this.isLoading = false;
+
+                            // Log backend auth failure
+                            this.errorLoggingService.logError(err, {
+                                source: 'login-google-backend-auth',
+                                severity: 'error',
+                                context: { method: 'popup' }
+                            });
                         }
+                    });
+                } else {
+                    // Log missing token
+                    this.errorLoggingService.logError(new Error('No ID token received from Google'), {
+                        source: 'login-google-no-token',
+                        severity: 'error'
                     });
                 }
             }
@@ -115,6 +150,12 @@ export class LoginComponent implements AfterViewInit {
                         this.isLoading = false;
                         window.removeEventListener('message', messageHandler);
                         console.log('Popup closed by user');
+
+                        // Log popup closed (informational, not an error)
+                        this.errorLoggingService.logError(new Error('User closed Google OAuth popup'), {
+                            source: 'login-popup-closed',
+                            severity: 'info'
+                        });
                     }
                 }, 1000);
             }
@@ -149,6 +190,16 @@ export class LoginComponent implements AfterViewInit {
             error: (err) => {
                 this.errorMessage = err.message;
                 this.isLoading = false;
+
+                // Log email/password login error
+                this.errorLoggingService.logError(err, {
+                    source: 'login-email-password',
+                    severity: 'error',
+                    context: {
+                        email: this.email,
+                        errorMessage: err.message
+                    }
+                });
             }
         });
     }

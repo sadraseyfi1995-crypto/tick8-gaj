@@ -4,6 +4,7 @@ import { BehaviorSubject, Observable, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { GOOGLE_CONFIG } from './google.config';
+import { ErrorLoggingService } from '../error-logging.service';
 
 declare const google: any;
 
@@ -37,7 +38,8 @@ export class AuthService {
     constructor(
         private http: HttpClient,
         private router: Router,
-        private ngZone: NgZone
+        private ngZone: NgZone,
+        private errorLoggingService: ErrorLoggingService
     ) {
         this.checkStoredAuth();
     }
@@ -54,8 +56,15 @@ export class AuthService {
                 const user = JSON.parse(userStr);
                 this.currentUser$.next(user);
                 this.isAuthenticated$.next(true);
-            } catch {
+            } catch (error) {
                 this.clearAuth();
+
+                // Log stored auth parsing error
+                this.errorLoggingService.logError(error, {
+                    source: 'auth-stored-auth-parse',
+                    severity: 'warning',
+                    context: { hadToken: !!token, hadUser: !!userStr }
+                });
             }
         }
     }
@@ -105,6 +114,13 @@ export class AuthService {
             }, 100);
         } else {
             console.error('Google Identity Services failed to load after maximum attempts');
+
+            // Log Google SDK loading failure
+            this.errorLoggingService.logError(new Error('Google Identity Services SDK failed to load'), {
+                source: 'auth-google-sdk-load-failure',
+                severity: 'error',
+                context: { attempts, maxAttempts }
+            });
         }
     }
 
@@ -121,8 +137,21 @@ export class AuthService {
                     },
                     error: (err) => {
                         console.error('Authentication failed:', err);
+
+                        // Log Google authentication callback failure
+                        this.errorLoggingService.logError(err, {
+                            source: 'auth-google-callback',
+                            severity: 'error',
+                            context: { method: 'button' }
+                        });
                     }
                 });
+            });
+        } else {
+            // Log missing credential
+            this.errorLoggingService.logError(new Error('No credential in Google callback'), {
+                source: 'auth-google-callback-no-credential',
+                severity: 'warning'
             });
         }
     }
