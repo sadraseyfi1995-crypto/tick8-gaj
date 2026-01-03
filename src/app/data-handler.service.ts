@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, filter, BehaviorSubject, of } from 'rxjs';
+import { Observable, filter, BehaviorSubject, of, Subject, debounceTime, switchMap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { VboxState, VocabComponentModel } from './vocab/vocab.component';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
@@ -18,6 +18,11 @@ export class DataHandlerService {
   public courses: ICourse[] = [];
   public courses$ = new BehaviorSubject<ICourse[]>([]);
   public loading$ = new BehaviorSubject<boolean>(false);
+
+  // Debouncing for updates to prevent GCS rate limiting
+  private pendingUpdates = new Map<string, { id: string | number; updates: any; courseId: string }>();
+  private updateTrigger$ = new Subject<void>();
+  private updateDebounceMs = 500;
 
   constructor(private http: HttpClient,
     private route: ActivatedRoute,
@@ -45,7 +50,14 @@ export class DataHandlerService {
             this.updateChosenCourse(courseId);
           }
         }
-      })
+      });
+
+    // Setup debounced update processing to prevent GCS rate limiting
+    this.updateTrigger$.pipe(
+      debounceTime(this.updateDebounceMs)
+    ).subscribe(() => {
+      this.processPendingUpdates();
+    });
   }
 
   private updateChosenCourse(courseId: string) {
@@ -100,8 +112,67 @@ export class DataHandlerService {
   }
 
   updateById(id: number | string, updates: VboxState[] | { states?: VboxState[]; liked?: boolean }): Observable<{ success: boolean; item?: VocabComponentModel }> {
-    const url = `${this.apiUrl}/${this.sharedService.getChosenCourseId()}/${id}`;
-    return this.http.patch<{ success: boolean; item?: VocabComponentModel }>(url, updates);
+    const courseId = this.sharedService.getChosenCourseId();
+    if (!courseId) {
+      return of({ success: false });
+    }
+
+    // Create a unique key for this update
+    const updateKey = `${courseId}:${id}`;
+
+    // Merge with any pending update for this item
+    const existing = this.pendingUpdates.get(updateKey);
+    let mergedUpdates = updates;
+    if (existing) {
+      // Merge updates - new updates override existing
+      if (Array.isArray(updates)) {
+        mergedUpdates = updates;
+      } else if (typeof existing.updates === 'object' && !Array.isArray(existing.updates)) {
+        mergedUpdates = { ...existing.updates, ...updates };
+      } else {
+        mergedUpdates = updates;
+      }
+    }
+
+    this.pendingUpdates.set(updateKey, { id, updates: mergedUpdates, courseId });
+
+    // Trigger debounced processing
+    this.updateTrigger$.next();
+
+    // Return immediately with success (optimistic update)
+    // The actual API call happens after debounce
+    return of({ success: true });
+  }
+
+  /**
+   * Process all pending updates - called after debounce timer
+   */
+  private processPendingUpdates(): void {
+    const updates = Array.from(this.pendingUpdates.entries());
+    this.pendingUpdates.clear();
+
+    if (updates.length === 0) return;
+
+    // Process each unique item update
+    updates.forEach(([key, { id, updates, courseId }]) => {
+      const url = `${this.apiUrl}/${courseId}/${id}`;
+      this.http.patch<{ success: boolean; item?: VocabComponentModel }>(url, updates).subscribe({
+        next: (response) => {
+          // Update local data if needed
+          if (response.item) {
+            const index = this.data.findIndex(item => String(item.id) === String(id));
+            if (index !== -1) {
+              this.data[index] = response.item;
+              this.data$.next([...this.data]);
+            }
+          }
+        },
+        error: (err) => {
+          console.error('Failed to save update:', err);
+          // Could implement retry logic here
+        }
+      });
+    });
   }
 
   getCourses(): Observable<any[]> {
