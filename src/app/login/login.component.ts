@@ -1,6 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
 import { GOOGLE_CONFIG } from '../auth/google.config';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-login',
@@ -13,7 +14,15 @@ export class LoginComponent implements AfterViewInit {
     statusMessage: string | null = null;
     showFallbackButton = false;
 
-    constructor(private authService: AuthService) { }
+    // Email/password login
+    email = '';
+    password = '';
+    showEmailLogin = false;
+
+    constructor(
+        private authService: AuthService,
+        private router: Router
+    ) { }
 
     ngAfterViewInit(): void {
         // Initialize Google Sign-In button after view is ready
@@ -110,5 +119,37 @@ export class LoginComponent implements AfterViewInit {
                 }, 1000);
             }
         }, 500);
+    }
+
+    /**
+     * Toggle between Google and email/password login
+     */
+    toggleEmailLogin(): void {
+        this.showEmailLogin = !this.showEmailLogin;
+        this.errorMessage = null;
+        this.statusMessage = null;
+    }
+
+    /**
+     * Login with email and password
+     */
+    loginWithEmail(): void {
+        if (!this.email || !this.password) {
+            this.errorMessage = 'Please enter both email and password';
+            return;
+        }
+
+        this.isLoading = true;
+        this.errorMessage = null;
+
+        this.authService.login(this.email, this.password).subscribe({
+            next: () => {
+                this.router.navigate(['/']);
+            },
+            error: (err) => {
+                this.errorMessage = err.message;
+                this.isLoading = false;
+            }
+        });
     }
 }

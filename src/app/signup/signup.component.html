@@ -1,0 +1,85 @@
+<div class="signup-container">
+    <div class="signup-card">
+        <div class="signup-header">
+            <div class="logo">
+                <span class="logo-icon">✓</span>
+                <span class="logo-text">tick8</span>
+            </div>
+            <h1>Create Account</h1>
+            <p class="subtitle">Join us to start your learning journey</p>
+        </div>
+
+        <div class="signup-content">
+            <!-- Success message -->
+            <div class="success-message" *ngIf="successMessage">
+                <span class="success-icon">✓</span>
+                {{ successMessage }}
+            </div>
+
+            <!-- Error message -->
+            <div class="error-message" *ngIf="errorMessage">
+                <span class="error-icon">⚠</span>
+                {{ errorMessage }}
+            </div>
+
+            <form class="signup-form" (ngSubmit)="signup()">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" [(ngModel)]="name" name="name"
+                           placeholder="Enter your full name" [disabled]="isLoading"
+                           autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" [(ngModel)]="email" name="email"
+                           placeholder="Enter your email" [disabled]="isLoading"
+                           autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" [(ngModel)]="password" name="password"
+                           placeholder="At least 8 characters" [disabled]="isLoading"
+                           autocomplete="new-password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword"
+                           name="confirmPassword" placeholder="Re-enter your password"
+                           [disabled]="isLoading" autocomplete="new-password"
+                           (keyup.enter)="signup()">
+                </div>
+
+                <button type="submit" class="signup-btn" [disabled]="isLoading">
+                    <span *ngIf="!isLoading">Create Account</span>
+                    <span *ngIf="isLoading">Creating account...</span>
+                </button>
+            </form>
+
+            <div class="login-link">
+                Already have an account?
+                <a routerLink="/login" class="link">Sign in</a>
+            </div>
+
+            <!-- Loading indicator -->
+            <div class="loading-spinner" *ngIf="isLoading">
+                <div class="spinner"></div>
+                <span>Creating your account...</span>
+            </div>
+        </div>
+
+        <div class="signup-footer">
+            <p class="terms">
+                By creating an account, you agree to our terms of service and privacy policy.
+            </p>
+        </div>
+    </div>
+
+    <div class="background-decoration">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+</div>

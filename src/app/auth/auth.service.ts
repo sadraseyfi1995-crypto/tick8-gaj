@@ -222,4 +222,70 @@ export class AuthService {
                 })
             );
     }
+
+    /**
+     * Sign up with email and password
+     */
+    public signup(email: string, password: string, name: string): Observable<AuthResponse> {
+        return this.http.post<AuthResponse>(`${this.apiUrl}/signup`, { email, password, name })
+            .pipe(
+                tap(response => {
+                    if (response.success) {
+                        this.setAuth(response.token, response.user);
+                    }
+                }),
+                catchError(err => {
+                    console.error('Signup error:', err);
+                    return throwError(() => new Error(err.error?.error || 'Signup failed'));
+                })
+            );
+    }
+
+    /**
+     * Login with email and password
+     */
+    public login(email: string, password: string): Observable<AuthResponse> {
+        return this.http.post<AuthResponse>(`${this.apiUrl}/login`, { email, password })
+            .pipe(
+                tap(response => {
+                    if (response.success) {
+                        this.setAuth(response.token, response.user);
+                    }
+                }),
+                catchError(err => {
+                    console.error('Login error:', err);
+                    return throwError(() => new Error(err.error?.error || 'Login failed'));
+                })
+            );
+    }
+
+    /**
+     * Request password reset
+     */
+    public forgotPassword(email: string): Observable<{ success: boolean; message: string; resetToken?: string }> {
+        return this.http.post<{ success: boolean; message: string; resetToken?: string }>(
+            `${this.apiUrl}/forgot-password`,
+            { email }
+        ).pipe(
+            catchError(err => {
+                console.error('Forgot password error:', err);
+                return throwError(() => new Error(err.error?.error || 'Request failed'));
+            })
+        );
+    }
+
+    /**
+     * Reset password using token
+     */
+    public resetPassword(email: string, token: string, newPassword: string): Observable<{ success: boolean; message: string }> {
+        return this.http.post<{ success: boolean; message: string }>(
+            `${this.apiUrl}/reset-password`,
+            { email, token, newPassword }
+        ).pipe(
+            catchError(err => {
+                console.error('Reset password error:', err);
+                return throwError(() => new Error(err.error?.error || 'Password reset failed'));
+            })
+        );
+    }
 }

@@ -22,6 +22,9 @@ import { ErrorInterceptor } from './error.interceptor';
 import { AuthGuard } from './auth/auth.guard';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SnapshotManagementComponent } from './snapshot-management/snapshot-management.component';
+import { SignupComponent } from './signup/signup.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { SnapshotManagementComponent } from './snapshot-management/snapshot-mana
     CourseManagementComponent,
     LoginComponent,
     WelcomeComponent,
-    SnapshotManagementComponent
+    SnapshotManagementComponent,
+    SignupComponent,
+    ForgotPasswordComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +54,9 @@ import { SnapshotManagementComponent } from './snapshot-management/snapshot-mana
       { path: '', component: WelcomeComponent },
       { path: 'book', component: BookComponent, canActivate: [AuthGuard] },
       { path: 'login', component: LoginComponent },
+      { path: 'signup', component: SignupComponent },
+      { path: 'forgot-password', component: ForgotPasswordComponent },
+      { path: 'reset-password', component: ResetPasswordComponent },
       { path: 'manage-courses', component: CourseManagementComponent, canActivate: [AuthGuard] },
       { path: 'snapshots', component: SnapshotManagementComponent, canActivate: [AuthGuard] }
     ]),
