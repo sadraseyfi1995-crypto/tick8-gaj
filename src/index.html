@@ -8,6 +8,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script>
+    // Very early error logging (catches errors during page load, before Angular)
+    (function() {
+      var apiUrl = 'https://tick8-api-616079701914.europe-west1.run.app/api/logs/error';
+
+      function logError(errorData) {
+        try {
+          var userEmail = 'anonymous';
+          try {
+            var userStr = localStorage.getItem('tick8_user');
+            if (userStr) {
+              var user = JSON.parse(userStr);
+              userEmail = user.email || 'anonymous';
+            }
+          } catch (e) {}
+
+          var payload = {
+            type: 'frontend',
+            source: errorData.source || 'page-load',
+            message: errorData.message || 'Unknown error',
+            stack: errorData.stack || null,
+            url: window.location.href,
+            userAgent: navigator.userAgent,
+            context: errorData.context || {},
+            severity: 'error',
+            userEmail: userEmail
+          };
+
+          if (navigator.sendBeacon) {
+            var blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
+            navigator.sendBeacon(apiUrl, blob);
+          } else {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', apiUrl, true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify(payload));
+          }
+        } catch (e) {
+          console.error('Failed to log error:', e);
+        }
+      }
+
+      // Catch all window errors
+      window.addEventListener('error', function(event) {
+        // Check if this is a resource loading error
+        if (event.target && event.target !== window) {
+          logError({
+            source: 'resource-load-error',
+            message: 'Failed to load resource: ' + (event.target.src || event.target.href),
+            context: {
+              tagName: event.target.tagName,
+              src: event.target.src,
+              href: event.target.href
+            }
+          });
+        } else {
+          logError({
+            source: 'early-window-error',
+            message: event.message || 'Window error',
+            stack: event.error ? event.error.stack : null,
+            context: {
+              filename: event.filename,
+              lineno: event.lineno,
+              colno: event.colno
+            }
+          });
+        }
+      }, true); // Use capture phase to catch resource errors
+
+      // Catch unhandled promise rejections
+      window.addEventListener('unhandledrejection', function(event) {
+        logError({
+          source: 'early-promise-rejection',
+          message: event.reason && event.reason.message ? event.reason.message : String(event.reason),
+          stack: event.reason && event.reason.stack ? event.reason.stack : null,
+          context: {
+            reason: String(event.reason)
+          }
+        });
+      });
+    })();
+  </script>
+  <script>
     // Check if we are in a popup and have a token
     if (window.opener && (window.location.hash.includes('id_token=') || window.location.hash.includes('access_token='))) {
       console.log('Tick8: OAuth callback detected in popup');

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataHandlerService } from './data-handler.service';
 import { AuthService } from './auth/auth.service';
+import { Router, NavigationError } from '@angular/router';
+import { ErrorLoggingService } from './error-logging.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,23 @@ import { AuthService } from './auth/auth.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor(public vocabService: DataHandlerService, private authService: AuthService) { }
+  constructor(
+    public vocabService: DataHandlerService,
+    private authService: AuthService,
+    private router: Router,
+    private errorLoggingService: ErrorLoggingService
+  ) {
+    // Subscribe to router navigation errors
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationError) {
+        this.errorLoggingService.logError(event.error, {
+          source: 'router-navigation-error',
+          url: event.url,
+          navigationId: event.id
+        });
+      }
+    });
+  }
 
   ngOnInit() {
     // Only trigger decay once per session, not on every component init
