@@ -3,10 +3,14 @@ import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest, HttpErrorResponse
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { MessageService } from 'primeng/api';
+import { ErrorLoggingService } from './error-logging.service';
 
 @Injectable()
 export class ErrorInterceptor implements HttpInterceptor {
-  constructor(private messageService: MessageService) {}
+  constructor(
+    private messageService: MessageService,
+    private errorLoggingService: ErrorLoggingService
+  ) {}
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     return next.handle(req).pipe(
@@ -49,6 +53,17 @@ export class ErrorInterceptor implements HttpInterceptor {
           detail: errorMessage,
           life: 4000
         });
+
+        // Log error to backend (skip if it's the logging endpoint itself to avoid infinite loop)
+        if (!req.url.includes('/api/logs/error')) {
+          this.errorLoggingService.logError(error, {
+            source: 'http-interceptor',
+            requestUrl: req.url,
+            requestMethod: req.method,
+            statusCode: error.status,
+            userFacingMessage: errorMessage
+          });
+        }
 
         return throwError(() => error);
       })

@@ -103,6 +103,31 @@
   font-size: 14px;
 }
 
+.admin-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  color: #fca5a5;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(239, 68, 68, 0.25);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: #fecaca;
+  }
+
+  .admin-icon {
+    font-size: 14px;
+  }
+}
+
 .login-link {
   padding: 8px 18px;
   background: linear-gradient(135deg, #34c759 0%, #30d158 100%);

@@ -1,10 +1,11 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { GlobalErrorHandler } from './global-error-handler';
 
 import { AppComponent } from './app.component';
 import { VocabComponent } from './vocab/vocab.component';
@@ -25,6 +26,7 @@ import { SnapshotManagementComponent } from './snapshot-management/snapshot-mana
 import { SignupComponent } from './signup/signup.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { LogsViewerComponent } from './logs-viewer/logs-viewer.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     SnapshotManagementComponent,
     SignupComponent,
     ForgotPasswordComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    LogsViewerComponent
   ],
   imports: [
     BrowserModule,
@@ -58,11 +61,16 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
       { path: 'forgot-password', component: ForgotPasswordComponent },
       { path: 'reset-password', component: ResetPasswordComponent },
       { path: 'manage-courses', component: CourseManagementComponent, canActivate: [AuthGuard] },
-      { path: 'snapshots', component: SnapshotManagementComponent, canActivate: [AuthGuard] }
+      { path: 'snapshots', component: SnapshotManagementComponent, canActivate: [AuthGuard] },
+      { path: 'logs', component: LogsViewerComponent, canActivate: [AuthGuard] }
     ]),
   ],
   providers: [
     MessageService,
+    {
+      provide: ErrorHandler,
+      useClass: GlobalErrorHandler
+    },
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,

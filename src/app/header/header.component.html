@@ -8,6 +8,12 @@
   <div class="header-right">
     <!-- Logged in state -->
     <ng-container *ngIf="isLoggedIn && user">
+      <!-- Admin Logs Link -->
+      <a *ngIf="isAdmin" routerLink="/logs" class="admin-link" title="System Logs">
+        <span class="admin-icon">📊</span>
+        Logs
+      </a>
+
       <div class="user-info">
         <img *ngIf="user.picture" [src]="user.picture" [alt]="user.name" class="user-avatar"
           referrerpolicy="no-referrer">

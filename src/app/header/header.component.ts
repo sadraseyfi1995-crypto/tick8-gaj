@@ -11,8 +11,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
   user: User | null = null;
   isLoggedIn = false;
   private subscriptions = new Subscription();
+  private readonly ADMIN_EMAIL = 'sadra.seyfi.1995@gmail.com';
 
   constructor(private authService: AuthService) { }
+
+  get isAdmin(): boolean {
+    return this.user?.email === this.ADMIN_EMAIL;
+  }
 
   ngOnInit(): void {
     this.subscriptions.add(

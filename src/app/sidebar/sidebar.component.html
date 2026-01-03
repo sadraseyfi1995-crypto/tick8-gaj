@@ -18,6 +18,12 @@
                 <span class="label" *ngIf="mode === 'expanded'">Snapshots</span>
             </button>
         </li>
+        <li *ngIf="isAdmin">
+            <button routerLink="/logs" (click)="onNavigate()" class="admin-menu-item">
+                <span class="icon">📊</span>
+                <span class="label" *ngIf="mode === 'expanded'">System Logs</span>
+            </button>
+        </li>
         <li *ngFor="let course of sortedCourses;">
             <button (click)="setCourse(course.id)">
                 <span class="label" *ngIf="mode === 'expanded'">{{course.name}}</span>

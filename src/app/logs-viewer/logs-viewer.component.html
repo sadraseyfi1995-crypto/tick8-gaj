@@ -1,0 +1,205 @@
+<div class="logs-viewer">
+  <div class="logs-header">
+    <h1>System Logs</h1>
+    <button class="cleanup-btn" (click)="cleanupOldLogs()">🗑️ Cleanup Old Logs</button>
+  </div>
+
+  <!-- Statistics Dashboard -->
+  <div class="stats-dashboard" *ngIf="stats">
+    <div class="stat-card">
+      <div class="stat-value">{{ stats.total }}</div>
+      <div class="stat-label">Total Logs</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">{{ stats.bySeverity?.error || 0 }}</div>
+      <div class="stat-label severity-error">Errors</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">{{ stats.bySeverity?.warning || 0 }}</div>
+      <div class="stat-label severity-warning">Warnings</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">{{ stats.byType?.frontend || 0 }}</div>
+      <div class="stat-label">Frontend</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">{{ stats.byType?.backend || 0 }}</div>
+      <div class="stat-label">Backend</div>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters-panel">
+    <h3>Filters</h3>
+    <div class="filters-grid">
+      <div class="filter-group">
+        <label>Type</label>
+        <select [(ngModel)]="filterType">
+          <option value="">All Types</option>
+          <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Severity</label>
+        <select [(ngModel)]="filterSeverity">
+          <option value="">All Severities</option>
+          <option *ngFor="let sev of severities" [value]="sev">{{ sev }}</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>User</label>
+        <select [(ngModel)]="filterUser">
+          <option value="">All Users</option>
+          <option *ngFor="let user of getUniqueUsers()" [value]="user">{{ user }}</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Source</label>
+        <select [(ngModel)]="filterSource">
+          <option value="">All Sources</option>
+          <option *ngFor="let source of getUniqueSources()" [value]="source">{{ source }}</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Limit</label>
+        <input type="number" [(ngModel)]="filterLimit" min="10" max="1000" />
+      </div>
+
+      <div class="filter-actions">
+        <button class="apply-btn" (click)="applyFilters()">Apply</button>
+        <button class="clear-btn" (click)="clearFilters()">Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error Message -->
+  <div class="error-message" *ngIf="errorMessage">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Loading -->
+  <div class="loading" *ngIf="isLoading">
+    Loading logs...
+  </div>
+
+  <!-- Logs Table -->
+  <div class="logs-table-container" *ngIf="!isLoading">
+    <table class="logs-table">
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>Severity</th>
+          <th>Type</th>
+          <th>Source</th>
+          <th>User</th>
+          <th>Message</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let log of logs" [class]="getSeverityClass(log.severity)">
+          <td class="timestamp">{{ formatTimestamp(log.timestamp) }}</td>
+          <td>
+            <span class="badge" [class]="getSeverityClass(log.severity)">
+              {{ log.severity }}
+            </span>
+          </td>
+          <td>
+            <span class="badge" [class]="getTypeClass(log.type)">
+              {{ log.type }}
+            </span>
+          </td>
+          <td class="source">{{ log.source }}</td>
+          <td class="user">{{ log.userEmail }}</td>
+          <td class="message">
+            <div class="message-text">{{ log.message }}</div>
+            <div class="message-details" *ngIf="log.statusCode">
+              <span class="status-code">{{ log.statusCode }}</span>
+              <span class="method" *ngIf="log.method">{{ log.method }}</span>
+            </div>
+          </td>
+          <td class="actions">
+            <button class="view-btn" (click)="showDetails(log)">👁️</button>
+            <button class="copy-btn" (click)="copyToClipboard(log)">📋</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="no-logs" *ngIf="logs.length === 0 && !isLoading">
+      No logs found matching your filters.
+    </div>
+  </div>
+
+  <!-- Log Detail Modal -->
+  <div class="modal-overlay" *ngIf="selectedLog" (click)="closeDetails()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>Log Details</h2>
+        <button class="close-btn" (click)="closeDetails()">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="detail-row">
+          <strong>ID:</strong>
+          <span>{{ selectedLog.id }}</span>
+        </div>
+        <div class="detail-row">
+          <strong>Timestamp:</strong>
+          <span>{{ formatTimestamp(selectedLog.timestamp) }}</span>
+        </div>
+        <div class="detail-row">
+          <strong>Type:</strong>
+          <span class="badge" [class]="getTypeClass(selectedLog.type)">{{ selectedLog.type }}</span>
+        </div>
+        <div class="detail-row">
+          <strong>Severity:</strong>
+          <span class="badge" [class]="getSeverityClass(selectedLog.severity)">{{ selectedLog.severity }}</span>
+        </div>
+        <div class="detail-row">
+          <strong>Source:</strong>
+          <span>{{ selectedLog.source }}</span>
+        </div>
+        <div class="detail-row">
+          <strong>User:</strong>
+          <span>{{ selectedLog.userEmail }}</span>
+        </div>
+        <div class="detail-row">
+          <strong>Message:</strong>
+          <span>{{ selectedLog.message }}</span>
+        </div>
+        <div class="detail-row" *ngIf="selectedLog.url">
+          <strong>URL:</strong>
+          <span class="url">{{ selectedLog.url }}</span>
+        </div>
+        <div class="detail-row" *ngIf="selectedLog.method">
+          <strong>Method:</strong>
+          <span>{{ selectedLog.method }}</span>
+        </div>
+        <div class="detail-row" *ngIf="selectedLog.statusCode">
+          <strong>Status Code:</strong>
+          <span>{{ selectedLog.statusCode }}</span>
+        </div>
+        <div class="detail-row" *ngIf="selectedLog.userAgent">
+          <strong>User Agent:</strong>
+          <span class="user-agent">{{ selectedLog.userAgent }}</span>
+        </div>
+        <div class="detail-row stack-trace" *ngIf="selectedLog.stack">
+          <strong>Stack Trace:</strong>
+          <pre>{{ selectedLog.stack }}</pre>
+        </div>
+        <div class="detail-row context" *ngIf="selectedLog.context">
+          <strong>Context:</strong>
+          <pre>{{ selectedLog.context | json }}</pre>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="copy-btn" (click)="copyToClipboard(selectedLog)">Copy Full Log</button>
+        <button class="close-btn" (click)="closeDetails()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

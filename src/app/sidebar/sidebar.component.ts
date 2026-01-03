@@ -16,6 +16,8 @@ export class SidebarComponent implements OnInit {
   @Output() toggleMode = new EventEmitter<SidebarMode>();
   @Output() navigate = new EventEmitter<void>();
 
+  private readonly ADMIN_EMAIL = 'sadra.seyfi.1995@gmail.com';
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -23,6 +25,11 @@ export class SidebarComponent implements OnInit {
     public dataHandler: DataHandlerService,
     public authService: AuthService
   ) { }
+
+  get isAdmin(): boolean {
+    const user = this.authService.getCurrentUser();
+    return user?.email === this.ADMIN_EMAIL;
+  }
 
   ngOnInit(): void {
     // Subscribe to the shared course list

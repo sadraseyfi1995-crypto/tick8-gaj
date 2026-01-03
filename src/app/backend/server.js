@@ -4,6 +4,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const { Storage } = require('@google-cloud/storage');
 const { setupAuthRoutes, authMiddleware } = require('./auth');
+const LoggingService = require('./logging-service');
 
 const app = express();
 
@@ -171,6 +172,10 @@ if (useGCS) {
 // Initialize on startup
 // storage.init().catch(console.error);
 
+// Initialize Logging Service
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'sadra.seyfi.1995@gmail.com';
+const loggingService = new LoggingService(storage, ADMIN_EMAIL);
+
 // ===========================================
 // Middleware Setup
 // ===========================================
@@ -186,6 +191,14 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json({ limit: '10mb' }));
+
+// Request logging middleware
+app.use((req, res, next) => {
+  // Attach logging service to request for use in error handlers
+  req.loggingService = loggingService;
+  next();
+});
+
 setupAuthRoutes(app);
 
 // ===========================================
@@ -1324,6 +1337,111 @@ app.delete('/api/snapshots/:id', authMiddleware, asyncHandler(async (req, res) =
 }));
 
 // ===========================================
+// Logging Routes
+// ===========================================
+
+/**
+ * POST /api/logs/error
+ * Log an error from frontend or backend
+ */
+app.post('/api/logs/error', async (req, res, next) => {
+  try {
+    const { type, source, message, stack, context, url, userAgent, severity } = req.body;
+
+    // Get user email if authenticated
+    const userEmail = req.user?.email || 'anonymous';
+
+    const logEntry = await loggingService.logError({
+      type: type || 'frontend',
+      source: source || 'unknown',
+      message: message || 'No message provided',
+      stack: stack || null,
+      userEmail,
+      userAgent: userAgent || req.headers['user-agent'],
+      url: url || req.headers.referer,
+      method: req.method,
+      context: context || {},
+      severity: severity || 'error'
+    });
+
+    res.json({ success: true, logId: logEntry?.id });
+  } catch (err) {
+    next(err);
+  }
+});
+
+/**
+ * GET /api/logs
+ * Get logs (admin only)
+ * Query params:
+ * - startDate: YYYY-MM-DD
+ * - endDate: YYYY-MM-DD
+ * - type: filter by type
+ * - userEmail: filter by user
+ * - severity: filter by severity
+ * - limit: max number of results
+ */
+app.get('/api/logs', authMiddleware, asyncHandler(async (req, res) => {
+  // Check if user is admin
+  if (req.user.email !== ADMIN_EMAIL) {
+    return res.status(403).json({ error: 'Admin access required' });
+  }
+
+  const { startDate, endDate, type, userEmail, severity, source, limit } = req.query;
+
+  let logs;
+  if (startDate && endDate) {
+    logs = await loggingService.getLogs(startDate, endDate, {
+      type,
+      userEmail,
+      severity,
+      source
+    });
+  } else {
+    logs = await loggingService.getRecentLogs(parseInt(limit) || 100, {
+      type,
+      userEmail,
+      severity,
+      source
+    });
+  }
+
+  res.json({ success: true, logs, count: logs.length });
+}));
+
+/**
+ * GET /api/logs/stats
+ * Get error statistics (admin only)
+ */
+app.get('/api/logs/stats', authMiddleware, asyncHandler(async (req, res) => {
+  // Check if user is admin
+  if (req.user.email !== ADMIN_EMAIL) {
+    return res.status(403).json({ error: 'Admin access required' });
+  }
+
+  const days = parseInt(req.query.days) || 7;
+  const stats = await loggingService.getErrorStats(days);
+
+  res.json({ success: true, stats });
+}));
+
+/**
+ * DELETE /api/logs/cleanup
+ * Delete old logs (admin only)
+ */
+app.delete('/api/logs/cleanup', authMiddleware, asyncHandler(async (req, res) => {
+  // Check if user is admin
+  if (req.user.email !== ADMIN_EMAIL) {
+    return res.status(403).json({ error: 'Admin access required' });
+  }
+
+  const daysToKeep = parseInt(req.query.daysToKeep) || 30;
+  const deletedCount = await loggingService.deleteOldLogs(daysToKeep);
+
+  res.json({ success: true, deletedCount });
+}));
+
+// ===========================================
 // Error Handling
 // ===========================================
 
@@ -1334,11 +1452,33 @@ app.use((req, res) => {
 
 // Global error handler
 app.use((err, req, res, next) => {
-  // Log error details
+  // Log error details to console
   console.error('Error:', err.message);
   if (!err.isOperational) {
     console.error('Stack:', err.stack);
   }
+
+  // Log to logging service
+  loggingService.logError({
+    type: 'backend',
+    source: req.path || 'unknown',
+    message: err.message,
+    stack: err.stack,
+    userEmail: req.user?.email || 'anonymous',
+    userAgent: req.headers['user-agent'],
+    url: req.originalUrl,
+    method: req.method,
+    statusCode: err.statusCode || 500,
+    context: {
+      isOperational: err.isOperational,
+      body: req.body,
+      query: req.query,
+      params: req.params
+    },
+    severity: err.statusCode < 500 ? 'warning' : 'error'
+  }).catch(logErr => {
+    console.error('Failed to log error:', logErr);
+  });
 
   // Determine status code
   const statusCode = err.statusCode || 500;

@@ -39,6 +39,17 @@
           background: rgba(255, 255, 255, 0.1);
         }
 
+        &.admin-menu-item {
+          background: rgba(239, 68, 68, 0.15);
+          border-left: 3px solid #ef4444;
+          color: #fca5a5;
+          font-weight: 600;
+
+          &:hover {
+            background: rgba(239, 68, 68, 0.25);
+          }
+        }
+
         .icon {
           display: inline-block;
           width: 24px;
